@@ -1,0 +1,179 @@
+<FTL>
+
+<sectorDescription name="SECTOR_FEDERATION" minSector="3" unique="true"> 
+	<nameList>
+		<name>Federation Sector [!]</name>
+		<name>Federation Colonies [!]</name>
+		<name>Federation Space [!]</name>
+		<name>Federation Settlements [!]</name>
+		<name>Federation Frontier [!]</name>
+		<name>Federation Territory [!]</name>
+		<name>Federation Domain [!]</name>
+		<name>Federation Rimworlds [!]</name>
+		<name>Federation Regions [!]</name>
+		<name>Federation Precinct [!]</name>
+		<name>Federation District [!]</name>
+		<name>Federation Turf [!]</name>
+		<name>Federation Quarter [!]</name>
+		<name>Federation Outreaches [!]</name>
+	</nameList>
+	<trackList>
+		<track>civilian</track> 
+		<track>galactic</track> 
+		<track>cosmos</track>
+		<track>milkyway</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="medic" rarity="4"/>
+		<blueprint name="engineer" rarity="0"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="1"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="2"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="5"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="5"/>
+		<blueprint name="freemantis" rarity="1"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="3"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="3"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="0"/>
+		<!--
+		\\\\\\\\\\\
+	     EQUIPMENT
+		\\\\\\\\\\\
+		-->
+		<blueprint name="GB_AC1" rarity="4"/>
+		<blueprint name="GB_AC2" rarity="4"/>
+		<blueprint name="GB_AC3" rarity="4"/>
+		<blueprint name="COMBAT_AC_1" rarity="5"/>
+	</rarityList>
+    <startEvent>ENTER_FEDERATION</startEvent>
+	<event name="TRANSPORT_FEDERATION_LOOT" min="1" max="1"/>
+	<event name="FEDERATION_OUTPOST_FED" min="1" max="1"/>
+	<event name="FED_MEMORIAL" min="1" max="1"/>
+	<event name="STEALTH_UNLOCK_1" min="1" max="1"/>
+	<event name="SYLVAN" min="0" max="1"/>
+	<event name="NEMESIS_ENCOUNTER" min="0" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="2"/>
+	<event name="STORELIST_FED" min="3" max="3"/>
+	<event name="ITEMS_FED" min="3" max="4"/>
+	<event name="NEUTRAL_FED_UNIQUE" min="3" max="4"/>
+	<event name="NEUTRAL_FED_GENERIC" min="1" max="2"/>
+	<event name="DISTRESS" min="0" max="1"/>
+	<event name="HOSTILE_FED" min="4" max="7"/>
+	<event name="QUESTS" min="0" max="1"/>
+</sectorDescription>
+
+<sectorDescription name="SECTOR_MILITIA" minSector="3" unique="true"> 
+	<nameList>
+		<name>Militia Encampment [!]</name>
+	</nameList>
+	<trackList>
+		<track>milkyway</track>
+		<track>galactic</track> 
+		<track>civilian</track> 
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="medic" rarity="3"/>
+		<blueprint name="engineer" rarity="0"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="3"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="2"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="5"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="4"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="5"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="4"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="0"/>
+		<!--
+		\\\\\\\\\\\
+	     EQUIPMENT
+		\\\\\\\\\\\
+		-->
+		<blueprint name="GB_AC1" rarity="5"/>
+		<blueprint name="GB_AC2" rarity="5"/>
+		<blueprint name="COMBAT_AC_1" rarity="5"/>
+	</rarityList>
+    <startEvent>ENTER_MILITIA</startEvent>
+	<event name="MILITIA_DETECTIVE" min="1" max="1"/>
+	<event name="TRANSPORT_MILITIA_LOOT" min="1" max="1"/>
+	<event name="SPIDER_QUEST_START" min="0" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="2"/>
+	<event name="NEMESIS_ENCOUNTER" min="0" max="1"/>
+	<event name="STORELIST_MILITIA" min="2" max="3"/>
+	<event name="ITEMS_MILITIA" min="3" max="4"/>
+	<event name="NEUTRAL_MILITIA" min="7" max="8"/>
+	<event name="DISTRESS_MILITIA" min="1" max="2"/>
+	<event name="HOSTILE_MILITIA" min="5" max="7"/>
+	<event name="QUESTS_MILITIA" min="1" max="1"/>
+</sectorDescription>
+
+</FTL>

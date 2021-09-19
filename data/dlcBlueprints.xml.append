@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- WEAPONS -->
+<!-- Rotary Autocannon Series -->
+<weaponBlueprint name="GB_ROTARY_AC">
+	<type>LASER</type>
+	<title>Rotary Autocannon</title>
+	<short>RAC</short>
+	<tip>tip_chain_laser</tip>
+	<desc>An attempt to utilize modern technology with this old weapon, which takes a long time to warm up. Each time it fires it decreases its cooldown between shots, eventually being able to take down any amount of shields.</desc>
+	<tooltip>3 shots 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach, charges quicker the more it fires</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>13</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>5</count>
+	</boost>
+	<power>4</power>
+	<cost>85</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Rotary_Autocannon</weaponArt>
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<!-- Coil Gun Series -->
+<weaponBlueprint name="GB_COIL_1">
+	<type>LASER</type>
+	<title>Coil Gun Mark I</title>
+	<short>Coil Gun I</short>
+	<desc>This modified mass driver fires a high velocity shield piercing projectile. Modified to decrease in cooldown the more times it fires.</desc>
+	<tooltip>1 shot 1 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>12</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>3</amount>
+		<count>2</count>
+	</boost>
+	<power>1</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<cost>60</cost>
+	<image>GB_magnetic_slug_light</image>
+	<launchSounds>
+		<sound>GB_gaussLight1</sound>
+		<sound>GB_gaussLight2</sound>
+		<sound>GB_gaussLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Coilgun_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_COIL_2">
+	<type>LASER</type>
+	<title>Coil Gun Mark II</title>
+	<short>Coil Gun II</short>
+	<desc>This modified mass driver is capable of delivering a shield piercing accurate barrage of shells at an increasing rate of fire after each shot.</desc>
+	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 20% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>15</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>3</count>
+	</boost>
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>70</cost>
+	<image>GB_magnetic_slug_medium</image>
+	<launchSounds>
+		<sound>GB_gauss1</sound>
+		<sound>GB_gauss2</sound>
+		<sound>GB_gauss3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Coilgun_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_COIL_3">
+	<type>LASER</type>
+	<title>Coil Gun Mark III</title>
+	<short>Coil Gun III</short>
+	<desc>This mass driver is modified to increase its rate of fire as it continues to pelt the enemy with high velocity shield piercing shells.</desc>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, charges quicker the more it fires, 30% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>30</accuracyMod>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>5</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>18</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>1.5</amount>
+		<count>4</count>
+	</boost>
+	<power>3</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>80</cost>
+	<image>GB_magnetic_slug_heavy</image>
+	<launchSounds>
+		<sound>GB_gaussHeavy1</sound>
+		<sound>GB_gaussHeavy2</sound>
+		<sound>GB_gaussHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Coilgun_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- WEAPONS -->
+<animSheet name="GB_Rotary_Autocannon_chargeglow" w="170" h="146" fw="34" fh="146">weapons/GB_Rotary_Autocannon_chargeglow_strip5.png</animSheet>
+<anim name="GB_Rotary_Autocannon_chargeglow">
+	<sheet>GB_Rotary_Autocannon_chargeglow</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="GB_Rotary_Autocannon" w="1462" h="146" fw="34" fh="146">weapons/GB_Rotary_Autocannon_strip43.png</animSheet>
+<weaponAnim name="GB_Rotary_Autocannon">
+	<sheet>GB_Rotary_Autocannon</sheet>
+	<desc length="43" x="0" y="0"/>
+	<chargedFrame>35</chargedFrame>
+	<fireFrame>36</fireFrame>
+	<firePoint x="25" y="29"/>
+	<mountPoint x="3" y="82"/>
+	<boost>GB_Rotary_Autocannon_chargeglow</boost>
+</weaponAnim>
+
+<animSheet name="GB_Coilgun_1_chargeglow" w="54" h="110" fw="27" fh="110">weapons/GB_Coilgun_1_chargeglow_strip2.png</animSheet>
+<anim name="GB_Coilgun_1_chargeglow">
+	<sheet>GB_Coilgun_1_chargeglow</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="GB_Coilgun_1" w="270" h="110" fw="27" fh="110">weapons/GB_Coilgun_1_strip10.png</animSheet>
+<weaponAnim name="GB_Coilgun_1">
+	<sheet>GB_Coilgun_1</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="16" y="21"/>
+	<mountPoint x="3" y="71"/>
+	<boost>GB_Coilgun_1_chargeglow</boost>
+	<chargeImage>weapons/GB_Coilgun_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Coilgun_2_chargeglow" w="93" h="140" fw="31" fh="140">weapons/GB_Coilgun_2_chargeglow_strip3.png</animSheet>
+<anim name="GB_Coilgun_2_chargeglow">
+	<sheet>GB_Coilgun_2_chargeglow</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="GB_Coilgun_2" w="372" h="140" fw="31" fh="140">weapons/GB_Coilgun_2_strip12.png</animSheet>
+<weaponAnim name="GB_Coilgun_2">
+	<sheet>GB_Coilgun_2</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>6</fireFrame>
+	<firePoint x="19" y="29"/>
+	<mountPoint x="4" y="90"/>
+	<boost>GB_Coilgun_2_chargeglow</boost>
+	<chargeImage>weapons/GB_Coilgun_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Coilgun_3_chargeglow" w="140" h="180" fw="35" fh="180">weapons/GB_Coilgun_3_chargeglow_strip4.png</animSheet>
+<anim name="GB_Coilgun_3_chargeglow">
+	<sheet>GB_Coilgun_3_chargeglow</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="GB_Coilgun_3" w="665" h="180" fw="35" fh="180">weapons/GB_Coilgun_3_strip19.png</animSheet>
+<weaponAnim name="GB_Coilgun_3">
+	<sheet>GB_Coilgun_3</sheet>
+	<desc length="19" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>10</fireFrame>
+	<firePoint x="20" y="48"/>
+	<mountPoint x="4" y="114"/>
+	<boost>GB_Coilgun_3_chargeglow</boost>
+	<chargeImage>weapons/GB_Coilgun_3_glow.png</chargeImage>
+</weaponAnim>

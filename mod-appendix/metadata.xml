@@ -1,0 +1,32 @@
+<metadata>
+  <title><![CDATA[ GO BALLISTIC 2! ]]></title>
+  <threadUrl><![CDATA[ https://subsetgames.com/forum/viewtopic.php?f=11&t=26840#p88666 ]]></threadUrl>
+  <author><![CDATA[ R4V3-0N, development assisted by porcu93 and formerly by ChronoVortex ]]></author>
+  <version><![CDATA[ 2.0.1 ]]></version>
+<!--  <description> 1.3 version description 
+<![CDATA[ This mod adds several sets of ballistic weapons and drones to the game, including autocannons, gauss, coil guns and railguns, all with unique animations and sounds.
+
+You can also use "ranged weapons" to try to deal a first strike against an enemy, shoot down an incoming threat, and do lots of other things ranged weapons are useful for.
+
+If you want to see if a weapon is ranged, check its tip in the equipment tab.
+
+Making this mod work perfectly with Captain's Edition is a bit of a pain, but it's doable. Despite what the load order in the CE thread says, you'll want to load the mods in this order:
+	| GO BALLISTIC! CE Fixes
+	| All CE resources, data and patches (in the order specified in the CE thread)
+	| GO BALLISTIC! (this mod)
+	| GO BALLISTIC! CE Content Patch
+	V Any ship mods you are using
+]]>
+  </description> -->
+  <description>
+<![CDATA[ This mod adds 16 new weapons and 1 new toggle drone themed around out dated ballistic weaponry of the Federation during its foundation during the Federation-Mantis War.
+
+This version is built for use with Multiverse 5.0+. The mod is a redevelopment and update of the original GO BALLISTIC! mod made by R4V3-0N with significant help from ChronoVortex. It features new art, sound effects, and a complete rebalance of the weapons and drones of the original. 
+Reimaginating the niche of these weapons using new Hyperspace functionality that did not exist at the time of the original mod and with a small team of friends.
+
+This is the first release version of the mod and is subject to balance changes and suggestions and reports are encouraged!
+
+Original weapon idea is from the Foundation of the Federation incomplete mod overhaul by WhaleCancer.
+]]>
+  </description>
+</metadata>

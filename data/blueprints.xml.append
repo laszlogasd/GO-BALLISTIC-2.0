@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- WEAPONS -->
+<!-- Autocannon Series -->
+<weaponBlueprint name="GB_AC1">
+	<type>LASER</type>
+	<title>Autocannon Mark I</title>
+	<short>AC I</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC2">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC3">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!-- Gauss Series -->
+<weaponBlueprint name="GB_GAUSS_1">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark I</title>
+	<short>Gauss I</short>
+	<desc>One of the first mass drivers in service capable of firing a shield piercing kinetic round with extreme precision.</desc>
+	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<cost>55</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussLight1</sound>
+		<sound>GB_gaussLight2</sound>
+		<sound>GB_gaussLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_2">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark II</title>
+	<short>Gauss II</short>
+	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>13</cooldown>
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>70</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussMedium1</sound>
+		<sound>GB_gaussMedium2</sound>
+		<sound>GB_gaussMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_3">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark III</title>
+	<short>Gauss III</short>
+	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
+	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>30</accuracyMod>
+	<damage>4</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>5</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>16</cooldown>
+	<power>3</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>80</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussHeavy1</sound>
+		<sound>GB_gaussHeavy2</sound>
+		<sound>GB_gaussHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_AP">
+	<type>LASER</type>
+	<title>Anti-Personnel Gauss</title>
+	<short>AP Gauss</short>
+	<desc>This weapon is a light anti-personnel weapon capable of taking pot shots at enemy crew with shield piercing kinetic strikes.</desc>
+	<tooltip>1 shot 30 crew damage weapon, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<accuracyMod>25</accuracyMod>
+	<damage>0</damage>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>7</cooldown>
+	<power>1</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>40</cost>
+	<image>GB_magnetic_slug_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_AP_Gauss</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!-- Machine Gun Series -->
+<weaponBlueprint name="GB_MG">
+	<type>LASER</type>
+	<title>Machine Gun</title>
+	<short>MG</short>
+	<desc>This weapon is an antiquated antiship weapon no longer capable of damaging the hulls of modern ships. They can however still hurt the crew inside those hulls.</desc>
+	<tooltip>5 shots 15 crew damage weapon</tooltip>
+	<damage>0</damage>
+	<persDamage>1</persDamage>
+	<shots>5</shots>
+	<sp>0</sp>
+	<cooldown>6</cooldown>
+	<power>0</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Machinegun</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_HMG">
+	<type>LASER</type>
+	<title>Heavy Machine Gun</title>
+	<short>HMG</short>
+	<desc>This weapon is an antiquated antiship weapon no longer capable of damaging the hulls of modern ships. They can however still hurt the crew inside those hulls.</desc>
+	<tooltip>3 shot 30 crew damage weapon, 10% chance to cause a breach, 10% chance to stun for 2 seconds</tooltip>
+	<damage>0</damage>
+	<persDamage>2</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<stunChance>1</stunChance>
+	<stun>2</stun>
+	<cooldown>6</cooldown>
+	<power>0</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>15</cost>
+	<image>GB_magnetic_slug_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Machinegun_Heavy</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!-- Rail Gun Series -->
+<weaponBlueprint name="GB_RAIL_1">
+	<type>LASER</type>
+	<title>Rail Gun Mark I</title>
+	<short>Rail Gun I</short>
+	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
+	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>2</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<stun>3</stun>
+	<cooldown>10</cooldown>
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<cost>70</cost>
+	<image>GB_magnetic_slug_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_RAIL_2">
+	<type>LASER</type>
+	<title>Rail Gun Mark II</title>
+	<short>Rail Gun II</short>
+	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields and designed to maximize hull damage.</desc>
+	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
+	<damage>3</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>3</sp>
+	<breachChance>5</breachChance>
+	<stunChance>3</stunChance>
+	<stun>3</stun>
+	<cooldown>13</cooldown>
+	<power>3</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>75</cost>
+	<image>GB_magnetic_slug_medium</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_RAIL_3">
+	<type>LASER</type>
+	<title>Rail Gun Mark III</title>
+	<short>Rail Gun III</short>
+	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devestating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
+	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>30</accuracyMod>
+	<damage>4</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>4</sp>
+	<breachChance>6</breachChance>
+	<stunChance>4</stunChance>
+	<stun>3</stun>
+	<cooldown>16</cooldown>
+	<power>4</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<cost>100</cost>
+	<image>GB_magnetic_slug_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!-- DRONES -->
+<!-- Drone Weapons -->
+<weaponBlueprint name="DRONE_AC_1" NOLOC="1">
+	<type>LASER</type>
+	<title>Drone Autocannon I</title>
+	<damage>1</damage>
+	<shots>1</shots>
+	<breachChance>1</breachChance>
+	<rarity>0</rarity>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="DRONE_AC_2" NOLOC="1">
+	<type>LASER</type>
+	<title>Drone Autocannon II</title>
+	<damage>2</damage>
+	<shots>1</shots>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<rarity>0</rarity>
+	<image>GB_shot_medium</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_1</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="DRONE_AC_3" NOLOC="1">
+	<type>LASER</type>
+	<title>Drone Autocannon III</title>
+	<damage>3</damage>
+	<shots>1</shots>
+	<breachChance>6</breachChance>
+	<stunChance>4</stunChance>
+	<rarity>0</rarity>
+	<image>GB_shot_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_1</weaponArt>
+</weaponBlueprint>
+
+<!-- Drone Body -->
+<droneBlueprint name="COMBAT_AC_1">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Autocannon Drone (Combat I)</title>
+	<short>AC Combat I</short>
+	<desc>[CURRENT POWER: 1] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<power>1</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>12</speed>
+	<cost>55</cost>
+	<bp>3</bp>
+	<droneImage>GB_ACDrone_1a</droneImage>
+	<weaponBlueprint>DRONE_AC_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+	
+<droneBlueprint name="COMBAT_AC_2">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Autocannon Drone (Combat II)</title>
+	<short>AC Combat II</short>
+	<desc>[CURRENT POWER: 2] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<power>2</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>12</speed>
+	<cost>55</cost>
+	<bp>3</bp>
+	<droneImage>GB_ACDrone_1b</droneImage>
+	<weaponBlueprint>DRONE_AC_2</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+
+<droneBlueprint name="COMBAT_AC_3">
+	<type>COMBAT</type>
+	<tip>tip_combat</tip>
+	<title>Autocannon Drone (Combat III)</title>
+	<short>AC Combat III</short>
+	<desc>[CURRENT POWER: 3] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<power>3</power>
+	<cooldown>1000</cooldown>
+	<dodge>0</dodge>
+	<speed>12</speed>
+	<cost>55</cost>
+	<bp>3</bp>
+	<droneImage>GB_ACDrone_1c</droneImage>
+	<weaponBlueprint>DRONE_AC_3</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
+
+<droneBlueprint name="DEFENSE_AC">
+	<type>DEFENSE</type>
+	<level>1</level>
+	<tip>tip_combat</tip>
+	<title>Autocannon Drone (Defense)</title>
+	<short>AC Def</short>
+	<desc>[CURRENT MODE: DEFENCE] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.
+	Reload: 800 MS</desc>
+	<power>1</power>
+	<cooldown>800</cooldown>
+	<dodge>0</dodge>
+	<speed>6</speed>
+	<cost>55</cost>
+	<bp>3</bp>
+	<droneImage>GB_ACDrone_1d</droneImage>
+	<weaponBlueprint>DRONE_AC_1</weaponBlueprint>
+	<rarity>0</rarity>
+	<iconImage>combat</iconImage>
+</droneBlueprint>
