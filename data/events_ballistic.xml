@@ -6,33 +6,62 @@
 	<event name = "GB_OLD_ALLIANCE_STORE"/>
 	<event name = "GB_FED_DESERTERS_AUTOCANNONS"/>
 	<event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<event name = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
 </eventList>
 
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
-	<preventQuest/>
-	<beaconType id="map_icon_store_federation" global="false">
-		<color r="215" g="255" b="200" a="1"/>
-	</beaconType>
-	<text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, theres only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journy here.</text>
-	<ship name = "MU_GHOST_FED_BOMBER" hostile = "false"/>
-	<choice>
-		<text>Visit the store.</text>
-		<event>
-			<text>You meet a friendly face as you approach the store. "Welcome, welcome. I haven't seen many folks here on my rotation here at this here posting. I assume you're looking to trade?"</text>
-			<store>STORE_STANDARD</store>
-		</event>
-	</choice>
-	<choice>
-		<text>You take notice to an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
-		<text>There seems to be an old Federation transport just off the main trade hub. Worth a look?</text>
-		<event>
-			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis, Interested in buying something as old as she is?"</text>
-			<store>STORE_BALLISTIC_AUTOCANNON</store>
-		</event>
-	</choice>
+    <preventQuest/>
+    <beaconType id="map_icon_store_federation" global="false">
+        <color r="215" g="255" b="200" a="1"/>
+    </beaconType>
+    <text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, theres only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journy here.</text>
+    <ship name = "MU_GHOST_FED_BOMBER" hostile = "false"/>
+    <choice>
+        <text>Visit the store.</text>
+        <event>
+            <text>You meet a friendly face as you approach the store. "Welcome, welcome. I haven't seen many folks here on my rotation here at this here posting. I assume you're looking to trade?"</text>
+            <store>STORE_STANDARD</store>
+        </event>
+    </choice>
+    <choice>
+        <text>You take notice to an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
+        <text>There seems to be an old Federation transport just off the main trade hub. Worth a look?</text>
+        <event>
+            <text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis, Interested in buying something as old as she is?"</text>
+			<choice>
+				<text>Shop at the old store.</text>
+				<event>
+					<text>"I see you've got an eye for beauty, sir. Come on in, you won't be disappointed."</text>
+					<store>STORE_BALLISTIC_AUTOCANNON</store>
+				</event>
+			</choice>
+			<choice>
+				<text>Sorry, we're only looking for up to date weaponry.</text>
+				<event>
+					<text>"No problem, captain. We've got plenty of that, too."</text>
+					<choice>
+						<text>Continue...</text>
+						<event load = "STORE_LOAD_GENERIC"/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>We don't need anything.</text>
+				<event>
+					<text>"Ah, no worries. Must be short on scrap, eh, all the way out here."</text>
+					<choice>
+						<text>Do something on board the ship.</text>
+						<event load = "STORAGE_CHECK_REAL"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+        </event>
+    </choice>
 </event>
-
-
 
 <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/><!--PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
 
@@ -184,7 +213,7 @@
 
 </FTL>
 
-```<event name="GB_STOREEVENT_ENTHUSIEST_CANNONS" unique="true">
+```<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_militia" global="false">
 		<color r="215" g="175" b="175" a="1"/>
