@@ -176,4 +176,102 @@
 	<event name="QUESTS_MILITIA" min="1" max="1"/>
 </sectorDescription>
 
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+LAST STAND
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<sectorDescription name="FINAL" minSector="7" unique="true">
+	<nameList>
+		<name>Node 17 [Federation Capital]</name>
+	</nameList>
+	<trackList>
+		<track>laststand</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="medic" rarity="3"/>
+		<blueprint name="engineer" rarity="4"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="2"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="5"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="4"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="3"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="4"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="5"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--phantom-->
+		<blueprint name="phantom" rarity="5"/>
+		
+		<!--
+		\\\\\\\\\\\
+		 EQUIPMENT
+		\\\\\\\\\\\
+		-->
+		<blueprint name="EXTRA_PREP" rarity="2"/>
+		
+		<blueprint name="CRATE_FUEL" rarity="0"/>
+		<blueprint name="CRATE_MISSILES" rarity="0"/>
+		<blueprint name="CRATE_DRONES" rarity="0"/>
+		<blueprint name="GHOST_DUPLICATOR" rarity="0"/>
+		<blueprint name="ANTI_VIRUS" rarity="0"/>
+		<blueprint name="COMBAT_WEAPON_JAMMER" rarity="0"/>
+		<blueprint name="COMBAT_REACTOR_JAMMER" rarity="0"/>
+		<blueprint name="COMBAT_POWER" rarity="0"/>
+		<blueprint name="SCRAP_COLLECTOR" rarity="0"/>
+		<blueprint name="ADV_SCANNERS" rarity="0"/>
+		<blueprint name="FTL_BOOSTER" rarity="0"/>
+		<blueprint name="FTL_JUMPER" rarity="0"/>
+		<blueprint name="FTL_JAMMER" rarity="0"/>
+		<blueprint name="DISTRACTION_BUOY" rarity="0"/>
+		<blueprint name="PDS_DISABLE" rarity="0"/>
+		<blueprint name="DISTRACTION_BUOY" rarity="0"/>
+		<blueprint name="PRE_SCANNER" rarity="0"/>
+		<blueprint name="FUEL_CONSERVER" rarity="0"/>
+		<blueprint name="GB_AC1" rarity="4"/>
+		<blueprint name="GB_AC2" rarity="4"/>
+		<blueprint name="GB_AC3" rarity="4"/>
+		<blueprint name="COMBAT_AC_1" rarity="5"/>
+	</rarityList>
+	<startEvent>BOSS_NEUTRAL</startEvent><!-- STUPID, since it's starting you at the "exit" -->
+	<event name="BOSS_STORES" min="1" max="1"/>
+	<event name="SYLVAN_LASTSTAND" min="1" max="1"/>
+	<!--<event name="BOSS_FATES" min="1" max="1"/>-->
+	<event name="BOSS_REPAIR_STATION" min="3" max="4"/>
+	<event name="BOSS_NEUTRAL" min="10" max="12"/>
+	<event name="BOSS_HOSTILE" min="999" max="999"/>
+</sectorDescription>
+
 </FTL>
