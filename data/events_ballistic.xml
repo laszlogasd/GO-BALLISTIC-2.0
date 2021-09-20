@@ -116,7 +116,7 @@
 	</choice>
 </event>
 
-<event name = "ASTEROID_AUTOCANNON_STORE" unique = "true">
+<event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -213,19 +213,19 @@
 
 </FTL>
 
-```<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
+<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_militia" global="false">
 		<color r="215" g="175" b="175" a="1"/>
 	</beaconType>
 	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
-	<ship load="SHIP_ROCK_STOREEVENT_MINELAUNCHER" hostile="false"/>
+	<ship load="MU_MILITIA_STATION" hostile="false"/>
 	<choice>
 		<text>Check out the emporium.</text>
 		<event>
 			<text>"Oh good, oh good! Guests at last! Have you come to purchase an Autocannon? Perhaps a mint condition Leto? Oh please, my stock is expansive, endless even!"</text>
-			<store>STORE_ROCK_MINELAUNCHER</store>
-			<choice hidden="true" req="LIST_CREW_ROCK">
+			<store>STORE_BALLISTIC_AUTOCANNON</store>
+			<choice hidden="true" req="soldier">
 				<text>(Soldier Crew) "Do you offer anything better?"</text>
 				<event>
 					<text>You expect the Militiaman to get offended, but instead she gets even more excited. "I found this not too long ago but I have been reserving it for someone special. You're the first person to show any interest, so here you go!"</text>
@@ -233,7 +233,7 @@
 						<text>Buy the prototype Autocannon.</text>
 						<event>
 							<text>"I hope you enjoy it!" The Militiaman dances with joy. You take a browse of the market as well on your way out.</text>
-							<store>STORE_ROCK_MINELAUNCHER</store>
+							<store>STORE_BALLISTIC_AUTOCANNON</store>
 							<item_modify>
 								<item type="scrap" min="-85" max="-85"/>
 							</item_modify>
@@ -244,7 +244,7 @@
 						<text>Nevermind.</text>
 						<event>
 							<text>The Militiaman's voice suddenly turns cold. "Head right, you'll find the general marketplace..." She storms off, her thunderous tears soak you as she goes by.</text>
-							<store>STORE_ROCK_MINELAUNCHER</store>
+							<store>STORE_BALLISTIC_AUTOCANNON</store>
 						</event>
 					</choice>
 				</event>
@@ -280,4 +280,4 @@
 			</choice>
 		</event>
 	</choice>
-</event>```
+</event>
