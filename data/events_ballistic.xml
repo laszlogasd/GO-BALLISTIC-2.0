@@ -184,19 +184,19 @@
 
 </FTL>
 
-```<event name="GB_STOREEVENT_ENTHUSIEST_CANNONS" unique="true">
+<event name="GB_STOREEVENT_ENTHUSIEST_CANNONS" unique="true">
 	<preventQuest/>
-	<beaconType id="map_icon_store_militia" global="false">
-		<color r="215" g="175" b="175" a="1"/>
+	<beaconType id="map_icon_store_generic" global="false">
+		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
-	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
-	<ship load="SHIP_ROCK_STOREEVENT_MINELAUNCHER" hostile="false"/>
+	<text>As soon as you jump in, you are immediately hailed repeatedly by a Miltiaman. "Guests! Come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the goddamn Cannons and missiles! But please, buy my Cannons!"</text>
+	<ship load="SHIP_MILITIA_STATION" hostile="false"/>
 	<choice>
 		<text>Check out the emporium.</text>
 		<event>
 			<text>"Oh good, oh good! Guests at last! Have you come to purchase an Autocannon? Perhaps a mint condition Leto? Oh please, my stock is expansive, endless even!"</text>
-			<store>STORE_ROCK_MINELAUNCHER</store>
-			<choice hidden="true" req="LIST_CREW_ROCK">
+			<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
+			<choice hidden="true" req="LIST_CREW_SOLDIER">
 				<text>(Soldier Crew) "Do you offer anything better?"</text>
 				<event>
 					<text>You expect the Militiaman to get offended, but instead she gets even more excited. "I found this not too long ago but I have been reserving it for someone special. You're the first person to show any interest, so here you go!"</text>
@@ -204,7 +204,7 @@
 						<text>Buy the prototype Autocannon.</text>
 						<event>
 							<text>"I hope you enjoy it!" The Militiaman dances with joy. You take a browse of the market as well on your way out.</text>
-							<store>STORE_ROCK_MINELAUNCHER</store>
+							<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
 							<item_modify>
 								<item type="scrap" min="-85" max="-85"/>
 							</item_modify>
@@ -215,7 +215,7 @@
 						<text>Nevermind.</text>
 						<event>
 							<text>The Militiaman's voice suddenly turns cold. "Head right, you'll find the general marketplace..." She storms off, her thunderous tears soak you as she goes by.</text>
-							<store>STORE_ROCK_MINELAUNCHER</store>
+							<store>STORE_STANDARD</store>
 						</event>
 					</choice>
 				</event>
@@ -240,7 +240,7 @@
 	<choice>
 		<text>Ignore the emporium.</text>
 		<event>
-			<text>The station continues to target you with a slue of enthusiastic advertisements, but you simply fly away.</text>
+			<text>The station continues to target you with a slew of enthusiastic advertisements, but you simply fly away.</text>
 			<choice>
 				<text>Do something onboard the ship.</text>
 				<event load="STORAGE_CHECK"/>
@@ -251,4 +251,4 @@
 			</choice>
 		</event>
 	</choice>
-</event>```
+</event>
