@@ -213,7 +213,7 @@
 
 </FTL>
 
-```<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
+<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_militia" global="false">
 		<color r="215" g="175" b="175" a="1"/>
@@ -280,4 +280,4 @@
 			</choice>
 		</event>
 	</choice>
-</event>```
+</event>
