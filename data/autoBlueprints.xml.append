@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 ----
 ////////////////////////////////////////////////////////////////////////////////////
@@ -21,8 +22,8 @@ PIRATES:	Rifled Cannons		Autocannons		???						???
 
 ////////////															////////////
 ----
--->
-<!--
+
+
 ----
 List of every weapon in each respective faction 
 
@@ -77,8 +78,7 @@ List of every weapon in each respective faction
 	<mod-append:name>GB_COIL_3</mod-append:name>				UNUSED
 </blueprintList>
 ------
--->
-<!--
+
 ----
 Autocannons were developed and used early in Humanities early years of intersolar expansion, reaching the peak of their service life during the Federation-Mantis War as reliable cost effective weapons
 in the face of the Red Mantis Menace, however this marked the last major conflict that Autocannons were used due to their ammo dependency which prevented any extended incursion into Hive Territory and
