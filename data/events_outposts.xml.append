@@ -1,0 +1,13 @@
+<FTL>
+
+<mod:findName type = "event" name = "FEDERATION_OUTPOST_FED">
+		<mod-append:choice hidden = "true" req = "soldier">
+			<text>(Soldier Crew) Request a weapon.</text>
+			<event>
+				<text>A grizzled Federation officer responds to your request, recognising your Soldier as a superior. He heads into a storage room, and returns dragging an antique railgun to install on your ship.</text>
+				<weapon name = "GB_RAIL"/>
+			</event>
+		</mod-append:choice>
+</mod:findName>
+
+</FTL>
