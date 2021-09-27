@@ -1,76 +1,57 @@
 <FTL>
 
+<!---
 <eventList name = "GB_BALLISTIC_STORES">
 	<event name = "GB_OLD_FED_STORE_AUTOCANNONS"/>
 	<event name = "GB_FED_STORE_WITH_AUTOCANNONS"/>
 	<event name = "GB_OLD_ALLIANCE_STORE"/>
 	<event name = "GB_FED_DESERTERS_AUTOCANNONS"/>
 	<event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
-	<event name = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
+</eventList> --->
+
+<eventList name = "GB_BALLISTIC_STORES">
+	<event name = "GB_OLD_FED_STORE_AUTOCANNONS"/>
+	<event name = "GB_ASTEROID_AUTOCANNON_STORE"/>
+	<event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
 </eventList>
 
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
-    <preventQuest/>
-    <beaconType id="map_icon_store_federation" global="false">
-        <color r="215" g="255" b="200" a="1"/>
-    </beaconType>
-    <text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, theres only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journy here.</text>
-    <ship name = "MU_GHOST_FED_BOMBER" hostile = "false"/>
-    <choice>
-        <text>Visit the store.</text>
-        <event>
-            <text>You meet a friendly face as you approach the store. "Welcome, welcome. I haven't seen many folks here on my rotation here at this here posting. I assume you're looking to trade?"</text>
-            <store>STORE_STANDARD</store>
-        </event>
-    </choice>
-    <choice>
-        <text>You take notice to an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
-        <text>There seems to be an old Federation transport just off the main trade hub. Worth a look?</text>
-        <event>
-            <text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis, Interested in buying something as old as she is?"</text>
-			<choice>
-				<text>Shop at the old store.</text>
-				<event>
-					<text>"I see you've got an eye for beauty, sir. Come on in, you won't be disappointed."</text>
-					<store>STORE_BALLISTIC_AUTOCANNON</store>
-				</event>
-			</choice>
-			<choice>
-				<text>Sorry, we're only looking for up to date weaponry.</text>
-				<event>
-					<text>"No problem, captain. We've got plenty of that, too."</text>
-					<choice>
-						<text>Continue...</text>
-						<event load = "STORE_LOAD_GENERIC"/>
-					</choice>
-				</event>
-			</choice>
-			<choice>
-				<text>We don't need anything.</text>
-				<event>
-					<text>"Ah, no worries. Must be short on scrap, eh, all the way out here."</text>
-					<choice>
-						<text>Do something on board the ship.</text>
-						<event load = "STORAGE_CHECK_REAL"/>
-					</choice>
-					<choice>
-						<text>Do nothing.</text>
-						<event/>
-					</choice>
-				</event>
-			</choice>
-        </event>
-    </choice>
+	<preventQuest/>
+	<beaconType id="map_icon_store_federation" global="false">
+		<color r="215" g="255" b="200" a="1"/>
+	</beaconType>
+	<text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, there's only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journey here.</text>
+	<ship name = "MU_GHOST_FED_BOMBER" hostile = "false"/>
+	<choice>
+		<text>Visit the store.</text>
+		<event>
+			<text>You meet a friendly face as you approach the store. "Welcome, welcome. I haven't seen many folks around here on my rotation at this here posting. I assume you're looking to trade?"</text>
+			<store>STORE_STANDARD</store>
+		</event>
+	</choice>
+	<choice>
+		<text>You take notice to an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
+		<text>There seems to be an old Federation transport just off the main trade hub. Worth a look?</text>
+		<event>
+			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis. Interested in buying something as old as she is?"</text>
+			<store>STORE_BALLISTIC_AUTOCANNON</store>
+		</event>
+	</choice>
 </event>
 
-<event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/><!--PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
+
+
+<!-- <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/> PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
+
+<!--- 
+Being rewritten
 
 <event name = "GB_FED_DESERTERS_AUTOCANNONS" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_generic" global="false">
 		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
-	<text>A market has been opened up on the side of a heavily modified decomissioned fleetship of old Federation make, most likely one of the early batches of Aquila-class Battlecarriers that were rushed into production of the onset of the Federation-Mantis War; now a rarity outside of gutted and demiliterised sold of to the civilians, planetary militias, and anyone else needing a well protected ship for long range hauls.</text>
+	<text>A market has been opened up on the side of a heavily modified decomissioned fleetship of old Federation make, most likely one of the early batches of Aquila-class Battlecarriers that were rushed into production of the onset of the Federation-Mantis War; now a rarity outside of gutted and demilitarized sold of to the civilians, planetary militias, and anyone else needing a well protected ship for long range hauls.</text>
 	<choice hidden = "true">
 		<text>Enter the market and shop around.</text>
 		<event>
@@ -80,7 +61,7 @@
 	<choice>	
 		<text>Ask about the strange choice of venue for the store.</text>
 		<event>
-			<text>What appears to be the owner scoffs. "It's an Aquila, plenty of these things still lying around and keeps the pirates off you.".</text>
+			<text>What appears to be the owner scoffs. "It's an Aquila, plenty of these things still lying around and keeps the pirates off you."</text>
 			<choice>
 				<text>Seems fair enough. Access his stores.</text>
 				<event>
@@ -89,7 +70,7 @@
 				</event>
 			</choice>
 			<choice hidden = "true">
-				<text>You take a good look around and notice that it's still equiped with many typical albeit old Federation equipment, and even some old warn out banners of a squadron you can't quite make out...</text>
+				<text>You take a good look around and notice that it's still equiped with many typical albeit old Federation equipment, and even some old worn out banners of a squadron you can't quite make out...</text>
 				<event>
 					<text>"Err... who are you to question our decisions? We spent eight years slogging it out against every godforsaken bug in this reality! You'd want out as well, I tell you.</text>
 					<choice>
@@ -114,19 +95,19 @@
 			</choice>
 		</event>
 	</choice>
-</event>
+</event> --->
 
 <event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
-	<text>You expected to see a a large supply depot and patrols in this area  but to your surprise you innitially couldn't find anything worth of note at this beacon, you started to charge your FTL drive until you pick up a signal coming from a derelict vessel in an asteroid field. Worth taking a look?</text>
+	<text>You expected to see a a large supply depot and patrols in this area but to your surprise you initially couldn't find anything worth of note at this beacon, you started to charge your FTL drive until you pick up a signal coming from a derelict vessel in a nearby asteroid field. Worth taking a look?</text>
 	<choice>
 		<text>Head over and investigate.</text>
 		<event>
 			<environment type = "asteroid"/>
-			<text>You are surprised to see a derilect outpost inside a crator of a dwarfplanet inside the asteroid field. As you approach for a landing they hail you on Federation channels. "Wasn't expecting a Federation vessel coming this way into our area of operations for another couple of months. We're short on munitions, and we're struggling to provide for the strikes this far deep in enemy territory with how infrequent supply runs have been. Perhaps we can come to an arrangement?"</text>
+			<text>You are surprised to see a derelict outpost inside a crater of a dwarf planet inside the asteroid field. As you approach for a landing they hail you on Federation channels. "Wasn't expecting a Federation vessel coming this way into our area of operations for another couple of months. We're short on munitions, and we're struggling to provide for the strikes this far deep in enemy territory with how infrequent supply runs have been. Perhaps we can come to an arrangement?"</text>
 			<choice>
 				<text>Hand over some ammunition to access a store. [-5 }]</text>
 				<event>
@@ -161,16 +142,16 @@
 	</choice>
 </event>
 
-<event name="STOREEVENT_ALIEN_AUTOCANNONS" unique="true">
+<event name="GB_STOREEVENT_ALIEN_AUTOCANNONS" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_generic" global="false">
 		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
-	<text>You find yourself surrounded by a variety of vessels, each in colourful markings and symbols. Some are more familiar like some Federation ships, others are more exotic and unknown. It appears that you have stumbled across a fair, selling artefacts from the Mantis War, an age before alternate realities were even known of. There are three merchants trying to attract your attention.</text>
+	<text>You find yourself surrounded by a variety of vessels, each in colourful markings and symbols. Some are more familiar like some Federation ships, others are more exotic and unknown. It appears that you have stumbled across a fair, selling artefacts from the Mantis War, an age before alternate realities were even known of. There are a few merchants trying to attract your attention.</text>
 	<choice hidden="true">
 		<text>Trade with the Separatist.</text>
 		<event>
-			<text>"These guns: vital in defence against the [Harmony]. The Harmony: Harms Many. These [guns] also harm many. I have many guns. Purchase or I shall [harm].</text>
+			<text>"These guns: vital in defence against the [Harmony]. The Harmony: Harms many. These [guns] also harm many. I have many guns. Purchase or I shall [harm].</text>
 			<ship load="LIST_SHIPS_SEPARATIST_GENERIC" hostile="false"/>
 			<choice hidden="true">
 				<text>Shop.</text>
@@ -198,7 +179,7 @@
 	<choice hidden="true">
 		<text>Trade with the Free Mantis.</text>
 		<event>
-			<text>The Free Mantis chatters excitedly at you. "Other traders, they say I enemy. But you true Feddy man, you trade with me. Come see, I have guns."</text>
+			<text>The Free Mantis chatters excitedly at you. "Other traders, they don't like me. But you are Feddy man yes? You trade with me. Come see, I have thingies to sell!".</text>
 			<ship load="LIST_SHIPS_FREEMANTIS_GENERIC" hostile="false"/>
 			<choice hidden="true">
 				<text>Shop.</text>
@@ -211,19 +192,19 @@
 	</choice>
 </event>
 
-<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
+<event name="GB_STOREEVENT_ENTHUSIEST_CANNONS" unique="true">
 	<preventQuest/>
-	<beaconType id="map_icon_store_militia" global="false">
-		<color r="215" g="175" b="175" a="1"/>
+	<beaconType id="map_icon_store_generic" global="false">
+		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
-	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
-	<ship load="MU_MILITIA_STATION" hostile="false"/>
+	<text>As soon as you jump in, you are immediately hailed repeatedly by a Miltiaman. "Guests! Come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the goddamn Cannons and missiles! But please, buy my Cannons!"</text>
+	<ship load="SHIP_CIVILIAN_STATION" hostile="false"/>
 	<choice>
 		<text>Check out the emporium.</text>
 		<event>
 			<text>"Oh good, oh good! Guests at last! Have you come to purchase an Autocannon? Perhaps a mint condition Leto? Oh please, my stock is expansive, endless even!"</text>
-			<store>STORE_BALLISTIC_AUTOCANNON</store>
-			<choice hidden="true" req="soldier">
+			<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
+			<choice hidden="true" req="LIST_CREW_SOLDIER">
 				<text>(Soldier Crew) "Do you offer anything better?"</text>
 				<event>
 					<text>You expect the Militiaman to get offended, but instead she gets even more excited. "I found this not too long ago but I have been reserving it for someone special. You're the first person to show any interest, so here you go!"</text>
@@ -231,7 +212,7 @@
 						<text>Buy the prototype Autocannon.</text>
 						<event>
 							<text>"I hope you enjoy it!" The Militiaman dances with joy. You take a browse of the market as well on your way out.</text>
-							<store>STORE_BALLISTIC_AUTOCANNON</store>
+							<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
 							<item_modify>
 								<item type="scrap" min="-85" max="-85"/>
 							</item_modify>
@@ -242,7 +223,7 @@
 						<text>Nevermind.</text>
 						<event>
 							<text>The Militiaman's voice suddenly turns cold. "Head right, you'll find the general marketplace..." She storms off, her thunderous tears soak you as she goes by.</text>
-							<store>STORE_BALLISTIC_AUTOCANNON</store>
+							<store>STORE_STANDARD</store>
 						</event>
 					</choice>
 				</event>
@@ -267,7 +248,7 @@
 	<choice>
 		<text>Ignore the emporium.</text>
 		<event>
-			<text>The station continues to target you with a slue of enthusiastic advertisements, but you simply fly away.</text>
+			<text>The station continues to target you with a slew of enthusiastic advertisements, but you simply fly away.</text>
 			<choice>
 				<text>Do something onboard the ship.</text>
 				<event load="STORAGE_CHECK"/>
@@ -279,4 +260,5 @@
 		</event>
 	</choice>
 </event>
+
 </FTL>

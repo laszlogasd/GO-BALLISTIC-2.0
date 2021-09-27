@@ -17,7 +17,7 @@
 	<cooldown>6</cooldown>
 	<power>1</power>
 	<bp>4</bp>
-	<rarity>0</rarity>
+	<rarity>4</rarity>
 	<cost>10</cost>
 	<image>GB_shot_light</image>
 	<launchSounds>
@@ -57,7 +57,7 @@
 	<cooldown>6</cooldown>
 	<power>2</power>
 	<bp>4</bp>
-	<rarity>0</rarity>
+	<rarity>3</rarity>
 	<cost>20</cost>
 	<image>GB_shot_medium</image>
 	<launchSounds>
@@ -97,7 +97,7 @@
 	<cooldown>6</cooldown>
 	<power>3</power>
 	<bp>4</bp>
-	<rarity>0</rarity>
+	<rarity>3</rarity>
 	<cost>40</cost>
 	<image>GB_shot_heavy</image>
 	<launchSounds>
@@ -416,7 +416,7 @@
 	<type>LASER</type>
 	<title>Rail Gun Mark II</title>
 	<short>Rail Gun II</short>
-	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields and designed to maximize hull damage.</desc>
+	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields and is designed to maximize hull damage.</desc>
 	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
@@ -460,7 +460,7 @@
 	<type>LASER</type>
 	<title>Rail Gun Mark III</title>
 	<short>Rail Gun III</short>
-	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devestating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
+	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
 	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
@@ -500,7 +500,11 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
-<!-- DRONES -->
+<!-- 
+//////////////////////////
+		DRONES 
+//////////////////////////	
+-->
 <!-- Drone Weapons -->
 <weaponBlueprint name="DRONE_AC_1" NOLOC="1">
 	<type>LASER</type>
@@ -586,12 +590,12 @@
 </weaponBlueprint>
 
 <!-- Drone Body -->
-<droneBlueprint name="COMBAT_AC_1">
+<droneBlueprint name="GB_COMBAT_AC_1">
 	<type>COMBAT</type>
 	<tip>tip_combat</tip>
 	<title>Autocannon Drone (Combat I)</title>
 	<short>AC Combat I</short>
-	<desc>[CURRENT POWER: 1] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<desc>[CURRENT POWER: 1] A unique Amp drone that switches between modular firing pieces on its expandable frame and is also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
 	<power>1</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -604,12 +608,12 @@
 	<iconImage>combat</iconImage>
 </droneBlueprint>
 	
-<droneBlueprint name="COMBAT_AC_2">
+<droneBlueprint name="GB_COMBAT_AC_2">
 	<type>COMBAT</type>
 	<tip>tip_combat</tip>
 	<title>Autocannon Drone (Combat II)</title>
 	<short>AC Combat II</short>
-	<desc>[CURRENT POWER: 2] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<desc>[CURRENT POWER: 2] A unique Amp drone that switches between modular firing pieces on its expandable frame and is also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
 	<power>2</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -622,12 +626,12 @@
 	<iconImage>combat</iconImage>
 </droneBlueprint>
 
-<droneBlueprint name="COMBAT_AC_3">
+<droneBlueprint name="GB_COMBAT_AC_3">
 	<type>COMBAT</type>
 	<tip>tip_combat</tip>
 	<title>Autocannon Drone (Combat III)</title>
 	<short>AC Combat III</short>
-	<desc>[CURRENT POWER: 3] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
+	<desc>[CURRENT POWER: 3] A unique Amp drone that switches between modular firing pieces on its expandable frame and is also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.</desc>
 	<power>3</power>
 	<cooldown>1000</cooldown>
 	<dodge>0</dodge>
@@ -640,13 +644,13 @@
 	<iconImage>combat</iconImage>
 </droneBlueprint>
 
-<droneBlueprint name="DEFENSE_AC">
+<droneBlueprint name="GB_DEFENSE_AC">
 	<type>DEFENSE</type>
 	<level>1</level>
 	<tip>tip_combat</tip>
 	<title>Autocannon Drone (Defense)</title>
 	<short>AC Def</short>
-	<desc>[CURRENT MODE: DEFENCE] A unique Amp drone that switches between modular firing pieces on its expandable frame and also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.
+	<desc>[CURRENT MODE: DEFENCE] A unique Amp drone that switches between modular firing pieces on its expandable frame and is also capable of switching into a defence mode. Accepting a larger cannon as it increases in power.
 	Reload: 800 MS</desc>
 	<power>1</power>
 	<cooldown>800</cooldown>

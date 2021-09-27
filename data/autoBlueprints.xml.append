@@ -1,19 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--
+----
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+					GO BALLISTIC! 2.0 INFO
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 
-<mod:findLike type="blueprintList" name="GIFTLIST_CIVILIAN">
+
+////////////		Visualisation of GB content weapon distribution		////////////
+
+CIVILIAN:	Rifled Cannons		Autocannons
+MILITIA:	Rifled Cannons		Autocannons		Advanced Autocannons	
+FEDERATION:						Autocannons		Advanced Autocannons	Gauss Rifles	Railguns
+ENGI:																	Gauss Rifles	Railguns	
+ZOLTAN:																					Energy Railguns
+SEPERATIST:																Coil Guns
+PIRATES:	Rifled Cannons		Autocannons		???						???
+
+////////////															////////////
+----
+-->
+<!--
+----
+List of every weapon in each respective faction 
+
+<blueprintList name=GB_ALL_GB_CIVILIAN>
+	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
-</mod:findLike>
+	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+</blueprintList>
 
-<mod:findLike type="blueprintList" name="GIFTLIST_FEDERATION"> 
-	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_GAUSS_2</mod-append:name>
-</mod:findLike>
-
-
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ALL">
+<blueprintList name=GB_ALL_GB_MILITIA>
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		ELITE / CGEG
+	<mod-append:name>GB_GAUSS_1</mod-append:name> 				ELITE / CGEG
+</blueprintList>
+
+<blueprintList name=GB_ALL_GB_FED>
+	<mod-append:name>GB_AC1</mod-append:name>
+	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC4</mod-append:name>		UNUSED
+	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>			UNUSED
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		
+	<mod-append:name>GB_GAUSS_1</mod-append:name> 				
+	<mod-append:name>GB_GAUSS_2</mod-append:name> 		
+	<mod-append:name>GB_GAUSS_3</mod-append:name>				UNUSED, FED MV AGENTS / SUPER ELITE? 
+	<mod-append:name>GB_RAIL_1</mod-append:name>
+	<mod-append:name>GB_RAIL_2</mod-append:name>				UNUSED, FED MV AGENTS? STEALTH SHIPS?
+	<mod-append:name>GB_RAIL_3</mod-append:name>				UNUSED, FED MV AGENTS? STEALTH SHIPS?
+</blueprintList>
+<blueprintList name="LIST_DRONES_FED">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>				ELITE
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>					
+</blueprintList>
+
+<blueprintList name=GB_ALL_GB_ENGI>
+	<mod-append:name>GB_GAUSS_1</mod-append:name>
+	<mod-append:name>GB_GAUSS_2</mod-append:name>				UNUSED, ELITE?
+	<mod-append:name>GB_GAUSS_3</mod-append:name>				UNUSED, ELITE?
+</blueprintList>
+
+<blueprintList name=GB_ALL_GB_SEPERATIST>	UNUSED
+	<mod-append:name>GB_COIL_1</mod-append:name>				UNUSED
+	<mod-append:name>GB_COIL_2</mod-append:name>				UNUSED
+	<mod-append:name>GB_COIL_3</mod-append:name>				UNUSED
+</blueprintList>
+------
+-->
+<!--
+----
+Autocannons were developed and used early in Humanities early years of intersolar expansion, reaching the peak of their service life during the Federation-Mantis War as reliable cost effective weapons
+in the face of the Red Mantis Menace, however this marked the last major conflict that Autocannons were used due to their ammo dependency which prevented any extended incursion into Hive Territory and
+extended combat effectiveness compared to the ammoless Lasers used to great effect by Mantis raiding parties in Federation territory. The Federation had begun the process of phasing out these weapons
+and have been making their ways down to Civilian Ships for self defence, becoming a common choice in less fortunate systems and nodes often winding up in the hands of Pirates and Mercenaries being an 
+easy solution to fill gaps in their firepower to perform illegitimate work.
+
+In the recent Civil Wars of the Federation within nearly every member state against the Rebelion, the Duskbringers, the Seperatists, etc. Had caused these now antiquated weapons to been requisitioned 
+from private hands, museums, and old weapon depots. Though no true replacement for laser weaponry it is still preferable to suplment a ships firepower and even more so a better alternative than nothing
+at all.
+
+Civilians who have taken up arms to defend their homes from the Rebel threat can be seen fielding autocannons heavily as many have had experience and training in using them be it from self defence in
+Civilian caravans to being former operators of them during the wars of past.
+
+Newer Autocannon models have been made and experimented with to help supliment the Federations ships firepower and update these weapons to compete in the modern conflicts of the Multiverse. Such as the
+
+More advance kinetic weaponry as a colaberation between the Engi and Humans such as Gauss Rifles and Railguns have been developed to counter recent point defence system and drones especially the more 
+maneuverable small compact Autoships that have  a growing presence and threat. These are often seen being carried by Elite Federation kill teams and Federation Multiverse Agents and occasionaly in the
+hands of the Engi vessels. Though the recent liberation of Engi sectors by the Seperatists had lead to a dirivitive technology the Coil Gun in their arsenal.
+
+There are stories of hodge podge creations in abandoned and unprotected sectors of the likes of thieves, assassins, and bounty hunters of creating unique weaponry from the parts of old autocannons or
+created from scratch using the components or techniques of them to create odd and undocumented weapons unfit for service on any ship with a self respecting captain in fear of the weapon itself detonating.
+----
+-->
+
+<mod:findName type="blueprintList" name="GIFTLIST_CIVILIAN">
+	<mod-append:name>GB_AC2</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="GIFTLIST_FEDERATION"> 
+	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_GAUSS_2</mod-append:name> <!-- unsure of Gauss, Rail, or both being here, but as the original list is short I'll keep this short -->
+</mod:findName>
+
+<!-- <mod:findName type="blueprintList" name="GIFTLIST_ENGI">
+</mod:findName> -->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
+	<mod-append:name>GB_AC1</mod-append:name>
+	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC3</mod-append:name>
+	<!--<mod-append:name>GB_AC4</mod-append:name>-->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -27,11 +134,16 @@
 	<mod-append:name>GB_COIL_3</mod-append:name>
 	<mod-append:name>GB_MG</mod-append:name>
 	<mod-append:name>GB_HMG</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
+	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
+	<mod-append:name>GB_MASS_ACCELERATOR</mod-append:name>-->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET"> <!--doesnt include enemy weapons, rift waker, or alternative variants of weapons with multiple kinds-->
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
+	<!-- <mod-append:name>GB_AC4</mod-append:name> -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -45,29 +157,39 @@
 	<mod-append:name>GB_COIL_3</mod-append:name>
 	<mod-append:name>GB_MG</mod-append:name>
 	<mod-append:name>GB_HMG</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ALL">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name>
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
+	<mod-append:name>GB_MASS_ACCELERATOR</mod-append:name>-->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ALL">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="BLUELIST_DRONES_DEFENSE">
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+<mod:findName type="blueprintList" name="BLUELIST_DRONES_DEFENSE">
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
+<!---- SHOP_ITEM_WEAPONS_GP_CANNONS ---->
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS">
 	<name>GB_AC1</name>
 	<name>GB_AC2</name>
 	<name>GB_AC3</name>
 	<name>GB_ROTARY_AC</name>
+	
+	<!--<name>GB_RIFLED_CANNON</name>
+	<name>GB_BURST_CANNON_1</name>
+	<name>GB_BURST_CANNON_2</name> -->
 </blueprintList>
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_MA_CANNONS">
 	<name>GB_GAUSS_1</name>
 	<name>GB_GAUSS_2</name>
 	<name>GB_GAUSS_3</name>
+	<!-- <name>GB_GAUSS_AP</name>-->
 	<name>GB_RAIL_1</name>
 	<name>GB_RAIL_2</name>
 	<name>GB_RAIL_3</name>
@@ -81,6 +203,11 @@
 	<name>GB_AC2</name>
 	<name>GB_AC3</name>
 	<name>GB_ROTARY_AC</name>
+	
+	<!--<name>GB_RIFLED_CANNON</name>
+	<name>GB_BURST_CANNON_1</name>
+	<name>GB_BURST_CANNON_2</name> -->
+	
 	<name>GB_GAUSS_1</name>
 	<name>GB_GAUSS_2</name>
 	<name>GB_GAUSS_3</name>
@@ -93,76 +220,245 @@
 	<name>GB_COIL_3</name>
 </blueprintList>
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_CIVILIAN"> 
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+						ENEMY SHIPS RELATED CONTENT!
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			CIVILIAN SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_CIVILIAN"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
-</mod:findLike>
+	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_MILITIA"> 
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			MILITIA SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
-</mod:findLike>
+	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_MILITIA_ELITE"> 
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			ELITE MILITIA SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA_ELITE"> 
+	<mod-append:name>GB_AC2</mod-append:name> <!-- AC's go up a mark over the standard and no longer use the outdated rifled cannon-->
+	<mod-append:name>GB_AC3</mod-append:name>
+	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
+	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
+</mod:findName>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			FEDERATION SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_FED"> 
+	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
+	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
+	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_FED">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<!-- <mod-append:name>GB_COMBAT_AC_3</mod-append:name> --> <!-- not sure if it woudl be too potent for enemies, need balance check-->
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			ELITE FEDERATION SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!--- Not part of MV or currently used --->
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_FED_ELITE"> 
+	<mod-append:name>GB_AC1</mod-append:name>
+	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC3</mod-append:name>
+	<!--<mod-append:name>GB_AC4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<mod-append:name>GB_ROTARY_AC</mod-append:name>
+	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
-</mod:findLike>
+	<mod-append:name>GB_GAUSS_2</mod-append:name>
+	<mod-append:name>GB_RAIL_1</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_FED">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name> <!-- still too much for an Elite? I swear if it ends up being underpowered either way...-->
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_FED"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			ENGI SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ENGI">
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_FED">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI">  <!-- unchanged, might edit later -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_FED_ELITE"> 
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_COMBAT">  <!-- unchanged, might edit later -->
+	
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE"> 	<!-- unchanged, might edit later -->
+
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
+
+</mod:findName>
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			ZOLTAN SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+
+<!--- currently nothing, may add some form of plasma/ energy/ laser railgun for the Zoltans another time, or for their Elites --->
+
+
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_ALL"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
+	<mod-append:name>GB_GAUSS_3</mod-append:name>
 	<mod-append:name>GB_RAIL_1</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_FED">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name>
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
-
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ENGI">
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
-</mod:findLike>
+	<mod-append:name>GB_RAIL_2</mod-append:name>
+	<mod-append:name>GB_RAIL_3</mod-append:name>
+	<mod-append:name>GB_COIL_1</mod-append:name>
+	<mod-append:name>GB_COIL_2</mod-append:name>
+	<mod-append:name>GB_COIL_3</mod-append:name>
+	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
+</mod:findName> -->
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
+	<mod-append:name>GB_AC1</mod-append:name>
+	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_ROTARY_AC</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
+</mod:findName> -->
 
 <blueprintList name="MV_WEAPONS_CANNON"> 
 	<name>GB_AC1</name>
 	<name>GB_AC2</name>
 	<name>GB_AC3</name>
 	<name>GB_ROTARY_AC</name>
+	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
+</blueprintList>
+<blueprintList name="MV_WEAPONS_CANNON_BURST"> 
+	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
 </blueprintList>
 
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD">
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_CANNON_HEAVY"> 
+	<mod-append:name>LASER_HEAVY_1</mod-append:name>
+	<mod-append:name>LASER_HEAVY_2</mod-append:name>
+	<mod-append:name>LASER_HEAVY_3</mod-append:name>
+	<mod-append:name>LASER_HEAVY_PIERCE</mod-append:name>
+	<mod-append:name>LASER_HEAVY_CHAINGUN</mod-append:name>
+</mod:findName> -->
+
+<!-- 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+These are for the Fed-Mantis store event, these will be modified in the future as more weapons are added
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Not sure about Burst canons being here, The AC Mk4 however will be here as 1 of the few events that would give it. Rifled cannon might be considered a dud item and might be removed
+Post update content might change these to "Federation"/Elite versions instead which has better stats, not sure what those will be-->
+
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"> <!--- modified list from GP cannons list--->
     <name>GB_AC1</name>
     <name>GB_AC2</name>
     <name>GB_AC3</name>
+    <!--<name>GB_AC4</name> -->
+    
+    <!--<name>GB_RIFLED_CANNON</name> 
+    <name>GB_BURST_CANNON_1</name>
+    <name>GB_BURST_CANNON_2</name> -->
 </blueprintList>
 
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_ENGI_OLD">
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_ENGI_OLD"> <!--- wow, I thought old Ions existed, turns out they don't. Guess I'll just put these 3 here for now --->
     <name>ION_1</name>
     <name>ION_HEAVY</name>
     <name>BOMB_ION</name>
     <name>RUSTY_LASER_HEAVY_1</name>    
 </blueprintList>
 
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_ZOLTAN_OLD">
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_ZOLTAN_OLD">  <!--- no rusty beams either --->
     <name>ENERGY_1</name>
     <name>BOMB_STUN</name>
     <name>BEAM_1</name>
@@ -215,15 +511,9 @@
 	<name>GB_GAUSS_3</name>
 </blueprintList>
 
-<blueprintList name = "GB_RAIL">
-	<name>GB_RAIL_1</name>
-	<name>GB_RAIL_2</name>
-	<name>GB_RAIL_3</name>
-</blueprintList>
-
-<mod:findLike type = "blueprintList" mod-append:name="LIST_CHECK_TOGGLES_AND_AMPS">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name>
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+<mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>

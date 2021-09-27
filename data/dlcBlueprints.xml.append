@@ -71,7 +71,7 @@
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<cost>60</cost>
 	<image>GB_magnetic_slug_light</image>
 	<launchSounds>
@@ -118,7 +118,7 @@
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>70</cost>
 	<image>GB_magnetic_slug_medium</image>
 	<launchSounds>
@@ -165,7 +165,7 @@
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>80</cost>
 	<image>GB_magnetic_slug_heavy</image>
 	<launchSounds>
