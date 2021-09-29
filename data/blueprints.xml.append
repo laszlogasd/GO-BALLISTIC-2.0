@@ -17,7 +17,7 @@
 	<cooldown>6</cooldown>
 	<power>1</power>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<cost>10</cost>
 	<image>GB_shot_light</image>
 	<launchSounds>
@@ -57,7 +57,7 @@
 	<cooldown>6</cooldown>
 	<power>2</power>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<cost>20</cost>
 	<image>GB_shot_medium</image>
 	<launchSounds>
@@ -97,7 +97,7 @@
 	<cooldown>6</cooldown>
 	<power>3</power>
 	<bp>4</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<cost>40</cost>
 	<image>GB_shot_heavy</image>
 	<launchSounds>
@@ -140,7 +140,7 @@
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<cost>55</cost>
 	<image>GB_shot_light</image>
 	<launchSounds>
@@ -182,7 +182,7 @@
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>70</cost>
 	<image>GB_shot_light</image>
 	<launchSounds>
@@ -224,7 +224,7 @@
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>80</cost>
 	<image>GB_shot_light</image>
 	<launchSounds>
@@ -265,7 +265,7 @@
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>40</cost>
 	<image>GB_magnetic_slug_light</image>
 	<launchSounds>
@@ -388,7 +388,7 @@
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<cost>70</cost>
 	<image>GB_magnetic_slug_light</image>
 	<launchSounds>
@@ -432,7 +432,7 @@
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>75</cost>
 	<image>GB_magnetic_slug_medium</image>
 	<launchSounds>
@@ -476,7 +476,7 @@
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<cost>100</cost>
 	<image>GB_magnetic_slug_heavy</image>
 	<launchSounds>

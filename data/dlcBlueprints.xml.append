@@ -24,7 +24,7 @@
 	<power>4</power>
 	<cost>85</cost>
 	<bp>2</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<image>GB_shot_light</image>
 	<launchSounds>
 		<sound>GB_cannonLight1</sound>
