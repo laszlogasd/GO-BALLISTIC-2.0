@@ -1,15 +1,15 @@
 <FTL>
 
 <mod:findLike type = "eventList" name = "STORELIST_REBEL">
-	<mod-append:name>GB_ASTEROID_AUTOCANNON_STORE</mod-append:name>
+	<mod-append:event>GB_ASTEROID_AUTOCANNON_STORE</mod-append:event>
 </mod:findLike>
 
 <mod:findLike type = "eventList" name = "STORELIST_FED">
-	<mod-append:name>GB_BALLISTIC_STORES</mod-append:name>
+	<mod-append:event load = "GB_BALLISTIC_STORES"/>
 </mod:findLike>
 
 <mod:findLike type = "eventList" name = "STORELIST_MILITIA">
-	<mod-append:name>GB_BALLISTIC_STORES</mod-append:name>
+	<mod-append:event load = "GB_BALLISTIC_STORES"/>
 </mod:findLike>
 
 </FTL>

@@ -517,3 +517,13 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
 	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
 </mod:findName>
+
+<blueprintList name = "GB_CARAVAN_REWARD">
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+</blueprintList>
+
+<blueprintList name = "GB_LIST_RECON_DRONES">
+	<name>RECON_BOARDING</name>
+	<name>RECON_DEFENSE</name>
+</blueprintList>

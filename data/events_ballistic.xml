@@ -1,18 +1,15 @@
 <FTL>
 
-<!---
 <eventList name = "GB_BALLISTIC_STORES">
-	<event name = "GB_OLD_FED_STORE_AUTOCANNONS"/>
-	<event name = "GB_FED_STORE_WITH_AUTOCANNONS"/>
-	<event name = "GB_OLD_ALLIANCE_STORE"/>
-	<event name = "GB_FED_DESERTERS_AUTOCANNONS"/>
-	<event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
-</eventList> --->
+	<event load = "GB_OLD_FED_STORE_AUTOCANNONS"/>
+	<event load = "GB_ASTEROID_AUTOCANNON_STORE"/>
+	<event load = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<event load = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
+	<event load = "GB_FED_DESERTERS_AUTOCANNONS"/>
+</eventList>
 
-<eventList name = "GB_BALLISTIC_STORES">
-	<event name = "GB_OLD_FED_STORE_AUTOCANNONS"/>
-	<event name = "GB_ASTEROID_AUTOCANNON_STORE"/>
-	<event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+<eventList name = "GB_GENERIC_EVENTS">
+	<event load = "GB_CARAVAN_ABANDONED"/>
 </eventList>
 
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
@@ -21,7 +18,7 @@
 		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
 	<text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, there's only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journey here.</text>
-	<ship name = "MU_GHOST_FED_BOMBER" hostile = "false"/>
+	<ship load = "MU_GHOST_FED_BOMBER" hostile = "false"/>
 	<choice>
 		<text>Visit the store.</text>
 		<event>
@@ -39,12 +36,7 @@
 	</choice>
 </event>
 
-
-
 <!-- <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/> PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
-
-<!--- 
-Being rewritten
 
 <event name = "GB_FED_DESERTERS_AUTOCANNONS" unique = "true">
 	<preventQuest/>
@@ -95,7 +87,7 @@ Being rewritten
 			</choice>
 		</event>
 	</choice>
-</event> --->
+</event>
 
 <event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
@@ -192,19 +184,19 @@ Being rewritten
 	</choice>
 </event>
 
-<event name="GB_STOREEVENT_ENTHUSIEST_CANNONS" unique="true">
+<event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
-	<beaconType id="map_icon_store_generic" global="false">
-		<color r="215" g="255" b="200" a="1"/>
+	<beaconType id="map_icon_store_militia" global="false">
+		<color r="215" g="175" b="175" a="1"/>
 	</beaconType>
-	<text>As soon as you jump in, you are immediately hailed repeatedly by a Miltiaman. "Guests! Come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the goddamn Cannons and missiles! But please, buy my Cannons!"</text>
-	<ship load="SHIP_CIVILIAN_STATION" hostile="false"/>
+	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
+	<ship load="MU_MILITIA_STATION" hostile="false"/>
 	<choice>
 		<text>Check out the emporium.</text>
 		<event>
 			<text>"Oh good, oh good! Guests at last! Have you come to purchase an Autocannon? Perhaps a mint condition Leto? Oh please, my stock is expansive, endless even!"</text>
-			<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
-			<choice hidden="true" req="LIST_CREW_SOLDIER">
+			<store>STORE_BALLISTIC_AUTOCANNON</store>
+			<choice hidden="true" req="soldier">
 				<text>(Soldier Crew) "Do you offer anything better?"</text>
 				<event>
 					<text>You expect the Militiaman to get offended, but instead she gets even more excited. "I found this not too long ago but I have been reserving it for someone special. You're the first person to show any interest, so here you go!"</text>
@@ -212,7 +204,7 @@ Being rewritten
 						<text>Buy the prototype Autocannon.</text>
 						<event>
 							<text>"I hope you enjoy it!" The Militiaman dances with joy. You take a browse of the market as well on your way out.</text>
-							<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
+							<store>STORE_BALLISTIC_AUTOCANNON</store>
 							<item_modify>
 								<item type="scrap" min="-85" max="-85"/>
 							</item_modify>
@@ -223,7 +215,7 @@ Being rewritten
 						<text>Nevermind.</text>
 						<event>
 							<text>The Militiaman's voice suddenly turns cold. "Head right, you'll find the general marketplace..." She storms off, her thunderous tears soak you as she goes by.</text>
-							<store>STORE_STANDARD</store>
+							<store>STORE_BALLISTIC_AUTOCANNON</store>
 						</event>
 					</choice>
 				</event>
@@ -248,7 +240,7 @@ Being rewritten
 	<choice>
 		<text>Ignore the emporium.</text>
 		<event>
-			<text>The station continues to target you with a slew of enthusiastic advertisements, but you simply fly away.</text>
+			<text>The station continues to target you with a slue of enthusiastic advertisements, but you simply fly away.</text>
 			<choice>
 				<text>Do something onboard the ship.</text>
 				<event load="STORAGE_CHECK"/>
@@ -257,6 +249,335 @@ Being rewritten
 				<text>Do nothing.</text>
 				<event/>
 			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED" unique="true">
+   <text>You arrive to find what was once a supply caravan in a debris field; most likely victims of Pirates. There is no response to your hails.</text>
+   <choice hidden="true">
+      <text>Dock with one of the transports and investigate.</text>
+      <event load="GB_CARAVAN_ABANDONED_TRANSPORTER" />
+   </choice>
+   <choice hidden="true">
+      <text>Dock with one of the escors and investigate.</text>
+      <event load="GB_CARAVAN_ABANDONED_ESCORT" />
+   </choice>
+   <choice hidden="true" req="GB_LIST_RECON_DRONES">
+      <text>(Recon Drone) Use a Recon Drone to quickly investigate each ship.</text>
+      <event load="GB_CARAVAN_ABANDONED_RECON" />
+   </choice>
+   <choice hidden="true" req="LIFE_SCANNER">
+      <text>(Lifeform Scanners) Run a scan on the caravan to detect if there are any survivors.</text>
+      <event load="GB_CARAVAN_ABANDONED_SCAN" />
+   </choice>
+   <choice hidden="true">
+      <text>Leave the caravan alone.</text>
+      <event />
+   </choice>
+</event>
+
+<eventList name="GB_CARAVAN_ABANDONED_TRANSPORTER">
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_GOOD"/>
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_BAD"/>
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_AUGMENT"/>
+</eventList>
+
+<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_GOOD">
+   <text>It looks that the pirates or who ever attacked the caravan had already taken anything it was transporting or otherwise not bolted to the floor. You salvage what you can before leaving.</text>
+   <autoReward level="LOW">scrap_only</autoReward>
+   <choice hidden="true">
+      <text>Take time to investigate one of the Escorts.</text>
+      <event>
+         <text>Although it'll take more time, surely there is something left behind worth looking for.</text>
+         <modifyPursuit amount="1" />
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event load="GB_CARAVAN_ABANDONED_ESCORT_DELAYED" />
+         </choice>
+      </event>
+   </choice>   
+   <choice hidden="true" req="SCRAP_COLLECTOR">
+      <text>(Scrap Recovery Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your scrap recovery arm slowly gathers up any usable debris from the caravan wrecks drifting nearby.</text>
+         <autoReward level="LOW">standard</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true" req="MAGNET_ARM">
+      <text>(Magnetic Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your Magnetic Arm makes quick work out of collecting the small space debris that floats around the wreckages.</text>
+         <autoReward level="MED">standard</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_BAD">
+	<text>It looks that the pirates or who ever attacked the caravan had already taken most of the goods carried by the Transport, however they were not the most thorough and find reasonable salvage.</text>
+   <autoReward level="MED">standard</autoReward>
+   <choice hidden="true">
+      <text>Take time to investigate one of the Escorts.</text>
+      <event>
+         <text>Although it'll take more time, surely there is something left behind worth looking for.</text>
+         <modifyPursuit amount="1" />
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event load="GB_CARAVAN_ABANDONED_ESCORT_DELAYED" />
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_TRANSPORTER_AUGMENT">
+   <text>Who ever attacked the caravan must've missed this Transporter or mysteriously wasn't interested in ransacking it for its contents. Regardless the crew is long dead and there is ample supplies to help you stock yourself for your mission.</text>
+   <autoReward level="RANDOM">augment</autoReward>
+   <choice hidden="true">
+      <text>Take time to investigate one of the Escorts.</text>
+      <event>
+         <text>Although it'll take more time, surely there is something left behind worth looking for.</text>
+         <modifyPursuit amount="1" />
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event load="GB_CARAVAN_ABANDONED_ESCORT_DELAYED" />
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<eventList name="GB_CARAVAN_ABANDONED_ESCORT">
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_GOOD"/>
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_BAD"/>
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_CREW"/>
+</eventList>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_GOOD">
+   <text>The cause of the outcome of the engagement have been made clear once you boarded the vessel. It seems the escorts were still operating a few quaint autocannons and had ran out of ammunition during the fight. Upon examining the weapon you discover it is still in functional order albeit dry on ammunition and is ready to be installed!</text>
+   <autoReward level="RANDOM">scrap_only</autoReward>
+   <weapon name="GB_CARAVAN_REWARD" />
+   <choice hidden="true">
+      <text>Take time to investigate one of the Transports.</text>
+      <event>
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event load="GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED" />
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>(Slug Crew) When docking with the escort your slug senses something.</text>
+      <event>
+         <text>You heed your slugs advice and follow their directions to where the lifesource is. Where you find a man hunched over a weapon console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
+         <crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_CREW">
+   <text>The cause of the outcome of the engagement have been made clear once you boarded the vessel. It seems the escorts were still operating a few quaint autocannons and had ran out of ammunition during the fight. Likely during the last leg of their journey. Before you are able to begin salvaging your crew spots a survivor in the weapons room hunched over a console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
+   <crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+   <choice hidden="true">
+      <text>Continue...</text>
+      <event>
+         <text>After the survivor stabilizes back on your ship he agrees to allow you to salvage his ship as long as you help him give his former crew a proper respects and a burial at space.</text>
+         <autoReward level="RANDOM">scrap_only</autoReward>
+         <choice hidden="true">
+            <text>Take time to investigate one of the Transports.</text>
+            <event load="GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED" />
+         </choice>
+         <choice hidden="true">
+            <text>Leave.</text>
+            <event />
+         </choice>
+      </event>
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_BAD">
+   <text>It appears that this escort had suffered from a catastrophic ammunition detonation which put a swift yet brutal end to the crew of this ship. The ships internals are warped and twisted metal frame. There is not much inside the ship to salvage and even less so on the outside.</text>
+   <choice hidden="true">
+      <text>Take time to investigate one of the Transports.</text>
+      <event load="GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED" />
+   </choice>
+   <choice hidden="true" req="SCRAP_COLLECTOR">
+      <text>(Scrap Recovery Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your scrap recovery arm slowly gathers up any usable debris from the caravan wrecks drifting nearby.</text>
+         <autoReward level="LOW">scrap_only</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>(Magnetic Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your Magnetic Arm makes quick work out of collecting the small space debris that floats around the wreckages.</text>
+         <autoReward level="MED">scrap_only</autoReward>
+      </event>
+   </choice>
+</event>
+
+<event name ="GB_CARAVAN_ABANDONED_RECON">
+    <text>You repeatedly deploy your Recon Drone as it finishes investigating each ship. Moving through each ones swiftly and analysing the environment on a timely manner. The Transports have mostly been sacked during the attack however the Recon Drone's camera feed does show that the pirates have not been so thorough as initially thought, leaving behind some some useful salvage.</text>
+    <autoReward level="HIGH">droneparts</autoReward>
+    <item_modify>
+        <item type="drones" min="-5" max="-5" />
+    </item_modify>
+    <choice hidden="true">
+        <text>Continue...</text>
+		<event>
+        <text>Just as you finish salvaging the the transport your Recon Drone on the last ship alerts you about a survivor on one of the escorts, however it would take time to finish salvaging the Transport and rescue them.</text>
+        <autoReward level="HIGH">standard</autoReward>
+			<choice hidden="true">
+				<text>Rescue the survivor.</text>
+				<event>
+					<text>Thanks to your recon drone you were able to find them just in time and are able to stabilize their condition once aboard your ship. He states that he was a gunnery officer aboard their ship and that they were ambushed just before their final destination and were low on ammunition unable to defend themselves. They offer their sincerest gratitude for rescuing them and offer to join your crew.</text>
+					<modifyPursuit amount="1" />
+					<crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+				</event>
+			</choice>
+			<choice hidden="true" req="teleporter" lvl="1">
+				<text>(Teleporter) Lock on to the survivors life signature and beam them onto your ship.</text>
+				<event>
+					<text>Thanks to your recon drone you were able to find them just in time and are able to stabilize their condition once aboard your ship. He states that he was a gunnery officer aboard their ship and that they were ambushed just before their final destination and were low on ammunition unable to defend themselves. They offer their sincerest gratitude for rescuing them and offer to join your crew.</text>
+					<crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Leave.</text>
+				<event>
+					<text>You have an important mission, you have already spent salvaging the transporter. You prepare to move on.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED">
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_GOOD"/>
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_BAD"/>
+	<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_AUGMENT"/>
+</eventList>
+
+<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_GOOD">
+   <text>It looks that the pirates or who ever attacked the caravan had already taken anything it was transporting or otherwise not bolted to the floor. You salvage what you can before leaving.</text>
+   <autoReward level="LOW">scrap_only</autoReward>
+   <choice hidden="true" req="SCRAP_COLLECTOR">
+      <text>(Scrap Recovery Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your scrap recovery arm slowly gathers up any usable debris from the caravan wrecks drifting nearby.</text>
+         <autoReward level="LOW">standard</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true" req="MAGNET_ARM">
+      <text>(Magnetic Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your Magnetic Arm makes quick work out of collecting the small space debris that floats around the wreckages.</text>
+         <autoReward level="MED">standard</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name = "GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_BAD">
+	<text>It looks that the pirates or who ever attacked the caravan had already taken most of the goods carried by the Transport, however they were not the most thorough and find reasonable salvage.</text>
+   <autoReward level="MED">standard</autoReward>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_TRANSPORTER_DELAYED_AUGMENT">
+   <text>Who ever attacked the caravan must've missed this Transporter or mysteriously wasn't interested in ransacking it for its contents. Regardless the crew is long dead and there is ample supplies to help you stock yourself for your mission.</text>
+   <autoReward level="RANDOM">augment</autoReward>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<eventList name="GB_CARAVAN_ABANDONED_ESCORT_DELAYED">
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_DELAYED_GOOD"/>
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_DELAYED_BAD"/>
+	<event name = "GB_CARAVAN_ABANDONED_ESCORT_DELAYED_CREW"/>
+</eventList>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_DELAYED_GOOD">
+   <text>The cause of the outcome of the engagement have been made clear once you boarded the vessel. It seems the escorts were still operating a few quaint autocannons and had ran out of ammunition during the fight. Upon examining the weapon you discover it is still in functional order albeit dry on ammunition and is ready to be installed!</text>
+   <autoReward level="RANDOM">scrap_only</autoReward>
+   <weapon name="GB_CARAVAN_REWARD" />
+   <choice hidden="true">
+      <text>(Slug Crew) When docking with the escort your slug senses something.</text>
+      <event>
+         <text>You heed your slugs advice and follow their directions to where the lifesource is. Where you find a man hunched over a weapon console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
+         <crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Leave.</text>
+      <event />
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_DELAYED_CREW">
+   <text>The cause of the outcome of the engagement have been made clear once you boarded the vessel. It seems the escorts were still operating a few quaint autocannons and had ran out of ammunition during the fight. Likely during the last leg of their journey. Before you are able to begin salvaging your crew spots a survivor in the weapons room hunched over a console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
+   <crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
+   <choice hidden="true">
+      <text>Continue...</text>
+      <event>
+         <text>After the survivor stabilizes back on your ship he agrees to allow you to salvage his ship as long as you help him give his former crew a proper respects and a burial at space.</text>
+         <autoReward level="RANDOM">scrap_only</autoReward>
+         <choice hidden="true">
+            <text>Leave.</text>
+            <event />
+         </choice>
+      </event>
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_ESCORT_DELAYED_BAD">
+   <text>It appears that this escort had suffered from a catastrophic ammunition detonation which put a swift yet brutal end to the crew of this ship. The ships internals are warped and twisted metal frame. There is not much inside the ship to salvage and even less so on the outside.</text>
+   <choice hidden="true" req="SCRAP_COLLECTOR">
+      <text>(Scrap Recovery Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your scrap recovery arm slowly gathers up any usable debris from the caravan wrecks drifting nearby.</text>
+         <autoReward level="LOW">scrap_only</autoReward>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>(Magnetic Arm) Attempt to recover additional salvage.</text>
+      <event>
+         <text>Your Magnetic Arm makes quick work out of collecting the small space debris that floats around the wreckages.</text>
+         <autoReward level="MED">scrap_only</autoReward>
+      </event>
+   </choice>
+</event>
+
+<event name="GB_CARAVAN_ABANDONED_SCAN">
+	<text>Scans indicate that there is 1 lifeform onboard one of the better off escorts. The signal is faint but stable.</text>
+	<choice>
+		<text>Investigate the escort and rescue them. </text>
+		<event>
+			<text>You head directly towards where the lifeform was detected. Where you find a man hunched over a weapons console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
+			<crewMember pilot="1" weapons="2" amount="1" class="human">Raynard</crewMember>
 		</event>
 	</choice>
 </event>
