@@ -517,6 +517,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
 	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
 </mod:findName>
+<<<<<<< Updated upstream
 
 <blueprintList name = "GB_CARAVAN_REWARD">
 	<name>GB_AC2</name>
@@ -527,3 +528,43 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>RECON_BOARDING</name>
 	<name>RECON_DEFENSE</name>
 </blueprintList>
+=======
+
+<blueprintList name = "GB_CARAVAN_REWARD">
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+</blueprintList>
+
+<blueprintList name = "GB_LIST_RECON_DRONES">
+	<name>RECON_BOARDING</name>
+	<name>RECON_DEFENSE</name>
+</blueprintList>
+
+<!--////////////////////////////
+			SHIPS
+/////////////////////////////-->
+
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="mu_ghost_fed_bomber">
+	<class>Damaged Federation Bomber</class>
+	<minSector>3</minSector>
+	<systemList>
+		<cloaking power="1" max="1" room="3" start="false" />
+		<doors power="1" max="3" room="2" start="false" />
+		<engines power="1" max="1" room="9" start="true" />
+		<medbay power="1" max="2" room="8" start="false" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<oxygen power="1" max="2" room="4" start="true"/>
+		<shields power="2" max="7" room="1" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4" load="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD" />
+	<droneList drones="0" count="2" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="4" class="human" />
+	<boardingAI>sabotage</boardingAI>
+	<cloakImage>mu_fed_bomber</cloakImage>
+</shipBlueprint>
+>>>>>>> Stashed changes

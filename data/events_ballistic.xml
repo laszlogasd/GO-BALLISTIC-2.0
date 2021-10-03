@@ -10,6 +10,11 @@
 
 <eventList name = "GB_GENERIC_EVENTS">
 	<event load = "GB_CARAVAN_ABANDONED"/>
+<<<<<<< Updated upstream
+=======
+	<event load = "GB_MILITIA_ESCORT"/>
+	<event load = "GB_FED_BOMBER_DISTRESS"/>
+>>>>>>> Stashed changes
 </eventList>
 
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
@@ -582,4 +587,127 @@
 	</choice>
 </event>
 
+<<<<<<< Updated upstream
+=======
+<event name = "GB_MILITIA_ESCORT">
+	<distressBeacon/>
+	<ship load = "MU_MILITIA_ESCORT" hostile = "false"/>
+	<text>The source of the distress beacon is emanating from a small Militia Escort. "Captain! We're very low on fuel and need some repairs desperately. Could you possibly take us to the nearest repair platform?"</text>
+	<choice>
+		<text>Accept.</text>
+		<event>
+			<text>"Thank you very much Captain. I'm sure we can arrange some remuneration at the shipyards.</text>
+			<quest event = "GB_QUEST_MILITIA_ESCORT"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Decline.</text>
+		<event>
+			<text>"Ok, captain. We'll just, uhh, die here then."</text>
+			<choice>
+				<text>Do something on board the ship.</text>
+				<event load = "STORAGE_CHECK_REAL"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Attack!</text>
+		<ship hostile = "true"/>
+		<event>
+			<text>You've decided, instead of helping the Militiamen, to brutally attack them instead.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name = "GB_QUEST_MILITIA_ESCORT">
+	<text>You've arrived at the shipyards, and receive a message from the Militiamen thanking you. They dispatch a shipwright to install a specialised piece of equipment on your ship.</text>
+	<weapon name = "GB_CARAVAN_REWARD"/>
+	<autoReward level = "MED">standard</autoReward>
+</event>
+
+<event name = "GB_FED_BOMBER_DISTRESS">
+	<distressBeacon/>
+	<text>You arrive at the beacon, only to find a Federation Bomber with its hull in tatters. Upon hailing, they explain that they had a run-in with some Mantis and are desperately low on ammo.</text>
+	<ship load = "GB_SHIP_FED_BOMBER_LOWAMMO" hostile = "false"/>
+	<choice>
+		<text>Give them a small amount of ammo. [-3}]</text>
+		<event>
+			<text>It isn't much, but it's all you can spare. Hopefully it'll be enough to keep them alive until a supply convoy finds its way here. The crew offer a few spare droneparts to recompense.</text>
+			<item_modify>
+				<item type = "missiles" min = "-3" max = "-3"/>
+				<item type="drones" min="2" max="4"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Give them a medium amount of ammo. [-5}]</text>
+		<event>
+			<text>"Thank you, sir. This should be plenty to get us out of this hellhole." The crew dispense an augment to help you on your mission.</text>
+			<autoReward level = "RANDOM">augment</autoReward>
+			<item_modify>
+				<item type = "missiles" min = "-5" max = "-5"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Give them a large amount of ammo. [-10}]</text>
+		<event>
+			<text>You hand over a significant amount of ammunition to the stranded Federation soldiers. Their captain messages you: "We don't have much to give, but we could probably spare one of our weapons. The other 3 should be plenty."</text>
+			<weapon name = "GB_CARAVAN_REWARD"/>
+			<item_modify>
+				<item type = "missiles" min = "-10" max = "-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden = "true" req = "RECYLCER">
+		<text>Show them your recycler module.</text>
+		<event>
+			<text>"You can just... make ammo? Man, why haven't we ever got one of these? We'd be happy to buy it off you if you can spare it. We have scrap.</text>
+			<choice>
+				<text>Agree to the trade.</text>
+				<event>
+					<remove name = "RECYLCER"/>
+					<item_modify>
+						<item type = "scrap" min = "30" max = "50"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice>
+				<text>Decline.</text>
+				<event>
+					<text>You decide you need the recycler more than these stranded soldiers and prepare to move on.</text>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden = "true" req = "CRATE_MISSILES">
+		<text>Give them your ammo crate.</text>
+		<event>
+			<text>You hand over your ammo crate to the stranded Federation soldiers. Their captain messages you: "We don't have much to give, but we could probably spare one of our weapons. The other 3 should be plenty."</text>
+			<weapon name = "GB_CARAVAN_REWARD"/>
+			<remove name = "CRATE_MISSILES"/>
+		</event>
+	</choice>
+	<choice>
+		<text>If they're low on ammo they're an easy target, attack!</text>
+		<ship hostile = "true"/>
+		<event>
+			<text>You power up your weapons and prepare to obliterate your allies.</text>
+			<choice>
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+>>>>>>> Stashed changes
 </FTL>
