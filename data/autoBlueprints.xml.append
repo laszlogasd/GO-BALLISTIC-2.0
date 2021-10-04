@@ -706,8 +706,8 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<minSector>4</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
-		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ARTILLERY" /> <!--- we don't have an artillery yet --->
-		<battery power="1" max="2" room="12" start="true" />
+		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ART_ENEMY" /> <!--- we don't have an artillery yet --->
+		<battery power="1" max="2" room="12" start="false" />
 		<clonebay power="1" max="3" room="5" start="true" />
 		<doors power="1" max="3" room="11" start="true" />
 		<engines power="1" max="3" room="3" start="true" />
