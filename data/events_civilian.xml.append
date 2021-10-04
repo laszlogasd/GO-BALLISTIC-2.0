@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<modfindName type = "eventList" name="ITEMS_MILITIA">
+<mod:findName type = "eventList" name="ITEMS_MILITIA">
 	<mod-append:event load = "GB_CARAVAN_ABANDONED"/>
 	<mod-append:event load = "GB_MILITIA_ESCORT"/>
 	<mod-append:event load = "GB_FED_BOMBER_DISTRESS"/>
