@@ -290,6 +290,17 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
 </mod:findName>
 
+<!--RENEGADE-->
+<blueprintList name="GB_MV_WEAPONS_LASER_AND_CANNONS"> <!--- one shot lasers and cannons for the Militia Gaurd Multiverse Renigade --->
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_LIGHT_1</name>
+	<!-- <name>LASER_LIGHT_2</name> I think it might be too evil having a Light 2 -->
+    <name>GB_AC1</name>
+    <name>GB_AC2</name>
+    <name>GB_AC3</name>
+</blueprintList>
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
@@ -314,6 +325,16 @@ created from scratch using the components or techniques of them to create odd an
 	<!-- <mod-append:name>GB_COMBAT_AC_3</mod-append:name> --> <!-- not sure if it woudl be too potent for enemies, need balance check-->
 	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
 </mod:findName>
+
+<blueprintList name="GB_ANTIQUE_FEDERATION"> <!--- this could benefit greatly from my ideas on some missiles, rockets, and torpedoes. Will use this for some encounters that require a more simple ammo weapon list with Fed themes --->
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	
+	<name>MISSILES_1</name>
+	<name>BOMB_1</name>
+	<name>BOMB_FIRE</name>
+</blueprintList>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -595,4 +616,63 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<crewCount amount="1" max="2" class="seperatist" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_TECH_RESPIRATOR" />
+</shipBlueprint>
+
+<shipBlueprint name="GB_R4_MR_MILITIA_GAURD" layout="R4_MR_militia_guard" img="R4_MR_militia_guard">
+	<class>Multiverse Renegade</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<battery power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="2" room="2" start="false" />
+		<doors power="1" max="2" room="6" start="true" />
+		<drones power="1" max="5" room="4" start="true" />
+		<engines power="2" max="4" room="7" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="6" room="1" start="true" />
+		<weapons power="2" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4" load="GB_MV_WEAPONS_LASER_AND_CANNONS" />
+	<droneList drones="3" count="2" load="GB_DRONES_COMBAT_CANNONS"/>
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="1" max="3" class="list_crew_militia_random" />
+	<crewCount amount="1" max="3" class="list_crew_federation_random" />
+	<crewCount amount="1" max="1" class="seperatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="EX_SHIELD_RECHARGE" />
+</shipBlueprint>
+
+<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="mu_fed_bomber" img="mu_fed_bomber">
+	<class>Federation Bomber</class>
+	<minSector>2</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="3" start="true" />
+		<doors power="1" max="3" room="2" start="false" />
+		<engines power="1" max="2" room="9" start="true" />
+		<medbay power="1" max="2" room="8" start="false" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4">
+		<weapon name="GB_AC2" />
+		<weapon name="BOMB_1" />
+		<weapon name="GB_ANTIQUE_FEDERATION" />
+		<weapon name="GB_ANTIQUE_FEDERATION" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="11" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="2" class="human" />
+	<crewCount amount="1" max="1" class="soldier" />
+	<crewCount amount="0" max="2" class="list_crew_federation_random" />
+	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>

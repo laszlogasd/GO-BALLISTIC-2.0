@@ -117,6 +117,17 @@
 					<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
 				</event>
 			</choice>
+			<choice>
+				<text>If they're low on ammo they're an easy target, attack!</text>
+				<event>
+					<text>As you charge up your weapons, you detect a vessel coming in fast, must be one of the interdictors that was operating near by. You get ready for battle!</text>
+					<ship load = "GB_FED_INTERDICTOR" hostile = "true"/>
+					<choice>
+						<text>Continue...</text>
+						<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+					</choice>
+				</event>
+			</choice>
 		</event>
 	</choice>
 	<choice>
