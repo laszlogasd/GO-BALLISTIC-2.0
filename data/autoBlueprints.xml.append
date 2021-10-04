@@ -174,7 +174,13 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>DEFENSE_AC</mod-append:name>
 </mod:findLike>
 
-<!---- SHOP_ITEM_WEAPONS_GP_CANNONS ---->
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+			STORES
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS">
 	<name>GB_AC1</name>
 	<name>GB_AC2</name>
@@ -246,6 +252,20 @@ created from scratch using the components or techniques of them to create odd an
     <name>GB_RAIL_3</name>
 </blueprintList>
 
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+			Drone Group Lists
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<blueprintList name="GB_DRONES_COMBAT_CANNONS">
+	<name>COMBAT_AC_1</name>
+	<name>COMBAT_AC_2</name>
+	<name>COMBAT_AC_3</name>
+</blueprintList>
+
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 			Event Exclusive Reward Lists
@@ -259,6 +279,122 @@ created from scratch using the components or techniques of them to create odd an
     <name>GB_BURST_CANNON_2</name> -->
 </blueprintList>
 
+
+<!-- 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+These are for the Fed-Mantis store event, these will be modified in the future as more weapons are added
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Not sure about Burst canons being here, The AC Mk4 however will be here as 1 of the few events that would give it. Rifled cannon might be considered a dud item and might be removed
+Post update content might change these to "Federation"/Elite versions instead which has better stats, not sure what those will be-->
+
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"> <!--- modified list from GP cannons list--->
+    <name>GB_AC1</name>
+    <name>GB_AC2</name>
+    <name>GB_AC3</name>
+    <!--<name>GB_AC4</name> -->
+    
+    <!--<name>GB_RIFLED_CANNON</name> 
+    <name>GB_BURST_CANNON_1</name>
+    <name>GB_BURST_CANNON_2</name> -->
+</blueprintList>
+
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_ENGI_OLD"> <!--- wow, I thought old Ions existed, turns out they don't. Guess I'll just put these 3 here for now --->
+    <name>ION_1</name>
+    <name>ION_HEAVY</name>
+    <name>BOMB_ION</name>
+    <name>RUSTY_LASER_HEAVY_1</name>    
+</blueprintList>
+
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_ZOLTAN_OLD">  <!--- no rusty beams either --->
+    <name>ENERGY_1</name>
+    <name>BOMB_STUN</name>
+    <name>BEAM_1</name>
+    <name>BEAM_2</name>
+</blueprintList>
+
+<blueprintList name="GB_LIST_WEAPONS_ENGI_SHOP">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_FROST_1</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+</blueprintList>
+
+
+<mod:findLike type = "blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
+	<name>COMBAT_AC_1</name>
+	<name>COMBAT_AC_2</name>
+	<name>COMBAT_AC_3</name>
+	<name>DEFENSE_AC</name>
+</mod:findLike>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			BLUE OPTION CHECKS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
+	<mod-append:name>GB_AC1</mod-append:name>
+	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_ROTARY_AC</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
+</mod:findLike> -->
+
+<blueprintList name="MV_WEAPONS_CANNON"> 
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	<name>GB_ROTARY_AC</name>
+	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
+</blueprintList>
+
+<blueprintList name="MV_WEAPONS_CANNON_BURST"> 
+	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
+	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
+</blueprintList>
+
+<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_CANNON_HEAVY"> 
+	<mod-append:name>LASER_HEAVY_1</mod-append:name>
+	<mod-append:name>LASER_HEAVY_2</mod-append:name>
+	<mod-append:name>LASER_HEAVY_3</mod-append:name>
+	<mod-append:name>LASER_HEAVY_PIERCE</mod-append:name>
+	<mod-append:name>LASER_HEAVY_CHAINGUN</mod-append:name>
+</mod:findLike> -->
 
 
 <!--
@@ -447,139 +583,55 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
-			BLUE OPTION CHECKS
+			MULTIVERSE RENEGADE SHIPS
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_ROTARY_AC</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
-</mod:findLike> -->
 
-<blueprintList name="MV_WEAPONS_CANNON"> 
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
-	<name>GB_ROTARY_AC</name>
-	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
-</blueprintList>
-
-<blueprintList name="MV_WEAPONS_CANNON_BURST"> 
-	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
-</blueprintList>
-
-<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_CANNON_HEAVY"> 
-	<mod-append:name>LASER_HEAVY_1</mod-append:name>
-	<mod-append:name>LASER_HEAVY_2</mod-append:name>
-	<mod-append:name>LASER_HEAVY_3</mod-append:name>
-	<mod-append:name>LASER_HEAVY_PIERCE</mod-append:name>
-	<mod-append:name>LASER_HEAVY_CHAINGUN</mod-append:name>
-</mod:findLike> -->
-
-
-
-<!-- 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-These are for the Fed-Mantis store event, these will be modified in the future as more weapons are added
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<!-- Not sure about Burst canons being here, The AC Mk4 however will be here as 1 of the few events that would give it. Rifled cannon might be considered a dud item and might be removed
-Post update content might change these to "Federation"/Elite versions instead which has better stats, not sure what those will be-->
-
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"> <!--- modified list from GP cannons list--->
+<blueprintList name="GB_MV_WEAPONS_LASER_AND_CANNONS"> <!--- one shot lasers and cannons for the Militia Gaurd Multiverse Renigade --->
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_LIGHT_1</name>
+	<!-- <name>LASER_LIGHT_2</name> I think it might be too evil having a Light 2 -->
     <name>GB_AC1</name>
     <name>GB_AC2</name>
     <name>GB_AC3</name>
-    <!--<name>GB_AC4</name> -->
-    
-    <!--<name>GB_RIFLED_CANNON</name> 
-    <name>GB_BURST_CANNON_1</name>
-    <name>GB_BURST_CANNON_2</name> -->
-</blueprintList>
-
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_ENGI_OLD"> <!--- wow, I thought old Ions existed, turns out they don't. Guess I'll just put these 3 here for now --->
-    <name>ION_1</name>
-    <name>ION_HEAVY</name>
-    <name>BOMB_ION</name>
-    <name>RUSTY_LASER_HEAVY_1</name>    
-</blueprintList>
-
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_ZOLTAN_OLD">  <!--- no rusty beams either --->
-    <name>ENERGY_1</name>
-    <name>BOMB_STUN</name>
-    <name>BEAM_1</name>
-    <name>BEAM_2</name>
-</blueprintList>
-
-<blueprintList name="GB_LIST_WEAPONS_ENGI_SHOP">
-	<name>LASER_BURST_1</name>
-	<name>LASER_BURST_3</name>
-	<name>LASER_HEAVY_1</name>
-	<name>BEAM_1</name>
-	<name>BEAM_2</name>
-	<name>BEAM_3</name>
-	<name>BEAM_LONG</name>
-	<name>BEAM_FIRE</name>
-	<name>ION_1</name>
-	<name>ION_2</name>
-	<name>ION_3</name>
-	
-	<name>ION_CHAINGUN</name>
-	<name>ION_CHARGEGUN</name>
-	<name>ION_STUN</name>
-	<name>ION_STUN_2</name>
-	<name>ION_STUN_HEAVY</name>
-	<name>ION_STUN_CHARGEGUN</name>
-	
-	<name>ION_HEAVY</name>
-	<name>ION_TRI</name>
-	<name>ION_FIRE</name>
-	<name>ION_BIO</name>
-	<name>LASER_FROST_1</name>
-	<name>BEAM_STUN</name>
-	<name>ENERGY_1</name>
-	<name>ENERGY_2</name>
-	<name>ENERGY_HULL</name>
-	
-	<name>ENERGY_STUN</name>
-	<name>ENERGY_CHARGEGUN</name>
 </blueprintList>
 
 
-<mod:findLike type = "blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
-	<name>COMBAT_AC_1</name>
-	<name>COMBAT_AC_2</name>
-	<name>COMBAT_AC_3</name>
-	<name>DEFENSE_AC</name>
-</mod:findLike>
+<shipBlueprint name="GB_R4_MR_MILITIA_GAURD" layout="R4_MR_militia_guard" img="R4_MR_militia_guard">
+	<class>Multiverse Renegade</class>
+	<minSector>3</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<battery power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="2" room="2" start="false" />
+		<doors power="1" max="2" room="6" start="true" />
+		<drones power="1" max="5" room="4" start="true" />
+		<engines power="2" max="4" room="7" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="6" room="1" start="true" />
+		<weapons power="2" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4" load="GB_MV_WEAPONS_LASER_AND_CANNONS" />
+	<droneList drones="3" count="2" load="GB_DRONES_COMBAT_CANNONS"/>
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="1" max="3" class="list_crew_militia_random" />
+	<crewCount amount="1" max="3" class="list_crew_federation_random" />
+	<crewCount amount="1" max="1" class="seperatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="EX_SHIELD_RECHARGE" />
+</shipBlueprint>
 
-<!--
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-						ENEMY SHIPS
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
--->
 
-
-<shipBlueprint name="GB_R4MU_FED_LIGHT_CRUISER_1" layout="R4mu_fed_light_cruiser" img="R4mu_fed_light_cruiser"> <!--- will try and think of a better prefix for layouts to be consistent through all of my mods for easy transfer ---> 
-	<class>MV Renegade</class>
+<shipBlueprint name="GB_R4_MR_FED_LIGHT_CRUISER_1" layout="R4_MR_fed_light_cruiser" img="R4_MR_fed_light_cruiser"> <!--- will try and think of a better prefix for layouts to be consistent through all of my mods for easy transfer ---> 
+	<class>Multiverse Renegade</class>
 	<minSector>4</minSector>
 	<maxSector>8</maxSector>
 	<systemList>
@@ -599,8 +651,8 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
 		<weapon name="GB_COILGUNS" />
 		<weapon name="GB_GAUSS" />
+		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" /> 
 		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
-		<weapon name="BEAM_LONG" />
 	</weaponList>
 	<droneList drones="0" count="0" />
 	<health amount="10" />
@@ -610,6 +662,6 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<crewCount amount="1" max="2" class="engi" />
 	<crewCount amount="1" max="2" class="seperatist" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="UPG_TECH_RESPIRATOR" />
+	<aug name="EX_O2_MASKS" />
 </shipBlueprint>
 
