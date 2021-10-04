@@ -4,3 +4,13 @@
 	<destroyed load="DESTROYED_FEDERATION"/>
 	<deadCrew load="DEAD_CREW_FEDERATION"/>
 </ship>
+
+<ship name="GB_MILITIA_ESCORT" auto_blueprint="MU_MILITIA_ESCORT">
+	<destroyed load="DESTROYED_MILITIA"/>
+	<deadCrew load="DEAD_CREW_MILITIA"/>
+</ship>
+
+<ship name="GB_MILITIA_STATION" auto_blueprint="MU_MILITIA_STATION">
+	<destroyed load="DESTROYED_MILITIA"/>
+	<deadCrew load="DEAD_CREW_MILITIA"/>
+</ship>

@@ -10,11 +10,8 @@
 
 <eventList name = "GB_GENERIC_EVENTS">
 	<event load = "GB_CARAVAN_ABANDONED"/>
-<<<<<<< Updated upstream
-=======
 	<event load = "GB_MILITIA_ESCORT"/>
 	<event load = "GB_FED_BOMBER_DISTRESS"/>
->>>>>>> Stashed changes
 </eventList>
 
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
@@ -32,8 +29,7 @@
 		</event>
 	</choice>
 	<choice>
-		<text>You take notice to an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
-		<text>There seems to be an old Federation transport just off the main trade hub. Worth a look?</text>
+		<text>You take notice of an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
 		<event>
 			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis. Interested in buying something as old as she is?"</text>
 			<store>STORE_BALLISTIC_AUTOCANNON</store>
@@ -148,7 +144,7 @@
 	<choice hidden="true">
 		<text>Trade with the Separatist.</text>
 		<event>
-			<text>"These guns: vital in defence against the [Harmony]. The Harmony: Harms many. These [guns] also harm many. I have many guns. Purchase or I shall [harm].</text>
+			<text>"These guns: vital in defence against the [Harmony]. The Harmony: Harms many. These [guns] also harm many. I have many guns. Purchase or I shall [harm]."</text>
 			<ship load="LIST_SHIPS_SEPARATIST_GENERIC" hostile="false"/>
 			<choice hidden="true">
 				<text>Shop.</text>
@@ -195,7 +191,7 @@
 		<color r="215" g="175" b="175" a="1"/>
 	</beaconType>
 	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
-	<ship load="MU_MILITIA_STATION" hostile="false"/>
+	<ship load="GB_MILITIA_STATION" hostile="false"/>
 	<choice>
 		<text>Check out the emporium.</text>
 		<event>
@@ -211,7 +207,7 @@
 							<text>"I hope you enjoy it!" The Militiaman dances with joy. You take a browse of the market as well on your way out.</text>
 							<store>STORE_BALLISTIC_AUTOCANNON</store>
 							<item_modify>
-								<item type="scrap" min="-85" max="-85"/>
+								<item type="scrap" min="-65" max="-65"/>
 							</item_modify>
 							<weapon name="GB_ROTARY_AC"/>
 						</event>
@@ -265,7 +261,7 @@
       <event load="GB_CARAVAN_ABANDONED_TRANSPORTER" />
    </choice>
    <choice hidden="true">
-      <text>Dock with one of the escors and investigate.</text>
+      <text>Dock with one of the escorts and investigate.</text>
       <event load="GB_CARAVAN_ABANDONED_ESCORT" />
    </choice>
    <choice hidden="true" req="GB_LIST_RECON_DRONES">
@@ -587,11 +583,9 @@
 	</choice>
 </event>
 
-<<<<<<< Updated upstream
-=======
 <event name = "GB_MILITIA_ESCORT">
 	<distressBeacon/>
-	<ship load = "MU_MILITIA_ESCORT" hostile = "false"/>
+	<ship load = "GB_MILITIA_ESCORT" hostile = "false"/>
 	<text>The source of the distress beacon is emanating from a small Militia Escort. "Captain! We're very low on fuel and need some repairs desperately. Could you possibly take us to the nearest repair platform?"</text>
 	<choice>
 		<text>Accept.</text>
@@ -616,8 +610,8 @@
 	</choice>
 	<choice>
 		<text>Attack!</text>
-		<ship hostile = "true"/>
 		<event>
+			<ship hostile = "true"/>
 			<text>You've decided, instead of helping the Militiamen, to brutally attack them instead.</text>
 			<choice>
 				<text>Continue...</text>
@@ -637,7 +631,7 @@
 	<distressBeacon/>
 	<text>You arrive at the beacon, only to find a Federation Bomber with its hull in tatters. Upon hailing, they explain that they had a run-in with some Mantis and are desperately low on ammo.</text>
 	<ship load = "GB_SHIP_FED_BOMBER_LOWAMMO" hostile = "false"/>
-	<choice>
+	<choice hidden = "true">
 		<text>Give them a small amount of ammo. [-3}]</text>
 		<event>
 			<text>It isn't much, but it's all you can spare. Hopefully it'll be enough to keep them alive until a supply convoy finds its way here. The crew offer a few spare droneparts to recompense.</text>
@@ -647,7 +641,7 @@
 			</item_modify>
 		</event>
 	</choice>
-	<choice>
+	<choice hidden = "true">
 		<text>Give them a medium amount of ammo. [-5}]</text>
 		<event>
 			<text>"Thank you, sir. This should be plenty to get us out of this hellhole." The crew dispense an augment to help you on your mission.</text>
@@ -657,7 +651,7 @@
 			</item_modify>
 		</event>
 	</choice>
-	<choice>
+	<choice hidden = "true">
 		<text>Give them a large amount of ammo. [-10}]</text>
 		<event>
 			<text>You hand over a significant amount of ammunition to the stranded Federation soldiers. Their captain messages you: "We don't have much to give, but we could probably spare one of our weapons. The other 3 should be plenty."</text>
@@ -671,7 +665,7 @@
 		<text>Show them your recycler module.</text>
 		<event>
 			<text>"You can just... make ammo? Man, why haven't we ever got one of these? We'd be happy to buy it off you if you can spare it. We have scrap.</text>
-			<choice>
+			<choice hidden = "true">
 				<text>Agree to the trade.</text>
 				<event>
 					<remove name = "RECYLCER"/>
@@ -698,8 +692,8 @@
 	</choice>
 	<choice>
 		<text>If they're low on ammo they're an easy target, attack!</text>
-		<ship hostile = "true"/>
 		<event>
+			<ship hostile = "true"/>
 			<text>You power up your weapons and prepare to obliterate your allies.</text>
 			<choice>
 				<text>Continue...</text>
@@ -709,5 +703,4 @@
 	</choice>
 </event>
 
->>>>>>> Stashed changes
 </FTL>
