@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<text name="text_GB_MT_FED_LIGHT_CRUISER_1_class">MV Renegade</text>
+<text name="text_R4_MR_MILITIA_GAURD_class">Multiverse Renegade</text>
+<text name="text_GB_MT_FED_LIGHT_CRUISER_1_class">Multiverse Renegade</text>
+<text name="text_GB_FED_BOMBER_INTERDICTOR_class">Federation Bomber</text>
+
 

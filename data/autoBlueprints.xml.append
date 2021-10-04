@@ -252,6 +252,12 @@ created from scratch using the components or techniques of them to create odd an
     <name>GB_RAIL_3</name>
 </blueprintList>
 
+<blueprintList name="GB_BASIC_CANNONS">
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+</blueprintList>
+
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -476,6 +482,31 @@ Post update content might change these to "Federation"/Elite versions instead wh
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
+
+<blueprintList name="GB_ANTIQUE_FEDERATION"> <!--- this could benefit greatly from my ideas on some missiles, rockets, and torpedoes. Will use this for some encounters that require a more simple ammo weapon list with Fed themes --->
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	
+	<name>MISSILES_1</name>
+	<name>BOMB_1</name>
+	<name>BOMB_FIRE</name>
+</blueprintList>
+
+<blueprintList name="GB_OLD_FEDERATION"> <!--- this is roughly approximates to what the feds have at the end of the Fed Mantis War, ignoring their super weapons. -->
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2</name>
+	<name>BOMB_1</name>
+	<name>BOMB_FIRE</name>
+</blueprintList>
+
 <mod:findLike type="blueprintList" name="LIST_WEAPONS_FED"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
@@ -583,6 +614,48 @@ Post update content might change these to "Federation"/Elite versions instead wh
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
+			ENEMY SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="GB_fed_bomber_interdictor" img="GB_fed_bomber_interdictor">
+	<class>Federation Bomber</class>
+	<minSector>2</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<cloaking power="1" max="2" room="3" start="true" />
+		<doors power="1" max="3" room="2" start="false" />
+		<engines power="1" max="2" room="9" start="true" />
+		<medbay power="1" max="2" room="8" start="false" />
+		<oxygen power="1" max="2" room="5" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="10" room="1" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="4">
+		<weapon name="GB_AC2" />
+		<weapon name="BOMB_1" />
+		<weapon name="GB_ANTIQUE_FEDERATION" />
+		<weapon name="GB_ANTIQUE_FEDERATION" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="11" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="2" class="human" />
+	<crewCount amount="1" max="1" class="soldier" />
+	<crewCount amount="0" max="2" class="list_crew_federation_random" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 			MULTIVERSE RENEGADE SHIPS
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
@@ -599,8 +672,6 @@ Post update content might change these to "Federation"/Elite versions instead wh
     <name>GB_AC2</name>
     <name>GB_AC3</name>
 </blueprintList>
-
-
 <shipBlueprint name="GB_R4_MR_MILITIA_GAURD" layout="R4_MR_militia_guard" img="R4_MR_militia_guard">
 	<class>Multiverse Renegade</class>
 	<minSector>3</minSector>
