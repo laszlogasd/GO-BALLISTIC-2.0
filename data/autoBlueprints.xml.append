@@ -47,7 +47,7 @@ List of every weapon in each respective faction
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_AC4</mod-append:name>					UNUSED
+	<mod-append:name>GB_AC4</mod-append:name>		UNUSED
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>			UNUSED
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		
@@ -59,10 +59,10 @@ List of every weapon in each respective faction
 	<mod-append:name>GB_RAIL_3</mod-append:name>				UNUSED, FED MV AGENTS? STEALTH SHIPS?
 </blueprintList>
 <blueprintList name="LIST_DRONES_FED">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name>				ELITE
-	<mod-append:name>DEFENSE_AC</mod-append:name>					
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>				ELITE
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>					
 </blueprintList>
 
 <blueprintList name=GB_ALL_GB_ENGI>
@@ -104,20 +104,19 @@ created from scratch using the components or techniques of them to create odd an
 ----
 -->
 
-<mod:findLike type="blueprintList" name="GIFTLIST_CIVILIAN">
+<mod:findName type="blueprintList" name="GIFTLIST_CIVILIAN">
 	<mod-append:name>GB_AC2</mod-append:name>
-</mod:findLike>
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="GIFTLIST_FEDERATION"> 
+<mod:findName type="blueprintList" name="GIFTLIST_FEDERATION"> 
 	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name> <!-- unsure of Gauss, Rail, or both being here, but as the original list is short I'll keep this short -->
-</mod:findLike>
+</mod:findName>
 
-<!-- <mod:findLike type="blueprintList" name="GIFTLIST_ENGI">
-</mod:findLike> -->
+<!-- <mod:findName type="blueprintList" name="GIFTLIST_ENGI">
+</mod:findName> -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ALL">
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
@@ -139,8 +138,8 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
 	<mod-append:name>GB_MASS_ACCELERATOR</mod-append:name>-->
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET"> <!--doesnt include enemy weapons, rift waker, or alternative variants of weapons with multiple kinds-->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET"> <!--doesnt include enemy weapons, rift waker, or alternative variants of weapons with multiple kinds-->
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
@@ -162,17 +161,17 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
 	<mod-append:name>GB_MASS_ACCELERATOR</mod-append:name>-->
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ALL">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name>
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ALL">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
-<mod:findLike type="blueprintList" name="BLUELIST_DRONES_DEFENSE">
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+<mod:findName type="blueprintList" name="BLUELIST_DRONES_DEFENSE">
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
 <!---- SHOP_ITEM_WEAPONS_GP_CANNONS ---->
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS">
@@ -181,84 +180,45 @@ created from scratch using the components or techniques of them to create odd an
 	<name>GB_AC3</name>
 	<name>GB_ROTARY_AC</name>
 	
-	<!--<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
+	<!--<name>GB_RIFLED_CANNON</name>
+	<name>GB_BURST_CANNON_1</name>
+	<name>GB_BURST_CANNON_2</name> -->
 </blueprintList>
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_MA_CANNONS">
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
-	<mod-append:name>GB_GAUSS_2</mod-append:name>
-	<mod-append:name>GB_GAUSS_3</mod-append:name>
-	<!-- <mod-append:name>GB_GAUSS_AP</mod-append:name>-->
-	<mod-append:name>GB_RAIL_1</mod-append:name>
-	<mod-append:name>GB_RAIL_2</mod-append:name>
-	<mod-append:name>GB_RAIL_3</mod-append:name>
-	<mod-append:name>GB_COIL_1</mod-append:name>
-	<mod-append:name>GB_COIL_2</mod-append:name>
-	<mod-append:name>GB_COIL_3</mod-append:name>
-</blueprintList>
-
-<blueprintList name="GB_SHOP_ITEM_WEAPONS_ALL_CANNONS">
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_ROTARY_AC</mod-append:name>
-	
-	<!--<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
-	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
-	<mod-append:name>GB_GAUSS_2</mod-append:name>
-	<mod-append:name>GB_GAUSS_3</mod-append:name>
-	<mod-append:name>GB_GAUSS_AP</mod-append:name>
-	<mod-append:name>GB_RAIL_1</mod-append:name>
-	<mod-append:name>GB_RAIL_2</mod-append:name>
-	<mod-append:name>GB_RAIL_3</mod-append:name>
-	<mod-append:name>GB_COIL_1</mod-append:name>
-	<mod-append:name>GB_COIL_2</mod-append:name>
-	<mod-append:name>GB_COIL_3</mod-append:name>
-</blueprintList>
-
-
-<!--
-////////////////////////////////////////////////////////////////////////////////////
-			Weapon Group Lists
-////////////////////////////////////////////////////////////////////////////////////
--->
-
-<blueprintList name = "GB_GAUSS">
 	<name>GB_GAUSS_1</name>
 	<name>GB_GAUSS_2</name>
 	<name>GB_GAUSS_3</name>
-</blueprintList>
-
-<blueprintList name = "GB_COILGUNS">
-	<name>GB_COIL_1</name>
-    <name>GB_COIL_2</name>
-    <name>GB_COIL_3</name>
-</blueprintList>
-
-<blueprintList name = "GB_RAILGUNS">
+	<!-- <name>GB_GAUSS_AP</name>-->
 	<name>GB_RAIL_1</name>
-    <name>GB_RAIL_2</name>
-    <name>GB_RAIL_3</name>
+	<name>GB_RAIL_2</name>
+	<name>GB_RAIL_3</name>
+	<name>GB_COIL_1</name>
+	<name>GB_COIL_2</name>
+	<name>GB_COIL_3</name>
 </blueprintList>
 
-<!--
-////////////////////////////////////////////////////////////////////////////////////
-			Event Exclusive Reward Lists
-////////////////////////////////////////////////////////////////////////////////////
--->
-
-<blueprintList name="GB_CARAVAN_REWARD"> <!--- Used for the Caravan Event primarily, --->
-    <name>GB_AC2</name>
-    <name>GB_AC3</name>
-    <!-- <name>GB_BURST_CANNON_1</name>
-    <name>GB_BURST_CANNON_2</name> -->
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_ALL_CANNONS">
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	<name>GB_ROTARY_AC</name>
+	
+	<!--<name>GB_RIFLED_CANNON</name>
+	<name>GB_BURST_CANNON_1</name>
+	<name>GB_BURST_CANNON_2</name> -->
+	
+	<name>GB_GAUSS_1</name>
+	<name>GB_GAUSS_2</name>
+	<name>GB_GAUSS_3</name>
+	<name>GB_GAUSS_AP</name>
+	<name>GB_RAIL_1</name>
+	<name>GB_RAIL_2</name>
+	<name>GB_RAIL_3</name>
+	<name>GB_COIL_1</name>
+	<name>GB_COIL_2</name>
+	<name>GB_COIL_3</name>
 </blueprintList>
-
 
 
 <!--
@@ -287,12 +247,12 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_CIVILIAN"> 
+<mod:findName type="blueprintList" name="LIST_WEAPONS_CIVILIAN"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
-</mod:findLike>
+</mod:findName>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -304,13 +264,13 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_MILITIA"> 
+<mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
-</mod:findLike>
+</mod:findName>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -322,13 +282,13 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_MILITIA_ELITE"> 
+<mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA_ELITE"> 
 	<mod-append:name>GB_AC2</mod-append:name> <!-- AC's go up a mark over the standard and no longer use the outdated rifled cannon-->
 	<mod-append:name>GB_AC3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
 	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
-</mod:findLike>
+</mod:findName>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -340,20 +300,20 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_FED"> 
+<mod:findName type="blueprintList" name="LIST_WEAPONS_FED"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
 	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_FED">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<!-- <mod-append:name>COMBAT_AC_3</mod-append:name> --> <!-- not sure if it woudl be too potent for enemies, need balance check-->
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_FED">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<!-- <mod-append:name>GB_COMBAT_AC_3</mod-append:name> --> <!-- not sure if it woudl be too potent for enemies, need balance check-->
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -366,7 +326,8 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <!--- Not part of MV or currently used --->
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_FED_ELITE"> 
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_FED_ELITE"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
@@ -377,13 +338,13 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
 	<mod-append:name>GB_RAIL_1</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_FED">
-	<mod-append:name>COMBAT_AC_1</mod-append:name>
-	<mod-append:name>COMBAT_AC_2</mod-append:name>
-	<mod-append:name>COMBAT_AC_3</mod-append:name> <!-- still too much for an Elite? I swear if it ends up being underpowered either way...-->
-	<mod-append:name>DEFENSE_AC</mod-append:name>
-</mod:findLike>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_FED">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name> <!-- still too much for an Elite? I swear if it ends up being underpowered either way...-->
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
@@ -394,22 +355,21 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
 -->
-<mod:findLike type="blueprintList" name="LIST_WEAPONS_ENGI">
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ENGI">
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ENGI">  <!-- unchanged, might edit later -->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI">  <!-- unchanged, might edit later -->
 
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ENGI_COMBAT">  <!-- unchanged, might edit later -->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_COMBAT">  <!-- unchanged, might edit later -->
 	
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE"> 	<!-- unchanged, might edit later -->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE"> 	<!-- unchanged, might edit later -->
 
-</mod:findLike>
-<mod:findLike type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
 
-</mod:findLike>
-
+</mod:findName>
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
@@ -424,7 +384,7 @@ created from scratch using the components or techniques of them to create odd an
 <!--- currently nothing, may add some form of plasma/ energy/ laser railgun for the Zoltans another time, or for their Elites --->
 
 
-<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_ALL"> 
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_ALL"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
@@ -441,26 +401,15 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
-</mod:findLike> -->
-
-<!--
-////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
-			BLUE OPTION CHECKS
-////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////
--->
-
-<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
+</mod:findName> -->
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
 	<mod-append:name>GB_AC1</mod-append:name>
 	<mod-append:name>GB_AC2</mod-append:name>
 	<mod-append:name>GB_AC3</mod-append:name>
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
-</mod:findLike> -->
+</mod:findName> -->
 
 <blueprintList name="MV_WEAPONS_CANNON"> 
 	<name>GB_AC1</name>
@@ -470,21 +419,18 @@ created from scratch using the components or techniques of them to create odd an
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
 </blueprintList>
-
 <blueprintList name="MV_WEAPONS_CANNON_BURST"> 
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
 </blueprintList>
 
-<!-- <mod:findLike type="blueprintList" name="MV_WEAPONS_CANNON_HEAVY"> 
+<!-- <mod:findName type="blueprintList" name="MV_WEAPONS_CANNON_HEAVY"> 
 	<mod-append:name>LASER_HEAVY_1</mod-append:name>
 	<mod-append:name>LASER_HEAVY_2</mod-append:name>
 	<mod-append:name>LASER_HEAVY_3</mod-append:name>
 	<mod-append:name>LASER_HEAVY_PIERCE</mod-append:name>
 	<mod-append:name>LASER_HEAVY_CHAINGUN</mod-append:name>
-</mod:findLike> -->
-
-
+</mod:findName> -->
 
 <!-- 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -517,6 +463,12 @@ Post update content might change these to "Federation"/Elite versions instead wh
     <name>BOMB_STUN</name>
     <name>BEAM_1</name>
     <name>BEAM_2</name>
+</blueprintList>
+
+<blueprintList name = "GB_COILGUNS">
+	<name>GB_COIL_1</name>
+    <name>GB_COIL_2</name>
+    <name>GB_COIL_3</name>
 </blueprintList>
 
 <blueprintList name="GB_LIST_WEAPONS_ENGI_SHOP">
@@ -553,63 +505,66 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>ENERGY_CHARGEGUN</name>
 </blueprintList>
 
+<blueprintList name = "GB_GAUSS">
+	<name>GB_GAUSS_1</name>
+	<name>GB_GAUSS_2</name>
+	<name>GB_GAUSS_3</name>
+</blueprintList>
 
-<mod:findLike type = "blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
-	<name>COMBAT_AC_1</name>
-	<name>COMBAT_AC_2</name>
-	<name>COMBAT_AC_3</name>
-	<name>DEFENSE_AC</name>
-</mod:findLike>
+<mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
+	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
+	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
+	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
+</mod:findName>
+<<<<<<< Updated upstream
 
-<!--
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-						ENEMY SHIPS
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
--->
+<blueprintList name = "GB_CARAVAN_REWARD">
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+</blueprintList>
 
+<blueprintList name = "GB_LIST_RECON_DRONES">
+	<name>RECON_BOARDING</name>
+	<name>RECON_DEFENSE</name>
+</blueprintList>
+=======
 
-<shipBlueprint name="GB_R4MU_FED_LIGHT_CRUISER_1" layout="R4mu_fed_light_cruiser" img="R4mu_fed_light_cruiser"> <!--- will try and think of a better prefix for layouts to be consistent through all of my mods for easy transfer ---> 
-	<class>MV Renegade</class>
-	<minSector>4</minSector>
-	<maxSector>8</maxSector>
+<blueprintList name = "GB_CARAVAN_REWARD">
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+</blueprintList>
+
+<blueprintList name = "GB_LIST_RECON_DRONES">
+	<name>RECON_BOARDING</name>
+	<name>RECON_DEFENSE</name>
+</blueprintList>
+
+<!--////////////////////////////
+			SHIPS
+/////////////////////////////-->
+
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="mu_ghost_fed_bomber">
+	<class>Damaged Federation Bomber</class>
+	<minSector>3</minSector>
 	<systemList>
-		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ARTILLERY" /> <!--- we don't have an artillery yet --->
-		<battery power="1" max="2" room="12" start="true" />
-		<clonebay power="1" max="3" room="5" start="true" />
-		<doors power="1" max="3" room="11" start="true" />
-		<engines power="1" max="3" room="3" start="true" />
-		<oxygen power="1" max="3" room="9" start="true" />
+		<cloaking power="1" max="1" room="3" start="false" />
+		<doors power="1" max="3" room="2" start="false" />
+		<engines power="1" max="1" room="9" start="true" />
+		<medbay power="1" max="2" room="8" start="false" />
 		<pilot power="1" max="2" room="0" start="true" />
-		<shields power="2" max="6" room="2" start="true" />
-		<teleporter power="1" max="2" room="4" start="false" />
-		<weapons power="1" max="10" room="7" start="true" />
+		<oxygen power="1" max="2" room="4" start="true"/>
+		<shields power="2" max="7" room="1" start="true" />
+		<weapons power="2" max="8" room="6" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
-	<droneSlots>0</droneSlots>
-	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
-		<weapon name="GB_COILGUNS" />
-		<weapon name="GB_GAUSS" />
-		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
-		<weapon name="BEAM_LONG" />
-	</weaponList>
-	<droneList drones="0" count="0" />
-	<health amount="10" />
-	<maxPower amount="10" />
-	<crewCount amount="1" max="1" class="human" />
-	<crewCount amount="1" max="1" class="soldier" />
-	<crewCount amount="1" max="2" class="engi" />
-	<crewCount amount="1" max="2" class="seperatist" />
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4" load="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD" />
+	<droneList drones="0" count="2" />
+	<health amount="9" />
+	<maxPower amount="8" />
+	<crewCount amount="3" max="4" class="human" />
 	<boardingAI>sabotage</boardingAI>
-	<aug name="UPG_TECH_RESPIRATOR" />
+	<cloakImage>mu_fed_bomber</cloakImage>
 </shipBlueprint>
-
+>>>>>>> Stashed changes

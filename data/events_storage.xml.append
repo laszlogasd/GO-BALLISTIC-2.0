@@ -1,35 +1,35 @@
 <FTL>
-<mod:findLike type = "event" name = "COMBAT_CHECK_TOGGLE">
-	<mod-append:choice req = "COMBAT_AC_1" blue = "false">
+<mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
+	<mod-append:choice req = "GB_COMBAT_AC_1" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Combat, 1 power]</text>
-		<event load="COMBAT_CHECK_COMBAT_AC_1"/>
+		<event load="COMBAT_CHECK_GB_COMBAT_AC_1"/>
 	</mod-append:choice>
-	<mod-append:choice req = "COMBAT_AC_2" blue = "false">
+	<mod-append:choice req = "GB_COMBAT_AC_2" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Combat, 2 power]</text>
-		<event load="COMBAT_CHECK_COMBAT_AC_2"/>
+		<event load="COMBAT_CHECK_GB_COMBAT_AC_2"/>
 	</mod-append:choice>
-	<mod-append:choice req = "COMBAT_AC_3" blue = "false">
+	<mod-append:choice req = "GB_COMBAT_AC_3" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Combat, 3 power]</text>
-		<event load="COMBAT_CHECK_COMBAT_AC_3"/>
+		<event load="COMBAT_CHECK_GB_COMBAT_AC_3"/>
 	</mod-append:choice>
-	<mod-append:choice req = "DEFENSE_AC" blue = "false">
+	<mod-append:choice req = "GB_DEFENSE_AC" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Defense]</text>
-		<event load="COMBAT_CHECK_COMBAT_DEFENSE_AC"/>
+		<event load="COMBAT_CHECK_GB_DEFENSE_AC"/>
 	</mod-append:choice>
-</mod:findLike>
+</mod:findName>
 
-<event name="COMBAT_CHECK_COMBAT_AC_1">
+<event name="COMBAT_CHECK_GB_COMBAT_AC_1">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
 		<text>Set the drone to Defense Mode.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_1"/>
+			<remove name="GB_COMBAT_AC_1"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="DEFENSE_AC"/>
+					<drone name="GB_DEFENSE_AC"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -46,12 +46,12 @@
 		<text>Set the drone to 2 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_1"/>
+			<remove name="GB_COMBAT_AC_1"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_2"/>
+					<drone name="GB_COMBAT_AC_2"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -68,12 +68,12 @@
 		<text>Set the drone to 3 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_1"/>
+			<remove name="GB_COMBAT_AC_1"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_3"/>
+					<drone name="GB_COMBAT_AC_3"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -96,18 +96,18 @@
 	</choice>
 </event>
 
-<event name="COMBAT_CHECK_COMBAT_AC_2">
+<event name="COMBAT_CHECK_GB_COMBAT_AC_2">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
 		<text>Set the drone to Defense Mode.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_2"/>
+			<remove name="GB_COMBAT_AC_2"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="DEFENSE_AC"/>
+					<drone name="GB_DEFENSE_AC"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -124,12 +124,12 @@
 		<text>Set the drone to 1 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_2"/>
+			<remove name="GB_COMBAT_AC_2"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_1"/>
+					<drone name="GB_COMBAT_AC_1"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -146,12 +146,12 @@
 		<text>Set the drone to 3 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_2"/>
+			<remove name="GB_COMBAT_AC_2"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_3"/>
+					<drone name="GB_COMBAT_AC_3"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -174,18 +174,18 @@
 	</choice>
 </event>
 
-<event name="COMBAT_CHECK_COMBAT_AC_3">
+<event name="COMBAT_CHECK_GB_COMBAT_AC_3">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
 		<text>Set the drone to Defense Mode.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_3"/>
+			<remove name="GB_COMBAT_AC_3"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="DEFENSE_AC"/>
+					<drone name="GB_DEFENSE_AC"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -202,12 +202,12 @@
 		<text>Set the drone to 1 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_3"/>
+			<remove name="GB_COMBAT_AC_3"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_1"/>
+					<drone name="GB_COMBAT_AC_1"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -224,12 +224,12 @@
 		<text>Set the drone to 2 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="COMBAT_AC_3"/>
+			<remove name="GB_COMBAT_AC_3"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_2"/>
+					<drone name="GB_COMBAT_AC_2"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -252,18 +252,18 @@
 	</choice>
 </event>
 
-<event name="COMBAT_CHECK_DEFENSE_AC">
+<event name="COMBAT_CHECK_GB_DEFENSE_AC">
 	<text>Are you sure you want to change the drone's settings?</text>
 	<choice hidden="true">
 		<text>Set the drone to 1 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="DEFENSE_AC"/>
+			<remove name="GB_DEFENSE_AC"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_1"/>
+					<drone name="GB_COMBAT_AC_1"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -280,12 +280,12 @@
 		<text>Set the drone to 2 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="DEFENSE_AC"/>
+			<remove name="GB_DEFENSE_AC"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_2"/>
+					<drone name="GB_COMBAT_AC_2"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -302,12 +302,12 @@
 		<text>Set the drone to 3 Power.</text>
 		<event>
 			<text>You start calibrating the drone...</text>
-			<remove name="DEFENSE_AC"/>
+			<remove name="GB_DEFENSE_AC"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the drone successfully.</text>
-					<drone name="COMBAT_AC_3"/>
+					<drone name="GB_COMBAT_AC_3"/>
 					<choice blue="false" req="MARKER_FLAGSHIP" lvl="0" max_group="1">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>

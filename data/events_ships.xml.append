@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ship name="GB_SHIP_FED_BOMBER_LOWAMMO" auto_blueprint="GB_FED_BOMBER_LOWAMMO">
+	<destroyed load="DESTROYED_FEDERATION"/>
+	<deadCrew load="DEAD_CREW_FEDERATION"/>
+</ship>
