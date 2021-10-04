@@ -471,6 +471,18 @@ Post update content might change these to "Federation"/Elite versions instead wh
     <name>GB_COIL_3</name>
 </blueprintList>
 
+<blueprintList name = "GB_GAUSS">
+	<name>GB_GAUSS_1</name>
+	<name>GB_GAUSS_2</name>
+	<name>GB_GAUSS_3</name>
+</blueprintList>
+
+<blueprintList name = "GB_RAIL">
+	<name>GB_RAIL_1</name>
+	<name>GB_RAIL_2</name>
+	<name>GB_RAIL_3</name>
+</blueprintList>
+
 <blueprintList name="GB_LIST_WEAPONS_ENGI_SHOP">
 	<name>LASER_BURST_1</name>
 	<name>LASER_BURST_3</name>
@@ -505,30 +517,12 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>ENERGY_CHARGEGUN</name>
 </blueprintList>
 
-<blueprintList name = "GB_GAUSS">
-	<name>GB_GAUSS_1</name>
-	<name>GB_GAUSS_2</name>
-	<name>GB_GAUSS_3</name>
-</blueprintList>
-
 <mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
 	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
 	<mod-append:name>GB_COMBAT_AC_2</mod-append:name>
 	<mod-append:name>GB_COMBAT_AC_3</mod-append:name>
 	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
 </mod:findName>
-<<<<<<< Updated upstream
-
-<blueprintList name = "GB_CARAVAN_REWARD">
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
-</blueprintList>
-
-<blueprintList name = "GB_LIST_RECON_DRONES">
-	<name>RECON_BOARDING</name>
-	<name>RECON_DEFENSE</name>
-</blueprintList>
-=======
 
 <blueprintList name = "GB_CARAVAN_REWARD">
 	<name>GB_AC2</name>
@@ -567,4 +561,38 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<boardingAI>sabotage</boardingAI>
 	<cloakImage>mu_fed_bomber</cloakImage>
 </shipBlueprint>
->>>>>>> Stashed changes
+
+<shipBlueprint name="GB_R4MU_FED_LIGHT_CRUISER_1" layout="R4mu_fed_light_cruiser" img="R4mu_fed_light_cruiser"> <!--- will try and think of a better prefix for layouts to be consistent through all of my mods for easy transfer ---> 
+	<class>MV Renegade</class>
+	<minSector>4</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ARTILLERY" /> <!--- we don't have an artillery yet --->
+		<battery power="1" max="2" room="12" start="true" />
+		<clonebay power="1" max="3" room="5" start="true" />
+		<doors power="1" max="3" room="11" start="true" />
+		<engines power="1" max="3" room="3" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="6" room="2" start="true" />
+		<teleporter power="1" max="2" room="4" start="false" />
+		<weapons power="1" max="10" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
+		<weapon name="GB_COILGUNS" />
+		<weapon name="GB_GAUSS" />
+		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
+		<weapon name="BEAM_LONG" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="10" />
+	<crewCount amount="1" max="1" class="human" />
+	<crewCount amount="1" max="1" class="soldier" />
+	<crewCount amount="1" max="2" class="engi" />
+	<crewCount amount="1" max="2" class="seperatist" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_RESPIRATOR" />
+</shipBlueprint>

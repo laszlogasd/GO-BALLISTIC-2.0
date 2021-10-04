@@ -1,11 +1,7 @@
 <FTL>
 
 <mod:findLike type = "eventList" name = "STORELIST_REBEL">
-<<<<<<< Updated upstream
-	<mod-append:event>GB_ASTEROID_AUTOCANNON_STORE</mod-append:event>
-=======
 	<mod-append:event load = "GB_ASTEROID_AUTOCANNON_STORE"/>
->>>>>>> Stashed changes
 </mod:findLike>
 
 <mod:findLike type = "eventList" name = "STORELIST_FED">
