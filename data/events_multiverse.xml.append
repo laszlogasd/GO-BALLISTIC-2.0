@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type = "eventList" name = "SYLVAN_TRADES">
+	<mod-append:event load = "SYLVAN_AUTOCANNON"/>
+	<mod-append:event load = "SYLVAN_GAUSS"/>
+</mod:findName>
+
+<event name="SYLVAN_AUTOCANNON">
+	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshined way. Want a look?"</text>
+	<store>STORE_SYLVAN_AC</store>
+</event>
+
+<event name="SYLVAN_GAUSS">
+	<text>"Ssstranger ssstranger, have you heard of the Federationssss latesssst prototype weaponry? Well, turnsss out they haven't kept them as clossssely guarded than one would think. Want a look?"</text>
+	<store>STORE_SYLVAN_GAUSS</store>
+</event>
