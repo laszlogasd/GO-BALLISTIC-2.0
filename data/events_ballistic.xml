@@ -198,7 +198,7 @@
 
 <event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
-	<beaconType id="map_icon_store_militia" global="false">
+	<beaconType id="map_icon_store_generic" global="false">
 		<color r="215" g="175" b="175" a="1"/>
 	</beaconType>
 	<text>As soon as you jump in, you are immediatly hailed repeatedly by the Miltiiaman. "Guests!, come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and missiles! But please, buy my Cannons!"</text>
