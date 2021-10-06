@@ -114,7 +114,7 @@
 							</item_modify>
 							<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
 						</event>
-						<text>Lets stick to the regular store. [-5 }]
+						<text>Lets stick to the regular store. [-5 }]</text>
 						<event>
 							<item_modify>
 								<item type="missiles" min="-5" max="-5"/>
