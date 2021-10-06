@@ -94,12 +94,14 @@
 	<event name="NEMESIS_ENCOUNTER" min="0" max="1"/>
 	<event name="MV_TRAVELER" min="1" max="2"/>
 	<event name="STORELIST_FED" min="3" max="3"/>
+	<event name="GB_BALLISTIC_STORES" min="1" max="2"/>
 	<event name="ITEMS_FED" min="3" max="4"/>
 	<event name="NEUTRAL_FED_UNIQUE" min="3" max="4"/>
 	<event name="NEUTRAL_FED_GENERIC" min="1" max="2"/>
 	<event name="DISTRESS" min="0" max="1"/>
 	<event name="HOSTILE_FED" min="4" max="7"/>
 	<event name="QUESTS" min="0" max="1"/>
+	<event name="GB_GENERIC_EVENTS" min="1" max="2"/>
 </sectorDescription>
 
 <sectorDescription name="SECTOR_MILITIA" minSector="3" unique="true"> <!--AUTOCANNONS-->
@@ -175,10 +177,12 @@
 	<event name="NEMESIS_ENCOUNTER" min="0" max="1"/>
 	<event name="STORELIST_MILITIA" min="2" max="3"/>
 	<event name="ITEMS_MILITIA" min="3" max="4"/>
+	<event name="GB_BALLISTIC_STORES" min="1" max="2"/>
 	<event name="NEUTRAL_MILITIA" min="7" max="8"/>
 	<event name="DISTRESS_MILITIA" min="1" max="2"/>
 	<event name="HOSTILE_MILITIA" min="5" max="7"/>
 	<event name="QUESTS_MILITIA" min="1" max="1"/>
+	<event name="GB_GENERIC_EVENTS" min="1" max="2"/>
 </sectorDescription>
 
 <sectorDescription name="FINAL" minSector="7" unique="true"> <!--AUTOCANNONS-->
@@ -439,13 +443,15 @@
 	<startEvent>ENTER_SEPARATIST</startEvent>
 	<event name="HARMONY_LINK_SEP" min="1" max="1"/>
 	<event name="RUINS_SEPARATIST" min="0" max="1"/>
-	<event name="STORELIST_SEPARATIST" min="2" max="3"/>
+	<event name="STORELIST_SEPARATIST" min="1" max="3"/>
+	<event name="GB_BALLISTIC_STORES" min="1" max="2"/>
 	<event name="MV_TRAVELER" min="1" max="1"/>
 	<event name="ITEMS_SEPERATIST" min="3" max="3"/>
 	<event name="DISTRESS_SEPERATIST" min="1" max="3"/>
 	<event name="QUESTS_SEPERATIST" min="1" max="1"/>
 	<event name="NEUTRAL_SEPERATIST" min="4" max="6"/>
 	<event name="HOSTILE_SEPERATIST" min="5" max="7"/>
+	<event name="GB_GENERIC_EVENTS" min="1" max="2"/>
 </sectorDescription>
 
 <sectorDescription name="SECTOR_SEPARATIST_UNIQUE" minSector="3" unique="true"> <!--COILGUNS-->
@@ -624,6 +630,7 @@
 	<event name="QUESTS_SEPERATIST" min="1" max="1"/>
 	<event name="NEUTRAL_SEPERATIST" min="4" max="6"/>
 	<event name="HOSTILE_SEPERATIST" min="5" max="7"/>
+	<event name="GB_GENERIC_EVENTS" min="1" max="2"/>
 </sectorDescription>
 
 <sectorDescription name="SECTOR_ZOLTAN" minSector="2" unique="false">   <!--GAUSS-->
