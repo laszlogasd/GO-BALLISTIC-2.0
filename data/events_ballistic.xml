@@ -5,7 +5,7 @@
 	<event load = "GB_ASTEROID_AUTOCANNON_STORE"/>
 	<event load = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
 	<event load = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
-	<event load = "GB_FED_DESERTERS_AUTOCANNONS"/>
+	<event load = "GB_FED_AQUILA_STORE"/>
 </eventList>
 
 <eventList name = "GB_GENERIC_EVENTS">
@@ -39,7 +39,7 @@
 
 <!-- <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/> PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
 
-<event name = "GB_FED_DESERTERS_AUTOCANNONS" unique = "true">
+<!--<event name = "GB_FED_DESERTERS_AUTOCANNONS" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_generic" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -88,7 +88,50 @@
 			</choice>
 		</event>
 	</choice>
+</event>-->
+
+<event name="GB_FED_AQUILA_STORE" unique="true">
+   <text>A market has set up operations on a side of a heavily modified decommissioned fleetship of old Federation make. Most likely one of the early batches of Aquila-class Battlecarriers that were common during the onset of the Federation-Mantis War; now sparsely sighted outside of planetary militias, Independents, and anyone else that might be interested in a well protected ship for long range hauls in the less fortunate systems. Worth taking a look?</text>
+   <choice hidden="true">
+      <text>Request docking access.</text>
+      <event>
+         <text>"Request received and granted, you are ready to enter and dock at landing pad... 5. Welcome to our humble store." your ship approaches and docks at the designated internal landing pad where you disembark your ship and walk towards the store front.</text>
+         <choice hidden="true">
+            <text>Shop.</text>
+			<store>STORE_STANDARD</store>
+         </choice>
+         <choice hidden="true">
+            <text>Inquire about the strange choice of venue.</text>
+            <event>
+               <text>The operator of this store front coughs to clear his throat. "This thing? Just a demilitarized Aquila. Converted for use as a long range hauler. Ample shields and firepower to keep any trigger happy Pirate off your back. Are you looking to trade or just curious? We have some old hand-me-downs in surplus if you’re interested.”</text>
+               <choice hidden="true">
+                  <text>Nah, just access the regular store.</text>
+				  <store>STORE_STANDARD</store>
+               </choice>
+               <choice hidden="true">
+                  <text>Sure, lets buy some of their old surplus.</text>
+                  <store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
+               </choice>
+            </event>
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>We don't need to go shopping right now.</text>
+      <event>
+         <text>Both you and the fleetship remain at this beacon while your FTL drive charges. </text>
+         <choice hidden="true">
+            <text>Do something onboard the ship.</text>
+            <event load="STORAGE_CHECK" />
+         </choice>
+         <choice hidden="true">
+            <text>Do nothing.</text>
+            <event />
+         </choice>
+      </event>
+   </choice>
 </event>
+
 
 <event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
@@ -115,12 +158,28 @@
 				<event>
 					<text>"These old things are running the foolproof classic load out of autocannons and bombs. Works perfectly fine up until you operate a bit further than a stone toss away from the supply lines. Hard getting supplies this far out without being overt in this enemy sector. You're more than free to take some off our hands in our inventory. No use keeping cannons that can't fire."</text>
 					<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
+					<choice>
+						<text>Agree to trade for a reduced cost. [-2 }]</text>
+						<event>
+							<item_modify>
+								<item type="missiles" min="-2" max="-2"/>
+							</item_modify>
+							<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
+						</event>
+						<text>Lets stick to the regular store. [-5 }]</text>
+						<event>
+							<item_modify>
+								<item type="missiles" min="-5" max="-5"/>
+							</item_modify>
+							<store>STORE_STANDARD</store>
+						</event>
+					</choice>
 				</event>
 			</choice>
 			<choice>
-				<text>If they're low on ammo they're an easy target, attack!</text>
+				<text>If they're low on ammo than they are an easy target, attack!</text>
 				<event>
-					<text>As you charge up your weapons, you detect a vessel coming in fast, must be one of the interdictors that was operating near by. You get ready for battle!</text>
+					<text>As you begin to charge up your weapons, you detect a vessel coming in fast, must be one of the interdictors returning from their mission. You get ready for battle!</text>
 					<ship load = "GB_FED_INTERDICTOR" hostile = "true"/>
 					<choice>
 						<text>Continue...</text>

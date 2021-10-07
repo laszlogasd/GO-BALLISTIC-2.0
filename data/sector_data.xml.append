@@ -453,7 +453,6 @@
 	<event name="HOSTILE_SEPERATIST" min="5" max="7"/>
 	<event name="GB_GENERIC_EVENTS" min="1" max="2"/>
 </sectorDescription>
-
 <sectorDescription name="SECTOR_SEPARATIST_UNIQUE" minSector="3" unique="true"> <!--COILGUNS-->
 	<nameList>
 		<name>S-2-L [Liberated Sector]</name>
@@ -1001,6 +1000,411 @@
 	<event name="QUESTS_HARMONY" min="1" max="1"/>
 	<event name="NEUTRAL_HARMONY" min="5" max="7"/>
 	<event name="HOSTILE_HARMONY" min="4" max="6"/>
+</sectorDescription>
+
+<sectorDescription name="SECTOR_AUTO" minSector="2" unique="false">  
+	<nameList>
+		<name>Automated Shipyard 2</name>
+		<name>Automated Shipyard 3</name>
+		<name>Automated Shipyard 4</name>
+		<name>Automated Shipyard 5</name>
+		<name>Automated Shipyard 6</name>
+		<name>Automated Shipyard 7</name>
+		<name>Automated Shipyard 8</name>
+		<name>Automated Shipyard 9</name>
+		<name>Automated Shipyard 10</name>
+		<name>Automated Shipyard 11</name>
+		<name>Automated Shipyard 12</name>
+		<name>Automated Shipyard 13</name>
+		<name>Automated Shipyard 14</name>
+		<name>Automated Shipyard 15</name>
+		<name>Automated Shipyard 16</name>
+		<name>Automated Shipyard 17</name>
+		<name>Automated Shipyard 18</name>
+		<name>Automated Shipyard 19</name>
+		<name>Automated Shipyard 20</name>
+		<name>Automated Shipyard 21</name>
+		<name>Automated Shipyard 22</name>
+		<name>Automated Shipyard 23</name>
+		<name>Automated Shipyard 24</name>
+		<name>Automated Shipyard 25</name>
+		<name>Automated Shipyard 26</name>
+		<name>Automated Shipyard 27</name>
+		<name>Automated Shipyard 28</name>
+		<name>Automated Shipyard 29</name>
+		<name>Automated Shipyard 30</name>
+		<name>Automated Shipyard 31</name>
+		<name>Automated Shipyard 32</name>
+		<name>Automated Shipyard 33</name>
+		<name>Automated Shipyard 34</name>
+		<name>Automated Shipyard 35</name>
+		<name>Automated Shipyard 36</name>
+		<name>Automated Shipyard 37</name>
+		<name>Automated Shipyard 38</name>
+		<name>Automated Shipyard 39</name>
+		<name>Automated Shipyard 40</name>
+		<name>Automated Shipyard 41</name>
+		<name>Automated Shipyard 42</name>
+		<name>Automated Shipyard 43</name>
+		<name>Automated Shipyard 44</name>
+		<name>Automated Shipyard 45</name>
+		<name>Automated Shipyard 46</name>
+		<name>Automated Shipyard 47</name>
+		<name>Automated Shipyard 48</name>
+		<name>Automated Shipyard 49</name>
+		<name>Automated Shipyard 50</name>
+		<name>Automated Shipyard 51</name>
+		<name>Automated Shipyard 52</name>
+		<name>Automated Shipyard 53</name>
+		<name>Automated Shipyard 54</name>
+		<name>Automated Shipyard 55</name>
+		<name>Automated Shipyard 56</name>
+		<name>Automated Shipyard 57</name>
+		<name>Automated Shipyard 58</name>
+		<name>Automated Shipyard 59</name>
+		<name>Automated Shipyard 60</name>
+		<name>Automated Shipyard 61</name>
+		<name>Automated Shipyard 62</name>
+		<name>Automated Shipyard 63</name>
+		<name>Automated Shipyard 64</name>
+		<name>Automated Shipyard 65</name>
+		<name>Automated Shipyard 66</name>
+		<name>Automated Shipyard 67</name>
+		<name>Automated Shipyard 68</name>
+		<name>Automated Shipyard 69</name>
+		<name>Automated Shipyard 70</name>
+		<name>Automated Shipyard 71</name>
+		<name>Automated Shipyard 72</name>
+		<name>Automated Shipyard 73</name>
+		<name>Automated Shipyard 74</name>
+		<name>Automated Shipyard 75</name>
+		<name>Automated Shipyard 76</name>
+		<name>Automated Shipyard 77</name>
+		<name>Automated Shipyard 78</name>
+		<name>Automated Shipyard 79</name>
+		<name>Automated Shipyard 80</name>
+		<name>Automated Shipyard 81</name>
+		<name>Automated Shipyard 82</name>
+		<name>Automated Shipyard 83</name>
+		<name>Automated Shipyard 84</name>
+		<name>Automated Shipyard 85</name>
+		<name>Automated Shipyard 86</name>
+		<name>Automated Shipyard 87</name>
+		<name>Automated Shipyard 88</name>
+		<name>Automated Shipyard 89</name>
+		<name>Automated Shipyard 90</name>
+		<name>Automated Shipyard 91</name>
+		<name>Automated Shipyard 92</name>
+		<name>Automated Shipyard 93</name>
+		<name>Automated Shipyard 94</name>
+		<name>Automated Shipyard 95</name>
+		<name>Automated Shipyard 96</name>
+		<name>Automated Shipyard 97</name>
+		<name>Automated Shipyard 98</name>
+		<name>Automated Shipyard 99</name>
+		<name>Automated Shipyard 100</name>
+	</nameList>
+	<trackList>
+		<track>auto</track>
+		<track>colonial</track>
+		<track>lostship</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="medic" rarity="0"/>
+		<blueprint name="engineer" rarity="3"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="0"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="0"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="5"/>
+	</rarityList>
+	<startEvent>ENTER_AUTO</startEvent>
+	<event name="DYNASTY_OUTPOST" min="0" max="1"/>
+	<event name="STORELIST_AUTO" min="1" max="2"/>
+	<event name="ITEMS_AUTO" min="1" max="2"/>
+	<event name="DISTRESS" min="1" max="2"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="NEMESIS_ENCOUNTER" min="1" max="1"/>
+	<event name="QUEST_AUTO" min="1" max="1"/>
+	<event name="NEUTRAL_AUTO_UNIQUE" min="5" max="5"/>
+	<event name="NEUTRAL_AUTO_GENERIC" min="4" max="4"/>
+	<event name="HOSTILE_AUTO" min="6" max="12"/>
+	<event name="GB_ASTEROID_AUTOCANNON_STORE" min="0" max="1"/>
+</sectorDescription>
+<sectorDescription name="SECTOR_AUTO_UNIQUE" minSector="4" unique="true">  
+	<nameList>
+		<name>Central Shipyards [!]</name>
+	</nameList>
+	<trackList>
+		<track>auto</track>
+		<track>colonial</track>
+		<track>lostship</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="0"/>
+		<blueprint name="medic" rarity="0"/>
+		<blueprint name="engineer" rarity="3"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="0"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="0"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="5"/>
+	</rarityList>
+	<startEvent>ENTER_AUTO_UNIQUE</startEvent>
+	<event name="DYNASTY_OUTPOST" min="0" max="1"/>
+	<event name="TRANSPORT_AUTO_LOOT" min="1" max="1"/>
+	<event name="AUTO_ENGINEER_MISTAKE" min="1" max="1"/>
+	<event name="TRAPPER_AUTO" min="1" max="1"/>
+	<event name="NEMESIS_ENCOUNTER" min="1" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="AUTO_POWERCORE" min="1" max="1"/>
+	<event name="SHIPYARDS_SPECIAL" min="1" max="1"/>
+	<event name="STORELIST_AUTO" min="1" max="2"/>
+	<event name="ITEMS_AUTO" min="1" max="2"/>
+	<event name="DISTRESS" min="1" max="2"/>
+	<event name="QUEST_AUTO" min="0" max="1"/>
+	<event name="NEUTRAL_AUTO_UNIQUE" min="5" max="5"/>
+	<event name="NEUTRAL_AUTO_GENERIC" min="4" max="5"/>
+	<event name="HOSTILE_AUTO" min="6" max="12"/>
+	<event name="GB_ASTEROID_AUTOCANNON_STORE" min="0" max="1"/>
+</sectorDescription>
+
+<sectorDescription name="SECTOR_REBEL" minSector="3" unique="false">  
+	<nameList>
+		<name>Rebel Sector</name>
+		<name>Rebel Colonies</name>
+		<name>Rebel Space</name>
+		<name>Rebel Settlements</name>
+		<name>Rebel Frontier</name>
+		<name>Rebel Territory</name>
+		<name>Rebel Domain</name>
+		<name>Rebel Regions</name>
+		<name>Rebel Precinct</name>
+		<name>Rebel District</name>
+		<name>Rebel Parts</name>
+		<name>Rebel Dominion</name>
+		<name>Rebel Turf</name>
+		<name>Rebel Realm</name>
+		<name>Rebel Quarter</name>
+		<name>Rebel Outreaches</name>
+	</nameList>
+	<trackList>
+		<track>colonial</track>
+		<track>wasteland</track>
+		<track>lostship</track>
+		<track>hacking</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="medic" rarity="4"/>
+		<blueprint name="engineer" rarity="3"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="0"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="0"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="0"/>
+	</rarityList>
+	<startEvent>ENTER_REBEL</startEvent>
+	<event name="STORELIST_REBEL" min="2" max="3"/>
+	<event name="STORES_HOSTILE_REBELLION" min="0" max="1"/>
+	<event name="DYNASTY_OUTPOST" min="0" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="NEMESIS_ENCOUNTER" min="1" max="1"/>
+	<event name="ITEMS" min="2" max="3"/>
+	<event name="JERRY_QUEST" min="1" max="1"/>
+	<event name="HOSTILE_REBEL_NEW" min="6" max="8"/>
+	<event name="DISTRESS" min="1" max="2"/>
+	<event name="QUESTS" min="0" max="2"/>
+	<event name="NEUTRAL_REBEL" min="5" max="6"/>
+	<event name="GB_ASTEROID_AUTOCANNON_STORE" min="0" max="1"/>
+</sectorDescription>
+<sectorDescription name="SECTOR_REBEL_UNIQUE" minSector="5" unique="true">
+	<nameList>
+		<name>Rebel Stronghold [!]</name>
+	</nameList>
+	<trackList>
+		<track>colonial</track>
+		<track>wasteland</track>
+		<track>hacking</track>
+		<track>lostship</track>
+	</trackList>
+	<rarityList>
+		<!--
+		\\\\\\\\\\\
+		   CREW
+		\\\\\\\\\\\
+		-->
+		<!--human-->
+		<blueprint name="human" rarity="1"/>
+		<blueprint name="medic" rarity="3"/>
+		<blueprint name="engineer" rarity="2"/>
+		<blueprint name="soldier" rarity="0"/>
+		<!--engi-->
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="separatist" rarity="0"/>
+		<blueprint name="defend" rarity="0"/>
+		<!--zoltan-->
+		<blueprint name="energy" rarity="0"/>
+		<blueprint name="monk" rarity="0"/>
+		<blueprint name="bomber" rarity="0"/>
+		<blueprint name="peace" rarity="0"/>
+		<!--rock-->
+		<blueprint name="rock" rarity="0"/>
+		<blueprint name="outcast" rarity="0"/>
+		<blueprint name="commando" rarity="0"/>
+		<blueprint name="crusader" rarity="0"/>
+		<!--mantis-->
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="freemantis" rarity="0"/>
+		<blueprint name="suzerain" rarity="0"/>
+		<!--slug-->
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="sabo" rarity="0"/>
+		<!--crystal-->
+		<blueprint name="crystal" rarity="0"/>
+		<blueprint name="sslg" rarity="0"/>
+		<blueprint name="sentinel" rarity="0"/>
+		<!--orchid-->
+		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="vampweed" rarity="0"/>
+		<!--leech-->
+		<blueprint name="leech" rarity="0"/>
+		<!--lanius-->
+		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="welder" rarity="0"/>
+		<!--ghost-->
+		<blueprint name="phantom" rarity="0"/>
+	</rarityList>
+	<startEvent>ENTER_REBEL_UNIQUE</startEvent>
+	<event name="TRANSPORT_REBEL_LOOT" min="1" max="1"/>
+	<event name="FLAGSHIP_CONSTRUCTION" min="1" max="1"/>
+	<event name="MV_TRAVELER" min="1" max="1"/>
+	<event name="NEMESIS_ENCOUNTER" min="1" max="1"/>
+	<event name="TRAPPER_AUTO" min="1" max="1"/>
+	<event name="JERRY_QUEST" min="1" max="1"/>
+	<event name="DYNASTY_OUTPOST" min="0" max="1"/>
+	<event name="STORELIST_REBEL" min="3" max="3"/>
+	<event name="ITEMS_REBELHOLD" min="1" max="2"/>
+	<event name="HOSTILE_REBELHOLD" min="6" max="8"/>
+	<event name="DISTRESS" min="1" max="2"/>
+	<event name="QUESTS_REBELHOLD" min="0" max="1"/>
+	<event name="NEUTRAL_REBELHOLD_UNIQUE" min="2" max="3"/>
+	<event name="NEUTRAL_REBELHOLD_GENERIC" min="2" max="4"/>
+	<event name="GB_ASTEROID_AUTOCANNON_STORE" min="0" max="1"/>
 </sectorDescription>
 
 </FTL>

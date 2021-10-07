@@ -28,10 +28,10 @@
 		<category type = "WEAPONS" group = "2">
 			<customTitle>BALLISTIC WEAPONS</customTitle>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS</blueprint>
             </item>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_OLD</blueprint>
             </item>
 			<item>
                 <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
@@ -41,13 +41,13 @@
 		<category type="WEAPONS">
            <customTitle>BALLISTIC WEAPONS</customTitle>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS</blueprint>
             </item>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS</blueprint>
             </item>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_OLD</blueprint>
             </item>
 			<chance>100</chance>
         </category>
@@ -126,10 +126,10 @@
 		<category type = "WEAPONS" group = "2">
 			<customTitle>BALLISTIC WEAPONS</customTitle>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_OLD</blueprint>
             </item>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS</blueprint>
             </item>
 			<item>
                 <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
@@ -568,10 +568,10 @@
 		<category type = "WEAPONS" group = "2">
 			<customTitle>BALLISTIC WEAPONS</customTitle>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS</blueprint>
             </item>
 			<item>
-                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>
+                <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS_OLD</blueprint>
             </item>
 			<item>
                 <blueprint>GB_SHOP_ITEM_WEAPONS_GP_CANNONS</blueprint>

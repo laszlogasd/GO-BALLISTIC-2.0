@@ -220,6 +220,14 @@ created from scratch using the components or techniques of them to create odd an
 	<name>GB_COIL_3</name>
 </blueprintList>
 
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS">
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	<name>MISSILES_1</name>
+	<name>MISSILES_2</name>
+	<name>BOMB_1</name>
+</blueprintList>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
