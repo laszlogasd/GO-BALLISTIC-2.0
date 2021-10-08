@@ -115,12 +115,23 @@
 							</item_modify>
 							<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
 						</event>
+					</choice>
+					<choice>
 						<text>Lets stick to the regular store. [-5 }]</text>
 						<event>
 							<item_modify>
 								<item type="missiles" min="-5" max="-5"/>
 							</item_modify>
 							<store>STORE_STANDARD</store>
+						</event>
+					</choice>
+					<choice>
+						<text> We are not interested.</text>
+						<event>
+							<text> You are unable to help and apologise. You wish them luck and promise to send word of their situation the next time you are come across a Federation contact. They are grateful but you can't shake the feeling that it was enough.</text>
+							<choice>
+								<text>Continue...</text>
+							</choice>
 						</event>
 					</choice>
 				</event>
