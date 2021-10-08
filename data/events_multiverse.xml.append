@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mod:findName type = "eventList" name = "SYLVAN_TRADES">
-	<mod-append:event load = "SYLVAN_AUTOCANNON"/>
-	<mod-append:event load = "SYLVAN_GAUSS"/>
+	<mod-append:event>SYLVAN_AUTOCANNON</mod-append:event>
+	<mod-append:event>SYLVAN_GAUSS</mod-append:event>
 </mod:findName>
 
 <event name="SYLVAN_AUTOCANNON">

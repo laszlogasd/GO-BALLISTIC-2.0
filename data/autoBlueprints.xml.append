@@ -220,6 +220,14 @@ created from scratch using the components or techniques of them to create odd an
 	<name>GB_COIL_3</name>
 </blueprintList>
 
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS">
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	<name>MISSILES_1</name>
+	<name>MISSILES_2</name>
+	<name>BOMB_1</name>
+</blueprintList>
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -646,7 +654,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<aug name="EX_SHIELD_RECHARGE" />
 </shipBlueprint>
 
-<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="mu_fed_bomber" img="mu_fed_bomber">
+<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="mu_fed_bomber" img="mu_fed_bomber"> <!--- dry on ammo ---> 
 	<class>Federation Bomber</class>
 	<minSector>2</minSector>
 	<maxSector>8</maxSector>
@@ -662,7 +670,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
-	<weaponList missiles="6" count="4">
+	<weaponList missiles="3" count="4"> <!--- might set ammo lower later, it should intentionally run out of ammo early into a fight --->
 		<weapon name="GB_AC2" />
 		<weapon name="BOMB_1" />
 		<weapon name="GB_ANTIQUE_FEDERATION" />
@@ -676,3 +684,4 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<crewCount amount="0" max="2" class="list_crew_federation_random" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
+

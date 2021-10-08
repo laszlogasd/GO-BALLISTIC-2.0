@@ -136,7 +136,7 @@
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>10</cooldown>
+	<cooldown>12</cooldown> <!--- was 10 --->
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -178,7 +178,7 @@
 	<sp>2</sp>
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
-	<cooldown>13</cooldown>
+	<cooldown>14</cooldown> <!--- was 13 --->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -384,7 +384,7 @@
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>10</cooldown>
+	<cooldown>12</cooldown> <!--- was 10 --->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -428,8 +428,8 @@
 	<breachChance>5</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>13</cooldown>
-	<power>3</power>
+	<cooldown>15</cooldown> <!--- was 13 --->
+	<power>3</power> 
 	<speed>180</speed>
 	<bp>4</bp>
 	<rarity>0</rarity>
@@ -472,7 +472,7 @@
 	<breachChance>6</breachChance>
 	<stunChance>4</stunChance>
 	<stun>3</stun>
-	<cooldown>16</cooldown>
+	<cooldown>18</cooldown> <!--- was 16 --->
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -497,43 +497,6 @@
 		<sound>miss</sound>
 	</missSounds>
 	<weaponArt>GB_Railgun_3</weaponArt>
-	<iconImage>laser</iconImage>
-</weaponBlueprint>
-
-<weaponBlueprint name="GB_RAIL_ART_ENEMY">
-	<type>LASER</type>
-	<title>Enemy Rail Gun Artillery</title>
-	<desc>Enemy artillery weapon. Base cooldown: 40 seconds.</desc>
-	<tooltip>Artillery: 1 shot 5 damage weapon, 80% chance to cause a breach, stuns for 3 seconds, pierces 5 shields, 25% more accurate</tooltip>
-	<accuracyMod>25</accuracyMod>
-	<damage>5</damage>
-	<shots>1</shots>
-	<sp>5</sp>
-	<breachChance>8</breachChance>
-	<stun>3</stun>
-	<cooldown>40</cooldown>
-	<speed>180</speed>
-	<bp>4</bp>
-	<rarity>0</rarity>
-	<image>GB_magnetic_slug_heavy</image>
-	<launchSounds>
-		<sound>GB_cannonLight1</sound>
-		<sound>GB_cannonLight2</sound>
-		<sound>GB_cannonLight3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull2</sound>
-		<sound>hitHull3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>GB_Railgun_Artillery</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
