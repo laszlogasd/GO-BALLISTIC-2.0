@@ -185,6 +185,17 @@ created from scratch using the components or techniques of them to create odd an
 	<name>GB_BURST_CANNON_2</name> -->
 </blueprintList>
 
+<blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS_OLD"> <!--- originally meant to be the GB_SHOP_ITEM_WEAPONS_CANNONS_OLD list, however going to retroactively use this to implement MG's into the store pool for now--->
+	<name>GB_AC1</name>
+	<name>GB_AC2</name>
+	<name>GB_AC3</name>
+	<name>GB_MG</name>
+	<name>GB_HMG</name>
+	<name>MISSILES_1</name>
+	
+	<!--<name>GB_RIFLED_CANNON</name>-->
+</blueprintList>
+
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_MA_CANNONS">
 	<name>GB_GAUSS_1</name>
 	<name>GB_GAUSS_2</name>

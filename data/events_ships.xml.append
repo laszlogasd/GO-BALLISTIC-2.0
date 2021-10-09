@@ -7,11 +7,11 @@
 
 <ship name="GB_FED_INTERDICTOR" auto_blueprint="GB_FED_BOMBER_INTERDICTOR">
 	<destroyed>
-		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost and charge your FTL drive.</text>
+		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
 		<autoReward level = "LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
-		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost and charge your FTL drive.</text>
+		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
 		<autoReward level = "MED">standard</autoReward>
 	</deadCrew>
 </ship>
