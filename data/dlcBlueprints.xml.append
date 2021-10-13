@@ -62,7 +62,7 @@
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>12</cooldown>
+	<cooldown>13</cooldown> <!--- was 12 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>3</amount>
@@ -109,7 +109,7 @@
 	<sp>2</sp>
 	<breachChance>4</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>15</cooldown>
+	<cooldown>16</cooldown> 
 	<boost>
 		<type>cooldown</type>
 		<amount>2</amount>
@@ -156,7 +156,7 @@
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>18</cooldown>
+	<cooldown>19</cooldown> <!--- was 18 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>1.5</amount>

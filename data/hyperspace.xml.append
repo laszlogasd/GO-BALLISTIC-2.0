@@ -727,3 +727,26 @@
     </customStore>
 	
 </store>
+
+
+<ships>
+	<customShip name = "GB_R4_MR_FED_LIGHT_CRUISER_1">
+		<shipIcons>
+			<shipIcon>icon_respirators</shipIcon>
+		</shipIcons>
+		<crew>
+			<soldier room = "0"/>
+			<human room = "3"/>
+			<separatist room = "7"/>
+			<separatist room = "2"/>
+		</crew>
+	</customShip>
+	<customShip name = "GB_R4_MR_MILITIA_GUARD">
+		<shipIcons>
+			<shipIcon>icon_shieldboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<separatist room = "5"/>
+		</crew>
+	</customShip>
+</ships>

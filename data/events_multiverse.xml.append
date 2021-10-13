@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findName type = "eventList" name = "SYLVAN_TRADES">
-	<event load = "SYLVAN_AUTOCANNON"/>
-	<event load = "SYLVAN_GAUSS"/>
-</mod:findName>
+<eventList name="SYLVAN_TRADES">
+	<event load="SYLVAN_LASERS"/>
+	<event load="SYLVAN_BEAM"/>
+	<event load="SYLVAN_ION"/>
+	<event load="SYLVAN_MISSILES"/>
+	<event load="SYLVAN_TRASH"/>
+	<event load="SYLVAN_ATTRIBUTES"/>
+	<event load="SYLVAN_STATUS"/>
+	<event load="SYLVAN_UTILITY"/>
+	<event load="SYLVAN_RACE"/>
+	<event load="SYLVAN_MINELAUNCHERS"/>
+	<event load="SYLVAN_DRONES"/>
+	<event load="SYLVAN_HEKTAR"/>
+	<event load="SYLVAN_LASERS"/>
+	<event load="SYLVAN_BEAM"/>
+	<event load="SYLVAN_ION"/>
+	<event load="SYLVAN_MISSILES"/>
+	<event load="SYLVAN_TRASH"/>
+	<event load="SYLVAN_ATTRIBUTES"/>
+	<event load="SYLVAN_STATUS"/>
+	<event load="SYLVAN_UTILITY"/>
+	<event load="SYLVAN_RACE"/>
+	<event load="SYLVAN_MINELAUNCHERS"/>
+	<event load="SYLVAN_DRONES"/>
+	<event load="SYLVAN_HEKTAR"/>
+	<event load="SYLVAN_RARE"/>
+	<event load="SYLVAN_ANCIENT"/>
+	<event load="SYLVAN_AUTOCANNON"/>
+	<event load="SYLVAN_GAUSS"/>
+</eventList>
 
 <event name="SYLVAN_AUTOCANNON">
-	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshined way. Want a look?"</text>
+	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshioned way. Want a look?"</text>
 	<store>STORE_SYLVAN_AC</store>
 </event>
 
 <event name="SYLVAN_GAUSS">
-	<text>"Ssstranger ssstranger, have you heard of the Federationssss latesssst prototype weaponry? Well, turnsss out they haven't kept them as clossssely guarded than one would think. Want a look?"</text>
+	<text>"Ssstranger ssstranger, have you heard of the Federation'ssss latesssst prototype weaponry? Well, turnsss out they haven't kept them as clossssely guarded than one would think. Want a look?"</text>
 	<store>STORE_SYLVAN_GAUSS</store>
 </event>
+
+<eventList name="MV_TRAVELER">
+	<event load="MV_TRAVELER_SPAWN"/>
+	<event load="MV_TRAVELER_SPAWN"/>
+	<event load="MV_TRAVELER_SPAWN"/>
+	<event load="MV_TRAVELER_SPAWN"/>
+	<event load="MV_TRAVELER_SPAWN"/>
+	<event load="MV_TRAVELER_SPAWN"/>
+	
+	<event load="ENCOUNTER_MV_REBEL"/>
+	<event load="ENCOUNTER_MV_REBEL"/>
+	<event load="ENCOUNTER_MV_REBEL"/>
+	<event load="ENCOUNTER_MV_REBEL"/>
+	
+	<event load="ENCOUNTER_MV_GB"/>
+	<event load="ENCOUNTER_MV_GB"/>
+	
+	<event load="ENCOUNTER_SIREN_UNKNOWN"/>
+	
+	<event load="ENCOUNTER_CALLIE"/>
+</eventList>
+
+<event name = "ENCOUNTER_MV_GB">
+	<text>From out of seemingly nowhere, a ship has appeared, guns blazing. You don't recognise its weaponry, but no time for that, fight!</text>
+	<ship load = "SHIP_GB_MV_RENEGADES" hostile = "true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<ship name="SHIP_GB_MV_RENEGADES" auto_blueprint="GB_MV_RENEGADES">
+	<surrender  chance="0.80" min="2" max="3" load="SURRENDER_MULTIVERSE_TRAVELER"/>
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+</ship>

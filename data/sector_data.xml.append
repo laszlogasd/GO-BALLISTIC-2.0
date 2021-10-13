@@ -75,15 +75,15 @@
 	     EQUIPMENT
 		\\\\\\\\\\\
 		-->
-		<blueprint name="GB_AC1" rarity="4"/>
-		<blueprint name="GB_AC2" rarity="4"/>
-		<blueprint name="GB_AC3" rarity="4"/>
+		<blueprint name="GB_AC_1" rarity="4"/>
+		<blueprint name="GB_AC_2" rarity="4"/>
+		<blueprint name="GB_AC_3" rarity="4"/>
 		<blueprint name="GB_GAUSS_1" rarity="4"/>
 		<blueprint name="GB_GAUSS_2" rarity="4"/>
 		<blueprint name="GB_GAUSS_3" rarity="5"/>
 		<blueprint name="GB_GAUSS_AP" rarity="4"/>
 		<blueprint name="GB_ROTARY_AC" rarity="5"/>
-		<blueprint name="GB_COMBAT_AC_1" rarity="5"/>
+		<blueprint name="GB_COMBAT_AC_1" rarity="4"/>
 	</rarityList>
     <startEvent>ENTER_FEDERATION</startEvent>
 	<event name="TRANSPORT_FEDERATION_LOOT" min="1" max="1"/>
@@ -165,8 +165,8 @@
 	     EQUIPMENT
 		\\\\\\\\\\\
 		-->
-		<blueprint name="GB_AC1" rarity="5"/>
-		<blueprint name="GB_AC2" rarity="5"/>
+		<blueprint name="GB_AC_1" rarity="5"/>
+		<blueprint name="GB_AC_2" rarity="5"/>
 		<blueprint name="GB_COMBAT_AC_1" rarity="5"/>
 	</rarityList>
     <startEvent>ENTER_MILITIA</startEvent>
@@ -264,9 +264,9 @@
 		<blueprint name="DISTRACTION_BUOY" rarity="0"/>
 		<blueprint name="PRE_SCANNER" rarity="0"/>
 		<blueprint name="FUEL_CONSERVER" rarity="0"/>
-		<blueprint name="GB_AC1" rarity="4"/>
-		<blueprint name="GB_AC2" rarity="4"/>
-		<blueprint name="GB_AC3" rarity="4"/>
+		<blueprint name="GB_AC_1" rarity="4"/>
+		<blueprint name="GB_AC_2" rarity="4"/>
+		<blueprint name="GB_AC_3" rarity="4"/>
 		<blueprint name="GB_COMBAT_AC_1" rarity="5"/>
 	</rarityList>
 	<startEvent>BOSS_NEUTRAL</startEvent><!-- STUPID, since it's starting you at the "exit" -->
@@ -777,9 +777,9 @@
 		<!--
 			EQUIPMENT
 		-->
-		<blueprint name="GB_RAIL_1" rarity="4"/>
-		<blueprint name="GB_RAIL_2" rarity="4"/>
-		<blueprint name="GB_RAIL_3" rarity="5"/>
+		<blueprint name="GB_RAIL_1" rarity="5"/>
+		<blueprint name="GB_RAIL_2" rarity="5"/>
+		<blueprint name="GB_RAIL_3" rarity="0"/>
 	</rarityList>
 	<startEvent>ENTER_ZOLTAN_UNIQUE</startEvent>
 	<event name="TRANSPORT_ZOLTAN_LOOT" min="1" max="1"/>
