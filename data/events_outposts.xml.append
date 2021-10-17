@@ -1,4 +1,4 @@
-<FTL>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <mod:findName type = "event" name = "FEDERATION_OUTPOST_FED">
 		<mod-append:choice hidden = "true" req = "soldier">
@@ -9,5 +9,3 @@
 			</event>
 		</mod-append:choice>
 </mod:findName>
-
-</FTL>

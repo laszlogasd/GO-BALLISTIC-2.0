@@ -725,6 +725,20 @@
 		</event>
 	</choice>
 	<choice>
+		<text>We can't help.</text>
+		<event>
+			<text>"We understand. Fly safe."</text>
+			<choice>
+				<text>Do something on board the ship.</text>
+				<event load = "STORAGE_CHECK_REAL"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
 		<text>If they're low on ammo they're an easy target, attack!</text>
 		<event>
 			<ship hostile = "true"/>

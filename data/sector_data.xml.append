@@ -1,4 +1,4 @@
-<FTL>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <sectorDescription name="SECTOR_FEDERATION" minSector="3" unique="true"> <!--AUTOCANNONS AND GAUSS-->
 	<nameList>
@@ -1406,5 +1406,3 @@
 	<event name="NEUTRAL_REBELHOLD_GENERIC" min="2" max="4"/>
 	<event name="GB_ASTEROID_AUTOCANNON_STORE" min="0" max="1"/>
 </sectorDescription>
-
-</FTL>

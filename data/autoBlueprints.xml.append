@@ -314,7 +314,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
 </mod:findName>
 
 <!--RENEGADE-->
@@ -344,7 +344,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_FED">
 	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
@@ -383,9 +383,9 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
-	<mod-append:name>GB_GAUSS_2</mod-append:name>
-	<mod-append:name>GB_RAIL_1</mod-append:name>
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name>
+	<mod-append:name>GB_GAUSS_2_ENEMY</mod-append:name>
+	<mod-append:name>GB_RAIL_1_ENEMY</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_FED">
 	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
@@ -404,7 +404,7 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ENGI">
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_ENGI">  <!-- unchanged, might edit later -->
 
@@ -525,6 +525,18 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>GB_GAUSS_3</name>
 </blueprintList>
 
+<blueprintList name = "GB_COILGUNS_ENEMY">
+	<name>GB_COIL_1_ENEMY</name>
+    <name>GB_COIL_2_ENEMY</name>
+    <name>GB_COIL_3_ENEMY</name>
+</blueprintList>
+
+<blueprintList name = "GB_GAUSS_ENEMY">
+	<name>GB_GAUSS_1_ENEMY</name>
+	<name>GB_GAUSS_2_ENEMY</name>
+	<name>GB_GAUSS_3_ENEMY</name>
+</blueprintList>
+
 <blueprintList name = "GB_RAIL">
 	<name>GB_RAIL_1</name>
 	<name>GB_RAIL_2</name>
@@ -629,8 +641,8 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
 	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
-		<weapon name="GB_COILGUNS" />
-		<weapon name="GB_GAUSS" />
+		<weapon name="GB_COILGUNS_ENEMY" />
+		<weapon name="GB_GAUSS_ENEMY" />
 		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
 		<weapon name="BEAM_LONG" />
 	</weaponList>

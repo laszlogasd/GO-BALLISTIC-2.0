@@ -730,6 +730,33 @@
 
 
 <ships>
+	
+	<!--PLAYER SHIPS-->
+	
+	<mod:findLike type ="shipOrder">
+			<!-- PAGE 1 -->
+	<mod-append:ship>PLAYER_SHIP_R4_GB_KESTREL</mod-append:ship>
+	</mod:findLike>
+
+    <mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true" />
+    <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL">
+        <hiddenAug>SHIP_KESTREL</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <crewLimit>11</crewLimit>
+    </mod-append:customShip>
+    <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_2">
+        <hiddenAug>SHIP_KESTREL</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+        <crewLimit>11</crewLimit>
+    </mod-append:customShip>
+	<mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_3">
+			<hiddenAug>SHIP_KESTREL</hiddenAug>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<crewLimit>11</crewLimit>
+		</mod-append:customShip>
+		
+	<!--ENEMY SHIPS-->
+	
 	<customShip name = "GB_R4_MR_FED_LIGHT_CRUISER_1">
 		<shipIcons>
 			<shipIcon>icon_respirators</shipIcon>

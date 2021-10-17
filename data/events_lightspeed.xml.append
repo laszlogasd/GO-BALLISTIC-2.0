@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event name="ENTER_BALLISTIC">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS"/>
+	</choice>
+</event>
+<event name="BALLISTIC_WARP">
+	<text>Name: Union Controlled Sector
+	Type: Uncolonized
+	Unique: True
+	Dominant Faction: None
+	Rebel Threat Level: Medium
+	
+	This Sector was the main theatre for the Federation-Mantis war. There is little active conflict here now, and it serves as a melting pot of scavengers from all over the galaxy, rubbing shoulders with Federation Veterans and scores of Mantis scavengers.</text>
+	<playSound>lightspeed</playSound>
+	<choice hidden="true">
+		<text>Exit Hyperspeed.</text>
+		<event load="START_BALLISTIC"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
+
+<mod:findName type = "event" name = "ATLAS_MENU">
+	<mod-append:choice req = "SEC SECTOR_BALLISTIC">
+		<text>Proceed to the Abandoned Battlegrounds.</text>
+		<event load="BALLISTIC_WARP"/>
+	</mod-append:choice>
+</mod:findName>
