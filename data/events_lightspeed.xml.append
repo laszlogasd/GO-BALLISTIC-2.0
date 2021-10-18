@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>
 
 <event name="ENTER_BALLISTIC">
 	<text load="TEXT_LIGHTSPEED"/>
@@ -32,4 +32,4 @@
 		<text>Proceed to the Abandoned Battlegrounds.</text>
 		<event load="BALLISTIC_WARP"/>
 	</mod-append:choice>
-</mod:findName>
+</mod:findName>-->

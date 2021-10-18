@@ -32,7 +32,20 @@
 		<text>You take notice of an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
 		<event>
 			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis. Interested in buying something as old as she is?"</text>
-			<store>STORE_BALLISTIC_AUTOCANNON</store>
+			<choice>
+				<text>Sure.</text>
+				<event>
+					<text>"These are living history lad, you know. Be careful with them."</text>
+					<store>STORE_BALLISTIC_AUTOCANNON</store>
+				</event>
+			</choice>
+			<choice>
+				<text>We'd rather see some up to date weapons.</text>
+				<event>
+					<text>"If you insist. You're missing out, you know, these newfangled weapons just lack a certain something."</text>
+					<store>STORE_STANDARD</store>
+				</event>
+			</choice>
 		</event>
 	</choice>
 </event>
@@ -108,14 +121,13 @@
 				<text>Enquire about the ammo dependency.</text>
 				<event>
 					<text>"These old things are running the foolproof classic load out of Autocannons and Bombs. Works perfectly fine up until you operate a bit further than a stone toss away from the supply lines. Hard getting supplies this far out without being overt in this enemy sector. You're more than free to take some off our hands in our inventory. No use keeping cannons that can't fire."</text>
-					<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
 					<choice>
                         <text>Agree to trade for a reduced cost. [-2 }]</text>
                         <event>
                             <item_modify>
                                 <item type="missiles" min="-2" max="-2"/>
                             </item_modify>
-                            <store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
+                            <store>STORE_BALLISTIC_AUTOCANNON_BOMB_NO_AMMO</store>
                         </event>
                     </choice>
                     <choice>
@@ -124,7 +136,7 @@
                             <item_modify>
                                 <item type="missiles" min="-5" max="-5"/>
                             </item_modify>
-                            <store>STORE_STANDARD</store>
+                            <store>STORE_STANDARD_NO_AMMO</store>
                         </event>
                     </choice>
                     <choice>

@@ -713,3 +713,87 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>GB_R4_MR_MILITIA_GUARD</name>
 	<name>GB_R4_MR_FED_LIGHT_CRUISER_1</name>
 </blueprintList>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_NORMAL" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="12" start="true" />
+		<doors power="2" max="3" room="4" start="true" />
+		<engines power="1" max="3" room="15" start="true" />
+		<oxygen power="1" max="1" room="13" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="7" room="11" start="true" />
+		<weapons power="8" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_1"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_2_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="20" />
+	<maxPower amount="21" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="2" max="3" room="12" start="true" />
+		<doors power="2" max="3" room="4" start="true" />
+		<engines power="1" max="3" room="15" start="true" />
+		<oxygen power="1" max="2" room="13" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="9" room="11" start="true" />
+		<weapons power="9" max="9" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_1"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_3_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="23" />
+	<maxPower amount="25" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="3" max="3" room="12" start="true" />
+		<doors power="3" max="3" room="4" start="true" />
+		<engines power="3" max="3" room="15" start="true" />
+		<oxygen power="1" max="2" room="13" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="4" max="11" room="11" start="true" />
+		<weapons power="11" max="11" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_CHAIN"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_3_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="25" />
+	<maxPower amount="27" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>

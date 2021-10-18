@@ -1029,13 +1029,10 @@
 	<droneList drones="2" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="human" />
 	<aug name="EX_EXPLOSIVE_REPLICATOR" />
 </shipBlueprint>
 
-<shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestral_2" img="r4p_gb_kestral_2">
+<shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestrel_b" img="r4p_gb_kestrel_b">
 	<class>Kestrel Cruiser</class>
 	<name>Warhawk</name>
 	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
@@ -1106,10 +1103,6 @@
 	<droneList drones="0" count="2" />
 	<health amount="30" />
 	<maxPower amount="7" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="freemantis" />
-	<crewCount amount="1" class="separatist" />
 	<aug name="EX_AUTO_COOLDOWN" />
 </shipBlueprint>
 
@@ -1181,8 +1174,28 @@
 	<droneList drones="2" count="2" />
 	<health amount="30" />
 	<maxPower amount="8" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="orchid" />
-	<crewCount amount="1" class="warlord" />
-	<aug name="EX_AUTO_COOLDOWN" />
+	<aug name="AUTO_LOADER_LOW_SHIELD_LOCKED" />
 </shipBlueprint>
+
+
+<!--/////////////////////////
+			AUGMENTS
+//////////////////////////-->
+
+<augBlueprint name = "AUTO_LOADER_LOW_SHIELD_LOCKED">
+	<title>Assault Auto-Reloader</title>
+	<desc>Massively decreases your weapon cooldown at the cost of slowing shield recharge rate considerably. Because what's the fun otherwise? (-20% weapon cooldown, -33% shield recharge rate.)</desc>
+	<cost>0</cost>
+	<bp>9</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name = "AUTO_LOADER_LOW_SHIELD">
+	<title>Assault Auto-Reloader</title>
+	<desc>Massively decreases your weapon cooldown at the cost of slowing shield recharge rate considerably. Because what's the fun otherwise? (-20% weapon cooldown, -33% shield recharge rate.)</desc>
+	<cost>50</cost>
+	<bp>9</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
