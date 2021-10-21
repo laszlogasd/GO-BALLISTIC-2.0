@@ -1,6 +1,6 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<event name="ENTER_BALLISTIC">
+<!--<event name="ENTER_BALLISTIC">
 	<text load="TEXT_LIGHTSPEED"/>
 	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
 	<choice hidden="true">

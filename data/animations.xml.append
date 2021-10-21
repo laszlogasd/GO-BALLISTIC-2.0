@@ -173,14 +173,14 @@
 	<mountPoint x="15" y="49" />
 </weaponAnim>
 
-<animSheet name = "GB_MG_loot" w = "1024" h = "101" fw = "64" fh = "101">weapons/GB_MG_loot.png</animSheet>
+<animSheet name = "GB_MG_loot" w = "1024" h = "101" fw = "32" fh = "101">weapons/GB_MG_loot.png</animSheet>
 <weaponAnim name="GB_MG_loot">
 	<sheet>GB_MG_loot</sheet>
 	<desc length="32" x="0" y="0" />
-	<chargedFrame>4</chargedFrame>
-	<fireFrame>6</fireFrame>
-	<firePoint x="0" y="0" />
-	<mountPoint x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="20" y="62" />
+	<mountPoint x="0" y="62" />
 	<chargeImage>weapons/GB_MG_loot_glow.png</chargeImage>
 	<boost>GB_MG_loot_chargeglow</boost>
 </weaponAnim>

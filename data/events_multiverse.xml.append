@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findName type = "eventList" name="SYLVAN_TRADES">
-	<mod-append:event name="SYLVAN_AUTOCANNON"/>
-	<mod-append:event name="SYLVAN_GAUSS"/>
-</mod:findName>
+<eventList name="SYLVAN_TRADES">
+	<event load="SYLVAN_LASERS"/>
+	<event load="SYLVAN_BEAM"/>
+	<event load="SYLVAN_ION"/>
+	<event load="SYLVAN_MISSILES"/>
+	<event load="SYLVAN_TRASH"/>
+	<event load="SYLVAN_ATTRIBUTES"/>
+	<event load="SYLVAN_STATUS"/>
+	<event load="SYLVAN_UTILITY"/>
+	<event load="SYLVAN_RACE"/>
+	<event load="SYLVAN_MINELAUNCHERS"/>
+	<event load="SYLVAN_DRONES"/>
+	<event load="SYLVAN_HEKTAR"/>
+	<event load="SYLVAN_LASERS"/>
+	<event load="SYLVAN_BEAM"/>
+	<event load="SYLVAN_ION"/>
+	<event load="SYLVAN_MISSILES"/>
+	<event load="SYLVAN_TRASH"/>
+	<event load="SYLVAN_ATTRIBUTES"/>
+	<event load="SYLVAN_STATUS"/>
+	<event load="SYLVAN_UTILITY"/>
+	<event load="SYLVAN_RACE"/>
+	<event load="SYLVAN_MINELAUNCHERS"/>
+	<event load="SYLVAN_DRONES"/>
+	<event load="SYLVAN_HEKTAR"/>
+	<event load="SYLVAN_RARE"/>
+	<event load="SYLVAN_ANCIENT"/>
+	<event load="SYLVAN_AUTOCANNON"/>
+	<event load="SYLVAN_GAUSS"/>
+</eventList>
 
 <event name="SYLVAN_AUTOCANNON">
 	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshioned way. Want a look?"</text>
@@ -33,7 +59,7 @@
 	<event load="ENCOUNTER_CALLIE"/>
 </eventList>
 
-<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS14"/>
+<!--<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS14"/>-->
 
 <event name = "ENCOUNTER_MV_GB">
 	<text>From out of seemingly nowhere, a ship has appeared, guns blazing. You don't recognise its weaponry, but no time for that, fight!</text>
