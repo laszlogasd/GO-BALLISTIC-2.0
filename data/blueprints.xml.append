@@ -754,14 +754,14 @@
 
 <weaponBlueprint name = "GB_MG_LOOT">
 	<type>BURST</type>
-	<title>'Ambush' Machinegun</title>
-	<short>'Ambush'</short>
+	<title>'Spray and Pray'</title>
+	<short>'S.A.P'</short>
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
 	<damage>1</damage>
 	<shots>1</shots>
 	<breachChance>1</breachChance>
-	<cooldown>1</cooldown>
+	<cooldown>20</cooldown>
 	<power>0</power>
 	<speed>60</speed>
 	<radius>50</radius>
@@ -771,11 +771,11 @@
 	<chargeLevels>16</chargeLevels>
 	<boost>
 		<type>cooldown</type>
-		<amount>2</amount>
-		<count>1</count>
+		<amount>10</amount>
+		<count>3</count>
 	</boost>
 	<projectiles>
-		<projectile count="1" fake="false">GB_shot_light</projectile>
+		<projectile count="8" fake="false">GB_shot_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>GB_cannonLight1</sound>

@@ -1,77 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<eventList name="SYLVAN_TRADES">
-	<event load="SYLVAN_LASERS"/>
-	<event load="SYLVAN_BEAM"/>
-	<event load="SYLVAN_ION"/>
-	<event load="SYLVAN_MISSILES"/>
-	<event load="SYLVAN_TRASH"/>
-	<event load="SYLVAN_ATTRIBUTES"/>
-	<event load="SYLVAN_STATUS"/>
-	<event load="SYLVAN_UTILITY"/>
-	<event load="SYLVAN_RACE"/>
-	<event load="SYLVAN_MINELAUNCHERS"/>
-	<event load="SYLVAN_DRONES"/>
-	<event load="SYLVAN_HEKTAR"/>
-	<event load="SYLVAN_LASERS"/>
-	<event load="SYLVAN_BEAM"/>
-	<event load="SYLVAN_ION"/>
-	<event load="SYLVAN_MISSILES"/>
-	<event load="SYLVAN_TRASH"/>
-	<event load="SYLVAN_ATTRIBUTES"/>
-	<event load="SYLVAN_STATUS"/>
-	<event load="SYLVAN_UTILITY"/>
-	<event load="SYLVAN_RACE"/>
-	<event load="SYLVAN_MINELAUNCHERS"/>
-	<event load="SYLVAN_DRONES"/>
-	<event load="SYLVAN_HEKTAR"/>
-	<event load="SYLVAN_RARE"/>
-	<event load="SYLVAN_ANCIENT"/>
-	<event load="SYLVAN_AUTOCANNON"/>
-	<event load="SYLVAN_GAUSS"/>
-</eventList>
+<mod:findName type = "eventList" name="SYLVAN_TRADES">
+	<mod-append:event name = "SYLVAN_AUTOCANNON"/>
+	<mod-append:event name = "SYLVAN_GAUSS"/>
+</mod:findName>
 
 <event name="SYLVAN_AUTOCANNON">
-	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshioned way. Want a look?"</text>
+	<text>"Ssstranger ssstranger, You mussst know about the Federation-Mantisss war, yesss? Well, perhapsss you might fancccy blowing ssshipsss up the old fassshioned way. Want a look?"</text>
 	<store>STORE_SYLVAN_AC</store>
 </event>
 
 <event name="SYLVAN_GAUSS">
-	<text>"Ssstranger ssstranger, have you heard of the Federation'ssss latesssst prototype weaponry? Well, turnsss out they haven't kept them as clossssely guarded than one would think. Want a look?"</text>
+	<text>"Ssstranger ssstranger, have you heard of the Federation'sss latessst prototype weaponry? Well, turnsss out they haven't kept them as closssely guarded than one would think. Want a look?"</text>
 	<store>STORE_SYLVAN_GAUSS</store>
 </event>
 
-<eventList name="MV_TRAVELER">
-	<event load="MV_TRAVELER_SPAWN"/>
-	<event load="MV_TRAVELER_SPAWN"/>
-	<event load="MV_TRAVELER_SPAWN"/>
-	<event load="MV_TRAVELER_SPAWN"/>
-	<event load="MV_TRAVELER_SPAWN"/>
-	<event load="MV_TRAVELER_SPAWN"/>
-	
-	<event load="ENCOUNTER_MV_REBEL"/>
-	<event load="ENCOUNTER_MV_REBEL"/>
-	<event load="ENCOUNTER_MV_REBEL"/>
-	<event load="ENCOUNTER_MV_REBEL"/>
-	
-	<event load="ENCOUNTER_SIREN_UNKNOWN"/>
-	
-	<event load="ENCOUNTER_CALLIE"/>
-</eventList>
+<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS14">
+	<mod-append:event name = "MV_TRAVELER_GB_MILITIA"/>
+</mod:findName>
 
-<!--<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS14"/>-->
+<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS56">
+	<mod-append:event name = "MV_TRAVELER_GB_MILITIA"/>
+	<mod-append:event name = "MV_TRAVELER_GB_FED"/>
+</mod:findName>
 
-<event name = "ENCOUNTER_MV_GB">
-	<text>From out of seemingly nowhere, a ship has appeared, guns blazing. You don't recognise its weaponry, but no time for that, fight!</text>
-	<ship load = "SHIP_GB_MV_RENEGADES" hostile = "true"/>
+<event name = "MV_TRAVELER_GB_MILITIA">
+	<text>"YOU! You're another renegade. I can tell, you know. We're battle hardened soldiers, and won't hesitate to kill!" Their weapons seem rather old-fashioned, but they still look a threat!</text>
+	<ship load = "SHIP_R4_GB_MV_TRAVELER_MILITIA" hostile = "true"/>
 	<choice hidden="true">
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
 	</choice>
 </event>
 
-<ship name="SHIP_GB_MV_RENEGADES" auto_blueprint="GB_MV_RENEGADES">
-	<surrender  chance="0.80" min="2" max="3" load="SURRENDER_MULTIVERSE_TRAVELER"/>
-	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
-	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
-</ship>
+<event name = "MV_TRAVELER_GB_FED">
+	<text>"See these weapons, fool? They're prototype mass accelerators, and we're gonna accelerate your mass to hell!"</text>
+	<ship load = "SHIP_R4_GB_MV_TRAVELER_FED" hostile = "true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>

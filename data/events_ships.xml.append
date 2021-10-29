@@ -25,3 +25,13 @@
 	<destroyed load="DESTROYED_MILITIA"/>
 	<deadCrew load="DEAD_CREW_MILITIA"/>
 </ship>
+
+<ship name = "SHIP_R4_GB_MV_TRAVELER_FED" auto_blueprint = "GB_R4_MR_FED_LIGHT_CRUISER_1">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+</ship>
+
+<ship name = "SHIP_R4_GB_MV_TRAVELER_MILITIA" auto_blueprint = "GB_R4_MR_MILITIA_GUARD">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+</ship>
