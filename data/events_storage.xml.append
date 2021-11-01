@@ -332,8 +332,8 @@
 </event>
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
-	<choice hidden="true" req="ACH_MV_BALLISTIC" lvl="1" blue="false">
+	<mod-append:choice hidden="true" req="ACH_MV_BALLISTIC" lvl="1" blue="false">
 		<text>Ballistic Cruiser</text>
 		<event load="OPTION_INVALID"/>
-	</choice>
+	</mod-append:choice>
 </mod:findName>
