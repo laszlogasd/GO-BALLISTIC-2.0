@@ -759,23 +759,23 @@
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
 	<damage>1</damage>
-	<shots>1</shots>
+	<shots>8</shots>
 	<breachChance>1</breachChance>
 	<cooldown>20</cooldown>
 	<power>0</power>
 	<speed>60</speed>
 	<radius>50</radius>
+	<fireTime>0.05</fireTime>
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<cost>60</cost>
-	<chargeLevels>16</chargeLevels>
 	<boost>
 		<type>cooldown</type>
 		<amount>10</amount>
 		<count>3</count>
 	</boost>
 	<projectiles>
-		<projectile count="8" fake="false">GB_shot_light</projectile>
+		<projectile count="1" fake="false">GB_shot_light</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>GB_cannonLight1</sound>
@@ -1244,4 +1244,13 @@
 	<bp>9</bp>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ACH_MV_KESTREL">
+	<title>Ship Achievement</title>
+	<desc>The player defeated the kestrel MV cruiser.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
 </augBlueprint>

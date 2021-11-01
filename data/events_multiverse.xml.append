@@ -24,6 +24,8 @@
 	<mod-append:event name = "MV_TRAVELER_GB_FED"/>
 </mod:findName>
 
+<!--RENEGADES-->
+
 <event name = "MV_TRAVELER_GB_MILITIA">
 	<text>"YOU! You're another renegade. I can tell, you know. We're battle hardened soldiers, and won't hesitate to kill!" Their weapons seem rather old-fashioned, but they still look a threat!</text>
 	<ship load = "SHIP_R4_GB_MV_TRAVELER_MILITIA" hostile = "true"/>
@@ -40,4 +42,129 @@
 		<text>Continue...</text>
 		<event load="COMBAT_CHECK"/>
 	</choice>
+</event>
+
+<!--RENEGADE CRUISERS-->
+
+<ship name="SHIP_MTBOSS_BALLISTIC_C_NORMAL" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_NORMAL">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+<ship name="SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_CHALLENGE">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+<ship name="SHIP_MTBOSS_BALLISTIC_C_EXTREME" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_EXTREME">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_NORMAL">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_NORMAL"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_CHALLENGE">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_EXTREME">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME"/>
+</mod:findName>
+
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_NORMAL">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
+	<ship load = "MT_BOSS_GB_R4_BALLISTIC_NORMAL" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Pay tribute in scrap to avoid the fight.</text>
+		<event>
+			<text>Fortunately, the MV ship accepts the tribute in turn for letting you live.</text>
+			<item_modify>
+				<item type="scrap" min="-35" max="-50"/>
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
+	<ship load = "MT_BOSS_GB_R4_BALLISTIC_CHALLENGE" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Draw straws and send over a crew as tribute.</text>
+		<event>
+			<text>Fortunately, the MV ship accepts the tribute in turn for letting you live.</text>
+			<removeCrew>
+				<clone>false</clone>
+				<text>Tempting as it is, cloning living crew is against Federation law. God damn Federation laws...</text>
+			</removeCrew>
+		</event>
+	</choice>
+</event>
+
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
+	<ship load = "MT_BOSS_GB_R4_BALLISTIC_EXTREME" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="MTBOSS_BALLISTICC_DESTROYED">
+	<text>The mighty vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<hiddenAug>ACH_MV_BALLISTIC</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_BALLISTICC_DROP_CHANCE"/>
+	</choice>
+</event> 
+<eventList name="MTBOSS_BALLISTICC_DROP_CHANCE">
+	<event>
+		<text>You find the remains of a unique weapon model amongst the ruins of the ship, but it appears it did not survive the fight. You'll have to be more careful next time, or get lucky. Fortunately, there's still a bit more supplies to take with you.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event load="MTBOSS_BALLISTICC_DROP"/>
+</eventList>
+<event name="MTBOSS_BALLISTICC_DEADCREW">
+	<text>The mighty vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<hiddenAug>ACH_MV_BALLISTIC</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_BALLISTICC_DROP"/>
+	</choice>
+</event>
+<event name="MTBOSS_BALLISTICC_DROP">
+	<text>You're also surprised to find a special weapon amongst the wreckage! You've never seen a weapon like this before, so you assume it's a custom model made by the travelers themselves.</text>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="GB_MG_LOOT"/>
 </event>
