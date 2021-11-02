@@ -1,4 +1,5 @@
-<FTL>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
 	<mod-append:choice req = "GB_COMBAT_AC_1" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Combat, 1 power]</text>
@@ -330,4 +331,9 @@
 	</choice>
 </event>
 
-</FTL>
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
+	<mod-append:choice hidden="true" req="ACH_MV_BALLISTIC" lvl="1" blue="false">
+		<text>Ballistic Cruiser</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName>

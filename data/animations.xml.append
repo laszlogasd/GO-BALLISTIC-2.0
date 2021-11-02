@@ -163,3 +163,31 @@
 	<mountPoint x="4" y="91" />
 	<chargeImage>weapons/GB_Railgun_3_glow.png</chargeImage>
 </weaponAnim>
+<animSheet name="GB_Railgun_Artillery" w="240" h="50" fw="30" fh="50">weapons/GB_Railgun_Artillery_strip8.png</animSheet>
+<weaponAnim name="GB_Railgun_Artillery">
+	<sheet>GB_Railgun_Artillery</sheet>
+	<desc length="8" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="15" y="49" />
+	<mountPoint x="15" y="49" />
+</weaponAnim>
+
+<animSheet name = "GB_MG_loot" w = "1024" h = "101" fw = "32" fh = "101">weapons/GB_MG_loot.png</animSheet>
+<weaponAnim name="GB_MG_loot">
+	<sheet>GB_MG_loot</sheet>
+	<desc length="32" x="0" y="0" />
+	<chargedFrame>3</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint x="20" y="62" />
+	<mountPoint x="0" y="62" />
+	<chargeImage>weapons/GB_MG_loot_glow.png</chargeImage>
+	<boost>GB_MG_loot_chargeglow</boost>
+</weaponAnim>
+
+<animSheet name="GB_MG_loot_chargeglow" w="31" h="100" fw="31" fh="100">weapons/GB_MG_loot_chargeglow.png</animSheet>
+<anim name="GB_MG_loot_chargeglow">
+	<sheet>GB_MG_loot_chargeglow</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>

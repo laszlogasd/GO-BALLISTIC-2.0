@@ -5,7 +5,18 @@
 	<deadCrew load="DEAD_CREW_FEDERATION"/>
 </ship>
 
-<ship name="GB_MILITIA_ESCORT" auto_blueprint="MU_MILITIA_ESCORT">
+<ship name="GB_FED_INTERDICTOR" auto_blueprint="GB_FED_BOMBER_INTERDICTOR">
+	<destroyed>
+		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
+		<autoReward level = "LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
+		<autoReward level = "MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_GB_MILITIA_ESCORT" auto_blueprint="MU_MILITIA_ESCORT">
 	<destroyed load="DESTROYED_MILITIA"/>
 	<deadCrew load="DEAD_CREW_MILITIA"/>
 </ship>
@@ -13,4 +24,14 @@
 <ship name="GB_MILITIA_STATION" auto_blueprint="MU_MILITIA_STATION">
 	<destroyed load="DESTROYED_MILITIA"/>
 	<deadCrew load="DEAD_CREW_MILITIA"/>
+</ship>
+
+<ship name = "SHIP_R4_GB_MV_TRAVELER_FED" auto_blueprint = "GB_R4_MR_FED_LIGHT_CRUISER_1">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+</ship>
+
+<ship name = "SHIP_R4_GB_MV_TRAVELER_MILITIA" auto_blueprint = "GB_R4_MR_MILITIA_GUARD">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
 </ship>

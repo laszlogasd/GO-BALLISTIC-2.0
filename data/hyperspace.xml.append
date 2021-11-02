@@ -875,11 +875,11 @@
     </customStore>
 	
 	<customStore id="STORE_SYLVAN_AC">
+		<itemPurchaseLimit>2</itemPurchaseLimit>
 		<resource>
 			<type>missiles</type>
 			<count min="9" max="13"/>
 		</resource>
-		<itemPurchaseLimit>2</itemPurchaseLimit>
 		<category type="WEAPONS">
 			<customTitle>AUTOCANNONS</customTitle>
             <item>
@@ -919,11 +919,11 @@
     </customStore>
 	
 	<customStore id="STORE_SYLVAN_GAUSS">
+		<itemPurchaseLimit>2</itemPurchaseLimit>
 		<resource>
 			<type>missiles</type>
 			<count min="9" max="13"/>
 		</resource>
-		<itemPurchaseLimit>2</itemPurchaseLimit>
 		<category type="WEAPONS">
 			<customTitle>MASS ACCELERATORS</customTitle>
             <item>
@@ -965,8 +965,52 @@
 </store>
 
 
-<ships>
-	<customShip name = "GB_R4_MR_FED_LIGHT_CRUISER_1">
+<mod:findLike type="ships">
+	
+	<!--PLAYER SHIPS-->
+	
+	<mod:findLike type ="shipOrder">
+	<!--PAGE 1-->
+	<mod-append:ship>PLAYER_SHIP_R4_GB_KESTREL</mod-append:ship>
+	</mod:findLike>
+
+    <mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true" />
+    <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL">
+        <hiddenAug>SHIP_KESTREL</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<crew>
+			<human room = "0"/>
+			<human room = "10"/>
+			<human room = "12"/>
+		</crew>
+        <crewLimit>11</crewLimit>
+    </mod-append:customShip>
+    <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_2">
+        <hiddenAug>SHIP_KESTREL</hiddenAug>
+        <hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<crew>
+			<human room = "5"/> <!--engines-->
+			<human room = "10"/> <!--weapons-->
+			<orchid room = "12"/> <!--cloaking-->
+			<energy room = "9"/> <!--piloting :)-->
+		</crew>
+        <crewLimit>11</crewLimit>
+    </mod-append:customShip>
+	<mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_3">
+		<hiddenAug>SHIP_KESTREL</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<crewLimit>11</crewLimit>
+		<crew>
+			<human room = "2"/> <!--airlock-->
+			<energy room = "12"/> <!--shields-->
+			<freemantis room = "0"/> <!--pilot-->
+			<separatist room = "13"/> <!--engines-->
+		</crew>
+	</mod-append:customShip>
+		
+	<!--ENEMY SHIPS-->
+	
+	<mod-append:customShip name = "GB_R4_MR_FED_LIGHT_CRUISER_1">
 		<shipIcons>
 			<shipIcon>icon_respirators</shipIcon>
 		</shipIcons>
@@ -976,13 +1020,81 @@
 			<separatist room = "7"/>
 			<separatist room = "2"/>
 		</crew>
-	</customShip>
-	<customShip name = "GB_R4_MR_MILITIA_GUARD">
+	</mod-append:customShip>
+	<mod-append:customShip name = "GB_R4_MR_MILITIA_GUARD">
 		<shipIcons>
 			<shipIcon>icon_shieldboost</shipIcon>
 		</shipIcons>
 		<crew>
 			<separatist room = "5"/>
 		</crew>
-	</customShip>
-</ships>
+	</mod-append:customShip>
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_specialwep</shipIcon>
+			<shipIcon>icon_weaponboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<human room="0"/> <!--piloting-->
+			<human room="4"/> <!--doors-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<shell room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<freemantis room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<leech room="6"/> <!--weapons-->
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_specialwep</shipIcon>
+			<shipIcon>icon_weaponboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<soldier room="0"/> <!--piloting-->
+			<human room="4"/> <!--doors-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<shell room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<warlord room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<leech room="6"/> <!--weapons-->
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_specialwep</shipIcon>
+			<shipIcon>icon_weaponboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<soldier room="0"/> <!--piloting-->
+			<medic room="4"/> <!--doors-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<guardian room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<warlord room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<ampere room="6"/> <!--weapons-->
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+</mod:findLike>
+
+<augments>
+	<aug name="AUTO_LOADER_LOW_SHIELD_LOCKED">
+		<locked/>
+		<function name="AUTO_COOLDOWN" value="0.20" />
+		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
+	</aug>
+	<aug name="AUTO_LOADER_LOW_SHIELD">
+		<function name="AUTO_COOLDOWN" value="0.20" />
+		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
+	</aug>
+</augments>

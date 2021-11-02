@@ -32,17 +32,17 @@
 		<text>You take notice of an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
 		<event>
 			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis. Interested in buying something as old as she is?"</text>
-			<choice hidden="true">
+			<choice>
 				<text>Sure.</text>
 				<event>
-					<text>You check their wares</text>
+					<text>"These are living history lad, you know. Be careful with them."</text>
 					<store>STORE_BALLISTIC_AUTOCANNON</store>
 				</event>
 			</choice>
-			<choice hidden="true">
-				<text>No, stick to a normal store.</text>
+			<choice>
+				<text>We'd rather see some up to date weapons.</text>
 				<event>
-					<text>You check their wares.</text>
+					<text>"If you insist. You're missing out, you know, these newfangled weapons just lack a certain something."</text>
 					<store>STORE_STANDARD</store>
 				</event>
 			</choice>
@@ -114,7 +114,7 @@
 					<item_modify>
 						<item type="missiles" min="-5" max="-5"/>
 					</item_modify>
-					<store>STORE_STANDARD_NO_AMMO</store>
+					<store>STORE_STANDARD</store>
 				</event>
 			</choice>
 			<choice>
@@ -737,6 +737,20 @@
 		</event>
 	</choice>
 	<choice>
+		<text>We can't help.</text>
+		<event>
+			<text>"We understand. Fly safe."</text>
+			<choice>
+				<text>Do something on board the ship.</text>
+				<event load = "STORAGE_CHECK_REAL"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
 		<text>If they're low on ammo they're an easy target, attack!</text>
 		<event>
 			<ship hostile = "true"/>
@@ -747,18 +761,6 @@
 			</choice>
 		</event>
 	</choice>
-	<choice>
-		<text>Say you cannot help and leave.</text>
-		<event>
-			<text>"We understand, fly safe."</event>
-			<choice>
-				<text>Do something onboard the ship.</text>
-				<event load="STORAGE_CHECK_REAL"/>
-			</choice>
-			<choice>
-				<text>Do nothing.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-</FTL>	
+</event>
+
+</FTL>
