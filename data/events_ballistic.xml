@@ -20,7 +20,7 @@
 		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
 	<text>You expect to find a well stocked Federation market at this Merchant's beacon, but instead, there's only a small station and one singular patrol ship. Hopefully there is enough to stock up on for your journey here.</text>
-	<ship load = "MU_GHOST_FED_BOMBER" hostile = "false"/>
+	<ship load = "GB_SHIP_FED_BOMBER_LOWAMMO" hostile = "false"/>
 	<choice>
 		<text>Visit the store.</text>
 		<event>
