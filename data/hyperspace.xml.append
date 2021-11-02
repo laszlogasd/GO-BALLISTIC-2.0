@@ -989,10 +989,10 @@
         <hiddenAug>SHIP_KESTREL</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crew>
-			<human room = "9"/>
-			<human room = "10"/>
-			<freemantis room = "5"/>
-			<separatist room = "2"/>
+			<human room = "5"/> <!--engines-->
+			<human room = "10"/> <!--weapons-->
+			<orchid room = "12"/> <!--cloaking-->
+			<energy room = "9"/> <!--piloting :)-->
 		</crew>
         <crewLimit>11</crewLimit>
     </mod-append:customShip>
@@ -1001,9 +1001,10 @@
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>11</crewLimit>
 		<crew>
-			<human room = "0"/>
-			<orchid room = "11"/>
-			<warlord room = "13"/>
+			<human room = "2"/> <!--airlock-->
+			<energy room = "12"/> <!--shields-->
+			<freemantis room = "0"/> <!--pilot-->
+			<separatist room = "13"/> <!--engines-->
 		</crew>
 	</mod-append:customShip>
 		
@@ -1028,41 +1029,7 @@
 			<separatist room = "5"/>
 		</crew>
 	</mod-append:customShip>
-	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_NORMAL">
-		<shipIcons>
-			<shipIcon>icon_threat</shipIcon>
-			<shipIcon>icon_specialwep</shipIcon>
-			<shipIcon>icon_weaponboost</shipIcon>
-		</shipIcons>
-		<crew>
-			<soldier room="0"/> <!--piloting-->
-			<human room="4"/> <!--doors-->
-			<orchid room="6"/> <!--weapons-->
-			<orchid room="12"/> <!--clonebay-->
-			<warlord room="15"/> <!--engines-->
-			<freemantis room="13"/> <!--empty-->
-			<freemantis room="11"/> <!--shields-->
-		</crew>
-		<noFuelStalemate/>
-	</mod-append:customShip>
-	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_CHALLENGE">
-		<shipIcons>
-			<shipIcon>icon_threat</shipIcon>
-			<shipIcon>icon_specialwep</shipIcon>
-			<shipIcon>icon_weaponboost</shipIcon>
-		</shipIcons>
-		<crew>
-			<soldier room="0"/> <!--piloting-->
-			<engineer room="4"/> <!--doors-->
-			<orchid room="6"/> <!--weapons-->
-			<chieftain room="12"/> <!--clonebay-->
-			<warlord room="15"/> <!--engines-->
-			<warlord room="13"/> <!--empty-->
-			<freemantis room="11"/> <!--shields-->
-		</crew>
-		<noFuelStalemate/>
-	</mod-append:customShip>
-	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_EXTREME">
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL">
 		<shipIcons>
 			<shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_specialwep</shipIcon>
@@ -1071,9 +1038,48 @@
 		<crew>
 			<human room="0"/> <!--piloting-->
 			<human room="4"/> <!--doors-->
-			<orchid room="6"/> <!--weapons-->
-			<warlord room="15"/> <!--engines-->
-			<freemantis room="11"/> <!--shields-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<shell room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<freemantis room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<leech room="6"/> <!--weapons-->
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_specialwep</shipIcon>
+			<shipIcon>icon_weaponboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<soldier room="0"/> <!--piloting-->
+			<human room="4"/> <!--doors-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<shell room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<warlord room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<leech room="6"/> <!--weapons-->
+		</crew>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+	<mod-append:customShip name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_specialwep</shipIcon>
+			<shipIcon>icon_weaponboost</shipIcon>
+		</shipIcons>
+		<crew>
+			<soldier room="0"/> <!--piloting-->
+			<medic room="4"/> <!--doors-->
+			<!--<orchid room="6"/>->> <!--weapons-->
+			<guardian room="12"/> <!--clonebay-->
+			<separatist room="15"/> <!--engines-->
+			<warlord room="13"/> <!--empty-->
+			<energy room="11"/> <!--shields-->
+			<ampere room="6"/> <!--weapons-->
 		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>

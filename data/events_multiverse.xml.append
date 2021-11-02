@@ -46,15 +46,15 @@
 
 <!--RENEGADE CRUISERS-->
 
-<ship name="SHIP_MTBOSS_BALLISTIC_C_NORMAL" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_NORMAL">
+<ship name="SHIP_MTBOSS_BALLISTIC_C_NORMAL" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL">
 	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
 	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
 </ship>
-<ship name="SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_CHALLENGE">
+<ship name="SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE">
 	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
 	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
 </ship>
-<ship name="SHIP_MTBOSS_BALLISTIC_C_EXTREME" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_EXTREME">
+<ship name="SHIP_MTBOSS_BALLISTIC_C_EXTREME" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME">
 	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
 	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
 </ship>
@@ -71,13 +71,15 @@
 	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME"/>
 </mod:findName>
 
+
+<!--note to CG: it's a kestrel cruiser not a federation cruiser smh-->
 <event name = "MV_TRAVELER_BOSS_BALLISTIC_C_NORMAL">
-	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
-	<ship load = "MT_BOSS_GB_R4_BALLISTIC_NORMAL" hostile = "false"/>
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_NORMAL" hostile = "false"/>
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -97,12 +99,12 @@
 </event>
 
 <event name = "MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE">
-	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
-	<ship load = "MT_BOSS_GB_R4_BALLISTIC_CHALLENGE" hostile = "false"/>
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" hostile = "false"/>
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -123,12 +125,12 @@
 </event>
 
 <event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME">
-	<text>From out of the tunnel comes a massive cruiser, of ancient Federation design! You assume this ship is one of the original Federation fleet, and it looks like its arsenal hasn't been updated for a while.</text>
-	<ship load = "MT_BOSS_GB_R4_BALLISTIC_EXTREME" hostile = "false"/>
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_EXTREME" hostile = "false"/>
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The Grizzled ex Federation Officer rubs his grizzled beard as he barks grizzled words to his grizzled crew to attack you. Their grizzled weapons pop out of the grizzled ship and begin charging... grizzlingly.</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>

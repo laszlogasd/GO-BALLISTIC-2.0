@@ -48,7 +48,7 @@ List of every weapon in each respective faction
 	<mod-append:name>GB_AC_1</mod-append:name>
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
-	<mod-append:name>GB_AC4</mod-append:name>		UNUSED
+	<mod-append:name>GB_AC_4</mod-append:name>		UNUSED
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>			UNUSED
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		
@@ -121,7 +121,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_1</mod-append:name>
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
-	<!--<mod-append:name>GB_AC4</mod-append:name>-->
+	<!--<mod-append:name>GB_AC_4</mod-append:name>-->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -144,7 +144,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_1</mod-append:name>
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
-	<!-- <mod-append:name>GB_AC4</mod-append:name> -->
+	<!-- <mod-append:name>GB_AC_4</mod-append:name> -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -158,6 +158,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_COIL_3</mod-append:name>
 	<mod-append:name>GB_MG</mod-append:name>
 	<mod-append:name>GB_HMG</mod-append:name>
+	<mod-append:name>GB_MV_LOOT</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
@@ -247,6 +248,12 @@ created from scratch using the components or techniques of them to create odd an
 	<name>GB_COMBAT_AC_3</name>
 	<name>GB_DEFENSE_AC</name>
 </blueprintList>
+
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BOSSLOOT">
+	<mod-append:name>GB_MG_LOOT</mod-append:name>
+</mod:findName>
+
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -379,7 +386,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_1</mod-append:name>
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
-	<!--<mod-append:name>GB_AC4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<!--<mod-append:name>GB_AC_4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
@@ -492,7 +499,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
     <name>GB_AC_1</name>
     <name>GB_AC_2</name>
     <name>GB_AC_3</name>
-    <!--<name>GB_AC4</name> -->
+    <!--<name>GB_AC_4</name> -->
     
     <!--<name>GB_RIFLED_CANNON</name> 
     <name>GB_BURST_CANNON_1</name>
@@ -598,7 +605,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 			SHIPS
 /////////////////////////////-->
 
-<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="mu_ghost_fed_bomber">
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="r4p_gb_fed_bomber_damaged">
 	<class>Damaged Federation Bomber</class>
 	<minSector>3</minSector>
 	<systemList>
@@ -711,7 +718,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<aug name="EX_SHIELD_RECHARGE" />
 </shipBlueprint>
 
-<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_NORMAL" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
 	<class>Renegade Cruiser</class>
 	<minSector>5</minSector>
 	<maxSector>8</maxSector>
@@ -739,7 +746,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
 </shipBlueprint>
 
-<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
 	<class>Renegade Cruiser</class>
 	<minSector>5</minSector>
 	<maxSector>8</maxSector>
@@ -767,7 +774,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
 </shipBlueprint>
 
-<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
 	<class>Renegade Cruiser</class>
 	<minSector>5</minSector>
 	<maxSector>8</maxSector>

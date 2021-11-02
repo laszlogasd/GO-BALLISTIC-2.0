@@ -1010,6 +1010,7 @@
 	<class>Kestrel Cruiser</class>
 	<name>The Falco</name>
 	<desc>A boring and outdated human vessel originally produced by the Federation. In its stock original configeration during the Federation-Mantis War.</desc>
+	<!--just a bunch of human crew-->
 	<systemList>
 		<artillery max="4" power="1" room="17" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 		<battery max="2" power="1" room="16" start="false" img="room_battery_8" />
@@ -1082,6 +1083,7 @@
 	<class>Kestrel Cruiser</class>
 	<name>Warhawk</name>
 	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
+	<!--human human orchid zoltan-->
 	<systemList>
 		<artillery max="3" power="1" room="8" start="false" weapon="ARTILLERY_MFK_1" img="room_artillery" />
 		<battery max="2" power="1" room="6" start="false" img="room_battery_15" />
@@ -1156,6 +1158,7 @@
 	<class>Kestrel Cruiser</class>
 	<name>The Martlet</name>
 	<desc>An old battlehardened Kestrel that is the embodiment that a good offense is a good defence.</desc>
+	<!--human free mantis zoltan separatist-->
 	<systemList>
 		<artillery power="1" room="18" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
 		<battery power="1" room="17" start="false" img="room_battery_13" />
@@ -1248,7 +1251,7 @@
 
 <augBlueprint name="ACH_MV_KESTREL">
 	<title>Ship Achievement</title>
-	<desc>The player defeated the kestrel MV cruiser.</desc>
+	<desc>The player defeated the GB kestrel MV cruiser.</desc>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
