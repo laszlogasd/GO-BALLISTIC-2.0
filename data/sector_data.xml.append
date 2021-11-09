@@ -14,7 +14,7 @@
 	</mod:findLike>
 	<mod-append:event name="GB_BALLISTIC_STORES" min="1" max="2"/>
 	<mod-append:event name="GB_GENERIC_EVENTS" min="1" max="2"/>
-</mod-findName>
+</mod:findName>
 
 <mod:findName type="sectorDescription" name="SECTOR_MILITIA"> <!--AUTOCANNONS-->
 	<mod:findLike type = "rarityList">

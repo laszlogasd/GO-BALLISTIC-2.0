@@ -14,6 +14,11 @@
 	<event load = "GB_FED_BOMBER_DISTRESS"/>
 </eventList>
 
+<eventList name = "GB_ITEMS">
+	<event load = "GB_FED_RESEARCH_RAIL"/>
+	<event load = "GB_MUSEUM_TOUR"/>
+</eventList>
+
 <event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
@@ -237,7 +242,6 @@
 		</event>
 	</choice>
 </event>
-
 
 <event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
@@ -758,6 +762,174 @@
 			<choice>
 				<text>Continue...</text>
 				<event load="MORALITY_UPDATE_GENERAL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="GB_FED_RESEARCH_RAIL">
+   <text>A Federation research station is sending out a request on Federation encrypted channels.</text>
+   <choice hidden="true">
+      <text>Contact them.</text>
+      <event>
+         <text>You transmit your ID to the outpost and contact them on encrypted frequencies. "Your codes are verified. Good to see you. We're a RnD facility tasked to improve the firepower of the Federation fleet and we need some field trials to be performed to work out the kinks. There's a reward in for it upon a successful egress after dispatching your target. What do you say Renegade?"</text>
+         <choice hidden="true">
+            <text>Agree to test the weapon.</text>
+            <event>
+               <text>"Excellent. We have reports of a Rebel forward scout near by for you to engage. We will send you all the supplies you need for your task. Equip the prototype Railgun and head to the designated target. Good luck!"</text>
+               <quest event="GB_RAILGUN_FIELD_TEST" />
+               <item_modify>
+                  <item type="fuel" min="2" max="2" />
+                  <item type="missiles" min="5" max="5" />
+               </item_modify>
+               <weapon name="GB_RAIL_1" />
+            </event>
+         </choice>
+         <choice hidden="true">
+            <text>Refuse.</text>
+            <event>
+               <text>"In that case farewell".</text>
+               <choice hidden="true">
+                  <text>Do something onboard the ship.</text>
+                  <event load="STORAGE_CHECK" />
+               </choice>
+               <choice hidden="true">
+                  <text>Do nothing.</text>
+                  <event />
+               </choice>
+            </event>
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Ignore the station.</text>
+      <event>
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event>
+               <text>You aren't interested in the station. You ignore them.</text>
+               <choice hidden="true">
+                  <text>Do something onboard the ship.</text>
+                  <event load="STORAGE_CHECK" />
+               </choice>
+               <choice hidden="true">
+                  <text>Do nothing.</text>
+                  <event />
+               </choice>
+            </event>
+         </choice>
+      </event>
+   </choice>
+</event>
+
+<ship name="SHIP_TESTING_RAILGUN" auto_blueprint="LIST_SHIPS_REBEL_FIGHT">
+	<destroyed load="GB_RAIL_TEST_DESTROYED_REBEL"/>
+	<deadCrew load="DEAD_CREW_REBEL"/>
+	<triggeredEvent event="GB_RAIL_TEST_REBEL_ESCAPE" time="60" thisFight="true" clearOnJump="true">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="default">
+			<warning time="10.0" flash="true"/>
+			<tooltip>The Rebel will escape as soon as this timer runs out.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+</ship>
+
+<event name = "GB_RAILGUN_FIELD_TEST">
+	<text>This is where the station reported rebel activity, and sure enough, a scout comes in to intercept you almost immediately. Time to show them who's boss.</text>
+	<ship load = "SHIP_TESTING_RAILGUN" hostile = "true"/>
+	<choice>
+		<text>Continue...</text>
+		<event load = "COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name = "GB_RAIL_TEST_DESTROYED_REBEL">
+	<text>The rebel ship has been eliminated, thanks to the prototype tech. You scrap the ship.</text>
+	<autoReward level = "HIGH">standard</autoReward>
+</event>
+
+<event name="GB_RAIL_TEST_REBEL_ESCAPE">
+	<text>The rebels jump away, and you sense you lost valuable time on the fleet.</text>
+	<instantEscape/>
+	<modifyPursuit amount = "1"/>
+	<choice hidden = "true" req = "GB_RAIL_1" lvl="1">
+		<text>Continue...</text>
+		<event>
+			<text>The commander of the station is unimpressed, and takes the prototype weapon away with him.</text>
+			<remove name = "GB_RAIL_1"/>
+		</event>
+	</choice>
+	<choice hidden = "true" req = "GB_RAIL_1" lvl="0">
+		<text>Continue...</text>
+		<event/>
+	</choice>
+</event>
+
+<event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here--
+	<text>This planet hosts a large human settlement, covering a large portion of the surface. Standing tall amid the city is a grand building, surrounded by fountains and seemingly the centre of attention.</text>
+	<choice hidden = "true">
+		<text>Land and look around the building.</text>
+		<event><!--Can I can I use grizzled here?--
+			<text>A grizzled Federation officer is guarding the front of the complex, allowing select members of the public to pass through into the halls beyond. You and your crew approach, and the officer stands aside to let you pass.</text>
+			<choice hidden = "true">
+				<text>Continue...</text>
+				<event>
+					<text>Entering the main corridor, you realise that this is a museum, built to contain old Federation memorabilia. A curator scuttles up to you, and, seeing your insignia, asks if they can provide anything to assist with your mission - for a price.</text>
+					<choice hidden = "true">
+						<text>Purchase an old Federation weapon.</text>
+						<event>
+							<text>"An Autocannon, sir? Cheap, and hastily assembled, yet excellent at suppressing fire? A fine choice."</text>
+							<weapon name = "GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"/>							
+							<item_modify>
+								<item type="scrap" min="-10" max="-35"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden = "true">
+						<text>Purchase an old Separatist weapon.</text>
+						<event>
+							<text>"A Coilgun, sir? A weapon for the patient. Good taste, they're fine weapons."</text>
+							<weapon name = "GB_COILGUNS"/>							
+							<item_modify>
+								<item type="scrap" min="-30" max="-45"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden = "true">
+						<text>Purchase an old Harmony weapon.</text>
+						<event>
+							<text>"A Gauss rifle, sir? Of course, of course. An acquired taste, for certain, but deadly in the right hands."</text>
+							<weapon name = "GB_GAUSS"/>							
+							<item_modify>
+								<item type="scrap" min="-30" max="-45"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden = "true" req = "LIST_CREW_FEDERATION_ELITE">
+						<text>(Elite Crew) Do you have anything... newer?</text>
+						<event>
+							<text>"Well, funny you should ask that, sir. We do keep some more... experimental armaments in our back rooms."</text>
+							<weapon name = "GB_RAIL"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-55"/>
+							</item_modify>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the city.</text>
+		<event>
+			<text>Whilst it might be quite the sight, you don't have time to waste on tourism.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
 			</choice>
 		</event>
 	</choice>

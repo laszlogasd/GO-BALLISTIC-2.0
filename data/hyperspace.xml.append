@@ -972,6 +972,15 @@
 	<mod:findLike type ="shipOrder">
 	<!--PAGE 1-->
 	<mod-append:ship>PLAYER_SHIP_R4_GB_KESTREL</mod-append:ship>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
 	</mod:findLike>
 
     <mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true" />
@@ -1056,7 +1065,7 @@
 		<crew>
 			<soldier room="0"/> <!--piloting-->
 			<human room="4"/> <!--doors-->
-			<!--<orchid room="6"/>->> <!--weapons-->
+			<!--<orchid room="6"/> <!--weapons-->
 			<shell room="12"/> <!--clonebay-->
 			<separatist room="15"/> <!--engines-->
 			<warlord room="13"/> <!--empty-->
@@ -1074,7 +1083,7 @@
 		<crew>
 			<soldier room="0"/> <!--piloting-->
 			<medic room="4"/> <!--doors-->
-			<!--<orchid room="6"/>->> <!--weapons-->
+			<!--<orchid room="6"/> <!--weapons-->
 			<guardian room="12"/> <!--clonebay-->
 			<separatist room="15"/> <!--engines-->
 			<warlord room="13"/> <!--empty-->
@@ -1082,7 +1091,7 @@
 			<ampere room="6"/> <!--weapons-->
 		</crew>
 		<noFuelStalemate/>
-	</mod-append:customShip>
+	</mod-append:customShip>--
 </mod:findLike>
 
 <augments>

@@ -333,7 +333,46 @@
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
 	<mod-append:choice hidden="true" req="ACH_MV_BALLISTIC" lvl="1" blue="false">
-		<text>Ballistic Cruiser</text>
-		<event load="OPTION_INVALID"/>
+		<text>Antique Kestrel Cruiser</text>
+		<event load="OPTION_INVALID" />
 	</mod-append:choice>
 </mod:findName>
+
+<mod:findName type="eventList" name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST">
+	<mod-append:event name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_BALLISTIC" />
+</mod:findName>
+
+<!--called _BALLISTIC to preserve compatibility-->
+<event name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_BALLISTIC">
+	<text>You check what ships are available to be summoned currently. Summoning an MV boss will take 7{.</text>
+	<choice hidden="true">
+		<text>Kestrel B - Drops Light Charger</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_KESTREL_B_CHALLENGE"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Federation B - Drops 'Pharaoh' Mine Launcher</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_FED_B_CHALLENGE"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Antique Kestrel C - Drops 'Spray and Pray' Machinegun</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE"/>
+		</event>
+	</choice>
+</event>
