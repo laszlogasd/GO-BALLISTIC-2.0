@@ -1016,7 +1016,38 @@
 			<separatist room = "13"/> <!--engines-->
 		</crew>
 	</mod-append:customShip>
-		
+	
+	<!--SHIP UNLOCKS-->
+	
+	<mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true">
+		<unlock variant="a" silent="false">
+			<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_KESTREL</ship>
+				<ship>PLAYER_SHIP_KESTREL_2</ship>
+				<ship>PLAYER_SHIP_KESTREL_3</ship>
+			</otherUnlocks>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="b" silent="true">
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL</shipReq>
+            <value>5</value>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="c" silent="true">
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL_2</shipReq>
+            <value>5</value>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="c" silent="true">
+			<type>2</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL</shipReq>
+		<silent>true</silent>
+		</unlock>
+	</mod-append:ship>
+	
 	<!--ENEMY SHIPS-->
 	
 	<mod-append:customShip name = "GB_R4_MR_FED_LIGHT_CRUISER_1">
