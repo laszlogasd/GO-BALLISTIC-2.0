@@ -865,11 +865,11 @@
 	</choice>
 </event>
 
-<event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here--
+<event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here-->
 	<text>This planet hosts a large human settlement, covering a large portion of the surface. Standing tall amid the city is a grand building, surrounded by fountains and seemingly the centre of attention.</text>
 	<choice hidden = "true">
 		<text>Land and look around the building.</text>
-		<event><!--Can I can I use grizzled here?--
+		<event><!--Can I can I use grizzled here?-->
 			<text>A grizzled Federation officer is guarding the front of the complex, allowing select members of the public to pass through into the halls beyond. You and your crew approach, and the officer stands aside to let you pass.</text>
 			<choice hidden = "true">
 				<text>Continue...</text>

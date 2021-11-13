@@ -425,6 +425,157 @@ created from scratch using the components or techniques of them to create odd an
 <mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
 
 </mod:findName>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			SEPPY SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<blueprintList name = "LIST_WEAPONS_SEPARATIST">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+	
+	<name>GB_COIL_1_ENEMY</name>
+	<name>GB_COIL_2_ENEMY</name>
+	<name>GB_COIL_3_ENEMY</name>
+</blueprintList>
+
+<!--SHIPS WITH NEW WEAPON LIST-->
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST"/>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NOCREW">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--OUTRIDER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--FIGHTER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER_NO2">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--RIGGER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER_NO2">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--ENFORCER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--BOMBER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--PROTECTOR-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--DROPSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP_NO2">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--MOTHERSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP_NO2" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRANSPORT-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT">
+	<weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT_NO2">
+	<weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRAPPER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<weapon name="LIST_WEAPONS_TRAPPER" />
+		<weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<weapon name="LIST_WEAPONS_TRAPPER" />
+		<weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
