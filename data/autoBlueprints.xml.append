@@ -387,6 +387,10 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
 	<!--<mod-append:name>GB_AC_4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<mod-append:name>GB_AC_1_E</mod-append:name>
+	<mod-append:name>GB_AC_2_E</mod-append:name>
+	<mod-append:name>GB_AC_3_E</mod-append:name>
+	<!--<mod-append:name>GB_AC_4_E</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
