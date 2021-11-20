@@ -1129,12 +1129,12 @@
 	<aug name="AUTO_LOADER_LOW_SHIELD_LOCKED">
 		<locked/>
 		<function name="AUTO_COOLDOWN" value="0.20" />
-		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="SHIELD_RECHARGE" value="-0.4" />
 		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
 	</aug>
 	<aug name="AUTO_LOADER_LOW_SHIELD">
 		<function name="AUTO_COOLDOWN" value="0.20" />
-		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="SHIELD_RECHARGE" value="-0.4" />
 		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
 	</aug>
 </augments>

@@ -1,11 +1,12 @@
 <FTL>
 
-<eventList name = "GB_BALLISTIC_STORES">
-	<event load = "GB_OLD_FED_STORE_AUTOCANNONS"/>
-	<event load = "GB_ASTEROID_AUTOCANNON_STORE"/>
+<eventList name = "GB_BALLISTIC_STORES"> <!--NOW UNUSED, HERE FOR REFERENCE-->
+	<event load = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS"/>
+	<event load = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE"/>
 	<event load = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
 	<event load = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
-	<event load = "GB_FED_AQUILA_STORE"/>
+	<event load = "GB_STOREEVENT_FED_AQUILA_STORE"/>
+	<event load = "GB_STOREEVENT_SEPARATIST_NANO"/>
 </eventList>
 
 <eventList name = "GB_GENERIC_EVENTS">
@@ -19,7 +20,7 @@
 	<event load = "GB_MUSEUM_TOUR"/>
 </eventList>
 
-<event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
+<event name = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -57,7 +58,7 @@
 
 <!-- <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/> PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
 
-<event name="GB_FED_AQUILA_STORE" unique="true"> <!--- trimmed version of the Deserter event --> 
+<event name="GB_STOREEVENT_FED_AQUILA_STORE" unique="true"> <!--- trimmed version of the Deserter event --> 
 	<text>A market has set up operations on a side of a heavily modified decommissioned fleetship of old Federation make. Most likely one of the early batches of Aquila-class Battlecarriers that were common during the onset of the Federation-Mantis War; now sparsely sighted outside of planetary militias, Independents, and anyone else that might be interested in a well protected ship for long range hauls in the less fortunate systems. Worth taking a look?</text>
 	<choice hidden="true">
 		<text>Request docking access.</text>
@@ -102,7 +103,7 @@
 	</choice>
 </event>
 
-<event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
+<event name = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -307,6 +308,97 @@
 			<choice>
 				<text>Do nothing.</text>
 				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="GB_STOREEVENT_SEPARATIST_NANO" unique="true">
+	<beaconType id="map_icon_store_separatist" global="false">
+		<color r="215" g="255" b="200" a="1"/>
+	</beaconType>
+	<text>To your surprise there is indeed a Separatist ship here transmitting the trade beacon. Though it doesn't appear that anythings amiss as the Separatist ship simply drifts around silently near you. You attempt to hail but you do not hear anything besides the crackle of the radio communicator and a faint buzzing sound. Preliminary scans does not answer any questions either as the ship despite being fully functional and responsive is devoid of any lifesigns.</text>
+	<ship load="SHIP_SEPERATIST_NANOCLOUD" hostile="false" />
+	<choice hidden="true">
+		<text>Attempt to salvage the ship</text>
+		<event>
+			<text>The mystery of what happened to the crew of this trader doesn't matter to you. The thoughts of what may be stowed onboard in its cargo holds and the riches that may be left inside is alluring... but before you can board the ship it begins taking defensive patterns and begins to power up its weapons!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Try to communicate and offer to trade.</text>
+		<event>
+			<text>You attempt to hail again but all you can pick up is the same buzzing sound. For no harm of trying you ask if its willing to trade.</text>
+			<choice hidden="true">
+				<text>Continue</text>
+				<event>
+					<text>You hear a faint buzzing sound in reply and your terminal recieves access to the Separatists digital kiosk to trade or buy from. It seems they're open for business.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>The ship opens a digital interface, and displays its wares for you to browse.</text>
+							<store>STORE_BALLISTIC_STANDARD_COILGUN</store>
+					</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_SLUG">
+		<text>(Slug Crew) Try to detect life signs.</text>
+		<event>
+			<text>Your Slug tries to sense some form of intelligence aboard the enemy ship. They detect faint signs of potential life, but it's near impossible for them to tell.</text>
+			<choice hidden="true">
+				<text>Attempt to salvage the ship</text>
+				<event>
+				<text>The mystery of what happened to the crew of this trader doesn't matter to you. The thoughts of what may be stowed onboard in its cargo holds and the riches that may be left inside is alluring... but before you can board the ship it begins taking defensive patterns and begins to power up its weapons!</text>
+					<ship hostile="true" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK" />
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Ignore the ship.</text>
+				<event>
+					<text>You've lost interest in the mystery of what happened with the Separatist Trader, and prepare to move on.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK" />
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="separatist"> <!-- I didn't finish this, I want this to be similar to the Crystal merchant event, where after communicating with your Separatist you are able to trade easily with the Merchant and have a random reward-->
+		<text>(Separatist Crew) Ask your Separatist about the strange phenomena.</text>
+		<event>
+			<text>Your Separatist explains that the ship is indeed manned, it's just the Separatist had entered a nanoform, most likely as a precaution. They contact the vessel, and, recognising a friendly face, offer a small reward and open a store.</text>
+			<autoReward level = "LOW">standard</autoReward>
+			<store>GB_STORE_SEPARATIST</store>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You have no further desire to interact further with the strange ship.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event />
 			</choice>
 		</event>
 	</choice>

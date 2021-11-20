@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type = "eventList" name = "STORELIST_FED">
+	<mod-append event name = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_FED_AQUILA_STORE"/>
+	<mod-append event name = "GB_STOREEVENT_SEPARATIST_NANO"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_CIVILIAN">
+	<mod-append event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_SEPARATIST_NANO"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_MILITIA">
+	<mod-append event name = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_SEPARATIST_NANO"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_SEPARATIST">
+	<mod-append event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_SEPARATIST_NANO"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_REBEL">
+	<mod-append event name = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_AUTO">
+	<mod-append event name = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "STORELIST_ABANDONED">
+	<mod-append event name = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE"/>
+	<mod-append event name = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
+	<mod-append event name = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS"/>
+</mod:findName>
