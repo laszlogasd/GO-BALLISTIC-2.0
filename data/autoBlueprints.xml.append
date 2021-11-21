@@ -521,7 +521,7 @@ created from scratch using the components or techniques of them to create odd an
 <mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER">
 	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
 </mod:findName>
-<<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER_NO2">
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER_NO2">
 	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
 </mod:findName>
 
@@ -559,24 +559,24 @@ created from scratch using the components or techniques of them to create odd an
 
 <!--TRANSPORT-->
 <mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT">
-	<weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
 </mod:findName>
 
 <mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT_NO2">
-	<weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
 </mod:findName>
 
 <!--TRAPPER-->
 <mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER">
 	<mod-overwrite:weaponList missiles="10" count="2">
-		<weapon name="LIST_WEAPONS_TRAPPER" />
-		<weapon name="LIST_WEAPONS_SEPARATIST" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
 	</mod-overwrite:weaponList>
 </mod:findName>
 <mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER_NO2">
 	<mod-overwrite:weaponList missiles="10" count="2">
-		<weapon name="LIST_WEAPONS_TRAPPER" />
-		<weapon name="LIST_WEAPONS_SEPARATIST" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
 	</mod-overwrite:weaponList>
 </mod:findName>
 
