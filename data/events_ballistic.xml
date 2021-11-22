@@ -1,11 +1,12 @@
 <FTL>
 
-<eventList name = "GB_BALLISTIC_STORES">
-	<event load = "GB_OLD_FED_STORE_AUTOCANNONS"/>
-	<event load = "GB_ASTEROID_AUTOCANNON_STORE"/>
+<eventList name = "GB_BALLISTIC_STORES"> <!--NOW UNUSED, HERE FOR REFERENCE-->
+	<event load = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS"/>
+	<event load = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE"/>
 	<event load = "GB_STOREEVENT_ALIEN_AUTOCANNONS"/>
 	<event load = "GB_STOREEVENT_ENTHUSIAST_CANNONS"/>
-	<event load = "GB_FED_AQUILA_STORE"/>
+	<event load = "GB_STOREEVENT_FED_AQUILA_STORE"/>
+	<event load = "GB_STOREEVENT_SEPARATIST_NANO"/>
 </eventList>
 
 <eventList name = "GB_GENERIC_EVENTS">
@@ -14,7 +15,12 @@
 	<event load = "GB_FED_BOMBER_DISTRESS"/>
 </eventList>
 
-<event name = "GB_OLD_FED_STORE_AUTOCANNONS" unique = "true">
+<eventList name = "GB_ITEMS">
+	<event load = "GB_FED_RESEARCH_RAIL"/>
+	<event load = "GB_MUSEUM_TOUR"/>
+</eventList>
+
+<event name = "GB_STOREEVENT_OLD_FED_STORE_AUTOCANNONS" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -32,57 +38,72 @@
 		<text>You take notice of an old Federation vessel outfitted for transport duty docked at the station. Worth investigating?</text>
 		<event>
 			<text>"Yep, that's my old girl. Fancy a bit of history? Me and the boys kept them in running shape since the war with the Mantis. Interested in buying something as old as she is?"</text>
-			<store>STORE_BALLISTIC_AUTOCANNON</store>
+			<choice>
+				<text>Sure.</text>
+				<event>
+					<text>"These are living history lad, you know. Be careful with them."</text>
+					<store>STORE_BALLISTIC_AUTOCANNON</store>
+				</event>
+			</choice>
+			<choice>
+				<text>We'd rather see some up to date weapons.</text>
+				<event>
+					<text>"If you insist. You're missing out, you know, these newfangled weapons just lack a certain something."</text>
+					<store>STORE_STANDARD</store>
+				</event>
+			</choice>
 		</event>
 	</choice>
 </event>
 
 <!-- <event name = "GB_OLD_ALLIANCE_STORE" unique = "true"/> PROBABLY THE BALLISTIC SHIP UNLOCK. ALSO UNFINISHED-->
 
-<event name="GB_FED_AQUILA_STORE" unique="true"> <!--- trimmed version of the Deserter event --> 
-   <text>A market has set up operations on a side of a heavily modified decommissioned fleetship of old Federation make. Most likely one of the early batches of Aquila-class Battlecarriers that were common during the onset of the Federation-Mantis War; now sparsely sighted outside of planetary militias, Independents, and anyone else that might be interested in a well protected ship for long range hauls in the less fortunate systems. Worth taking a look?</text>
-   <choice hidden="true">
-      <text>Request docking access.</text>
-      <event>
-         <text>"Request received and granted, you are ready to enter and dock at landing pad... 5. Welcome to our humble store." Your ship approaches and docks at the designated internal landing pad where you disembark your ship and walk towards the store front.</text>
-         <choice hidden="true">
-            <text>Shop.</text>
-			<store>STORE_STANDARD</store>
-         </choice>
-         <choice hidden="true">
-            <text>Inquire about the strange choice of venue.</text>
-            <event>
-               <text>The operator of this store front coughs to clear his throat. "This thing? Just a demilitarized Aquila. Converted for use as a long range hauler. Ample shields and firepower to keep any trigger happy Pirate off your back. Are you looking to trade, or are you just curious? We have some old hand-me-downs in surplus if you’re interested.”</text>
-               <choice hidden="true">
-                  <text>Nah, just access the regular store.</text>
-				  <store>STORE_STANDARD</store>
-               </choice>
-               <choice hidden="true">
-                  <text>Sure, let's buy some of their old surplus.</text>
-                  <store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
-               </choice>
-            </event>
-         </choice>
-      </event>
-   </choice>
-   <choice hidden="true">
-      <text>We don't need to go shopping right now.</text>
-      <event>
-         <text>Both you and the fleetship remain at this beacon while your FTL drive charges. </text>
-         <choice hidden="true">
-            <text>Do something onboard the ship.</text>
-            <event load="STORAGE_CHECK" />
-         </choice>
-         <choice hidden="true">
-            <text>Do nothing.</text>
-            <event />
-         </choice>
-      </event>
-   </choice>
+<event name="GB_STOREEVENT_FED_AQUILA_STORE" unique="true"> <!--- trimmed version of the Deserter event -->
+	<text>A market has set up operations on a side of a heavily modified decommissioned fleetship of old Federation make. Most likely one of the early batches of Aquila-class Battlecarriers that were common during the onset of the Federation-Mantis War; now sparsely sighted outside of planetary militias, Independents, and anyone else that might be interested in a well protected ship for long range hauls in the less fortunate systems. Worth taking a look?</text>
+	<choice hidden="true">
+		<text>Request docking access.</text>
+		<event>
+			<text>"Request received and granted, you are ready to enter and dock at landing pad... 5. Welcome to our humble store." Your ship approaches and docks at the designated internal landing pad where you disembark your ship and walk towards the store front.</text>
+			<choice hidden="true">
+				<text>Shop.</text>
+				<event load="STORE_LOAD_GENERIC"/>
+			</choice>
+			<choice hidden="true">
+				<text>Inquire about the strange choice of venue.</text>
+				<event>
+				<text>The operator of this store front coughs to clear his throat. "This thing? Just a demilitarized Aquila. Converted for use as a long range hauler. Ample shields and firepower to keep any trigger happy Pirate off your back. Are you looking to trade, or are you just curious? We have some old hand-me-downs in surplus if you’re interested.”</text>
+					<choice hidden="true">
+						<text>Nah, just access the regular store.</text>
+						<event load="STORE_LOAD_GENERIC"/>
+					</choice>
+					<choice hidden="true">
+						<text>Sure, let's buy some of their old surplus.</text>
+						<event>
+							<text>You continue on to the old store.</text>
+							<store>STORE_BALLISTIC_STANDARD_AUTOCANNON</store>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>We don't need to go shopping right now.</text>
+		<event>
+			<text>Both you and the fleetship remain at this beacon while your FTL drive charges. </text>
+			<choice hidden="true">
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+			<choice hidden="true">
+				<text>Do nothing.</text>
+				<event />
+			</choice>
+		</event>
+	</choice>
 </event>
 
-
-<event name = "GB_ASTEROID_AUTOCANNON_STORE" unique = "true">
+<event name = "GB_STOREEVENT_ASTEROID_AUTOCANNON_STORE" unique = "true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_federation" global="false">
 		<color r="215" g="255" b="200" a="1"/>
@@ -106,14 +127,13 @@
 				<text>Enquire about the ammo dependency.</text>
 				<event>
 					<text>"These old things are running the foolproof classic load out of Autocannons and Bombs. Works perfectly fine up until you operate a bit further than a stone toss away from the supply lines. Hard getting supplies this far out without being overt in this enemy sector. You're more than free to take some off our hands in our inventory. No use keeping cannons that can't fire."</text>
-					<store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
 					<choice>
                         <text>Agree to trade for a reduced cost. [-2 }]</text>
                         <event>
                             <item_modify>
                                 <item type="missiles" min="-2" max="-2"/>
                             </item_modify>
-                            <store>STORE_BALLISTIC_AUTOCANNON_BOMB</store>
+                            <store>STORE_BALLISTIC_AUTOCANNON_BOMB_NO_AMMO</store>
                         </event>
                     </choice>
                     <choice>
@@ -122,7 +142,7 @@
                             <item_modify>
                                 <item type="missiles" min="-5" max="-5"/>
                             </item_modify>
-                            <store>STORE_STANDARD</store>
+                            <store>STORE_STANDARD_NO_AMMO</store>
                         </event>
                     </choice>
                     <choice>
@@ -131,7 +151,8 @@
                             <text>You are unable to help and apologise. You wish them luck and promise to send word of their situation the next time you come across a Federation contact. They are grateful, but you can't shake the feeling that it wasn't enough.</text>
                         </event>
                     </choice>
-			</choice>		
+				</event>
+			</choice>
 			<choice>
 				<text>If they're low on ammo than they are an easy target, attack!</text>
 				<event>
@@ -203,8 +224,20 @@
 			<choice hidden="true">
 				<text>Shop.</text>
 				<event>
-					<text>"I taking these weapons from Engi supplies in big war. You want see?"</text>
-					<store>STORE_BALLISTIC_STANDARD_GAUSS</store>
+					<text>"Engi very generous. I came to say hello to Federation Engi but he couldn't stay around. Gave me many things if I did not follow.  Want to see what they gave?"</text>
+					<store>STORE_ENGI</store>
+				</event>
+				<event>
+					<text>"I saw a Federation officer man not long ago! Must be very high rank for his ship is painted entirely orange! I had ran onboard when he docked and he screamed of joy when he saw me onboard with him! He gave me many things if I went back to where I come. Very generous Federation man. Want to see his gifts?</text>
+					<store>STORE_REBEL</store>
+				</event>
+				<event>
+					<text>"Zoltan left lots of thingies back at home. Many shiny but mostly junk. But here is some things Federation man might want!"</text>
+					<store>STORE_ZOLTAN</store>
+				</event>
+				<event>
+					<text>"Coalition, very strange. Act very big and tough. But when I come onboard there was only just a single slug! Now act very scared and gave me everything, was good tradings. Now you want trade? </text>
+					<store>STORE_COALITION</store>
 				</event>
 			</choice>
 		</event>
@@ -214,7 +247,7 @@
 <event name="GB_STOREEVENT_ENTHUSIAST_CANNONS" unique="true">
 	<preventQuest/>
 	<beaconType id="map_icon_store_generic" global="false">
-		<color r="215" g="175" b="175" a="1"/>
+		<color r="215" g="255" b="200" a="1"/>
 	</beaconType>
 	<text>As soon as you jump in, you are immediately hailed repeatedly by the Miltiaman. "Guests! Come in and visit my brand new Ballistics Emporium! We sell Cannons! Missiles! And uh... other things, because no one buys the god damn Cannons and Missiles! But please, buy my Cannons!"</text>
 	<ship load="GB_MILITIA_STATION" hostile="false"/>
@@ -280,6 +313,97 @@
 	</choice>
 </event>
 
+<event name="GB_STOREEVENT_SEPARATIST_NANO" unique="true">
+	<beaconType id="map_icon_store_separatist" global="false">
+		<color r="215" g="255" b="200" a="1"/>
+	</beaconType>
+	<text>To your surprise there is indeed a Separatist ship here transmitting the trade beacon. Though it doesn't appear that anythings amiss as the Separatist ship simply drifts around silently near you. You attempt to hail but you do not hear anything besides the crackle of the radio communicator and a faint buzzing sound. Preliminary scans does not answer any questions either as the ship despite being fully functional and responsive is devoid of any lifesigns.</text>
+	<ship load="SHIP_SEPERATIST_NANOCLOUD" hostile="false" />
+	<choice hidden="true">
+		<text>Attempt to salvage the ship</text>
+		<event>
+			<text>The mystery of what happened to the crew of this trader doesn't matter to you. The thoughts of what may be stowed onboard in its cargo holds and the riches that may be left inside is alluring... but before you can board the ship it begins taking defensive patterns and begins to power up its weapons!</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK" />
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Try to communicate and offer to trade.</text>
+		<event>
+			<text>You attempt to hail again but all you can pick up is the same buzzing sound. For no harm of trying you ask if its willing to trade.</text>
+			<choice hidden="true">
+				<text>Continue</text>
+				<event>
+					<text>You hear a faint buzzing sound in reply and your terminal recieves access to the Separatists digital kiosk to trade or buy from. It seems they're open for business.</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>The ship opens a digital interface, and displays its wares for you to browse.</text>
+							<store>STORE_BALLISTIC_STANDARD_COILGUN</store>
+					</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIST_CREW_SLUG">
+		<text>(Slug Crew) Try to detect life signs.</text>
+		<event>
+			<text>Your Slug tries to sense some form of intelligence aboard the enemy ship. They detect faint signs of potential life, but it's near impossible for them to tell.</text>
+			<choice hidden="true">
+				<text>Attempt to salvage the ship</text>
+				<event>
+				<text>The mystery of what happened to the crew of this trader doesn't matter to you. The thoughts of what may be stowed onboard in its cargo holds and the riches that may be left inside is alluring... but before you can board the ship it begins taking defensive patterns and begins to power up its weapons!</text>
+					<ship hostile="true" />
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK" />
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Ignore the ship.</text>
+				<event>
+					<text>You've lost interest in the mystery of what happened with the Separatist Trader, and prepare to move on.</text>
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK" />
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event />
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="separatist"> <!-- I didn't finish this, I want this to be similar to the Crystal merchant event, where after communicating with your Separatist you are able to trade easily with the Merchant and have a random reward-->
+		<text>(Separatist Crew) Ask your Separatist about the strange phenomena.</text>
+		<event>
+			<text>Your Separatist explains that the ship is indeed manned, it's just the Separatist had entered a nanoform, most likely as a precaution. They contact the vessel, and, recognising a friendly face, offer a small reward and open a store.</text>
+			<autoReward level = "LOW">standard</autoReward>
+			<store>STORE_BALLISTIC_STANDARD_COILGUN</store>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the ship.</text>
+		<event>
+			<text>You have no further desire to interact further with the strange ship.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK" />
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event />
+			</choice>
+		</event>
+	</choice>
+</event>
+
 <event name="GB_CARAVAN_ABANDONED" unique="true">
    <text>You arrive to find what was once a supply caravan in a debris field; most likely victims of Pirates. There is no response to your hails.</text>
    <choice hidden="true">
@@ -323,7 +447,7 @@
             <event load="GB_CARAVAN_ABANDONED_ESCORT_DELAYED" />
          </choice>
       </event>
-   </choice>   
+   </choice>
    <choice hidden="true" req="SCRAP_COLLECTOR">
       <text>(Scrap Recovery Arm) Attempt to recover additional salvage.</text>
       <event>
@@ -384,7 +508,7 @@
    </choice>
 </event>
 
-<eventList name="GB_CARAVAN_ABANDONED_ESCORT">
+<eventList name="GB_CARAVAN_ABANDONED_ESCORT"> <!-- LIKE JESUS HOW MANY EVENT OUTCOMES-->
 	<event name = "GB_CARAVAN_ABANDONED_ESCORT_GOOD"/>
 	<event name = "GB_CARAVAN_ABANDONED_ESCORT_BAD"/>
 	<event name = "GB_CARAVAN_ABANDONED_ESCORT_CREW"/>
@@ -403,7 +527,7 @@
          </choice>
       </event>
    </choice>
-   <choice hidden="true">
+   <choice hidden="true" req = "slug">
       <text>(Slug Crew) When docking with the escort, your Slug sensed something.</text>
       <event>
          <text>You heed your Slug's advice and follow their directions to where the lifesource is, where you find a man hunched over a weapon console. Although not in as severe a condition as initially expected, but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
@@ -545,7 +669,7 @@
    <text>The cause of the outcome of the engagement has been made clear once you boarded the vessel. It seems the escorts were still operating a few quaint Autocannons and had ran out of ammunition during the fight. Upon examining the weapon you discover, it is still in functional order, albeit dry on ammunition, and is ready to be installed!</text>
    <autoReward level="RANDOM">scrap_only</autoReward>
    <weapon name="GB_CARAVAN_REWARD" />
-   <choice hidden="true">
+   <choice hidden="true" req = "slug">
       <text>(Slug Crew) When docking with the escort your slug senses something.</text>
       <event>
          <text>You heed your slugs advice and follow their directions to where the lifesource is. Where you find a man hunched over a weapon console. Although not in as severe a condition as initially expected but any longer and they would've most likely not made it. They sincerely thank you for saving them when you did and offer to join your crew. "I was a gunnery officer aboard our ship, consider myself somewhat of a crack shot too 'till I we began running dry towards the end of our caravans journey. Now I wish to pick up where I left off and make the universe a safer place from these raiders".</text>
@@ -603,7 +727,7 @@
 
 <event name = "GB_MILITIA_ESCORT">
 	<distressBeacon/>
-	<ship load = "GB_MILITIA_ESCORT" hostile = "false"/>
+	<ship load = "SHIP_GB_MILITIA_ESCORT" hostile = "false"/>
 	<text>The source of the distress beacon is emanating from a small Militia Escort. "Captain! We're very low on fuel and need some repairs desperately. Could you possibly take us to the nearest repair platform?"</text>
 	<choice>
 		<text>Accept.</text>
@@ -709,6 +833,20 @@
 		</event>
 	</choice>
 	<choice>
+		<text>We can't help.</text>
+		<event>
+			<text>"We understand. Fly safe."</text>
+			<choice>
+				<text>Do something on board the ship.</text>
+				<event load = "STORAGE_CHECK_REAL"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
 		<text>If they're low on ammo they're an easy target, attack!</text>
 		<event>
 			<ship hostile = "true"/>
@@ -721,4 +859,220 @@
 	</choice>
 </event>
 
-</FTL>
+<event name="GB_FED_RESEARCH_RAIL">
+   <text>A Federation research station is sending out a request on Federation encrypted channels.</text>
+   <choice hidden="true">
+      <text>Contact them.</text>
+      <event>
+         <text>You transmit your ID to the outpost and contact them on encrypted frequencies. "Your codes are verified. Good to see you. We're a RnD facility tasked to improve the firepower of the Federation fleet and we need some field trials to be performed to work out the kinks. There's a reward in for it upon a successful egress after dispatching your target. What do you say Renegade?"</text>
+         <choice hidden="true">
+            <text>Agree to test the weapon.</text>
+            <event>
+               <text>"Excellent. We have reports of a Rebel forward scout near by for you to engage. We will send you all the supplies you need for your task. Equip the prototype Railgun and head to the designated target. Good luck!"</text>
+               <quest event="GB_RAILGUN_FIELD_TEST" />
+               <item_modify>
+                  <item type="fuel" min="2" max="2" />
+                  <item type="missiles" min="5" max="5" />
+               </item_modify>
+               <weapon name="GB_RAIL_1" />
+            </event>
+         </choice>
+         <choice hidden="true">
+            <text>Refuse.</text>
+            <event>
+               <text>"In that case farewell".</text>
+               <choice hidden="true">
+                  <text>Do something onboard the ship.</text>
+                  <event load="STORAGE_CHECK" />
+               </choice>
+               <choice hidden="true">
+                  <text>Do nothing.</text>
+                  <event />
+               </choice>
+            </event>
+         </choice>
+      </event>
+   </choice>
+   <choice hidden="true">
+      <text>Ignore the station.</text>
+      <event>
+         <choice hidden="true">
+            <text>Continue...</text>
+            <event>
+               <text>You aren't interested in the station. You ignore them.</text>
+               <choice hidden="true">
+                  <text>Do something onboard the ship.</text>
+                  <event load="STORAGE_CHECK" />
+               </choice>
+               <choice hidden="true">
+                  <text>Do nothing.</text>
+                  <event />
+               </choice>
+            </event>
+         </choice>
+      </event>
+   </choice>
+</event>
+
+<ship name="SHIP_TESTING_RAILGUN" auto_blueprint="LIST_SHIPS_REBEL_FIGHT">
+	<destroyed load="GB_RAIL_TEST_DESTROYED_REBEL"/>
+	<deadCrew load="DEAD_CREW_REBEL"/>
+	<triggeredEvent event="GB_RAIL_TEST_REBEL_ESCAPE" time="60" thisFight="true" clearOnJump="true">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="default">
+			<warning time="10.0" flash="true"/>
+			<tooltip>The Rebel will escape as soon as this timer runs out.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+</ship>
+
+<event name = "GB_RAILGUN_FIELD_TEST">
+	<text>This is where the station reported rebel activity, and sure enough, a scout comes in to intercept you almost immediately. Time to show them who's boss.</text>
+	<ship load = "SHIP_TESTING_RAILGUN" hostile = "true"/>
+	<choice>
+		<text>Continue...</text>
+		<event load = "COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name = "GB_RAIL_TEST_DESTROYED_REBEL">
+	<text>The rebel ship has been eliminated, thanks to the prototype tech. You scrap the ship.</text>
+	<autoReward level = "HIGH">standard</autoReward>
+</event>
+
+<event name="GB_RAIL_TEST_REBEL_ESCAPE">
+	<text>The rebels jump away, and you sense you lost valuable time on the fleet.</text>
+	<instantEscape/>
+	<modifyPursuit amount = "1"/>
+	<choice hidden = "true" req = "GB_RAIL_1" lvl="1">
+		<text>Continue...</text>
+		<event>
+			<text>The commander of the station is unimpressed, and takes the prototype weapon away with him.</text>
+			<remove name = "GB_RAIL_1"/>
+		</event>
+	</choice>
+	<choice hidden = "true" req = "GB_RAIL_1" lvl="0">
+		<text>Continue...</text>
+		<event/>
+	</choice>
+</event>
+
+<event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here-->
+	<text>This planet hosts a large human settlement, covering a large portion of the surface. The landscape is covered in sprawling urban landscapes cradled between towering peaks on the supercontinent. Standing tall amid the city is a grand building, surrounded by fountains and seemingly the centre of attention.</text>
+	<choice hidden = "true">
+		<text>Land and look around the building.</text>
+		<event><!--Can I can I use grizzled here?-->
+			<text>A grizzled Federation officer is guarding the front of the complex, allowing select members of the public to pass through into the halls beyond. You and your crew approach, and, recognising your uniforms, the officer stands aside to let you pass.</text>
+			<choice hidden = "true">
+				<text>Continue...</text>
+				<event>
+					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. Entering the main corridor, you realise that this is a museum, built to contain old Federation memorabilia. A curator scuttles up to you, and, seeing your insignia, asks if they can provide anything to assist with your mission - for a price.</text>
+					<choice>
+						<text>Take a tour around the museum.</text>
+						<event/>
+					</choice>
+					<choice>
+						<text>Let's get straight to business, shall we?</text>
+						<event load = "GB_MUSEUM_PURCHASE_DONATE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the city.</text>
+		<event>
+			<text>Whilst it might be quite the sight, you don't have time to waste on tourism.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name = "GB_MUSEUM_PURCHASE_DONATE">
+	<text>The curator bows obsequiously, and takes you into a storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both.</text> 
+	<choice>
+		<text>Purchase an old Federation weapon.</text>
+		<event>
+			<text>"An Autocannon, sir? Cheap, and hastily assembled, yet excellent at suppressing shields? A fine choice."</text>
+			<weapon name = "GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"/>
+			<item_modify>
+				<item type="scrap" min="-10" max="-35"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Purchase an old Separatist weapon.</text>
+		<event>
+			<text>"A Coilgun, sir? A weapon for the patient. Good taste, they're fine weapons."</text>
+			<weapon name = "GB_COILGUNS"/>
+			<item_modify>
+				<item type="scrap" min="-30" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Purchase an old Harmony weapon.</text>
+		<event>
+			<text>"A Gauss rifle, sir? Of course, of course. An acquired taste, for certain, but deadly in the right hands."</text>
+			<weapon name = "GB_GAUSS"/>
+			<item_modify>
+				<item type="scrap" min="-30" max="-45"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req = "LIST_CREW_FEDERATION_ELITE">
+		<text>(Federation Elite Crew) Do you have anything... newer?</text>
+		<event>
+			<text>"Well, funny you should ask that, sir. We do keep some more... experimental armaments in our back rooms."</text>
+			<weapon name = "GB_RAIL"/>
+			<item_modify>
+				<item type="scrap" min="-40" max="-55"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="GB_AC_1">
+		<text>Donate your autocannon MK1 to the museum.</text>
+		<event>
+			<text>"Hmm. A mark one autocannon. Quite a poor specimen, as well." They grumble a little, but eventually you talk them into paying you for it.</text>
+			<autoReward level = "MED">scrap_only</autoReward>
+		</event>
+	</choice>
+	<choice req="GB_AC_2">
+		<text>Donate your autocannon MK2 to the museum.</text>
+		<event>
+			<text>The curator starts when you offer your donation. "A mark two? In excellent condition, as well. I would be honoured to take this off your hands, captain."</text>
+			<autoReward level = "HIGH">scrap_only</autoReward>
+		</event>
+	</choice>
+	<choice req="GB_AC_3">
+		<text>Donate your autocannon MK3 to the museum.</text>
+		<event>
+			<text>"Oh my, oh my! A mark three. Gosh, I haven't seen one of these for... oh, must be twenty years. A little beat-up I see, but this would be a prize addition to our collection here." They offer you as much scrap as they can find in their vaults.</text>
+			<autoReward level = "HIGH">scrap_only</autoReward>
+			<choice hidden = "true">
+				<text>Continue...</text>
+				<event>
+					<text>The museum drop off even more scrap as you leave the building.</text>
+					<autoReward level = "HIGH">scrap_only</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Leave.</text>
+		<event/>
+	</choice>
+	<!--<choice req="GB_AC_4">
+		<text>Donate your autocannon MK4 to the museum.</text>
+		<event/>
+	</choice>-->
+</event>
+
+</FTL>	

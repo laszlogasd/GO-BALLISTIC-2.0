@@ -1,16 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findName type = "eventList" name = "SYLVAN_TRADES">
-	<mod-append:event>SYLVAN_AUTOCANNON</mod-append:event>
-	<mod-append:event>SYLVAN_GAUSS</mod-append:event>
+<mod:findName type = "eventList" name="SYLVAN_TRADES">
+	<mod-append:event name = "SYLVAN_AUTOCANNON"/>
+	<mod-append:event name = "SYLVAN_GAUSS"/>
 </mod:findName>
 
 <event name="SYLVAN_AUTOCANNON">
-	<text>"Ssstranger ssstranger, You musssst know about the Federation-Mantisss war, yes? Well, perhapsss you might fancccy blowing shipsss up the old fasshioned way. Want a look?"</text>
+	<text>"Ssstranger ssstranger, You mussst know about the Federation-Mantisss war, yesss? Well, perhapsss you might fancccy blowing ssshipsss up the old fassshioned way. Want a look?"</text>
 	<store>STORE_SYLVAN_AC</store>
 </event>
 
 <event name="SYLVAN_GAUSS">
-	<text>"Ssstranger ssstranger, have you heard of the Federation'ssss latesssst prototype weaponry? Well, turnsss out they haven't kept them as clossssely guarded than one would think. Want a look?"</text>
+	<text>"Ssstranger ssstranger, have you heard of the Federation'sss latessst prototype weaponry? Well, turnsss out they haven't kept them as closssely guarded than one would think. Want a look?"</text>
 	<store>STORE_SYLVAN_GAUSS</store>
+</event>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS14">
+	<mod-append:event name = "MV_TRAVELER_GB_MILITIA"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_SECTORS56">
+	<mod-append:event name = "MV_TRAVELER_GB_MILITIA"/>
+	<mod-append:event name = "MV_TRAVELER_GB_FED"/>
+</mod:findName>
+
+<!--RENEGADES-->
+
+<event name = "MV_TRAVELER_GB_MILITIA">
+	<text>"YOU! You're another renegade. I can tell, you know. We're battle hardened soldiers, and won't hesitate to kill!" Their weapons seem rather old-fashioned, but they still look a threat!</text>
+	<ship load = "SHIP_R4_GB_MV_TRAVELER_MILITIA" hostile = "true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name = "MV_TRAVELER_GB_FED">
+	<text>"See these weapons, fool? They're prototype mass accelerators, and we're gonna accelerate your mass to hell!"</text>
+	<ship load = "SHIP_R4_GB_MV_TRAVELER_FED" hostile = "true"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<!--RENEGADE CRUISERS-->
+
+<ship name="SHIP_MTBOSS_BALLISTIC_C_NORMAL" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+<ship name="SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+<ship name="SHIP_MTBOSS_BALLISTIC_C_EXTREME" auto_blueprint="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME">
+	<destroyed load="MTBOSS_BALLISTICC_DESTROYED"/>
+	<deadCrew load="MTBOSS_BALLISTICC_DEADCREW"/>
+</ship>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_NORMAL">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_NORMAL"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_CHALLENGE">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE"/>
+</mod:findName>
+
+<mod:findName type = "eventList" name = "MV_TRAVELER_BOSS_EXTREME">
+	<mod-append:event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME"/>
+</mod:findName>
+
+
+<!--note to CG: it's a kestrel cruiser not a federation cruiser smh-->
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_NORMAL">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_NORMAL" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Pay tribute in scrap to avoid the fight.</text>
+		<event>
+			<text>Fortunately, the MV ship accepts the tribute in turn for letting you live.</text>
+			<item_modify>
+				<item type="scrap" min="-35" max="-50"/>
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_CHALLENGE" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Draw straws and send over a crew as tribute.</text>
+		<event>
+			<text>Fortunately, the MV ship accepts the tribute in turn for letting you live.</text>
+			<removeCrew>
+				<clone>false</clone>
+				<text>Tempting as it is, cloning living crew is against Federation law. God damn Federation laws...</text>
+			</removeCrew>
+		</event>
+	</choice>
+</event>
+
+<event name = "MV_TRAVELER_BOSS_BALLISTIC_C_EXTREME">
+	<text>From out of the tunnel comes a massive cruiser, of ancient Kestrel design! You assume this ship is one of the original Federation fleet, and while it's offense appears powerful, it's defenses may fall short!</text>
+	<ship load = "SHIP_MTBOSS_BALLISTIC_C_EXTREME" hostile = "false"/>
+	<choice hidden = "true">
+		<text>Continue...</text>
+		<event>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="MTBOSS_BALLISTICC_DESTROYED">
+	<text>The mighty vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<hiddenAug>ACH_MV_BALLISTIC</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_BALLISTICC_DROP_CHANCE"/>
+	</choice>
+</event> 
+<eventList name="MTBOSS_BALLISTICC_DROP_CHANCE">
+	<event>
+		<text>You find the remains of a unique weapon model amongst the ruins of the ship, but it appears it did not survive the fight. You'll have to be more careful next time, or get lucky. Fortunately, there's still a bit more supplies to take with you.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event load="MTBOSS_BALLISTICC_DROP"/>
+</eventList>
+<event name="MTBOSS_BALLISTICC_DEADCREW">
+	<text>The mighty vessel has been eliminated! Within its wreckage remains plenty of scrap and supplies for the taking.</text>
+	<autoReward level="HIGH">standard</autoReward>
+	<hiddenAug>ACH_MV_BALLISTIC</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="MTBOSS_BALLISTICC_DROP"/>
+	</choice>
+</event>
+<event name="MTBOSS_BALLISTICC_DROP">
+	<text>You're also surprised to find a special weapon amongst the wreckage! You've never seen a weapon like this before, so you assume it's a custom model made by the travelers themselves.</text>
+	<autoReward level="LOW">stuff</autoReward>
+	<weapon name="GB_MG_LOOT"/>
 </event>

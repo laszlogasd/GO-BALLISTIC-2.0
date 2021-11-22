@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 ----
 ////////////////////////////////////////////////////////////////////////////////////
@@ -27,16 +28,16 @@ PIRATES:	Rifled Cannons		Autocannons		???						???
 List of every weapon in each respective faction 
 
 <blueprintList name=GB_ALL_GB_CIVILIAN>
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 </blueprintList>
 
 <blueprintList name=GB_ALL_GB_MILITIA>
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		ELITE / CGEG
@@ -44,10 +45,10 @@ List of every weapon in each respective faction
 </blueprintList>
 
 <blueprintList name=GB_ALL_GB_FED>
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<mod-append:name>GB_AC4</mod-append:name>		UNUSED
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
+	<mod-append:name>GB_AC_4</mod-append:name>		UNUSED
 	<mod-append:name>GB_RIFLED_CANNON</mod-append:name>			UNUSED
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> 		
@@ -105,11 +106,11 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <mod:findName type="blueprintList" name="GIFTLIST_CIVILIAN">
-	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="GIFTLIST_FEDERATION"> 
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name> <!-- unsure of Gauss, Rail, or both being here, but as the original list is short I'll keep this short -->
 </mod:findName>
 
@@ -117,10 +118,10 @@ created from scratch using the components or techniques of them to create odd an
 </mod:findName> -->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<!--<mod-append:name>GB_AC4</mod-append:name>-->
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
+	<!--<mod-append:name>GB_AC_4</mod-append:name>-->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -140,10 +141,10 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_MASS_ACCELERATOR</mod-append:name>-->
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET"> <!--doesnt include enemy weapons, rift waker, or alternative variants of weapons with multiple kinds-->
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<!-- <mod-append:name>GB_AC4</mod-append:name> -->
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
+	<!-- <mod-append:name>GB_AC_4</mod-append:name> -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -157,6 +158,7 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_COIL_3</mod-append:name>
 	<mod-append:name>GB_MG</mod-append:name>
 	<mod-append:name>GB_HMG</mod-append:name>
+	<mod-append:name>GB_MV_LOOT</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
@@ -175,9 +177,9 @@ created from scratch using the components or techniques of them to create odd an
 
 <!---- SHOP_ITEM_WEAPONS_GP_CANNONS ---->
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS">
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	<name>GB_ROTARY_AC</name>
 	
 	<!--<name>GB_RIFLED_CANNON</name>
@@ -186,9 +188,9 @@ created from scratch using the components or techniques of them to create odd an
 </blueprintList>
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS_OLD"> <!--- originally meant to be the GB_SHOP_ITEM_WEAPONS_CANNONS_OLD list, however going to retroactively use this to implement MG's into the store pool for now--->
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	<name>GB_MG</name>
 	<name>GB_HMG</name>
 	<name>MISSILES_1</name>
@@ -210,9 +212,9 @@ created from scratch using the components or techniques of them to create odd an
 </blueprintList>
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_ALL_CANNONS">
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	<name>GB_ROTARY_AC</name>
 	
 	<!--<name>GB_RIFLED_CANNON</name>
@@ -232,13 +234,26 @@ created from scratch using the components or techniques of them to create odd an
 </blueprintList>
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_PLUS">
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	<name>MISSILES_1</name>
 	<name>MISSILES_2</name>
 	<name>BOMB_1</name>
 </blueprintList>
+
+<blueprintList name = "GB_DRONES_COMBAT_CANNONS">
+	<name>GB_COMBAT_AC_1</name>
+	<name>GB_COMBAT_AC_2</name>
+	<name>GB_COMBAT_AC_3</name>
+	<name>GB_DEFENSE_AC</name>
+</blueprintList>
+
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BOSSLOOT">
+	<mod-append:name>GB_MG_LOOT</mod-append:name>
+</mod:findName>
+
 
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -267,8 +282,8 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_CIVILIAN"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
 </mod:findName>
@@ -284,9 +299,9 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<!-- <mod-append:name>GB_RIFLED_CANNON</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name> -->
 </mod:findName>
@@ -302,22 +317,22 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_MILITIA_ELITE"> 
-	<mod-append:name>GB_AC2</mod-append:name> <!-- AC's go up a mark over the standard and no longer use the outdated rifled cannon-->
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name> <!-- AC's go up a mark over the standard and no longer use the outdated rifled cannon-->
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name> <!-- CDEG equipped with lower mark of Federation Advance Technologies-->
 </mod:findName>
 
 <!--RENEGADE-->
-<blueprintList name="GB_MV_WEAPONS_LASER_AND_CANNONS"> <!--- one shot lasers and cannons for the Militia Gaurd Multiverse Renigade --->
+<blueprintList name="GB_MV_WEAPONS_LASER_AND_CANNONS"> <!--- one shot lasers and cannons for the Militia GUARD Multiverse Renigade --->
 	<name>LASER_BURST_1</name>
 	<name>LASER_HEAVY_1</name>
 	<name>LASER_LIGHT_1</name>
 	<!-- <name>LASER_LIGHT_2</name> I think it might be too evil having a Light 2 -->
-    <name>GB_AC1</name>
-    <name>GB_AC2</name>
-    <name>GB_AC3</name>
+    <name>GB_AC_1</name>
+    <name>GB_AC_2</name>
+    <name>GB_AC_3</name>
 </blueprintList>
 
 <!--
@@ -331,12 +346,12 @@ created from scratch using the components or techniques of them to create odd an
 -->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_FED"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<!-- <mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name> <!-- Will test to see how common and fair a Gauss 1 is on Fed ships, due to Fed Ship rarity however it may not be a problem. Might need to make Enemy versions of all Mass Accelserators -->
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_FED">
 	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
@@ -346,9 +361,9 @@ created from scratch using the components or techniques of them to create odd an
 </mod:findName>
 
 <blueprintList name="GB_ANTIQUE_FEDERATION"> <!--- this could benefit greatly from my ideas on some missiles, rockets, and torpedoes. Will use this for some encounters that require a more simple ammo weapon list with Fed themes --->
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	
 	<name>MISSILES_1</name>
 	<name>BOMB_1</name>
@@ -368,16 +383,20 @@ created from scratch using the components or techniques of them to create odd an
 <!--- Not part of MV or currently used --->
 
 <mod:findName type="blueprintList" name="LIST_WEAPONS_FED_ELITE"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
-	<!--<mod-append:name>GB_AC4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
+	<!--<mod-append:name>GB_AC_4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<mod-append:name>GB_AC_1_E</mod-append:name>
+	<mod-append:name>GB_AC_2_E</mod-append:name>
+	<mod-append:name>GB_AC_3_E</mod-append:name>
+	<!--<mod-append:name>GB_AC_4_E</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
-	<mod-append:name>GB_GAUSS_2</mod-append:name>
-	<mod-append:name>GB_RAIL_1</mod-append:name>
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name>
+	<mod-append:name>GB_GAUSS_2_ENEMY</mod-append:name>
+	<mod-append:name>GB_RAIL_1_ENEMY</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_FED">
 	<mod-append:name>GB_COMBAT_AC_1</mod-append:name>
@@ -396,7 +415,7 @@ created from scratch using the components or techniques of them to create odd an
 ////////////////////////////////////////////////////////////////////////////////////
 -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ENGI">
-	<mod-append:name>GB_GAUSS_1</mod-append:name>
+	<mod-append:name>GB_GAUSS_1_ENEMY</mod-append:name>
 </mod:findName>
 <mod:findName type="blueprintList" name="LIST_DRONES_ENGI">  <!-- unchanged, might edit later -->
 
@@ -410,6 +429,157 @@ created from scratch using the components or techniques of them to create odd an
 <mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
 
 </mod:findName>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			SEPPY SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<blueprintList name = "LIST_WEAPONS_SEPARATIST">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+	
+	<name>GB_COIL_1_ENEMY</name>
+	<name>GB_COIL_2_ENEMY</name>
+	<name>GB_COIL_3_ENEMY</name>
+</blueprintList>
+
+<!--SHIPS WITH NEW WEAPON LIST-->
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST"/>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NOCREW">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--OUTRIDER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--FIGHTER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER_NO2">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--RIGGER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER_NO2">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--ENFORCER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--BOMBER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--PROTECTOR-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--DROPSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP_NO2">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--MOTHERSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP_NO2" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRANSPORT-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT_NO2">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRAPPER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
@@ -425,9 +595,9 @@ created from scratch using the components or techniques of them to create odd an
 
 
 <!-- <mod:findName type="blueprintList" name="MV_WEAPONS_ALL"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_GAUSS_1</mod-append:name>
 	<mod-append:name>GB_GAUSS_2</mod-append:name>
@@ -443,18 +613,18 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
 </mod:findName> -->
 <!-- <mod:findName type="blueprintList" name="MV_WEAPONS_SHIELDBREAKER"> 
-	<mod-append:name>GB_AC1</mod-append:name>
-	<mod-append:name>GB_AC2</mod-append:name>
-	<mod-append:name>GB_AC3</mod-append:name>
+	<mod-append:name>GB_AC_1</mod-append:name>
+	<mod-append:name>GB_AC_2</mod-append:name>
+	<mod-append:name>GB_AC_3</mod-append:name>
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>
 </mod:findName> -->
 
 <blueprintList name="MV_WEAPONS_CANNON"> 
-	<name>GB_AC1</name>
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 	<name>GB_ROTARY_AC</name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name>-->
@@ -481,10 +651,10 @@ These are for the Fed-Mantis store event, these will be modified in the future a
 Post update content might change these to "Federation"/Elite versions instead which has better stats, not sure what those will be-->
 
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"> <!--- modified list from GP cannons list--->
-    <name>GB_AC1</name>
-    <name>GB_AC2</name>
-    <name>GB_AC3</name>
-    <!--<name>GB_AC4</name> -->
+    <name>GB_AC_1</name>
+    <name>GB_AC_2</name>
+    <name>GB_AC_3</name>
+    <!--<name>GB_AC_4</name> -->
     
     <!--<name>GB_RIFLED_CANNON</name> 
     <name>GB_BURST_CANNON_1</name>
@@ -515,6 +685,18 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<name>GB_GAUSS_1</name>
 	<name>GB_GAUSS_2</name>
 	<name>GB_GAUSS_3</name>
+</blueprintList>
+
+<blueprintList name = "GB_COILGUNS_ENEMY">
+	<name>GB_COIL_1_ENEMY</name>
+    <name>GB_COIL_2_ENEMY</name>
+    <name>GB_COIL_3_ENEMY</name>
+</blueprintList>
+
+<blueprintList name = "GB_GAUSS_ENEMY">
+	<name>GB_GAUSS_1_ENEMY</name>
+	<name>GB_GAUSS_2_ENEMY</name>
+	<name>GB_GAUSS_3_ENEMY</name>
 </blueprintList>
 
 <blueprintList name = "GB_RAIL">
@@ -565,8 +747,8 @@ Post update content might change these to "Federation"/Elite versions instead wh
 </mod:findName>
 
 <blueprintList name = "GB_CARAVAN_REWARD">
-	<name>GB_AC2</name>
-	<name>GB_AC3</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
 </blueprintList>
 
 <blueprintList name = "GB_LIST_RECON_DRONES">
@@ -575,10 +757,21 @@ Post update content might change these to "Federation"/Elite versions instead wh
 </blueprintList>
 
 <!--////////////////////////////
+			CREW
+/////////////////////////////-->
+
+<blueprintList name = "LIST_CREW_FEDERATION_ELITE">
+	<name>soldier</name>
+	<name>defend</name>
+	<name>chieftain</name>
+	<name>peace</name>
+</blueprintList>
+
+<!--////////////////////////////
 			SHIPS
 /////////////////////////////-->
 
-<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="mu_ghost_fed_bomber">
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="r4p_gb_fed_bomber_damaged">
 	<class>Damaged Federation Bomber</class>
 	<minSector>3</minSector>
 	<systemList>
@@ -602,70 +795,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<cloakImage>mu_fed_bomber</cloakImage>
 </shipBlueprint>
 
-<shipBlueprint name="GB_R4MU_FED_LIGHT_CRUISER_1" layout="R4mu_fed_light_cruiser" img="R4mu_fed_light_cruiser"> <!--- will try and think of a better prefix for layouts to be consistent through all of my mods for easy transfer ---> 
-	<class>MV Renegade</class>
-	<minSector>4</minSector>
-	<maxSector>8</maxSector>
-	<systemList>
-		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ARTILLERY" /> <!--- we don't have an artillery yet --->
-		<battery power="1" max="2" room="12" start="true" />
-		<clonebay power="1" max="3" room="5" start="true" />
-		<doors power="1" max="3" room="11" start="true" />
-		<engines power="1" max="3" room="3" start="true" />
-		<oxygen power="1" max="3" room="9" start="true" />
-		<pilot power="1" max="2" room="0" start="true" />
-		<shields power="2" max="6" room="2" start="true" />
-		<teleporter power="1" max="2" room="4" start="false" />
-		<weapons power="1" max="10" room="7" start="true" />
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>0</droneSlots>
-	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
-		<weapon name="GB_COILGUNS" />
-		<weapon name="GB_GAUSS" />
-		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
-		<weapon name="BEAM_LONG" />
-	</weaponList>
-	<droneList drones="0" count="0" />
-	<health amount="10" />
-	<maxPower amount="10" />
-	<crewCount amount="1" max="1" class="human" />
-	<crewCount amount="1" max="1" class="soldier" />
-	<crewCount amount="1" max="2" class="engi" />
-	<crewCount amount="1" max="2" class="seperatist" />
-	<boardingAI>sabotage</boardingAI>
-	<aug name="UPG_TECH_RESPIRATOR" />
-</shipBlueprint>
-
-<shipBlueprint name="GB_R4_MR_MILITIA_GAURD" layout="R4_MR_militia_guard" img="R4_MR_militia_guard">
-	<class>Multiverse Renegade</class>
-	<minSector>3</minSector>
-	<maxSector>8</maxSector>
-	<systemList>
-		<battery power="1" max="2" room="8" start="true" />
-		<clonebay power="1" max="2" room="2" start="false" />
-		<doors power="1" max="2" room="6" start="true" />
-		<drones power="1" max="5" room="4" start="true" />
-		<engines power="2" max="4" room="7" start="true" />
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="1" room="0" start="true" />
-		<shields power="2" max="6" room="1" start="true" />
-		<weapons power="2" max="10" room="5" start="true" />
-	</systemList>
-	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
-	<weaponList missiles="3" count="4" load="GB_MV_WEAPONS_LASER_AND_CANNONS" />
-	<droneList drones="3" count="2" load="GB_DRONES_COMBAT_CANNONS"/>
-	<health amount="10" />
-	<maxPower amount="7" />
-	<crewCount amount="1" max="3" class="list_crew_militia_random" />
-	<crewCount amount="1" max="3" class="list_crew_federation_random" />
-	<crewCount amount="1" max="1" class="seperatist" />
-	<boardingAI>sabotage</boardingAI>
-	<aug name="EX_SHIELD_RECHARGE" />
-</shipBlueprint>
-
-<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="mu_fed_bomber" img="mu_fed_bomber"> <!--- dry on ammo ---> 
+<shipBlueprint name="GB_FED_BOMBER_INTERDICTOR" layout="GB_fed_bomber_interdictor" img="mu_fed_bomber"> <!--- dry on ammo ---> 
 	<class>Federation Bomber</class>
 	<minSector>2</minSector>
 	<maxSector>8</maxSector>
@@ -682,7 +812,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="3" count="4"> <!--- might set ammo lower later, it should intentionally run out of ammo early into a fight --->
-		<weapon name="GB_AC2" />
+		<weapon name="GB_AC_2" />
 		<weapon name="BOMB_1" />
 		<weapon name="GB_ANTIQUE_FEDERATION" />
 		<weapon name="GB_ANTIQUE_FEDERATION" />
@@ -690,9 +820,150 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<droneList drones="0" count="2" />
 	<health amount="11" />
 	<maxPower amount="7" />
-	<crewCount amount="2" max="2" class="human" />
-	<crewCount amount="1" max="1" class="soldier" />
-	<crewCount amount="0" max="2" class="list_crew_federation_random" />
+	<crewCount amount="3" max="7" class="LIST_CREW_FEDERATION_RANDOM" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 
+<!--RENEGADES-->
+
+<shipBlueprint name="GB_R4_MR_FED_LIGHT_CRUISER_1" layout="R4_MR_fed_light_cruiser" img="R4_MR_fed_light_cruiser">
+	<class>MV Renegade</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<artillery power="1" max="2" room="6" start="true" weapon="GB_RAIL_ARTILLERY" /> 
+		<battery power="1" max="2" room="12" start="true" />
+		<clonebay power="1" max="3" room="5" start="true" />
+		<doors power="1" max="3" room="11" start="true" />
+		<engines power="1" max="3" room="3" start="true" />
+		<oxygen power="1" max="3" room="9" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="6" room="2" start="true" />
+		<teleporter power="1" max="2" room="4" start="false" />
+		<weapons power="1" max="10" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="3" count="4"> <!--- this may require a lot of rebalancing, the idea is that it has to have a coilgun and gauss rifle. Subject to rebalancing, this may be the main enemy to test if these mass drivers are OP in enemy hands and require enemy variants--->
+		<weapon name="GB_COILGUNS_ENEMY" />
+		<weapon name="GB_GAUSS_ENEMY" />
+		<weapon name="MV_WEAPONS_BEAMS_DAMAGE" />
+		<weapon name="BEAM_LONG" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="10" />
+	<maxPower amount="14"/>
+	<crewCount amount="1" max="2" class="engi" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_RESPIRATOR" />
+</shipBlueprint>
+
+<shipBlueprint name="GB_R4_MR_MILITIA_GUARD" layout="R4_MR_militia_guard" img="R4_MR_militia_guard">
+	<class id="text_GB_R4_MR_MILITIA_GUARD_class">Multiverse Renegade</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<battery power="1" max="2" room="8" start="true" />
+		<clonebay power="1" max="2" room="2" start="false" />
+		<doors power="1" max="2" room="6" start="true" />
+		<drones power="1" max="5" room="4" start="true" />
+		<engines power="2" max="4" room="7" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="6" room="1" start="true" />
+		<weapons power="2" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4" load="GB_MV_WEAPONS_LASER_AND_CANNONS" />
+	<droneList drones="3" count="2" load="GB_DRONES_COMBAT_CANNONS" />
+	<health amount="10" />
+	<maxPower amount="7" />
+	<crewCount amount="2" max="6" class="LIST_CREW_MILITIA_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="EX_SHIELD_RECHARGE" />
+</shipBlueprint>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_NORMAL" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="1" max="3" room="12" start="true" />
+		<doors power="2" max="3" room="4" start="true" />
+		<engines power="1" max="3" room="15" start="true" />
+		<oxygen power="1" max="1" room="13" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="7" room="11" start="true" />
+		<weapons power="8" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_1"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_2_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="20" />
+	<maxPower amount="21" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="2" max="3" room="12" start="true" />
+		<doors power="2" max="3" room="4" start="true" />
+		<engines power="1" max="3" room="15" start="true" />
+		<oxygen power="1" max="2" room="13" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="9" room="11" start="true" />
+		<weapons power="9" max="9" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_1"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_3_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="23" />
+	<maxPower amount="25" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>
+
+<shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
+	<class>Renegade Cruiser</class>
+	<minSector>5</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<clonebay power="3" max="3" room="12" start="true" />
+		<doors power="3" max="3" room="4" start="true" />
+		<engines power="3" max="3" room="15" start="true" />
+		<oxygen power="1" max="2" room="13" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="4" max="11" room="11" start="true" />
+		<weapons power="11" max="11" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name = "GB_ROTARY_AC"/>
+		<weapon name = "FOCUS_CHAIN"/>
+		<weapon name = "BOMB_1"/>
+		<weapon name = "MISSILES_3_ENEMY"/>
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="25" />
+	<maxPower amount="27" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+</shipBlueprint>

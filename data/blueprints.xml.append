@@ -2,7 +2,7 @@
 
 <!-- WEAPONS -->
 <!-- Autocannon Series -->
-<weaponBlueprint name="GB_AC1">
+<weaponBlueprint name="GB_AC_1">
 	<type>LASER</type>
 	<title>Autocannon Mark I</title>
 	<short>AC I</short>
@@ -41,7 +41,7 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="GB_AC2">
+<weaponBlueprint name="GB_AC_2">
 	<type>LASER</type>
 	<title>Autocannon Mark II</title>
 	<short>AC II</short>
@@ -81,7 +81,7 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="GB_AC3">
+<weaponBlueprint name="GB_AC_3">
 	<type>LASER</type>
 	<title>Autocannon Mark III</title>
 	<short>AC III</short>
@@ -121,6 +121,133 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
+<!--ELITE ACS-->
+
+<weaponBlueprint name="GB_AC_1_E">
+	<type>LASER</type>
+	<title>Autocannon Mark I</title>
+	<short>AC I</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>5</cooldown>
+	<power>1</power>
+	<stun>6</stun>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_E">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>2</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>5</cooldown>
+	<power>2</power>
+	<stun>6</stun>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_E">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>3</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>5</cooldown>
+	<power>3</power>
+	<stun>6</stun>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
 <!-- Gauss Series -->
 <weaponBlueprint name="GB_GAUSS_1">
 	<type>LASER</type>
@@ -131,6 +258,47 @@
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
 	<accuracyMod>25</accuracyMod>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>3</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>12</cooldown> <!--- was 10 -->
+	<power>1</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>55</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussLight1</sound>
+		<sound>GB_gaussLight2</sound>
+		<sound>GB_gaussLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_1_ENEMY">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark I</title>
+	<short>Gauss I</short>
+	<desc>One of the first mass drivers in service, capable of firing a shield piercing kinetic round with extreme precision.</desc>
+	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
@@ -215,6 +383,88 @@
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
 	<accuracyMod>30</accuracyMod>
+	<damage>4</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>5</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>16</cooldown>
+	<power>3</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>80</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussHeavy1</sound>
+		<sound>GB_gaussHeavy2</sound>
+		<sound>GB_gaussHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_2_ENEMY">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark II</title>
+	<short>Gauss II</short>
+	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>14</cooldown> <!--- was 13 -->
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>70</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussMedium1</sound>
+		<sound>GB_gaussMedium2</sound>
+		<sound>GB_gaussMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_GAUSS_3_ENEMY">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark III</title>
+	<short>Gauss III</short>
+	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
+	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
 	<damage>4</damage>
 	<shots>1</shots>
 	<sp>2</sp>
@@ -412,6 +662,49 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="GB_RAIL_1_ENEMY">
+	<type>LASER</type>
+	<title>Rail Gun Mark I</title>
+	<short>Rail Gun I</short>
+	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
+	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<damage>2</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<stun>3</stun>
+	<cooldown>12</cooldown> <!--- was 10 -->
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>70</cost>
+	<image>GB_magnetic_slug_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="GB_RAIL_2">
 	<type>LASER</type>
 	<title>Rail Gun Mark II</title>
@@ -421,6 +714,49 @@
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
 	<accuracyMod>25</accuracyMod>
+	<damage>3</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>3</sp>
+	<breachChance>5</breachChance>
+	<stunChance>3</stunChance>
+	<stun>3</stun>
+	<cooldown>15</cooldown> <!--- was 13 -->
+	<power>3</power> 
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>75</cost>
+	<image>GB_magnetic_slug_medium</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_RAIL_2_ENEMY">
+	<type>LASER</type>
+	<title>Rail Gun Mark II</title>
+	<short>Rail Gun II</short>
+	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields, and is designed to maximize hull damage.</desc>
+	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
 	<damage>3</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -497,6 +833,97 @@
 		<sound>miss</sound>
 	</missSounds>
 	<weaponArt>GB_Railgun_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_RAIL_3_ENEMY">
+	<type>LASER</type>
+	<title>Rail Gun Mark III</title>
+	<short>Rail Gun III</short>
+	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
+	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>75</freeMissileChance>
+	<damage>4</damage>
+	<hullBust>1</hullBust>
+	<shots>1</shots>
+	<sp>4</sp>
+	<breachChance>6</breachChance>
+	<stunChance>4</stunChance>
+	<stun>3</stun>
+	<cooldown>18</cooldown> <!--- was 16 -->
+	<power>4</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>100</cost>
+	<image>GB_magnetic_slug_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Railgun_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!--SPECIAL LOOT-->
+
+<weaponBlueprint name = "GB_MG_LOOT">
+	<type>BURST</type>
+	<title>'Spray and Pray'</title>
+	<short>'S.A.P'</short>
+	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
+	<tooltip>Boss loot.</tooltip>
+	<damage>1</damage>
+	<shots>8</shots>
+	<breachChance>1</breachChance>
+	<cooldown>20</cooldown>
+	<power>0</power>
+	<speed>60</speed>
+	<radius>50</radius>
+	<fireTime>0.05</fireTime>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>60</cost>
+	<boost>
+		<type>cooldown</type>
+		<amount>10</amount>
+		<count>3</count>
+	</boost>
+	<projectiles>
+		<projectile count="1" fake="false">GB_shot_light</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_MG_loot</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
@@ -663,3 +1090,299 @@
 	<rarity>0</rarity>
 	<iconImage>combat</iconImage>
 </droneBlueprint>
+
+<!--//////////////////
+	ARTILLERY
+///////////////////-->
+
+<weaponBlueprint name="GB_RAIL_ARTILLERY">
+    <type>LASER</type>
+    <title>Enemy Rail Gun Artillery</title>
+    <desc>Enemy artillery weapon. Base cooldown: 40 seconds.</desc>
+    <tooltip>Artillery: 1 shot 5 damage weapon, 80% chance to cause a breach, stuns for 3 seconds, pierces 5 shields, 25% more accurate</tooltip>
+    <damage>5</damage>
+    <shots>1</shots>
+    <sp>5</sp>
+    <breachChance>8</breachChance>
+    <stun>3</stun>
+    <cooldown>40</cooldown>
+    <speed>180</speed>
+    <bp>4</bp>
+    <rarity>0</rarity>
+    <image>GB_magnetic_slug_heavy</image>
+    <launchSounds>
+        <sound>GB_cannonLight1</sound>
+        <sound>GB_cannonLight2</sound>
+        <sound>GB_cannonLight3</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>hitHull2</sound>
+        <sound>hitHull3</sound>
+    </hitShipSounds>
+    <hitShieldSounds>
+        <sound>hitShield1</sound>
+        <sound>hitShield2</sound>
+        <sound>hitShield3</sound>
+    </hitShieldSounds>
+    <missSounds>
+        <sound>miss</sound>
+    </missSounds>
+    <weaponArt>GB_Railgun_Artillery</weaponArt>
+    <iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!--////////////////////////
+		PLAYER SHIPS
+/////////////////////////-->
+
+<shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL" layout="r4p_gb_kestrel_a" img="r4p_gb_kestrel_a">
+	<class>Kestrel Cruiser</class>
+	<name>The Falco</name>
+	<desc>A boring and outdated human vessel originally produced by the Federation. In its stock original configeration during the Federation-Mantis War.</desc>
+	<!--just a bunch of human crew-->
+	<systemList>
+		<artillery max="4" power="1" room="17" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+		<battery max="2" power="1" room="16" start="false" img="room_battery_8" />
+		<cloaking power="1" room="3" start="false" img="room_cloaking_7" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>2</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="14" start="true" img="room_doors_9">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="6" start="false" img="room_drones_6" />
+		<engines power="2" room="12" start="true" img="room_engines_5">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_4" />
+		<medbay power="1" room="4" start="true" img="room_medbay_7">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="8" start="false" img="room_mind_5" />
+		<oxygen power="1" room="7" start="true" img="room_oxygen_8" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields max="8" power="2" room="11" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons max="8" power="3" room="10" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="12" count="4">
+		<weapon name="GB_AC_2" />
+		<weapon name="MISSILES_BURST" />
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<aug name="EX_EXPLOSIVE_REPLICATOR" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestrel_b" img="r4p_gb_kestrel_b">
+	<class>Kestrel Cruiser</class>
+	<name>Warhawk</name>
+	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
+	<!--human human orchid zoltan-->
+	<systemList>
+		<artillery max="3" power="1" room="8" start="false" weapon="ARTILLERY_MFK_1" img="room_artillery" />
+		<battery max="2" power="1" room="6" start="false" img="room_battery_15" />
+		<cloaking power="1" room="12" start="true" img="room_cloaking_6" />
+		<clonebay power="1" room="0" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="7" start="true" img="room_doors_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="13" start="false" img="room_drones_12" />
+		<engines power="2" room="5" start="true" img="room_engines_9">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="14" start="false" img="room_hacking_4" />
+		<medbay power="1" room="0" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_1" />
+		<oxygen power="1" room="3" start="true" img="room_oxygen_12" />
+		<pilot power="1" room="9" start="true" img="room_pilot_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields max="8" power="2" room="2" start="false" img="room_shields_5">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="4" start="false" />
+		<weapons max="8" power="4" room="10" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="12" count="4">
+		<weapon name="GB_AC_1" />
+		<weapon name="GB_AC_1" />
+		<weapon name="GB_AC_1" />
+		<weapon name="GB_AC_1" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<aug name="EX_AUTO_COOLDOWN" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_3" layout="r4p_gb_kestrel_c" img="r4p_gb_kestrel_c">
+	<class>Kestrel Cruiser</class>
+	<name>The Martlet</name>
+	<desc>An old battlehardened Kestrel that is the embodiment that a good offense is a good defence.</desc>
+	<!--human free mantis zoltan separatist-->
+	<systemList>
+		<artillery power="1" room="18" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
+		<battery power="1" room="17" start="false" img="room_battery_13" />
+		<cloaking power="1" room="4" start="false" img="room_cloaking_11" />
+		<clonebay power="1" room="5" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="15" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="7" start="false" img="room_drones_4" />
+		<engines power="2" room="13" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="10" start="false" img="room_hacking_2" />
+		<medbay power="1" room="5" start="false" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="false" img="room_mind_5" />
+		<oxygen power="1" room="8" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="14" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="3" room="12" start="true" img="room_shields_2">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="6" start="false" />
+		<weapons power="4" room="11" start="true" img="room_weapons_5">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="11" count="4">
+		<weapon name="GB_ROTARY_AC" />
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<aug name="AUTO_LOADER_LOW_SHIELD_LOCKED" />
+</shipBlueprint>
+
+
+<!--/////////////////////////
+			AUGMENTS
+//////////////////////////-->
+
+<augBlueprint name = "AUTO_LOADER_LOW_SHIELD_LOCKED">
+	<title>Assault Auto-Reloader</title>
+	<desc>Massively decreases your weapon cooldown at the cost of slowing shield recharge rate considerably. Because what's the fun otherwise? (-20% weapon cooldown, -33% shield recharge rate.)</desc>
+	<cost>0</cost>
+	<bp>9</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name = "AUTO_LOADER_LOW_SHIELD">
+	<title>Assault Auto-Reloader</title>
+	<desc>Massively decreases your weapon cooldown at the cost of slowing shield recharge rate considerably. Because what's the fun otherwise? (-20% weapon cooldown, -33% shield recharge rate.)</desc>
+	<cost>50</cost>
+	<bp>9</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="ACH_MV_KESTREL">
+	<title>Ship Achievement</title>
+	<desc>The player defeated the GB kestrel MV cruiser.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>

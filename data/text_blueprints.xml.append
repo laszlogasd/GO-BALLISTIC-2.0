@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<text name="text_R4_MR_MILITIA_GAURD_class">Multiverse Renegade</text>
-<text name="text_GB_MT_FED_LIGHT_CRUISER_1_class">Multiverse Renegade</text>
-<text name="text_GB_FED_BOMBER_INTERDICTOR_class">Federation Bomber</text>
+<text name="text_GB_R4_MR_MILITIA_GUARD_class">Multiverse Renegade</text>
 
+<text name="text_PLAYER_SHIP_KESTREL_class">Kestrel Cruiser</text>
+<text name="text_PLAYER_SHIP_R4_GB_KESTREL_name">The Martlet</text>
+<text name="text_PLAYER_SHIP_R4_GB_KESTREL_desc">A battle hardened cruiser that really takes to heart the maxim that a good offence is a good defence.</text>
 
+<text name="text_PLAYER_SHIP_KESTREL_class">Kestrel Cruiser</text>
+<text name="text_PLAYER_SHIP_KESTREL_name">The Kestrel</text>
+<text name="text_PLAYER_SHIP_KESTREL_desc">A boring and outdated human vessel originally produced by the Federation. In its stock original configuration from during the Federation-Mantis War.</text>
+
+<text name="text_PLAYER_SHIP_HARD_2_class">Kestrel Cruiser</text>
+<text name="text_PLAYER_SHIP_HARD_2_name">Warhawk</text>
+<text name="text_PLAYER_SHIP_R4_GB_KESTREL_2_desc">This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</text>
