@@ -958,21 +958,27 @@
 </event>
 
 <event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here-->
-	<text>This planet hosts a large human settlement, covering a large portion of the surface. The landscape is covered in sprawling urban landscapes cradled between towering peaks on the supercontinent. Standing tall amid the city is a grand building, surrounded by fountains and seemingly the centre of attention.</text>
+	<text>You arrive at a planet. It's clear even from far above that its landscape is covered with an urban sprawl cradled between tall mointains. While an impressive feat of engineering, there is nothing much of interest. However not far from the capitals space port is a Federation Military Museum. Perhaps we can learn something of the conflicts of yesteryear.</text>
 	<choice hidden = "true">
 		<text>Land and look around the building.</text>
-		<event><!--Can I can I use grizzled here?-->
-			<text>A grizzled Federation officer is guarding the front of the complex, allowing select members of the public to pass through into the halls beyond. You and your crew approach, and, recognising your uniforms, the officer stands aside to let you pass.</text>
+		<event><!--- CG: Can I can I use grizzled here? --> <!--R4: Yes you may-->
+			<text>The museum is a public space and is rather crowded today both tourists and local citizens. Before you can make yourway inside a grizzled employee stops and greats you. Recognising your uniform and ship they welcome you and follow you in personally.</text>
 			<choice hidden = "true">
 				<text>Continue...</text>
 				<event>
-					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. Entering the main corridor, you realise that this is a museum, built to contain old Federation memorabilia. A curator scuttles up to you, and, seeing your insignia, asks if they can provide anything to assist with your mission - for a price.</text>
-					<choice>
-						<text>Take a tour around the museum.</text>
+					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. One of the museums curators scuttles up towards you, recognising you as the Multiverse traveller, asks if they could provide any assistance with your mission.</text>
+					<!--<choice>
+						<text>Ask to take a tour around the museum.</text>
+						<event>
+							<text>Something something LORE BIRB</text>
+							<choice> tell me about the Federation-Mantis War [[general overview]] -> [[conclusion of war]] -> menu of 3 questions, 1: Free mantis origin,  2: increased piracy (Tiikaka), 3: Federation question, 4:
+							<choice> tell me about the Federations Weapons History [[Autocannon lore during war]] -> [[what happened post war]] -> [[Rebelion era]] -> [[now]]
+							<choice> tell me about the expansion wars [[summary]] -> [[how it affected the Federation and international response]]
+							<choice> ask about the museums collection [[broad description]] -> [[options to ask about some items]]
 						<event/>
-					</choice>
+					</choice> -->
 					<choice>
-						<text>Let's get straight to business, shall we?</text>
+						<text>Ask to access the museums storeroom.</text>
 						<event load = "GB_MUSEUM_PURCHASE_DONATE"/>
 					</choice>
 				</event>
@@ -996,47 +1002,28 @@
 </event>
 
 <event name = "GB_MUSEUM_PURCHASE_DONATE">
-	<text>The curator bows obsequiously, and takes you into a storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both.</text> 
+	<text>The curator bows obsequiously, and leads you into a dusty storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both.</text> 
 	<choice>
-		<text>Purchase an old Federation weapon.</text>
+		<text>Offer to purchase a weapon from the collection.</text>
 		<event>
-			<text>"An Autocannon, sir? Cheap, and hastily assembled, yet excellent at suppressing shields? A fine choice."</text>
+			<text>"We've sold and traded many items from our inventory over the years, but never have I thought of something from our collection going out back into battle."</text>
 			<weapon name = "GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"/>
 			<item_modify>
 				<item type="scrap" min="-10" max="-35"/>
 			</item_modify>
 		</event>
 	</choice>
-	<choice>
-		<text>Purchase an old Separatist weapon.</text>
-		<event>
-			<text>"A Coilgun, sir? A weapon for the patient. Good taste, they're fine weapons."</text>
-			<weapon name = "GB_COILGUNS"/>
-			<item_modify>
-				<item type="scrap" min="-30" max="-45"/>
-			</item_modify>
-		</event>
-	</choice>
-	<choice>
-		<text>Purchase an old Harmony weapon.</text>
-		<event>
-			<text>"A Gauss rifle, sir? Of course, of course. An acquired taste, for certain, but deadly in the right hands."</text>
-			<weapon name = "GB_GAUSS"/>
-			<item_modify>
-				<item type="scrap" min="-30" max="-45"/>
-			</item_modify>
-		</event>
-	</choice>
 	<choice req = "LIST_CREW_FEDERATION_ELITE">
-		<text>(Federation Elite Crew) Do you have anything... newer?</text>
+		<text>(Federation Elite Crew) Requisition a weapon from the collection.</text>
 		<event>
-			<text>"Well, funny you should ask that, sir. We do keep some more... experimental armaments in our back rooms."</text>
-			<weapon name = "GB_RAIL"/>
+			<text>With the Federations supply shortage of weapons they passed a resolution that allows their Elites and Officers to requisition former Federation equipment.</text> <!-- something after the explanation of how requisition works?-->
+			<weapon name = "GB_RAIL"/> <!-- maybe an Elite AC or AC4? Random chance between those two?-->
 			<item_modify>
 				<item type="scrap" min="-40" max="-55"/>
 			</item_modify>
 		</event>
 	</choice>
+<!-- Have the donate weapons be a single option to donate a weapon, which then plays the event a bit and asks what do you wish to donate, which then prompts the bellow weapons -->
 	<choice req="GB_AC_1">
 		<text>Donate your autocannon MK1 to the museum.</text>
 		<event>
