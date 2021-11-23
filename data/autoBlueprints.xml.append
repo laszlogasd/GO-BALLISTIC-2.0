@@ -771,7 +771,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 			SHIPS
 /////////////////////////////-->
 
-<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="r4p_gb_fed_bomber_damaged">
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="gb_fed_bomber" img="gb_fed_bomber">
 	<class>Damaged Federation Bomber</class>
 	<minSector>3</minSector>
 	<systemList>

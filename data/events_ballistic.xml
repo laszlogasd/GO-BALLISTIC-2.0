@@ -995,79 +995,74 @@
 </event>
 
 <event name = "GB_MUSEUM_PURCHASE_DONATE">
-	<text>The curator bows obsequiously, and takes you into a storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both.</text> 
-	<choice hidden = "true">
-		<text>Purchase an old Federation weapon.</text>
+	<text>The curator bows obsequiously, and leads you into a dusty storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both." </text> 
+	<choice>
+		<text>Offer to purchase a weapon from the collection.</text>
 		<event>
-			<text>"An Autocannon, sir? Cheap, and hastily assembled, yet excellent at suppressing shields? A fine choice."</text>
+			<text>"We've sold and traded many items from our inventory over the years, but never have I thought of something from our collection going out back into battle."</text>
 			<weapon name = "GB_SHOP_ITEM_WEAPONS_CANNONS_OLD"/>
 			<item_modify>
 				<item type="scrap" min="-10" max="-35"/>
 			</item_modify>
 		</event>
 	</choice>
-	<choice hidden = "true">
-		<text>Purchase an old Separatist weapon.</text>
+	<choice req = "LIST_CREW_FEDERATION_ELITE">
+		<text>(Federation Elite Crew) Requisition a weapon from the collection.</text>
 		<event>
-			<text>"A Coilgun, sir? A weapon for the patient. Good taste, they're fine weapons."</text>
-			<weapon name = "GB_COILGUNS"/>
-			<item_modify>
-				<item type="scrap" min="-30" max="-45"/>
-			</item_modify>
-		</event>
-	</choice>
-	<choice hidden = "true">
-		<text>Purchase an old Harmony weapon.</text>
-		<event>
-			<text>"A Gauss rifle, sir? Of course, of course. An acquired taste, for certain, but deadly in the right hands."</text>
-			<weapon name = "GB_GAUSS"/>
-			<item_modify>
-				<item type="scrap" min="-30" max="-45"/>
-			</item_modify>
-		</event>
-	</choice>
-	<choice hidden = "true" req = "LIST_CREW_FEDERATION_ELITE">
-		<text>(Elite Crew) Do you have anything... newer?</text>
-		<event>
-			<text>"Well, funny you should ask that, sir. We do keep some more... experimental armaments in our back rooms."</text>
-			<weapon name = "GB_RAIL"/>
+			<text>With the Federations supply shortage of weapons, they passed a resolution that allows their Elites and Officers to requisition former Federation equipment.</text> <!-- something after the explanation of how requisition works?-->
+			<weapon name = "GB_RAIL"/> <!-- maybe an Elite AC or AC4? Random chance between those two?-->
 			<item_modify>
 				<item type="scrap" min="-40" max="-55"/>
 			</item_modify>
 		</event>
 	</choice>
-	<choice hidden = "true" req="GB_AC_1">
-		<text>Donate your autocannon to the museum.</text>
+	<!-- Have the donate weapons be a single option to donate a weapon, which then plays the event a bit and asks what do you wish to donate, which then prompts the bellow weapons -->
+	<choice req = "GB_SHOP_ITEM_WEAPONS_CANNONS_OLD">
+		<text>Donate a weapon to the museum.</text>
 		<event>
-			<text>"Hmm. A mark one autocannon. Quite a poor specimen, as well." They grumble a little, but eventually you talk them into paying you for it.</text>
-			<autoReward level = "MED">scrap_only</autoReward>
-		</event>
-	</choice>
-	<choice hidden = "true" req="GB_AC_2">
-		<text>Donate your autocannon to the museum.</text>
-		<event>
-			<text>The curator starts when you offer your donation. "A mark two? In excellent condition, as well. I would be honoured to take this off your hands, captain."</text>
-			<autoReward level = "HIGH">scrap_only</autoReward>
-		</event>
-	</choice>
-	<choice hidden = "true" req="GB_AC_3">
-		<text>Donate your autocannon to the museum.</text>
-		<event>
-			<text>"Oh my, oh my! A mark three. Gosh, I haven't seen one of these for... oh, must be twenty years. A little beat-up I see, but this would be a prize addition to our collection here." They offer you as much scrap as they can find in their vaults.</text>
-			<autoReward level = "HIGH">scrap_only</autoReward>
-			<choice hidden = "true">
-				<text>Continue...</text>
+			<text>The curator seems rather shocked when you offer to donate some of your arsenal. "We thought the military didn't care about us any more... what with this Multiversal conflict going on, the last time a supply ship made it out this far was six months ago. Whilst it may not be food, we at The Federal War Museum would be delighted to take some equipment off you, captain."</text>
+			<choice req="GB_AC_1">
+				<text>Donate your autocannon MK1 to the museum.</text>
 				<event>
-					<text>The museum drop off even more scrap as you leave the building.</text>
+					<text>"Hmm. A mark one autocannon. Quite a poor specimen, as well." They grumble a little, but eventually you talk them into paying you for it.</text>
+					<autoReward level = "MED">scrap_only</autoReward>
+				</event>
+			</choice>
+			<choice req="GB_AC_2">
+				<text>Donate your autocannon MK2 to the museum.</text>
+				<event>
+					<text>The curator stares when you offer your donation. "A mark two? In excellent condition, as well. I would be honoured to take this off your hands, captain."</text>
 					<autoReward level = "HIGH">scrap_only</autoReward>
 				</event>
 			</choice>
+			<choice req="GB_AC_3">
+				<text>Donate your autocannon MK3 to the museum.</text>
+				<event>
+					<text>"Oh my, oh my! A mark three. Gosh, I haven't seen one of these for... oh, must be twenty years. A little beat-up I see, but this would be a prize addition to our collection here." They offer you as much scrap as they can find in their vaults.</text>
+					<autoReward level = "HIGH">scrap_only</autoReward>
+					<choice hidden = "true">
+						<text>Continue...</text>
+						<event>
+							<text>The museum drop off even more scrap as you leave the building.</text>
+							<autoReward level = "HIGH">scrap_only</autoReward>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<!--<choice req="GB_AC_4">
+				<text>Donate your autocannon MK4 to the museum.</text>
+				<event/>
+			</choice>-->
+			<choice>
+				<text>Leave.</text>
+				<event/>
+			</choice>
 		</event>
 	</choice>
-	<!--<choice req="GB_AC_4">
-		<text>Donate your autocannon to the museum.</text>
+	<choice>
+		<text>Leave.</text>
 		<event/>
-	</choice>-->
+	</choice>
 </event>
 
 </FTL>

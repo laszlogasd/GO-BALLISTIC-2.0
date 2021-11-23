@@ -888,19 +888,20 @@
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
 	<damage>1</damage>
+	<freeMissileChance>50</freeMissileChance>
 	<shots>8</shots>
 	<breachChance>1</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>30</cooldown>
 	<power>0</power>
 	<speed>60</speed>
-	<radius>50</radius>
+	<radius>75</radius>
 	<fireTime>0.05</fireTime>
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<cost>60</cost>
 	<boost>
 		<type>cooldown</type>
-		<amount>10</amount>
+		<amount>15</amount>
 		<count>3</count>
 	</boost>
 	<projectiles>
