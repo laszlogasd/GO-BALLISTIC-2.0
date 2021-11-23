@@ -958,7 +958,7 @@
 </event>
 
 <event name = "GB_MUSEUM_TOUR">  <!--I guess I'm trying to evoke Trantor here-->
-	<text>You arrive at a planet. It's clear even from far above that its landscape is covered with an urban sprawl cradled between tall mointains. While an impressive feat of engineering, there is nothing much of interest. However not far from the capitals space port is a Federation Military Museum. Perhaps we can learn something of the conflicts of yesteryear.</text>
+	<text>You arrive at a planet. It's clear that even from far above, its landscape is covered with an urban sprawl, cradled between tall mountains. While an impressive feat of engineering, there is nothing much of interest. However, not far from the capital's space port is a Federation Military Museum. Perhaps we can learn something of the conflicts of yesteryear.</text>
 	<choice hidden = "true">
 		<text>Land and look around the building.</text>
 		<event><!--- CG: Can I can I use grizzled here? --> <!--R4: Yes you may-->
@@ -966,7 +966,7 @@
 			<choice hidden = "true">
 				<text>Continue...</text>
 				<event>
-					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. One of the museums curators scuttles up towards you, recognising you as the Multiverse traveller, asks if they could provide any assistance with your mission.</text>
+					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events, do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. One of the museums curators scuttles up towards you, recognising you as the Multiverse traveller, asks if they could provide any assistance with your mission.</text>
 					<!--<choice>
 						<text>Ask to take a tour around the museum.</text>
 						<event>
@@ -1002,7 +1002,7 @@
 </event>
 
 <event name = "GB_MUSEUM_PURCHASE_DONATE">
-	<text>The curator bows obsequiously, and leads you into a dusty storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both.</text> 
+	<text>The curator bows obsequiously, and leads you into a dusty storeroom, where a variety of antique weapons are hanging on the walls, neatly categorised by year and users. You note that the 'Federation' section is rather empty. "I, sir, would be delighted to assist you in any way. Well, any way that helps us both." </text> 
 	<choice>
 		<text>Offer to purchase a weapon from the collection.</text>
 		<event>
@@ -1016,7 +1016,7 @@
 	<choice req = "LIST_CREW_FEDERATION_ELITE">
 		<text>(Federation Elite Crew) Requisition a weapon from the collection.</text>
 		<event>
-			<text>With the Federations supply shortage of weapons they passed a resolution that allows their Elites and Officers to requisition former Federation equipment.</text> <!-- something after the explanation of how requisition works?-->
+			<text>With the Federations supply shortage of weapons, they passed a resolution that allows their Elites and Officers to requisition former Federation equipment.</text> <!-- something after the explanation of how requisition works?-->
 			<weapon name = "GB_RAIL"/> <!-- maybe an Elite AC or AC4? Random chance between those two?-->
 			<item_modify>
 				<item type="scrap" min="-40" max="-55"/>
@@ -1034,7 +1034,7 @@
 	<choice req="GB_AC_2">
 		<text>Donate your autocannon MK2 to the museum.</text>
 		<event>
-			<text>The curator starts when you offer your donation. "A mark two? In excellent condition, as well. I would be honoured to take this off your hands, captain."</text>
+			<text>The curator stares when you offer your donation. "A mark two? In excellent condition, as well. I would be honoured to take this off your hands, captain."</text>
 			<autoReward level = "HIGH">scrap_only</autoReward>
 		</event>
 	</choice>
