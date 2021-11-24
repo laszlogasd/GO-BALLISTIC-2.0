@@ -991,6 +991,7 @@
 			<human room = "0"/>
 			<human room = "10"/>
 			<human room = "12"/>
+			<human room = "11"/> <!-- R4: I just winged it and hope this is somewhere nice -->
 		</crew>
         <crewLimit>11</crewLimit>
     </mod-append:customShip>

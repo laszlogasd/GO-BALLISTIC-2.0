@@ -10,7 +10,7 @@
 	<desc>An attempt to utilize modern technology with this old weapon, which takes a long time to warm up. Each time it fires it decreases its cooldown between shots, eventually being able to take down any amount of shields.</desc>
 	<tooltip>3 shots 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach, charges quicker the more it fires</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>75</freeMissileChance>
 	<damage>1</damage>
 	<shots>3</shots>
 	<sp>0</sp>
@@ -56,13 +56,13 @@
 	<tooltip>1 shot 1 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<accuracyMod>20</accuracyMod>
 	<damage>1</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>13</cooldown> <!--- was 12 -->
+	<cooldown>14</cooldown> <!--- was 12 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>3</amount>
@@ -94,7 +94,6 @@
 	<weaponArt>GB_Coilgun_1</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_COIL_1_ENEMY">
 	<type>LASER</type>
 	<title>Coil Gun Mark I</title>
@@ -103,12 +102,13 @@
 	<tooltip>1 shot 1 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
 	<missiles>1</missiles>
 	<freeMissileChance>75</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>1</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>1</stunChance>
-	<cooldown>13</cooldown> <!--- was 12 -->
+	<cooldown>14</cooldown> <!--- was 12 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>3</amount>
@@ -148,14 +148,14 @@
 	<desc>This modified mass driver is capable of delivering a shield piercing accurate barrage of shells at an increasing rate of fire after each shot.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 20% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>4</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>16</cooldown> 
+	<cooldown>18.5</cooldown> 
 	<boost>
 		<type>cooldown</type>
 		<amount>2</amount>
@@ -187,7 +187,6 @@
 	<weaponArt>GB_Coilgun_2</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_COIL_2_ENEMY">
 	<type>LASER</type>
 	<title>Coil Gun Mark II</title>
@@ -195,7 +194,8 @@
 	<desc>This modified mass driver is capable of delivering a shield piercing accurate barrage of shells at an increasing rate of fire after each shot.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 20% chance to stun, pierces 2 shields, charges quicker the more it fires, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
@@ -239,16 +239,16 @@
 	<title>Coil Gun Mark III</title>
 	<short>Coil Gun III</short>
 	<desc>This mass driver is modified to increase its rate of fire as it continues to pelt the enemy with high velocity shield piercing shells.</desc>
-	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, charges quicker the more it fires, 30% more accurate</tooltip>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, charges quicker the more it fires, 30% more accurate.</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>30</accuracyMod>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>19</cooldown> <!--- was 18 -->
+	<cooldown>23</cooldown> <!--- was 18 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>1.5</amount>
@@ -280,7 +280,6 @@
 	<weaponArt>GB_Coilgun_3</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_COIL_3_ENEMY">
 	<type>LASER</type>
 	<title>Coil Gun Mark III</title>
@@ -288,13 +287,14 @@
 	<desc>This mass driver is modified to increase its rate of fire as it continues to pelt the enemy with high velocity shield piercing shells.</desc>
 	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, charges quicker the more it fires, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>10</accuracyMod>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>19</cooldown> <!--- was 18 -->
+	<cooldown>23</cooldown> <!--- was 18 -->
 	<boost>
 		<type>cooldown</type>
 		<amount>1.5</amount>
