@@ -910,6 +910,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="21" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "human"/>
 </shipBlueprint>
 
 <shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
@@ -938,6 +939,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="25" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "soldier"/>
 </shipBlueprint>
 
 <shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
@@ -966,4 +968,5 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="27" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "soldier"/>
 </shipBlueprint>

@@ -1137,8 +1137,9 @@
 /////////////////////////-->
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL" layout="r4p_gb_kestrel_a" img="r4p_gb_kestrel_a">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>The Falco</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_unlock"/>
 	<desc>A boring and outdated human vessel originally produced by the Federation. In its stock original configeration during the Federation-Mantis War.</desc>
 	<!--just a bunch of human crew-->
 	<systemList>
@@ -1210,8 +1211,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestrel_b" img="r4p_gb_kestrel_b">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>Warhawk</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_2_unlock"/>
 	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
 	<!--human human orchid zoltan-->
 	<systemList>
@@ -1285,8 +1287,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_3" layout="r4p_gb_kestrel_c" img="r4p_gb_kestrel_c">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>The Martlet</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_3_unlock"/>
 	<desc>An old battlehardened Kestrel that is the embodiment that a good offense is a good defence.</desc>
 	<!--human free mantis zoltan separatist-->
 	<systemList>
