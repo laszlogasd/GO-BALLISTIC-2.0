@@ -2,6 +2,7 @@
 
 <!-- WEAPONS -->
 <!-- Autocannon Series -->
+
 <weaponBlueprint name="GB_AC_1">
 	<type>LASER</type>
 	<title>Autocannon Mark I</title>
@@ -48,7 +49,7 @@
 	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
 	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>83</freeMissileChance>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -88,7 +89,7 @@
 	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
 	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>81</freeMissileChance>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -171,7 +172,7 @@
 	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
 	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>83</freeMissileChance>
 	<damage>2</damage>
 	<persDamage>1</persDamage>
 	<shots>1</shots>
@@ -213,7 +214,7 @@
 	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
 	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>81</freeMissileChance>
 	<damage>3</damage>
 	<persDamage>1</persDamage>
 	<shots>1</shots>
@@ -256,14 +257,14 @@
 	<desc>One of the first mass drivers in service, capable of firing a shield piercing kinetic round with extreme precision.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -290,7 +291,6 @@
 	<weaponArt>GB_Gauss_1</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_GAUSS_1_ENEMY">
 	<type>LASER</type>
 	<title>Gauss Rifle Mark I</title>
@@ -298,13 +298,14 @@
 	<desc>One of the first mass drivers in service, capable of firing a shield piercing kinetic round with extreme precision.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -339,8 +340,49 @@
 	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
 	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>16</cooldown> <!--- was 13 -->
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>70</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussMedium1</sound>
+		<sound>GB_gaussMedium2</sound>
+		<sound>GB_gaussMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="GB_GAUSS_2_ENEMY">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark II</title>
+	<short>Gauss II</short>
+	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>16</accuracyMod>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>2</sp>
@@ -381,14 +423,14 @@
 	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
 	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>30</accuracyMod>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
 	<damage>4</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>16</cooldown>
+	<cooldown>20</cooldown>
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -415,48 +457,6 @@
 	<weaponArt>GB_Gauss_3</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
-<weaponBlueprint name="GB_GAUSS_2_ENEMY">
-	<type>LASER</type>
-	<title>Gauss Rifle Mark II</title>
-	<short>Gauss II</short>
-	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
-	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
-	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<damage>3</damage>
-	<shots>1</shots>
-	<sp>2</sp>
-	<breachChance>4</breachChance>
-	<stunChance>3</stunChance>
-	<cooldown>14</cooldown> <!--- was 13 -->
-	<power>2</power>
-	<speed>180</speed>
-	<bp>4</bp>
-	<rarity>0</rarity>
-	<cost>70</cost>
-	<image>GB_shot_light</image>
-	<launchSounds>
-		<sound>GB_gaussMedium1</sound>
-		<sound>GB_gaussMedium2</sound>
-		<sound>GB_gaussMedium3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull2</sound>
-		<sound>hitHull3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>GB_Gauss_2</weaponArt>
-	<iconImage>laser</iconImage>
-</weaponBlueprint>
-
 <weaponBlueprint name="GB_GAUSS_3_ENEMY">
 	<type>LASER</type>
 	<title>Gauss Rifle Mark III</title>
@@ -464,13 +464,14 @@
 	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
 	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>4</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>16</cooldown>
+	<cooldown>20</cooldown>
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -504,7 +505,7 @@
 	<short>AP Gauss</short>
 	<desc>This weapon is a light anti-personnel weapon capable of taking pot shots at enemy crew with shield piercing kinetic strikes.</desc>
 	<tooltip>1 shot 30 crew damage weapon, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
-	<accuracyMod>25</accuracyMod>
+	<accuracyMod>20</accuracyMod>
 	<damage>0</damage>
 	<persDamage>2</persDamage>
 	<shots>1</shots>
@@ -625,8 +626,8 @@
 	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
 	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>2</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -634,7 +635,7 @@
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -661,7 +662,6 @@
 	<weaponArt>GB_Railgun_1</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_1_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark I</title>
@@ -669,7 +669,8 @@
 	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
 	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>2</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -677,7 +678,7 @@
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -712,8 +713,8 @@
 	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields, and is designed to maximize hull damage.</desc>
 	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>3</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -721,7 +722,7 @@
 	<breachChance>5</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>15</cooldown> <!--- was 13 -->
+	<cooldown>16</cooldown> <!--- was 13 -->
 	<power>3</power> 
 	<speed>180</speed>
 	<bp>4</bp>
@@ -748,7 +749,6 @@
 	<weaponArt>GB_Railgun_2</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_2_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark II</title>
@@ -756,7 +756,8 @@
 	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields, and is designed to maximize hull damage.</desc>
 	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>3</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -764,7 +765,7 @@
 	<breachChance>5</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>15</cooldown> <!--- was 13 -->
+	<cooldown>16</cooldown> <!--- was 13 -->
 	<power>3</power> 
 	<speed>180</speed>
 	<bp>4</bp>
@@ -799,8 +800,8 @@
 	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
 	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>30</accuracyMod>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>4</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -808,7 +809,7 @@
 	<breachChance>6</breachChance>
 	<stunChance>4</stunChance>
 	<stun>3</stun>
-	<cooldown>18</cooldown> <!--- was 16 -->
+	<cooldown>24</cooldown> <!--- was 16 -->
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -835,7 +836,6 @@
 	<weaponArt>GB_Railgun_3</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_3_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark III</title>
@@ -843,7 +843,8 @@
 	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
 	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>4</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -851,7 +852,7 @@
 	<breachChance>6</breachChance>
 	<stunChance>4</stunChance>
 	<stun>3</stun>
-	<cooldown>18</cooldown> <!--- was 16 -->
+	<cooldown>24</cooldown> <!--- was 16 -->
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -883,26 +884,27 @@
 
 <weaponBlueprint name = "GB_MG_LOOT">
 	<type>BURST</type>
-	<title>'Spray and Pray'</title>
+	<title>'Spray'n'Pray'</title>
 	<short>'S.A.P'</short>
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>45</freeMissileChance>
 	<damage>1</damage>
-	<freeMissileChance>50</freeMissileChance>
 	<shots>8</shots>
 	<breachChance>1</breachChance>
 	<cooldown>30</cooldown>
 	<power>0</power>
 	<speed>60</speed>
-	<radius>75</radius>
+	<radius>50</radius>
 	<fireTime>0.05</fireTime>
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<cost>60</cost>
 	<boost>
 		<type>cooldown</type>
-		<amount>15</amount>
-		<count>3</count>
+		<amount>20</amount>
+		<count>2</count>
 	</boost>
 	<projectiles>
 		<projectile count="1" fake="false">GB_shot_light</projectile>

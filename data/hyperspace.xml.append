@@ -1033,10 +1033,10 @@
         <hiddenAug>SHIP_KESTREL</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crew>
-			<human room = "5"/> <!--engines-->
+			<human room = "9"/> <!--engines-->
 			<human room = "10"/> <!--weapons-->
 			<orchid room = "12"/> <!--cloaking-->
-			<energy room = "9"/> <!--piloting :)-->
+			<energy room = "5"/> <!--piloting :)-->
 		</crew>
         <crewLimit>11</crewLimit>
     </mod-append:customShip>
@@ -1046,7 +1046,7 @@
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>11</crewLimit>
 		<crew>
-			<human room = "2"/> <!--airlock-->
+			<human room = "11"/> <!--weapons-->
 			<energy room = "12"/> <!--shields-->
 			<freemantis room = "0"/> <!--pilot-->
 			<separatist room = "13"/> <!--engines-->

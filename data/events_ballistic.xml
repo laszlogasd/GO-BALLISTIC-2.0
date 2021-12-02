@@ -575,8 +575,8 @@
 				<event>
 					<text>You enter into the atrium, where you see many great displays of equipment of various points of the Federation's timespan in this Universe. Some things depicted here, especially the events do not line up perfectly with what you are familiar with in your universe. You aren't sure if that's due to errors of the displays or a divergence in the timeline between this and your universe. Entering the main corridor, you realise that this is a museum, built to contain old Federation memorabilia. A curator scuttles up to you, and, seeing your insignia, asks if they can provide anything to assist with your mission - for a price.</text>
 					<choice>
-						<text>Take a tour around the museum.</text>
-						<event load = "GB_MUSEUM_TOUR_TOUR"/>
+						<text>Take a tour around the museum. WARNING, DOES NOTHING FOR NOW</text>
+						<!--<event load = "GB_MUSEUM_TOUR_TOUR"/>-->
 					</choice>
 					<choice>
 						<text>Let's get straight to business, shall we?</text>
@@ -673,8 +673,34 @@
 	</choice>
 </event>
 
-<event name = "GB_MUSEUM_TOUR_TOUR">
-	<text>LORE BIRB</text>
+<!--<event name = "GB_MUSEUM_TOUR_TOUR">
+	<text>You request to take a tour around the museum, in the hopes it will teach you more about your mission.</text>
+	<choice>
+		<text>Ask to take a tour around the museum.</text>
+		<event>
+			<text>Something something LORE BIRB</text>
+			<choice req = "jerry">
+				<text>Jerry wants to learn about Canada.</text>
+			</choice>
+			<choice> tell me about the Federation-Mantis War [[general overview]] -> [[conclusion of war]] -> menu of 3 questions, 1: Free mantis origin,  2: increased piracy (Tiikaka), 3: Federation question, 4:
+			<choice> tell me about the Federations Weapons History [[Autocannon lore during war]] -> [[what happened post war]] -> [[Rebelion era]] -> [[now]]
+			<choice> tell me about the expansion wars [[summary]] -> [[how it affected the Federation and international response]]
+			<choice> ask about the museums collection [[broad description]] -> [[options to ask about some items]]
+			<choice>
+				<text>Ask to learn about the Aquarian Trade Empire.</text>
+				<event>
+					<text>"The Aquarians... well, I think we have just the presentation for you, sir."</text>
+					<choice>
+						<text>Follow the curator to the holoroom.</text>
+						<event>
+							<text>It appears another group of tourists are already watching some film about Aquarians. You and your crew catch snippets of it as you follow the curator to the room.
+							"Hey guys, did you know that in terms of male human and female alien breeding, an Aquarian is the most compatible..." Your gunner snorts slightly at the 'educational' presentation. "Aquarians are an average of 3'03" tall and 63.9 pounds, this means they’re large enough to be able to handle..." and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have sex with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide nipples, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility. Also, fun fact, if you pull out enough, you can make your Vaporeon turn white. Vaporeon is literally built for human dick. Ungodly defense stat+high HP pool+Acid Armor means it can take cock all day, all shapes and sizes and still come for more.</text>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		<event/>
+	</choice>
 </event>
 
 <!--<choice>
