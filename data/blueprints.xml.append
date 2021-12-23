@@ -161,7 +161,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>GB_Autocannon_1</weaponArt>
+	<weaponArt>GB_Autocannon_1_E</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
@@ -203,7 +203,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>GB_Autocannon_2</weaponArt>
+	<weaponArt>GB_Autocannon_2_E</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
@@ -245,7 +245,7 @@
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>GB_Autocannon_3</weaponArt>
+	<weaponArt>GB_Autocannon_3_E</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
@@ -1142,7 +1142,7 @@
 	<class>Antique Kestrel Cruiser</class>
 	<name>The Falco</name>
 	<unlock id="ship_PLAYER_SHIP_BALLISTIC_unlock"/>
-	<desc>A boring and outdated human vessel originally produced by the Federation. In its stock original configeration during the Federation-Mantis War.</desc>
+	<desc id = "text_PLAYER_SHIP_BALLISTIC_desc"/>
 	<!--just a bunch of human crew-->
 	<systemList>
 		<artillery max="4" power="1" room="17" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />
@@ -1216,7 +1216,7 @@
 	<class>Antique Kestrel Cruiser</class>
 	<name>Warhawk</name>
 	<unlock id="ship_PLAYER_SHIP_BALLISTIC_2_unlock"/>
-	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
+	<desc id = "text_PLAYER_SHIP_BALLISTIC_2_desc"/>
 	<!--human human orchid zoltan-->
 	<systemList>
 		<artillery max="3" power="1" room="8" start="false" weapon="ARTILLERY_MFK_1" img="room_artillery" />
@@ -1292,7 +1292,7 @@
 	<class>Antique Kestrel Cruiser</class>
 	<name>The Martlet</name>
 	<unlock id="ship_PLAYER_SHIP_BALLISTIC_3_unlock"/>
-	<desc>An old battlehardened Kestrel that is the embodiment that a good offense is a good defence.</desc>
+	<desc id = "text_PLAYER_SHIP_BALLISTIC_3_desc"/>
 	<!--human free mantis zoltan separatist-->
 	<systemList>
 		<artillery power="1" room="18" start="false" weapon="ARTILLERY_BEAM" img="room_artillery" />

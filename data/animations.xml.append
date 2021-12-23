@@ -40,6 +40,8 @@
 </anim>
 
 <!-- WEAPONS -->
+
+<!--AUTOCANNONS-->
 <animSheet name="GB_Autocannon_1" w="119" h="67" fw="17" fh="67">weapons_autocannon/GB_Autocannon_1_strip7.png</animSheet>
 <weaponAnim name="GB_Autocannon_1">
 	<sheet>GB_Autocannon_1</sheet>
@@ -70,6 +72,41 @@
 	<mountPoint x="3" y="66" />
 	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
 </weaponAnim>
+
+<!-- ELITE AUTOCANNONS-->
+
+<animSheet name="GB_Autocannon_1_E" w="119" h="67" fw="17" fh="67">weapons_autocannon/GB_Autocannon_1_Elite_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_E">
+	<sheet>GB_Autocannon_1_E</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="GB_Autocannon_2_E" w="171" h="75" fw="19" fh="75">weapons_autocannon/GB_Autocannon_2_Elite_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_E">
+	<sheet>GB_Autocannon_2_E</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="GB_Autocannon_3_E" w="234" h="90" fw="26" fh="90">weapons_autocannon/GB_Autocannon_3_Elite_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_E">
+	<sheet>GB_Autocannon_3_E</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<!--GAUSS-->
 
 <animSheet name="GB_Gauss_1" w="312" h="130" fw="24" fh="130">weapons_gauss/GB_Gauss_1_strip13.png</animSheet>
 <weaponAnim name="GB_Gauss_1">
@@ -112,6 +149,8 @@
 	<chargeImage>weapons_gauss/GB_AP_Gauss_glow.png</chargeImage>
 </weaponAnim>
 
+<!--MG-->
+
 <animSheet name="GB_Machinegun" w="98" h="60" fw="14" fh="60">weapons/GB_Machinegun_strip7.png</animSheet>
 <weaponAnim name="GB_Machinegun">
 	<sheet>GB_Machinegun</sheet>
@@ -132,6 +171,8 @@
 	<mountPoint x="3" y="40" />
 	<chargeImage>weapons/GB_Machinegun_Heavy_glow.png</chargeImage>
 </weaponAnim>
+
+<!--RAILGUNS-->
 
 <animSheet name="GB_Railgun_1" w="243" h="110" fw="27" fh="110">weapons_rail/GB_Railgun_1_strip9.png</animSheet>
 <weaponAnim name="GB_Railgun_1">
@@ -172,6 +213,8 @@
 	<firePoint x="15" y="49" />
 	<mountPoint x="15" y="49" />
 </weaponAnim>
+
+<!--BRRRRRRRRRRRRRRRT-->
 
 <animSheet name = "GB_MG_loot" w = "1024" h = "101" fw = "32" fh = "101">weapons/GB_MG_loot.png</animSheet>
 <weaponAnim name="GB_MG_loot">

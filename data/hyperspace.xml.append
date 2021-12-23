@@ -4,6 +4,11 @@
 
 <events>
 <eventFile>ballistic</eventFile>
+
+<bossShip yOffset = "70">MT_BOSS_GB_R4_BALLISTIC_C_NORMAL</bossShip>
+<bossShip yOffset = "70">MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE</bossShip>
+<bossShip yOffset = "70">MT_BOSS_GB_R4_BALLISTIC_C_EXTREME</bossShip>
+
 </events>
 
 <store>
