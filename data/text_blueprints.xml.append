@@ -13,3 +13,7 @@
 <text name="text_PLAYER_SHIP_HARD_2_class">Kestrel Cruiser</text>
 <text name="text_PLAYER_SHIP_HARD_2_name">Warhawk</text>
 <text name="text_PLAYER_SHIP_R4_GB_KESTREL_2_desc">This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</text>
+
+<text name="ship_PLAYER_SHIP_BALLISTIC_unlock">Unlock all 3 kestrel cruisers to unlock this cruiser. !!TEMP UNLOCK!!</text>
+<text name="ship_PLAYER_SHIP_BALLISTIC_2_unlock">Get to Sector 5 with the Antique Kestrel Cruiser Type A to unlock this ship.</text>
+<text name="ship_PLAYER_SHIP_BALLISTIC_3_unlock">Get to Sector 5 with the Antique Kestrel Cruiser Type B or beat the game with the Antique Kestrel Cruiser Type A to unlock this ship.</text>

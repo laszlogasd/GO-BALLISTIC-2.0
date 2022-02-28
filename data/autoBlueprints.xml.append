@@ -175,6 +175,37 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_DEFENSE_AC</mod-append:name>
 </mod:findName>
 
+<blueprintList name="GB_CANNONS_AMMOSELECT">
+	<name>GB_AC_1</name>
+	<name>GB_AC_2</name>
+	<name>GB_AC_3</name>
+	<name>GB_AC_4</name>
+	<name>GB_AC_1_HE</name>
+	<name>GB_AC_1_FLECHETTE</name>
+	<name>GB_AC_1_HV</name>
+	<name>GB_AC_1_INCENDIARY</name>
+	<name>GB_AC_1_CASELESS</name>
+	<name>GB_AC_2_HE</name>
+	<name>GB_AC_2_FLECHETTE</name>
+	<name>GB_AC_2_HV</name>
+	<name>GB_AC_2_INCENDIARY</name>
+	<name>GB_AC_2_CASELESS</name>
+	<name>GB_AC_3_HE</name>
+	<name>GB_AC_3_FLECHETTE</name>
+	<name>GB_AC_3_HV</name>
+	<name>GB_AC_3_INCENDIARY</name>
+	<name>GB_AC_3_CASELESS</name>
+	<name>GB_AC_4_HE</name>
+	<name>GB_AC_4_FLECHETTE</name>
+	<name>GB_AC_4_HV</name>
+	<name>GB_AC_4_INCENDIARY</name>
+	<name>GB_AC_4_CASELESS</name>
+	<!--<name>GB_AC_4</name>
+	<name>GB_RIFLED_CANNON</name>
+	<name>GB_BURST_CANNON_1</name>
+	<name>GB_BURST_CANNON_2</name> -->
+</blueprintList>
+
 <!---- SHOP_ITEM_WEAPONS_GP_CANNONS ---->
 <blueprintList name="GB_SHOP_ITEM_WEAPONS_GP_CANNONS">
 	<name>GB_AC_1</name>
@@ -387,6 +418,10 @@ created from scratch using the components or techniques of them to create odd an
 	<mod-append:name>GB_AC_2</mod-append:name>
 	<mod-append:name>GB_AC_3</mod-append:name>
 	<!--<mod-append:name>GB_AC_4</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
+	<mod-append:name>GB_AC_1_E</mod-append:name>
+	<mod-append:name>GB_AC_2_E</mod-append:name>
+	<mod-append:name>GB_AC_3_E</mod-append:name>
+	<!--<mod-append:name>GB_AC_4_E</mod-append:name> --> <!-- Perhaps best left for specific encounter? -->
 	<mod-append:name>GB_ROTARY_AC</mod-append:name>
 	<!--<mod-append:name>GB_BURST_CANNON_1</mod-append:name>
 	<mod-append:name>GB_BURST_CANNON_2</mod-append:name> -->
@@ -425,6 +460,157 @@ created from scratch using the components or techniques of them to create odd an
 <mod:findName type="blueprintList" name="LIST_DRONES_ENGI_DEFENSE_NOENEMY"> 	<!-- unchanged, might edit later -->
 
 </mod:findName>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+			SEPPY SHIPS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<blueprintList name = "LIST_WEAPONS_SEPARATIST">
+	<name>LASER_BURST_1</name>
+	<name>LASER_BURST_2_ENEMY</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_HEAVY_1</name>
+	<name>BEAM_1</name>
+	<name>BEAM_2</name>
+	<name>BEAM_3</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_FIRE</name>
+	<name>ION_1</name>
+	<name>ION_2</name>
+	<name>ION_3</name>
+	
+	<name>ION_CHAINGUN</name>
+	<name>ION_CHARGEGUN</name>
+	<name>ION_STUN</name>
+	<name>ION_STUN_2</name>
+	<name>ION_STUN_HEAVY</name>
+	<name>ION_STUN_CHARGEGUN</name>
+	
+	<name>ION_HEAVY</name>
+	<name>ION_TRI</name>
+	<name>ION_FIRE</name>
+	<name>ION_BIO</name>
+	<name>LASER_PIERCE_ENEMY</name>
+	<name>LASER_FROST_1</name>
+	<name>LASER_STUN_ENEMY</name>
+	<name>BEAM_STUN</name>
+	<name>ENERGY_1</name>
+	<name>ENERGY_2</name>
+	<name>ENERGY_HULL</name>
+	
+	<name>ENERGY_STUN</name>
+	<name>ENERGY_CHARGEGUN</name>
+	
+	<name>GB_COIL_1_ENEMY</name>
+	<name>GB_COIL_2_ENEMY</name>
+	<name>GB_COIL_3_ENEMY</name>
+</blueprintList>
+
+<!--SHIPS WITH NEW WEAPON LIST-->
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST"/>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_SCOUT_NOCREW">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--OUTRIDER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_OUTRIDER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--FIGHTER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_FIGHTER_NO2">
+	<mod-overwrite:weaponList missiles="0" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--RIGGER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_RIGGER_NO2">
+<mod-overwrite:weaponList missiles="5" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--ENFORCER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_ENFORCER_NO2">
+	<mod-overwrite:weaponList missiles="6" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--BOMBER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_BOMBER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--PROTECTOR-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_PROTECTOR_NO2">
+	<mod-overwrite:weaponList missiles="10" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--DROPSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_DROPSHIP_NO2">
+	<mod-overwrite:weaponList missiles="0" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--MOTHERSHIP-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_MOTHERSHIP_NO2" layout="mu_engi_mothership_a" img="mu_engi_mothership_b">
+	<mod-overwrite:weaponList missiles="7" count="4" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRANSPORT-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRANSPORT_NO2">
+	<mod-overwrite:weaponList missiles="6" count="3" load="LIST_WEAPONS_SEPARATIST" />
+</mod:findName>
+
+<!--TRAPPER-->
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+<mod:findName type = "shipBlueprint" name="MU_SEPARATIST_TRAPPER_NO2">
+	<mod-overwrite:weaponList missiles="10" count="2">
+		<mod-overwrite:weapon name="LIST_WEAPONS_TRAPPER" />
+		<mod-overwrite:weapon name="LIST_WEAPONS_SEPARATIST" />
+	</mod-overwrite:weaponList>
+</mod:findName>
+
 <!--
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
@@ -602,10 +788,21 @@ Post update content might change these to "Federation"/Elite versions instead wh
 </blueprintList>
 
 <!--////////////////////////////
+			CREW
+/////////////////////////////-->
+
+<blueprintList name = "LIST_CREW_FEDERATION_ELITE">
+	<name>soldier</name>
+	<name>defend</name>
+	<name>chieftain</name>
+	<name>peace</name>
+</blueprintList>
+
+<!--////////////////////////////
 			SHIPS
 /////////////////////////////-->
 
-<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="mu_ghost_fed_bomber" img="r4p_gb_fed_bomber_damaged">
+<shipBlueprint name="GB_FED_BOMBER_LOWAMMO" layout="gb_fed_bomber" img="gb_fed_bomber">
 	<class>Damaged Federation Bomber</class>
 	<minSector>3</minSector>
 	<systemList>
@@ -744,6 +941,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="21" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "human"/>
 </shipBlueprint>
 
 <shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_CHALLENGE" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
@@ -772,6 +970,7 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="25" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "soldier"/>
 </shipBlueprint>
 
 <shipBlueprint name="MT_BOSS_GB_R4_BALLISTIC_C_EXTREME" layout="mt_boss_gb_r4_ballistic" img="mt_boss_gb_r4_ballistic">
@@ -800,4 +999,5 @@ Post update content might change these to "Federation"/Elite versions instead wh
 	<maxPower amount="27" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name = "AUTO_LOADER_LOW_SHIELD"/>
+	<crewCount amount = "1" max = "1" class = "soldier"/>
 </shipBlueprint>

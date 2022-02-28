@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--<mod:findName type = "event" name = "STORAGE_CHECK_REAL">
+	<mod-append:choice req = "GB_CANNONS_AMMOSELECT" blue = "false">
+		<text>(Autocannon) ammo</text>
+		<event load="STORAGE_CHECK_GB_AMMO"/>
+	</mod-append:choice>
+</mod:findName>-->
+
+<event name="STORAGE_CHECK_GB_AMMO">
+	<text>which autocannon do you want to config</text>
+	<choice req = "GB_AC_1_LIST" blue = "false" hidden="true">
+		<text>AC1</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1"/>
+	</choice>
+	<choice req = "GB_AC_2_LIST" blue = "false" hidden="true">
+		<text>AC2</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC2"/>
+	</choice>
+	<choice req = "GB_AC_3_LIST" blue = "false" hidden="true">
+		<text>AC3</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC3"/>
+	</choice>
+	<choice req = "GB_AC_4_LIST" blue = "false" hidden="true">
+		<text>AC4</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC4"/>
+	</choice>
+	<choice>
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<event name="STORAGE_CHECK_GB_AMMO_AC1">
+	<text>choose gun you want to change</text>
+	<choice req = "GB_AC_1" blue = "false">
+		<text>AC1 [Standard ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_NORMAL"/>
+	</choice>
+	<choice req = "GB_AC_1_HE" blue = "false">
+		<text>AC1 [High Explosive ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_HE"/>
+	</choice>
+	<choice req = "GB_AC_1_CASELESS" blue = "false">
+		<text>AC1 [Caseless ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_CASELESS"/>
+	</choice>
+	<choice req = "GB_AC_1_FLECHETTE" blue = "false">
+		<text>AC1 [Flechette ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_FLECHETTE"/>
+	</choice>
+	<choice req = "GB_AC_1_INCENDIARY" blue = "false">
+		<text>AC1 [Incendiary ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_INCENDIARY"/>
+	</choice>
+	<choice req = "GB_AC_1_HV" blue = "false">
+		<text>AC1 [High Velocity ammo in use].</text>
+		<event load="STORAGE_CHECK_GB_AMMO_AC1_HV"/>
+	</choice>
+	<choice>
+		<text>Do something else instead.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
 	<mod-append:choice req = "GB_COMBAT_AC_1" blue = "false">
 		<text>(Autocannon Drone) Set the state of the drone. [Current mode: Combat, 1 power]</text>
@@ -333,7 +396,46 @@
 
 <mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
 	<mod-append:choice hidden="true" req="ACH_MV_BALLISTIC" lvl="1" blue="false">
-		<text>Ballistic Cruiser</text>
-		<event load="OPTION_INVALID"/>
+		<text>Antique Kestrel Cruiser</text>
+		<event load="OPTION_INVALID" />
 	</mod-append:choice>
 </mod:findName>
+
+<mod:findName type="eventList" name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_LIST">
+	<mod-append:event name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_BALLISTIC" />
+</mod:findName>
+
+<!--called _BALLISTIC to preserve compatibility-->
+<event name="STORAGE_CHECK_AUG_MVBOSS_SPAWNER_BALLISTIC">
+	<text>You check what ships are available to be summoned currently. Summoning an MV boss will take 7{.</text>
+	<choice hidden="true">
+		<text>Kestrel B - Drops Light Charger</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_KESTREL_B_CHALLENGE"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Federation B - Drops 'Pharaoh' Mine Launcher</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_FED_B_CHALLENGE"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Antique Kestrel C - Drops 'Spray and Pray' Machinegun</text>
+		<event>
+			<text>You power up the machine to max and watch as a rift opens, shaking the ship until suddenly it powers off, and a flashing green light followed by a string of coordinates signifies that it has worked.</text>
+			<item_modify>
+				<item type="fuel" min="-7" max="-7"/>
+			</item_modify>
+			<quest event="MV_TRAVELER_BOSS_BALLISTIC_C_CHALLENGE"/>
+		</event>
+	</choice>
+</event>

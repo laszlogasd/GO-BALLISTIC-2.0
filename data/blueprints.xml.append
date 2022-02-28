@@ -2,6 +2,7 @@
 
 <!-- WEAPONS -->
 <!-- Autocannon Series -->
+
 <weaponBlueprint name="GB_AC_1">
 	<type>LASER</type>
 	<title>Autocannon Mark I</title>
@@ -41,6 +42,451 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="GB_AC_1_INCENDIARY">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Incendiary]</title>
+	<short>AC I [I]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>80</freeMissileChance>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>4</fireChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_Incendiary</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_Incendiary</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_HV">
+	<type>LASER</type>
+	<title>Autocannon Mark I [High Velocity]</title>
+	<short>AC I [HV]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<accuracyMod>10</accuracyMod>
+	<cost>10</cost>
+	<speed>80</speed>
+	<image>GB_shot_light_HV</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_HV</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_EMP">
+	<type>LASER</type>
+	<title>Autocannon Mark I [EMP]</title>
+	<short>AC I [EMP]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>1</damage>
+	<sysDamage>-1</sysDamage>
+	<spawnCrew>
+        <race>gb_ion_instant_1</race>
+        <number>1</number>
+        <noSlot>true</noSlot>
+        <statBoosts>
+            <statBoost name="noClone">
+                <boostType>SET</boostType>
+                <value>true</value>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+            <statBoost name="maxHealth">
+                <boostType>FLAT</boostType>
+                <amount>-1000000</amount>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999999</priority>
+            </statBoost>
+        </statBoosts>
+    </spawnCrew>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<speed>80</speed>
+	<image>GB_shot_light_EMP</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_emp</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_HEAT">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Particle]</title>
+	<short>AC I [Part]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<sysDamage>2</sysDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_HEAT</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_HEAT</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_HE">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Concussive]</title>
+	<short>AC I [HE]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>1</damage>
+	<statBoosts>
+		<statBoost name="powerRechargeMultiplier">
+			<boostType>FLAT</boostType>
+			<amount>0.7</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>15</duration>
+			<statBoosts>
+		<statBoost name="damageMultiplier">
+			<boostType>FLAT</boostType>
+			<amount>0.9</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>15</duration>
+		</statBoost>
+	</statBoosts>
+		</statBoost>
+	</statBoosts>
+	<shots>1</shots>
+	<stun>5</stun>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_HE</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_HE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_FREE">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Recycler]</title>
+	<short>AC I [Re]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>92</freeMissileChance>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>0</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_FREE</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_FREE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_FLECHETTE">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Flechette]</title>
+	<short>AC I [F]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>82</freeMissileChance>
+	<damage>1</damage>
+	<persDamage>-1</persDamage>
+	<sysDamage>-1</sysDamage> <!--minus 1, flat, for all AC marks-->
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<cooldown>6</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<radius>40</radius>
+	<cost>10</cost>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-1</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>25</duration>
+			<boostAnim>blood_effect</boostAnim>
+		</statBoost>
+	</statBoosts>
+	<projectiles>
+		<projectile count="1" fake="false">GB_shot_light_FLECHETTE</projectile>
+		<projectile count="1" fake="true">GB_shot_tiny_FLECHETTE</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_FLECHETTE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_CASELESS">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Caseless]</title>
+	<short>AC I [CL]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>80</freeMissileChance>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>4</cooldown>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_CASELESS</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_CASELESS</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_1_RAD">
+	<type>LASER</type>
+	<title>Autocannon Mark I [Rad]</title>
+	<short>AC I [R]</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means. (FT: Warcrimes!)</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>82</freeMissileChance>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>3</breachChance>
+	<cooldown>6</cooldown>
+	<statBoosts> <!--5/10/15/20/25-->
+		<statBoost name="moveSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount> 
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>5</duration>
+			<boostAnim>bio_poison</boostAnim>
+		</statBoost>
+		<statBoost name="stunMultiplier">
+			<boostType>MULT</boostType>
+			<amount>1.75</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>5</duration>
+		</statBoost>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>0.33</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>5</duration>
+		</statBoost>
+	</statBoosts>
+	<power>1</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light_RAD</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1_RAD</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="GB_AC_2">
 	<type>LASER</type>
 	<title>Autocannon Mark II</title>
@@ -48,7 +494,7 @@
 	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
 	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>83</freeMissileChance>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -81,6 +527,366 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
+<weaponBlueprint name="GB_AC_2_RAD">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_RAD</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_RAD</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_HV">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_HV</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_HV</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_HE">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_HE</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_HE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_EMP">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_EMP</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_EMP</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_FLECHETTE">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_FLECHETTE</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_FLECHETTE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_CASELESS">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_CASELESS</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_CASELESS</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_INCENDIARY">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_INCENDIARY</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_INCENDIARY</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_HEAT">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_HEAT</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_HEAT</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_FREE">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>6</cooldown>
+	<power>2</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium_FREE</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2_FREE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
 <weaponBlueprint name="GB_AC_3">
 	<type>LASER</type>
 	<title>Autocannon Mark III</title>
@@ -88,7 +894,7 @@
 	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
 	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>81</freeMissileChance>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -96,6 +902,493 @@
 	<stunChance>4</stunChance>
 	<cooldown>6</cooldown>
 	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_HE">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_HE</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_HE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_EMP">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_EMP</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_EMP</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_HV">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_HV</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_HV</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_INCENDIARY">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_INCENDIARY</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_INCENDIARY</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_HEAT">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_HEAT</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_HEAT</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_RAD">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_RAD</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_RAD</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_FREE">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_FREE</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_FREE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_CASELESS">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_CASELESS</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_CASELESS</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_FLECHETTE">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>6</cooldown>
+	<power>3</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<image>GB_shot_heavy_FLECHETTE</image>
+	<launchSounds>
+		<sound>GB_cannonHeavy1</sound>
+		<sound>GB_cannonHeavy2</sound>
+		<sound>GB_cannonHeavy3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_3_FLECHETTE</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<!--ELITE ACS-->
+	
+<weaponBlueprint name="GB_AC_1_E">
+	<type>LASER</type>
+	<title>Autocannon Mark I</title>
+	<short>AC I</short>
+	<desc>The very basic ballistic weapon used by the Federation during the Federation-Mantis war. Heavily outdated by modern standards, it is still a weapon by all means.</desc>
+	<tooltip>1 shot 1 damage weapon, 85% chance to not use ammo, 10% chance to cause a breach</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>85</freeMissileChance>
+	<damage>1</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>1</breachChance>
+	<cooldown>5</cooldown>
+	<power>1</power>
+	<stun>6</stun>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>10</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_cannonLight1</sound>
+		<sound>GB_cannonLight2</sound>
+		<sound>GB_cannonLight3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_2_E">
+	<type>LASER</type>
+	<title>Autocannon Mark II</title>
+	<short>AC II</short>
+	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
+	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>83</freeMissileChance>
+	<damage>2</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>5</cooldown>
+	<power>2</power>
+	<stun>6</stun>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>20</cost>
+	<image>GB_shot_medium</image>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Autocannon_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GB_AC_3_E">
+	<type>LASER</type>
+	<title>Autocannon Mark III</title>
+	<short>AC III</short>
+	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
+	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>81</freeMissileChance>
+	<damage>3</damage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>4</breachChance>
+	<stunChance>4</stunChance>
+	<cooldown>5</cooldown>
+	<power>3</power>
+	<stun>6</stun>
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<cost>40</cost>
@@ -129,14 +1422,14 @@
 	<desc>One of the first mass drivers in service, capable of firing a shield piercing kinetic round with extreme precision.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -163,7 +1456,6 @@
 	<weaponArt>GB_Gauss_1</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_GAUSS_1_ENEMY">
 	<type>LASER</type>
 	<title>Gauss Rifle Mark I</title>
@@ -171,13 +1463,14 @@
 	<desc>One of the first mass drivers in service, capable of firing a shield piercing kinetic round with extreme precision.</desc>
 	<tooltip>1 shot 2 damage weapon, 75% chance to not use ammo, 30% chance to cause a breach, 20% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>3</breachChance>
 	<stunChance>2</stunChance>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>1</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -212,8 +1505,49 @@
 	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
 	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
+	<damage>3</damage>
+	<shots>1</shots>
+	<sp>2</sp>
+	<breachChance>4</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>16</cooldown> <!--- was 13 -->
+	<power>2</power>
+	<speed>180</speed>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>70</cost>
+	<image>GB_shot_light</image>
+	<launchSounds>
+		<sound>GB_gaussMedium1</sound>
+		<sound>GB_gaussMedium2</sound>
+		<sound>GB_gaussMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>GB_Gauss_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="GB_GAUSS_2_ENEMY">
+	<type>LASER</type>
+	<title>Gauss Rifle Mark II</title>
+	<short>Gauss II</short>
+	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
+	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>16</accuracyMod>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>2</sp>
@@ -254,14 +1588,14 @@
 	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
 	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>30</accuracyMod>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>25</accuracyMod>
 	<damage>4</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>16</cooldown>
+	<cooldown>20</cooldown>
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -288,48 +1622,6 @@
 	<weaponArt>GB_Gauss_3</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
-<weaponBlueprint name="GB_GAUSS_2_ENEMY">
-	<type>LASER</type>
-	<title>Gauss Rifle Mark II</title>
-	<short>Gauss II</short>
-	<desc>This mass driver is capable of firing a shield piercing kinetic projectile capable of destroying targets with little assistance.</desc>
-	<tooltip>1 shot 3 damage weapon, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
-	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<damage>3</damage>
-	<shots>1</shots>
-	<sp>2</sp>
-	<breachChance>4</breachChance>
-	<stunChance>3</stunChance>
-	<cooldown>14</cooldown> <!--- was 13 -->
-	<power>2</power>
-	<speed>180</speed>
-	<bp>4</bp>
-	<rarity>0</rarity>
-	<cost>70</cost>
-	<image>GB_shot_light</image>
-	<launchSounds>
-		<sound>GB_gaussMedium1</sound>
-		<sound>GB_gaussMedium2</sound>
-		<sound>GB_gaussMedium3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull2</sound>
-		<sound>hitHull3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>GB_Gauss_2</weaponArt>
-	<iconImage>laser</iconImage>
-</weaponBlueprint>
-
 <weaponBlueprint name="GB_GAUSS_3_ENEMY">
 	<type>LASER</type>
 	<title>Gauss Rifle Mark III</title>
@@ -337,13 +1629,14 @@
 	<desc>A powerful shield piercing weapon of war capable of crippling ships with precise shots.</desc>
 	<tooltip>1 shot 4 damage weapon, 75% chance to not use ammo, 50% chance to cause a breach, 40% chance to stun, pierces 2 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>4</damage>
 	<shots>1</shots>
 	<sp>2</sp>
 	<breachChance>5</breachChance>
 	<stunChance>4</stunChance>
-	<cooldown>16</cooldown>
+	<cooldown>20</cooldown>
 	<power>3</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -377,7 +1670,7 @@
 	<short>AP Gauss</short>
 	<desc>This weapon is a light anti-personnel weapon capable of taking pot shots at enemy crew with shield piercing kinetic strikes.</desc>
 	<tooltip>1 shot 30 crew damage weapon, 30% chance to cause a breach, 10% chance to stun, pierces 2 shields, 25% more accurate</tooltip>
-	<accuracyMod>25</accuracyMod>
+	<accuracyMod>20</accuracyMod>
 	<damage>0</damage>
 	<persDamage>2</persDamage>
 	<shots>1</shots>
@@ -498,8 +1791,8 @@
 	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
 	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>2</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -507,7 +1800,7 @@
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -534,7 +1827,6 @@
 	<weaponArt>GB_Railgun_1</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_1_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark I</title>
@@ -542,7 +1834,8 @@
 	<desc>This rare heavy mass driver is capable of firing heavy shield piercing kinetic projectiles designed to maximize hull damage.</desc>
 	<tooltip>1 shot 2 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 40% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 2 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>70</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>2</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -550,7 +1843,7 @@
 	<breachChance>4</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>12</cooldown> <!--- was 10 -->
+	<cooldown>14</cooldown> <!--- was 10 -->
 	<power>2</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -585,8 +1878,8 @@
 	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields, and is designed to maximize hull damage.</desc>
 	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>25</accuracyMod>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>3</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -594,7 +1887,7 @@
 	<breachChance>5</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>15</cooldown> <!--- was 13 -->
+	<cooldown>16</cooldown> <!--- was 13 -->
 	<power>3</power> 
 	<speed>180</speed>
 	<bp>4</bp>
@@ -621,7 +1914,6 @@
 	<weaponArt>GB_Railgun_2</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_2_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark II</title>
@@ -629,7 +1921,8 @@
 	<desc>This rare heavy mass driver is capable of piercing even greater layers of shields, and is designed to maximize hull damage.</desc>
 	<tooltip>1 shot 3 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 50% chance to cause a breach, 30% chance to stun for 3 seconds, pierces 3 shields, 25% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>65</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>3</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -637,7 +1930,7 @@
 	<breachChance>5</breachChance>
 	<stunChance>3</stunChance>
 	<stun>3</stun>
-	<cooldown>15</cooldown> <!--- was 13 -->
+	<cooldown>16</cooldown> <!--- was 13 -->
 	<power>3</power> 
 	<speed>180</speed>
 	<bp>4</bp>
@@ -672,8 +1965,8 @@
 	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
 	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
-	<accuracyMod>30</accuracyMod>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>20</accuracyMod>
 	<damage>4</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -681,7 +1974,7 @@
 	<breachChance>6</breachChance>
 	<stunChance>4</stunChance>
 	<stun>3</stun>
-	<cooldown>18</cooldown> <!--- was 16 -->
+	<cooldown>24</cooldown> <!--- was 16 -->
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -708,7 +2001,6 @@
 	<weaponArt>GB_Railgun_3</weaponArt>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
-
 <weaponBlueprint name="GB_RAIL_3_ENEMY">
 	<type>LASER</type>
 	<title>Rail Gun Mark III</title>
@@ -716,7 +2008,8 @@
 	<desc>One of the heaviest mass drivers available in the Federation. Known for its absolutely devastating hull damage capabilities that can destroy lesser ships in a single blow.</desc>
 	<tooltip>1 shot 4 damage weapon, double damage on systemless rooms, 75% chance to not use ammo, 60% chance to cause a breach, 40% chance to stun for 3 seconds, pierces 4 shields, 30% more accurate</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>75</freeMissileChance>
+	<freeMissileChance>60</freeMissileChance>
+	<accuracyMod>7</accuracyMod>
 	<damage>4</damage>
 	<hullBust>1</hullBust>
 	<shots>1</shots>
@@ -724,7 +2017,7 @@
 	<breachChance>6</breachChance>
 	<stunChance>4</stunChance>
 	<stun>3</stun>
-	<cooldown>18</cooldown> <!--- was 16 -->
+	<cooldown>24</cooldown> <!--- was 16 -->
 	<power>4</power>
 	<speed>180</speed>
 	<bp>4</bp>
@@ -752,16 +2045,20 @@
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
 
+<!--SPECIAL LOOT-->
+
 <weaponBlueprint name = "GB_MG_LOOT">
 	<type>BURST</type>
-	<title>'Spray and Pray'</title>
+	<title>'Spray'n'Pray'</title>
 	<short>'S.A.P'</short>
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>45</freeMissileChance>
 	<damage>1</damage>
 	<shots>8</shots>
 	<breachChance>1</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>30</cooldown>
 	<power>0</power>
 	<speed>60</speed>
 	<radius>50</radius>
@@ -771,8 +2068,8 @@
 	<cost>60</cost>
 	<boost>
 		<type>cooldown</type>
-		<amount>10</amount>
-		<count>3</count>
+		<amount>20</amount>
+		<count>2</count>
 	</boost>
 	<projectiles>
 		<projectile count="1" fake="false">GB_shot_light</projectile>
@@ -1007,8 +2304,9 @@
 /////////////////////////-->
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL" layout="r4p_gb_kestrel_a" img="r4p_gb_kestrel_a">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>The Falco</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_unlock"/>
 	<desc>A boring and outdated human vessel originally produced by the Federation. In its stock original configeration during the Federation-Mantis War.</desc>
 	<!--just a bunch of human crew-->
 	<systemList>
@@ -1080,8 +2378,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestrel_b" img="r4p_gb_kestrel_b">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>Warhawk</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_2_unlock"/>
 	<desc>This old modified Kestrel class ship designed to destroy enemy ships with an amassment of autocannons.</desc>
 	<!--human human orchid zoltan-->
 	<systemList>
@@ -1155,8 +2454,9 @@
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_3" layout="r4p_gb_kestrel_c" img="r4p_gb_kestrel_c">
-	<class>Kestrel Cruiser</class>
+	<class>Antique Kestrel Cruiser</class>
 	<name>The Martlet</name>
+	<unlock id="ship_PLAYER_SHIP_BALLISTIC_3_unlock"/>
 	<desc>An old battlehardened Kestrel that is the embodiment that a good offense is a good defence.</desc>
 	<!--human free mantis zoltan separatist-->
 	<systemList>
@@ -1257,3 +2557,63 @@
 	<stackable>false</stackable>
 	<bp>0</bp>
 </augBlueprint>
+
+<!--/////////////////////////
+			HI CYRUS
+//////////////////////////-->
+
+<crewBlueprint name="gb_ion_instant_1"> <!--EMP AC1 ion-->
+
+	<desc>Ion Pulse</desc> 
+	<title>Ion Pulse</title>
+	<short>Ion Pulse</short>
+	<cost>50</cost> 
+	<bp>2</bp>	  
+	<rarity>0</rarity>
+	<powerList>	
+       <power>: -how'd you actually manage to select this</power>
+       <power>: -seriously, it is quite impressive</power>
+	</powerList>
+	<colorList> 
+		<layer>		
+		<color r="17" g="255" b="0" a="0.7"/>
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="gb_ion_instant_2"> <!--EMP AC2 ion-->
+
+	<desc>Ion Pulse</desc> 
+	<title>Ion Pulse</title>
+	<short>Ion Pulse</short>
+	<cost>50</cost> 
+	<bp>2</bp>	  
+	<rarity>0</rarity>
+	<powerList>	
+       <power>: -how'd you actually manage to select this</power>
+       <power>: -seriously, it is quite impressive</power>
+	</powerList>
+	<colorList> 
+		<layer>		
+		<color r="17" g="255" b="0" a="0.7"/>
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<crewBlueprint name="gb_ion_instant_3"> <!--EMP AC3 ion-->
+	<desc>Ion Pulse</desc> 
+	<title>Ion Pulse</title>
+	<short>Ion Pulse</short>
+	<cost>50</cost> 
+	<bp>2</bp>	  
+	<rarity>0</rarity>
+	<powerList>	
+       <power>: -how'd you actually manage to select this</power>
+       <power>: -seriously, it is quite impressive</power>
+	</powerList>
+	<colorList> 
+		<layer>		
+		<color r="17" g="255" b="0" a="0.7"/>
+		</layer>
+	</colorList>
+</crewBlueprint>

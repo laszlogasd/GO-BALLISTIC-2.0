@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ship name="GB_SHIP_FED_BOMBER_LOWAMMO" auto_blueprint="GB_FED_BOMBER_LOWAMMO">
-	<destroyed load="DESTROYED_FEDERATION"/>
-	<deadCrew load="DEAD_CREW_FEDERATION"/>
+	<destroyed>
+		<text>As the Federation bomber explodes, you get the sense that that bomber in particular was absolutely and completely awful. You feel no guilt scrapping the ship.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>As you explore the now crewless ship, you find the captain slumped in a corner, who turns out to be ADMIRAL VANCE of the REBEL FLEET, who stands up and then pulls out a MASSIVE RAILGUN and blows a planet full of KITTENS in half before teleporting away. Maybe murdering these guys was justified.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
 </ship>
-
 <ship name="GB_FED_INTERDICTOR" auto_blueprint="GB_FED_BOMBER_INTERDICTOR">
 	<destroyed>
 		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
-		<autoReward level = "LOW">standard</autoReward>
+		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
 	<deadCrew>
 		<text>You have defeated the Federation ship and the station surrenders. However the commotion has attracted nearby Rebel patrols. You have no time to return back to the outpost, you must charge your FTL drive.</text>
-		<autoReward level = "MED">standard</autoReward>
+		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
-
 <ship name="SHIP_GB_MILITIA_ESCORT" auto_blueprint="MU_MILITIA_ESCORT">
-	<destroyed load="DESTROYED_MILITIA"/>
-	<deadCrew load="DEAD_CREW_MILITIA"/>
+	<destroyed load="DESTROYED_MILITIA" />
+	<deadCrew load="DEAD_CREW_MILITIA" />
 </ship>
-
 <ship name="GB_MILITIA_STATION" auto_blueprint="MU_MILITIA_STATION">
-	<destroyed load="DESTROYED_MILITIA"/>
-	<deadCrew load="DEAD_CREW_MILITIA"/>
+	<destroyed load="DESTROYED_MILITIA" />
+	<deadCrew load="DEAD_CREW_MILITIA" />
 </ship>
-
-<ship name = "SHIP_R4_GB_MV_TRAVELER_FED" auto_blueprint = "GB_R4_MR_FED_LIGHT_CRUISER_1">
-	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
-	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+<ship name="SHIP_R4_GB_MV_TRAVELER_FED" auto_blueprint="GB_R4_MR_FED_LIGHT_CRUISER_1">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER" />
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER" />
 </ship>
-
-<ship name = "SHIP_R4_GB_MV_TRAVELER_MILITIA" auto_blueprint = "GB_R4_MR_MILITIA_GUARD">
-	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER"/>
-	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER"/>
+<ship name="SHIP_R4_GB_MV_TRAVELER_MILITIA" auto_blueprint="GB_R4_MR_MILITIA_GUARD">
+	<destroyed load="DEFEAT_MULTIVERSE_TRAVELER" />
+	<deadCrew load="DEFEAT_MULTIVERSE_TRAVELER" />
 </ship>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<version>8</version>
-
 <events>
 <eventFile>ballistic</eventFile>
 </events>
@@ -972,36 +970,81 @@
 	<mod:findLike type ="shipOrder">
 	<!--PAGE 1-->
 	<mod-append:ship>PLAYER_SHIP_R4_GB_KESTREL</mod-append:ship>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
+	<mod-append:empty/>
 	</mod:findLike>
 
-    <mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true" />
+	<!--SHIP UNLOCKS-->
+	
+	<mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true">
+		<unlock variant="a" silent="false">
+			<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_KESTREL</ship>
+				<ship>PLAYER_SHIP_KESTREL_2</ship>
+				<ship>PLAYER_SHIP_KESTREL_3</ship>
+			</otherUnlocks>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="b" silent="true">
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL</shipReq>
+            <value>5</value>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="c" silent="true">
+			<type>1</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL_2</shipReq>
+            <value>5</value>
+		<silent>true</silent>
+		</unlock>
+		<unlock variant="c" silent="true">
+			<type>2</type>
+			<shipReq>PLAYER_SHIP_R4_GB_KESTREL</shipReq>
+		<silent>true</silent>
+		</unlock>
+	</mod-append:ship>
+
+	<!--PLAYER SHIPS-->
+
+    <mod-append:ship name="PLAYER_SHIP_R4_GB_KESTREL" b="true" c="true"/>
     <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL">
         <hiddenAug>SHIP_KESTREL</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
-		<crew>
-			<human room = "0"/>
-			<human room = "10"/>
-			<human room = "12"/>
-		</crew>
         <crewLimit>11</crewLimit>
+		<crew>
+			<human room = "0"/> <!--piloting-->
+			<human room = "10"/> <!--weapons-->
+			<human room = "11"/> <!--shields-->
+			<human room = "12"/> <!--engines-->
+		</crew>
     </mod-append:customShip>
+	
     <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_2">
         <hiddenAug>SHIP_KESTREL</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crew>
-			<human room = "5"/> <!--engines-->
+			<human room = "9"/> <!--engines-->
 			<human room = "10"/> <!--weapons-->
 			<orchid room = "12"/> <!--cloaking-->
-			<energy room = "9"/> <!--piloting :)-->
+			<energy room = "5"/> <!--piloting :)-->
 		</crew>
         <crewLimit>11</crewLimit>
     </mod-append:customShip>
+	
 	<mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_3">
 		<hiddenAug>SHIP_KESTREL</hiddenAug>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>11</crewLimit>
 		<crew>
-			<human room = "2"/> <!--airlock-->
+			<human room = "11"/> <!--weapons-->
 			<energy room = "12"/> <!--shields-->
 			<freemantis room = "0"/> <!--pilot-->
 			<separatist room = "13"/> <!--engines-->
@@ -1036,7 +1079,6 @@
 			<shipIcon>icon_weaponboost</shipIcon>
 		</shipIcons>
 		<crew>
-			<human room="0"/> <!--piloting-->
 			<human room="4"/> <!--doors-->
 			<!--<orchid room="6"/>->> <!--weapons-->
 			<shell room="12"/> <!--clonebay-->
@@ -1054,9 +1096,8 @@
 			<shipIcon>icon_weaponboost</shipIcon>
 		</shipIcons>
 		<crew>
-			<soldier room="0"/> <!--piloting-->
 			<human room="4"/> <!--doors-->
-			<!--<orchid room="6"/>->> <!--weapons-->
+			<!--<orchid room="6"/> <!--weapons-->
 			<shell room="12"/> <!--clonebay-->
 			<separatist room="15"/> <!--engines-->
 			<warlord room="13"/> <!--empty-->
@@ -1072,9 +1113,8 @@
 			<shipIcon>icon_weaponboost</shipIcon>
 		</shipIcons>
 		<crew>
-			<soldier room="0"/> <!--piloting-->
 			<medic room="4"/> <!--doors-->
-			<!--<orchid room="6"/>->> <!--weapons-->
+			<!--<orchid room="6"/> <!--weapons-->
 			<guardian room="12"/> <!--clonebay-->
 			<separatist room="15"/> <!--engines-->
 			<warlord room="13"/> <!--empty-->
@@ -1089,12 +1129,134 @@
 	<aug name="AUTO_LOADER_LOW_SHIELD_LOCKED">
 		<locked/>
 		<function name="AUTO_COOLDOWN" value="0.20" />
-		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="SHIELD_RECHARGE" value="-0.4" />
 		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
 	</aug>
 	<aug name="AUTO_LOADER_LOW_SHIELD">
 		<function name="AUTO_COOLDOWN" value="0.20" />
-		<function name="SHIELD_RECHARGE" value="-0.33" />
+		<function name="SHIELD_RECHARGE" value="-0.4" />
 		<function name="ROCK_ARMOR" value="0.1" useForReqs="true" warning="false"/>
 	</aug>
 </augments>
+
+<crew> <!-- AC1 EMP crew, 1 ion damage -->
+	<race name="gb_ion_instant_1">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<selectable>false</selectable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+			<hasDeathExplosion>true</hasDeathExplosion>
+			<deathEffect>
+				<ion>1</ion>
+				<stun>3</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</race>
+</crew>
+	
+	<crew> <!-- EMP AC2 Ion crew, 2 ion damage -->
+		<race name="gb_ion_instant_2">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<selectable>false</selectable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<ion>2</ion>
+				<stun>3</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</race>
+		</crew>
+		
+	<crew> <!-- EMP AC3 Ion crew, 3 ion damage-->
+		<race name="gb_ion_instant_3">
+			<maxHealth>100</maxHealth>
+			<repairSpeed>0</repairSpeed>
+			<canFight>false</canFight>
+			<canRepair>false</canRepair>
+			<canSabotage>false</canSabotage>
+			<canSuffocate>false</canSuffocate>
+			<fireDamageMultiplier>0</fireDamageMultiplier>
+			<canMan>false</canMan>
+			<noClone>true</noClone>
+			<noSlot>true</noSlot>
+			<controllable>false</controllable>
+			<selectable>false</selectable>
+			<canPhaseThroughDoors>true</canPhaseThroughDoors>
+			<moveSpeedMultiplier>0.00</moveSpeedMultiplier>
+			<sabotageSpeedMultiplier>0.0</sabotageSpeedMultiplier>
+			<damageMultiplier>0</damageMultiplier>
+			<damageTakenMultiplier>0.0</damageTakenMultiplier> 
+			<animBase>mantis</animBase>
+			<deathSounds>
+				<deathSound>energyDeath</deathSound>
+			</deathSounds>
+			<shootingSounds>
+				<shootingSound>mantisSpit1</shootingSound>
+				<shootingSound>mantisSpit2</shootingSound>
+				<shootingSound>mantisSpit3</shootingSound>
+			</shootingSounds>
+			<deathEffect>
+				<ion>3</ion>
+				<stun>5</stun>
+				<friendlyFire>true</friendlyFire>
+				<shipFriendlyFire>true</shipFriendlyFire>
+			</deathEffect>
+				
+			
+		
+		</race>
+		</crew>

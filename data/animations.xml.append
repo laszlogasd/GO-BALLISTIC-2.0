@@ -1,38 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- PROJECTILES -->
-<animSheet name="GB_shot_light" w="160" h="16" fw="40" fh="16">weapons/GB_shot_light_strip4.png</animSheet>
+<animSheet name="GB_shot_light" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_strip4.png</animSheet>
 <anim name="GB_shot_light">
 	<sheet>GB_shot_light</sheet>
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
-<animSheet name="GB_shot_medium" w="200" h="20" fw="50" fh="20">weapons/GB_shot_medium_strip4.png</animSheet>
+
+<animSheet name="GB_shot_light_EMP" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_emp_strip4.png</animSheet>
+<anim name="GB_shot_light_EMP">
+	<sheet>GB_shot_light_EMP</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_HE" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_HE_strip4.png</animSheet>
+<anim name="GB_shot_light_HE">
+	<sheet>GB_shot_light_HE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_RAD" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_rad_strip4.png</animSheet>
+<anim name="GB_shot_light_RAD">
+	<sheet>GB_shot_light_RAD</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_CASELESS" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_caseless_strip4.png</animSheet>
+<anim name="GB_shot_light_CASELESS">
+	<sheet>GB_shot_light_CASELESS</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_HEAT" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_HEAT_strip4.png</animSheet>
+<anim name="GB_shot_light_HEAT">
+	<sheet>GB_shot_light_HEAT</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_FREE" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_FREE_strip4.png</animSheet>
+<anim name="GB_shot_light_FREE">
+	<sheet>GB_shot_light_FREE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_HV" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_HV_strip4.png</animSheet>
+<anim name="GB_shot_light_HV">
+	<sheet>GB_shot_light_HV</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_Incendiary" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_I_strip4.png</animSheet>
+<anim name="GB_shot_light_Incendiary">
+	<sheet>GB_shot_light_Incendiary</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_light_FLECHETTE" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_light_flechette_strip4.png</animSheet>
+<anim name="GB_shot_light_FLECHETTE">
+	<sheet>GB_shot_light_FLECHETTE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_tiny_FLECHETTE" w="160" h="16" fw="40" fh="16">projectiles/GB_shot_tiny_flechette_strip4.png</animSheet>
+<anim name="GB_shot_tiny_FLECHETTE">
+	<sheet>GB_shot_tiny_FLECHETTE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_strip4.png</animSheet>
 <anim name="GB_shot_medium">
 	<sheet>GB_shot_medium</sheet>
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
-<animSheet name="GB_shot_heavy" w="200" h="20" fw="50" fh="20">weapons/GB_shot_heavy_strip4.png</animSheet>
+
+<animSheet name="GB_shot_medium_RAD" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_rad_strip4.png</animSheet>
+<anim name="GB_shot_medium_RAD">
+	<sheet>GB_shot_medium_RAD</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_INCENDIARY" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_i_strip4.png</animSheet>
+<anim name="GB_shot_medium_INCENDIARY">
+	<sheet>GB_shot_medium_INCENDIARY</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_FREE" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_recycled_strip4.png</animSheet>
+<anim name="GB_shot_medium_FREE">
+	<sheet>GB_shot_medium_FREE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_HV" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_HV_strip4.png</animSheet>
+<anim name="GB_shot_medium_HV">
+	<sheet>GB_shot_medium_HV</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_HEAT" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_HEAT_strip4.png</animSheet>
+<anim name="GB_shot_medium_HEAT">
+	<sheet>GB_shot_medium_HEAT</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_FLECHETTE" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_flechette_strip4.png</animSheet>
+<anim name="GB_shot_medium_FLECHETTE">
+	<sheet>GB_shot_medium_FLECHETTE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_medium_EMP" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_emp_strip4.png</animSheet>
+<anim name="GB_shot_medium_EMP">
+	<sheet>GB_shot_medium_EMP</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_strip4.png</animSheet>
 <anim name="GB_shot_heavy">
 	<sheet>GB_shot_heavy</sheet>
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
 
-<animSheet name="GB_magnetic_slug_light" w="200" h="16" fw="50" fh="16">weapons/GB_magnetic_slug_light_strip4.png</animSheet>
+<animSheet name="GB_shot_heavy_EMP" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_emp_strip4.png</animSheet>
+<anim name="GB_shot_heavy_EMP">
+	<sheet>GB_shot_heavy_EMP</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_HE" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_he_strip4.png</animSheet>
+<anim name="GB_shot_heavy_HE">
+	<sheet>GB_shot_heavy_HE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_HEAT" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_heat_strip4.png</animSheet>
+<anim name="GB_shot_heavy_HEAT">
+	<sheet>GB_shot_heavy_HEAT</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_RAD" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_rad_strip4.png</animSheet>
+<anim name="GB_shot_heavy_RAD">
+	<sheet>GB_shot_heavy_RAD</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_HV" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_hv_strip4.png</animSheet>
+<anim name="GB_shot_heavy_HV">
+	<sheet>GB_shot_heavy_HV</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_INCENDIARY" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_incendiary_strip4.png</animSheet>
+<anim name="GB_shot_heavy_INCENDIARY">
+	<sheet>GB_shot_heavy_INCENDIARY</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_FLECHETTE" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_flechette_strip4.png</animSheet>
+<anim name="GB_shot_heavy_FLECHETTE">
+	<sheet>GB_shot_heavy_FLECHETTE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_shot_heavy_FREE" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_heavy_recycled_strip4.png</animSheet>
+<anim name="GB_shot_heavy_FREE">
+	<sheet>GB_shot_heavy_FREE</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
+
+<animSheet name="GB_magnetic_slug_light" w="200" h="16" fw="50" fh="16">projectiles/GB_magnetic_slug_light_strip4.png</animSheet>
 <anim name="GB_magnetic_slug_light">
 	<sheet>GB_magnetic_slug_light</sheet>
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
-<animSheet name="GB_magnetic_slug_medium" w="200" h="16" fw="50" fh="16">weapons/GB_magnetic_slug_medium_strip4.png</animSheet>
+<animSheet name="GB_magnetic_slug_medium" w="200" h="16" fw="50" fh="16">projectiles/GB_magnetic_slug_medium_strip4.png</animSheet>
 <anim name="GB_magnetic_slug_medium">
 	<sheet>GB_magnetic_slug_medium</sheet>
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
-<animSheet name="GB_magnetic_slug_heavy" w="200" h="16" fw="50" fh="16">weapons/GB_magnetic_slug_heavy_strip4.png</animSheet>
+<animSheet name="GB_magnetic_slug_heavy" w="200" h="16" fw="50" fh="16">projectiles/GB_magnetic_slug_heavy_strip4.png</animSheet>
 <anim name="GB_magnetic_slug_heavy">
 	<sheet>GB_magnetic_slug_heavy</sheet>
 	<desc length="4" x="0" y="0" />
@@ -40,7 +217,7 @@
 </anim>
 
 <!-- WEAPONS -->
-<animSheet name="GB_Autocannon_1" w="119" h="67" fw="17" fh="67">weapons/GB_Autocannon_1_strip7.png</animSheet>
+<animSheet name="GB_Autocannon_1" w="119" h="67" fw="17" fh="67">weapons_autocannon/GB_Autocannon_1_strip7.png</animSheet>
 <weaponAnim name="GB_Autocannon_1">
 	<sheet>GB_Autocannon_1</sheet>
 	<desc length="7" x="0" y="0" />
@@ -48,9 +225,9 @@
 	<fireFrame>2</fireFrame>
 	<firePoint x="11" y="11" />
 	<mountPoint x="3" y="47" />
-	<chargeImage>weapons/GB_Autocannon_1_glow.png</chargeImage>
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Autocannon_2" w="171" h="75" fw="19" fh="75">weapons/GB_Autocannon_2_strip9.png</animSheet>
+<animSheet name="GB_Autocannon_2" w="171" h="75" fw="19" fh="75">weapons_autocannon/GB_Autocannon_2_strip9.png</animSheet>
 <weaponAnim name="GB_Autocannon_2">
 	<sheet>GB_Autocannon_2</sheet>
 	<desc length="9" x="0" y="0" />
@@ -58,9 +235,9 @@
 	<fireFrame>4</fireFrame>
 	<firePoint x="13" y="14" />
 	<mountPoint x="3" y="56" />
-	<chargeImage>weapons/GB_Autocannon_2_glow.png</chargeImage>
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Autocannon_3" w="234" h="90" fw="26" fh="90">weapons/GB_Autocannon_3_strip9.png</animSheet>
+<animSheet name="GB_Autocannon_3" w="234" h="90" fw="26" fh="90">weapons_autocannon/GB_Autocannon_3_strip9.png</animSheet>
 <weaponAnim name="GB_Autocannon_3">
 	<sheet>GB_Autocannon_3</sheet>
 	<desc length="9" x="0" y="0" />
@@ -68,10 +245,296 @@
 	<fireFrame>4</fireFrame>
 	<firePoint x="13" y="19" />
 	<mountPoint x="3" y="66" />
-	<chargeImage>weapons/GB_Autocannon_3_glow.png</chargeImage>
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="GB_Gauss_1" w="312" h="130" fw="24" fh="130">weapons/GB_Gauss_1_strip13.png</animSheet>
+<animSheet name="GB_Autocannon_1_Incendiary" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_I_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_Incendiary">
+	<sheet>GB_Autocannon_1_Incendiary</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_HV" w="119" h="87" fw="17" fh="87">weapons_autocannon_ammo/GB_Autocannon_1_HV_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_HV">
+	<sheet>GB_Autocannon_1_HV</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_HEAT" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_HEAT_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_HEAT">
+	<sheet>GB_Autocannon_1_HEAT</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_HE" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_HE_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_HE">
+	<sheet>GB_Autocannon_1_HE</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_FREE" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_Free_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_FREE">
+	<sheet>GB_Autocannon_1_FREE</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_FLECHETTE" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_Flechette_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_FLECHETTE">
+	<sheet>GB_Autocannon_1_FLECHETTE</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_RAD" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_Rad_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_RAD">
+	<sheet>GB_Autocannon_1_RAD</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_CASELESS" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_Caseless_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_CASELESS">
+	<sheet>GB_Autocannon_1_CASELESS</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_1_emp" w="119" h="67" fw="17" fh="67">weapons_autocannon_ammo/GB_Autocannon_1_emp_strip7.png</animSheet>
+<weaponAnim name="GB_Autocannon_1_emp">
+	<sheet>GB_Autocannon_1_emp</sheet>
+	<desc length="7" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint x="11" y="11" />
+	<mountPoint x="3" y="47" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_1_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_HE" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_HE_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_HE">
+	<sheet>GB_Autocannon_2_HE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_FREE" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_Free_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_FREE">
+	<sheet>GB_Autocannon_2_FREE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_INCENDIARY" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_I_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_INCENDIARY">
+	<sheet>GB_Autocannon_2_INCENDIARY</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_HEAT" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_HEAT_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_HEAT">
+	<sheet>GB_Autocannon_2_HEAT</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_CASELESS" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_Caseless_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_CASELESS">
+	<sheet>GB_Autocannon_2_CASELESS</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_FLECHETTE" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_Flechette_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_FLECHETTE">
+	<sheet>GB_Autocannon_2_FLECHETTE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_EMP" w="171" h="75" fw="19" fh="75">weapons_autocannon_ammo/GB_Autocannon_2_EMP_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_EMP">
+	<sheet>GB_Autocannon_2_EMP</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_2_HV" w="171" h="115" fw="19" fh="115">weapons_autocannon_ammo/GB_Autocannon_2_HV_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_2_HV">
+	<sheet>GB_Autocannon_2_HV</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="14" />
+	<mountPoint x="3" y="56" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_2_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_HE" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_HE_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_HE">
+	<sheet>GB_Autocannon_3_HE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_CASELESS" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_caseless_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_CASELESS">
+	<sheet>GB_Autocannon_3_CASELESS</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_FLECHETTE" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_flechette_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_FLECHETTE">
+	<sheet>GB_Autocannon_3_FLECHETTE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_RAD" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_Rad_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_RAD">
+	<sheet>GB_Autocannon_3_RAD</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_INCENDIARY" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_Incendiary_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_INCENDIARY">
+	<sheet>GB_Autocannon_3_INCENDIARY</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_HEAT" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_HEAT_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_HEAT">
+	<sheet>GB_Autocannon_3_HEAT</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_FREE" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_Free_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_FREE">
+	<sheet>GB_Autocannon_3_FREE</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_EMP" w="234" h="90" fw="26" fh="90">weapons_autocannon_ammo/GB_Autocannon_3_EMP_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_EMP">
+	<sheet>GB_Autocannon_3_EMP</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Autocannon_3_HV" w="234" h="115" fw="26" fh="115">weapons_autocannon_ammo/GB_Autocannon_3_HV_strip9.png</animSheet>
+<weaponAnim name="GB_Autocannon_3_HV">
+	<sheet>GB_Autocannon_3_HV</sheet>
+	<desc length="9" x="0" y="0" />
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint x="13" y="19" />
+	<mountPoint x="3" y="66" />
+	<chargeImage>weapons_autocannon/GB_Autocannon_3_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="GB_Gauss_1" w="312" h="130" fw="24" fh="130">weapons_gauss/GB_Gauss_1_strip13.png</animSheet>
 <weaponAnim name="GB_Gauss_1">
 	<sheet>GB_Gauss_1</sheet>
 	<desc length="13" x="0" y="0" />
@@ -79,9 +542,9 @@
 	<fireFrame>7</fireFrame>
 	<firePoint x="15" y="26" />
 	<mountPoint x="3" y="99" />
-	<chargeImage>weapons/GB_Gauss_1_glow.png</chargeImage>
+	<chargeImage>weapons_gauss/GB_Gauss_1_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Gauss_2" w="378" h="160" fw="27" fh="160">weapons/GB_Gauss_2_strip14.png</animSheet>
+<animSheet name="GB_Gauss_2" w="378" h="160" fw="27" fh="160">weapons_gauss/GB_Gauss_2_strip14.png</animSheet>
 <weaponAnim name="GB_Gauss_2">
 	<sheet>GB_Gauss_2</sheet>
 	<desc length="14" x="0" y="0" />
@@ -89,9 +552,9 @@
 	<fireFrame>7</fireFrame>
 	<firePoint x="16" y="36" />
 	<mountPoint x="3" y="105" />
-	<chargeImage>weapons/GB_Gauss_2_glow.png</chargeImage>
+	<chargeImage>weapons_gauss/GB_Gauss_2_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Gauss_3" w="465" h="160" fw="31" fh="160">weapons/GB_Gauss_3_strip15.png</animSheet>
+<animSheet name="GB_Gauss_3" w="465" h="160" fw="31" fh="160">weapons_gauss/GB_Gauss_3_strip15.png</animSheet>
 <weaponAnim name="GB_Gauss_3">
 	<sheet>GB_Gauss_3</sheet>
 	<desc length="15" x="0" y="0" />
@@ -99,9 +562,9 @@
 	<fireFrame>8</fireFrame>
 	<firePoint x="19" y="37" />
 	<mountPoint x="3" y="105" />
-	<chargeImage>weapons/GB_Gauss_3_glow.png</chargeImage>
+	<chargeImage>weapons_gauss/GB_Gauss_3_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_AP_Gauss" w="84" h="70" fw="14" fh="70">weapons/GB_AP_Gauss_strip6.png</animSheet>
+<animSheet name="GB_AP_Gauss" w="84" h="70" fw="14" fh="70">weapons_gauss/GB_AP_Gauss_strip6.png</animSheet>
 <weaponAnim name="GB_AP_Gauss">
 	<sheet>GB_AP_Gauss</sheet>
 	<desc length="6" x="0" y="0" />
@@ -109,7 +572,7 @@
 	<fireFrame>3</fireFrame>
 	<firePoint x="9" y="13" />
 	<mountPoint x="2" y="44" />
-	<chargeImage>weapons/GB_AP_Gauss_glow.png</chargeImage>
+	<chargeImage>weapons_gauss/GB_AP_Gauss_glow.png</chargeImage>
 </weaponAnim>
 
 <animSheet name="GB_Machinegun" w="98" h="60" fw="14" fh="60">weapons/GB_Machinegun_strip7.png</animSheet>
@@ -133,7 +596,7 @@
 	<chargeImage>weapons/GB_Machinegun_Heavy_glow.png</chargeImage>
 </weaponAnim>
 
-<animSheet name="GB_Railgun_1" w="243" h="110" fw="27" fh="110">weapons/GB_Railgun_1_strip9.png</animSheet>
+<animSheet name="GB_Railgun_1" w="243" h="110" fw="27" fh="110">weapons_rail/GB_Railgun_1_strip9.png</animSheet>
 <weaponAnim name="GB_Railgun_1">
 	<sheet>GB_Railgun_1</sheet>
 	<desc length="9" x="0" y="0" />
@@ -141,9 +604,9 @@
 	<fireFrame>5</fireFrame>
 	<firePoint x="16" y="20" />
 	<mountPoint x="3" y="68" />
-	<chargeImage>weapons/GB_Railgun_1_glow.png</chargeImage>
+	<chargeImage>weapons_rail/GB_Railgun_1_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Railgun_2" w="360" h="120" fw="30" fh="120">weapons/GB_Railgun_2_strip12.png</animSheet>
+<animSheet name="GB_Railgun_2" w="360" h="120" fw="30" fh="120">weapons_rail/GB_Railgun_2_strip12.png</animSheet>
 <weaponAnim name="GB_Railgun_2">
 	<sheet>GB_Railgun_2</sheet>
 	<desc length="12" x="0" y="0" />
@@ -151,9 +614,9 @@
 	<fireFrame>5</fireFrame>
 	<firePoint x="19" y="30" />
 	<mountPoint x="3" y="75" />
-	<chargeImage>weapons/GB_Railgun_2_glow.png</chargeImage>
+	<chargeImage>weapons_rail/GB_Railgun_2_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Railgun_3" w="432" h="155" fw="36" fh="155">weapons/GB_Railgun_3_strip12.png</animSheet>
+<animSheet name="GB_Railgun_3" w="432" h="155" fw="36" fh="155">weapons_rail/GB_Railgun_3_strip12.png</animSheet>
 <weaponAnim name="GB_Railgun_3">
 	<sheet>GB_Railgun_3</sheet>
 	<desc length="12" x="0" y="0" />
@@ -161,9 +624,9 @@
 	<fireFrame>5</fireFrame>
 	<firePoint x="22" y="39" />
 	<mountPoint x="4" y="91" />
-	<chargeImage>weapons/GB_Railgun_3_glow.png</chargeImage>
+	<chargeImage>weapons_rail/GB_Railgun_3_glow.png</chargeImage>
 </weaponAnim>
-<animSheet name="GB_Railgun_Artillery" w="240" h="50" fw="30" fh="50">weapons/GB_Railgun_Artillery_strip8.png</animSheet>
+<animSheet name="GB_Railgun_Artillery" w="240" h="50" fw="30" fh="50">artillery/GB_Railgun_Artillery_strip8.png</animSheet>
 <weaponAnim name="GB_Railgun_Artillery">
 	<sheet>GB_Railgun_Artillery</sheet>
 	<desc length="8" x="0" y="0" />

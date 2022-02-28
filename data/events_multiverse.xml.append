@@ -79,7 +79,7 @@
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seen better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -104,7 +104,7 @@
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seen better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -130,7 +130,7 @@
 	<choice hidden = "true">
 		<text>Continue...</text>
 		<event>
-			<text>The ship hails you and the video feed flickers on, although the ships lighting has seem better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
+			<text>The ship hails you and the video feed flickers on, although the ships lighting has seen better days you can see the silhouettes of various races of crew onboard the Federation ship, some of which you wouldn't expect on such a vessel. "This is the Captain speaking from the experimental type Kestrel-class cruiser hailing from Universe 163. You have been deemed to be a threat of the fragile peace of the new Federation with 89.2% probability. I am sorry that it has to end like this."</text>
 			<ship hostile="true"/> 
 			<choice hidden="true">
 				<text>Continue...</text>
