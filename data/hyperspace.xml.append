@@ -987,12 +987,12 @@
     <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL">
         <hiddenAug>SHIP_KESTREL</hiddenAug>
         <hiddenAug>FOR_MULTIVERSE</hiddenAug>
-		<crew>
+		<!--<crew>
 			<human room = "0"/>
 			<human room = "10"/>
 			<human room = "12"/>
-			<human room = "11"/> <!-- R4: I just winged it and hope this is somewhere nice -->
-		</crew>
+			<human room = "11"/> !-- R4: I just winged it and hope this is somewhere nice --
+		</crew>    I somehow broke everything here -->
         <crewLimit>11</crewLimit>
     </mod-append:customShip>
     <mod-append:customShip name="PLAYER_SHIP_R4_GB_KESTREL_2">

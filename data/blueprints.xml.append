@@ -48,7 +48,7 @@
 	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
 	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>83</freeMissileChance>
 	<damage>2</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -88,7 +88,7 @@
 	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
 	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>81</freeMissileChance>
 	<damage>3</damage>
 	<shots>1</shots>
 	<sp>0</sp>
@@ -171,7 +171,7 @@
 	<desc>The standard Autocannon of the Federation during its founding. Outdated but still effective.</desc>
 	<tooltip>1 shot 2 damage weapon, 85% chance to not use ammo, 20% chance to cause a breach, 20% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>83</freeMissileChance>
 	<damage>2</damage>
 	<persDamage>1</persDamage>
 	<shots>1</shots>
@@ -213,7 +213,7 @@
 	<desc>The heaviest Autocannon in service during the Federation-Mantis war; capable of bringing down any warship under a continuous bombardment.</desc>
 	<tooltip>1 shot 3 damage weapon, 85% chance to not use ammo, 40% chance to cause a breach, 40% chance to stun</tooltip>
 	<missiles>1</missiles>
-	<freeMissileChance>85</freeMissileChance>
+	<freeMissileChance>81</freeMissileChance>
 	<damage>3</damage>
 	<persDamage>1</persDamage>
 	<shots>1</shots>
@@ -883,14 +883,16 @@
 
 <weaponBlueprint name = "GB_MG_LOOT">
 	<type>BURST</type>
-	<title>'Spray and Pray'</title>
+	<title>'Spray'n'Pray'</title>
 	<short>'S.A.P'</short>
 	<desc>BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRT</desc>
 	<tooltip>Boss loot.</tooltip>
+	<missiles>1</missiles>
+	<freeMissileChance>45</freeMissileChance>
 	<damage>1</damage>
 	<shots>8</shots>
 	<breachChance>1</breachChance>
-	<cooldown>20</cooldown>
+	<cooldown>30</cooldown>
 	<power>0</power>
 	<speed>60</speed>
 	<radius>50</radius>
@@ -900,8 +902,8 @@
 	<cost>60</cost>
 	<boost>
 		<type>cooldown</type>
-		<amount>10</amount>
-		<count>3</count>
+		<amount>20</amount>
+		<count>2</count>
 	</boost>
 	<projectiles>
 		<projectile count="1" fake="false">GB_shot_light</projectile>
@@ -1206,6 +1208,7 @@
 	<health amount="30" />
 	<maxPower amount="7" />
 	<aug name="EX_EXPLOSIVE_REPLICATOR" />
+	<crewCount amount = "4" class="human"/>
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_R4_GB_KESTREL_2" layout="r4p_gb_kestrel_b" img="r4p_gb_kestrel_b">
